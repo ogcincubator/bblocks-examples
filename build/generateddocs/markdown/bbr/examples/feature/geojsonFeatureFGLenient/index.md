@@ -95,17 +95,17 @@ simplifying implementation.
 ```ttl
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
-@prefix ns1: <http://www.opengis.net/def/glossary/term/> .
-@prefix ns2: <http://example.org/myModel/> .
+@prefix ns1: <http://example.org/myModel/> .
+@prefix ns2: <http://www.opengis.net/def/glossary/term/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://example.com/features/f1> a <app:building>,
         geojson:Feature ;
-    ns2:myProp "Mandatory property example" ;
+    ns1:myProp "Mandatory property example" ;
     dcterms:time [ time:hasTime ( "2014-04-24T10:50:18Z" ".." ) ] ;
-    ns1:CoordinateReferenceSystemCRS "http://www.opengis.net/def/crs/EPSG/0/5555" ;
+    ns2:CoordinateReferenceSystemCRS "http://www.opengis.net/def/crs/EPSG/0/5555" ;
     geojson:geometry [ a geojson:LineString ;
             geojson:coordinates ( ( -1.116718e+02 4.005671e+01 ) ( -1.1171e+02 4.015671e+01 ) ) ] .
 

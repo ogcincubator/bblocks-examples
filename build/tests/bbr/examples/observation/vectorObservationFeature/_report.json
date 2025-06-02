@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.bbr.examples.observation.vectorObservationFeature - Custom Result for Observation Feature",
   "bblockName": "Custom Result for Observation Feature",
   "bblockId": "ogc.bbr.examples.observation.vectorObservationFeature",
-  "generated": "2025-05-19T10:37:07.192349+00:00",
+  "generated": "2025-06-02T20:19:19.131501+00:00",
   "result": true,
   "items": [
     {
@@ -72,9 +72,9 @@
             {
               "shaclFile": "_sources/observation/vectorObservationFeature/rules.shacl",
               "focusNodes": {
-                "<http://example.com/rules#testVectorObservationFeatureHasOneGeometry>": {
+                "<http://example.com/rules#testGeometryHasCoordinates>": {
                   "nodes": [
-                    "<http://example.com/features/vector-obs-1>"
+                    "<http://example.com/features/vector-obs-1>/geojson:geometry"
                   ]
                 },
                 "<http://example.com/rules#testGeometryCoordinatesIsList>": {
@@ -82,54 +82,14 @@
                     "<http://example.com/features/vector-obs-1>/geojson:geometry"
                   ]
                 },
-                "<http://example.com/rules#testGeometryHasCoordinates>": {
-                  "nodes": [
-                    "<http://example.com/features/vector-obs-1>/geojson:geometry"
-                  ]
-                }
-              },
-              "isError": false,
-              "message": "Focus nodes for _sources/observation/vectorObservationFeature/rules.shacl:\n - Shape <http://example.com/rules#testVectorObservationFeatureHasOneGeometry>: <http://example.com/features/vector-obs-1>\n - Shape <http://example.com/rules#testGeometryCoordinatesIsList>: <http://example.com/features/vector-obs-1>/geojson:geometry\n - Shape <http://example.com/rules#testGeometryHasCoordinates>: <http://example.com/features/vector-obs-1>/geojson:geometry\n"
-            },
-            {
-              "op": "shacl-report",
-              "shaclFile": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl",
-              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-              "isError": false,
-              "message": "Validation result for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
-            },
-            {
-              "shaclFile": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl",
-              "focusNodes": {
-                "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
-                  "nodes": [
-                    "<http://example.com/features/vector-obs-1>"
-                  ]
-                },
-                "<https://www.ogc.org/rules/sosa/#testResult>": {
-                  "nodes": [
-                    "<http://example.com/features/vector-obs-1>"
-                  ]
-                },
-                "<https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>": {
-                  "nodes": []
-                },
-                "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
-                  "nodes": []
-                },
-                "<https://www.ogc.org/rules/sosa/#testObservedProperty>": {
-                  "nodes": [
-                    "<http://example.com/features/vector-obs-1>"
-                  ]
-                },
-                "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
+                "<http://example.com/rules#testVectorObservationFeatureHasOneGeometry>": {
                   "nodes": [
                     "<http://example.com/features/vector-obs-1>"
                   ]
                 }
               },
               "isError": false,
-              "message": "Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: <http://example.com/features/vector-obs-1>\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: <http://example.com/features/vector-obs-1>\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testObservedProperty>: <http://example.com/features/vector-obs-1>\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: <http://example.com/features/vector-obs-1>\n"
+              "message": "Focus nodes for _sources/observation/vectorObservationFeature/rules.shacl:\n - Shape <http://example.com/rules#testGeometryHasCoordinates>: <http://example.com/features/vector-obs-1>/geojson:geometry\n - Shape <http://example.com/rules#testGeometryCoordinatesIsList>: <http://example.com/features/vector-obs-1>/geojson:geometry\n - Shape <http://example.com/rules#testVectorObservationFeatureHasOneGeometry>: <http://example.com/features/vector-obs-1>\n"
             }
           ]
         }
@@ -202,9 +162,9 @@
             {
               "shaclFile": "_sources/observation/vectorObservationFeature/rules.shacl",
               "focusNodes": {
-                "<http://example.com/rules#testVectorObservationFeatureHasOneGeometry>": {
+                "<http://example.com/rules#testGeometryHasCoordinates>": {
                   "nodes": [
-                    "<http://example.com/features/vector-obs-1>"
+                    "<http://example.com/features/vector-obs-1>/geojson:geometry"
                   ]
                 },
                 "<http://example.com/rules#testGeometryCoordinatesIsList>": {
@@ -212,54 +172,14 @@
                     "<http://example.com/features/vector-obs-1>/geojson:geometry"
                   ]
                 },
-                "<http://example.com/rules#testGeometryHasCoordinates>": {
-                  "nodes": [
-                    "<http://example.com/features/vector-obs-1>/geojson:geometry"
-                  ]
-                }
-              },
-              "isError": false,
-              "message": "Focus nodes for _sources/observation/vectorObservationFeature/rules.shacl:\n - Shape <http://example.com/rules#testVectorObservationFeatureHasOneGeometry>: <http://example.com/features/vector-obs-1>\n - Shape <http://example.com/rules#testGeometryCoordinatesIsList>: <http://example.com/features/vector-obs-1>/geojson:geometry\n - Shape <http://example.com/rules#testGeometryHasCoordinates>: <http://example.com/features/vector-obs-1>/geojson:geometry\n"
-            },
-            {
-              "op": "shacl-report",
-              "shaclFile": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl",
-              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-              "isError": false,
-              "message": "Validation result for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
-            },
-            {
-              "shaclFile": "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl",
-              "focusNodes": {
-                "<https://www.ogc.org/rules/sosa/#testRequiredTime>": {
-                  "nodes": [
-                    "<http://example.com/features/vector-obs-1>"
-                  ]
-                },
-                "<https://www.ogc.org/rules/sosa/#testResult>": {
-                  "nodes": [
-                    "<http://example.com/features/vector-obs-1>"
-                  ]
-                },
-                "<https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>": {
-                  "nodes": []
-                },
-                "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
-                  "nodes": []
-                },
-                "<https://www.ogc.org/rules/sosa/#testObservedProperty>": {
-                  "nodes": [
-                    "<http://example.com/features/vector-obs-1>"
-                  ]
-                },
-                "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
+                "<http://example.com/rules#testVectorObservationFeatureHasOneGeometry>": {
                   "nodes": [
                     "<http://example.com/features/vector-obs-1>"
                   ]
                 }
               },
               "isError": false,
-              "message": "Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: <http://example.com/features/vector-obs-1>\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: <http://example.com/features/vector-obs-1>\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testObservedProperty>: <http://example.com/features/vector-obs-1>\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: <http://example.com/features/vector-obs-1>\n"
+              "message": "Focus nodes for _sources/observation/vectorObservationFeature/rules.shacl:\n - Shape <http://example.com/rules#testGeometryHasCoordinates>: <http://example.com/features/vector-obs-1>/geojson:geometry\n - Shape <http://example.com/rules#testGeometryCoordinatesIsList>: <http://example.com/features/vector-obs-1>/geojson:geometry\n - Shape <http://example.com/rules#testVectorObservationFeatureHasOneGeometry>: <http://example.com/features/vector-obs-1>\n"
             }
           ]
         }

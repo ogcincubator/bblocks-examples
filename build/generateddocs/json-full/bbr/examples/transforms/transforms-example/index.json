@@ -8,7 +8,7 @@
   "dateTimeAddition": "2024-10-03T11:31:00+02:00",
   "itemClass": "schema",
   "version": "0.1",
-  "dateOfLastChange": "2025-01-26",
+  "dateOfLastChange": "2025-06-02",
   "shaclRules": {},
   "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/context.jsonld",
   "schema": {
