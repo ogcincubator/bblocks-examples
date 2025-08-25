@@ -20,9 +20,9 @@
   "scope": "unstable",
   "dependsOn": [
     "ogc.sosa.properties.observation",
-    "ogc.sosa.features.observationCollection",
     "ogc.bbr.examples.observation.vectorObservation",
-    "ogc.sosa.features.observation"
+    "ogc.sosa.features.observation",
+    "ogc.sosa.features.observationCollection"
   ],
   "tags": [
     "sosa",
@@ -33,12 +33,12 @@
   ],
   "group": "Examples",
   "highlighted": true,
-  "shaclRules": {
+  "shaclShapes": {
     "ogc.bbr.examples.observation.vectorObservationFeature": [
       "https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservationFeature/rules.shacl"
     ],
     "ogc.sosa.properties.observation": [
-      "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl"
+      "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl"
     ]
   },
   "schema": {

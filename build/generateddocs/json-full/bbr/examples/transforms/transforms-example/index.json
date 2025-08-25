@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "version": "0.1",
   "dateOfLastChange": "2025-08-25",
-  "shaclRules": {},
+  "shaclShapes": {},
   "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/context.jsonld",
   "schema": {
     "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/schema.yaml",

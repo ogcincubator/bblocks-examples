@@ -89,7 +89,7 @@
         "@type": "@id"
       },
       "tags": "dcat:keyword",
-      "shaclRules": {
+      "shaclShapes": {
         "@id": "bblocks:hasShaclRule",
         "@type": "@id",
         "@container": "@index",
@@ -112,12 +112,12 @@
   "name": "Building Blocks - Building Blocks Examples",
   "abstract": "This register provides a collection of **examples** designed to illustrate capabilities and implementation patterns for [Building Blocks (see more)](https://ogcincubator.github.io/bblocks-docs). \n\n*These buildings blocks may be copied and edited into a new repository based on the [template](https://github.com/opengeospatial/bblock-template) - but should not be referenced and extended for reuse*\n",
   "description": "The aim of the highlighted examples is to illustrate implementation patterns for reusing OGC building blocks. The emphasis is on typical requirements to extend or constrain generic or abstract models such as OGC API Features, Observations etc. \n\n Other examples will illustrate different possible ways to use the Building Block machinery to semantically annotate externally defines schemas, develop and test logical constraints, or simply test examples using a published specification.\n\nMore complex examples will include transformation testing - testing a format can be transformed into a related structure and/or data model.\n",
-  "modified": "2025-08-25T08:06:50.723348",
+  "modified": "2025-08-25T11:37:04.844161",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"90449d8d782b37e989efa59d628701428c5ec209",
-      "shortCommitId": "\"90449d",
-      "date": "2025-07-22T23:11:05+00:00\""
+      "commitId": "\"7706428cacea50013f04585b5be2d7d29b7b2d9b",
+      "shortCommitId": "\"770642",
+      "date": "2025-08-25T11:10:01+00:00\""
     }
   },
   "gitRepository": "https://github.com/ogcincubator/bblocks-examples",
@@ -145,7 +145,7 @@
       "itemClass": "schema",
       "version": "0.1",
       "dateOfLastChange": "2025-08-25",
-      "shaclRules": {
+      "shaclShapes": {
         "ogc.bbr.examples.semantic-uplift.pre-and-post-uplift": [
           "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/pre-and-post-uplift/rules.shacl"
         ]
@@ -190,7 +190,7 @@
       "itemClass": "schema",
       "version": "0.1",
       "dateOfLastChange": "2025-08-25",
-      "shaclRules": {},
+      "shaclShapes": {},
       "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/context.jsonld",
       "schema": {
         "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/schema.yaml",
@@ -430,7 +430,7 @@
         "examples"
       ],
       "group": "Examples",
-      "shaclRules": {},
+      "shaclShapes": {},
       "schema": {
         "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema.yaml",
         "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema.json"
@@ -488,9 +488,9 @@
         "examples"
       ],
       "group": "Examples",
-      "shaclRules": {
+      "shaclShapes": {
         "ogc.sosa.properties.observation": [
-          "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl"
+          "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl"
         ]
       },
       "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/context.jsonld",
@@ -550,9 +550,9 @@
         "geopose"
       ],
       "group": "Examples",
-      "shaclRules": {
+      "shaclShapes": {
         "ogc.sosa.properties.observation": [
-          "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl"
+          "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl"
         ]
       },
       "schema": {
@@ -619,7 +619,7 @@
         "examples"
       ],
       "group": "Examples",
-      "shaclRules": {},
+      "shaclShapes": {},
       "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/overrideContext/context.jsonld",
       "schema": {
         "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/overrideContext/schema.yaml",
@@ -679,9 +679,9 @@
       ],
       "group": "Examples",
       "highlighted": true,
-      "shaclRules": {
+      "shaclShapes": {
         "ogc.sosa.properties.observation": [
-          "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl"
+          "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl"
         ]
       },
       "schema": {
@@ -731,14 +731,14 @@
         "examples"
       ],
       "group": "Examples",
-      "shaclRules": {
+      "shaclShapes": {
         "ogc.sosa.properties.observation": [
-          "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl"
+          "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl"
         ]
       },
       "dependsOn": [
-        "ogc.geo.json-fg.feature-lenient",
-        "ogc.bbr.examples.feature.propertySet"
+        "ogc.bbr.examples.feature.propertySet",
+        "ogc.geo.json-fg.feature-lenient"
       ],
       "schema": {
         "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/schema.yaml",
@@ -788,9 +788,9 @@
         "examples"
       ],
       "group": "Examples",
-      "shaclRules": {
+      "shaclShapes": {
         "ogc.sosa.properties.observation": [
-          "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl"
+          "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl"
         ]
       },
       "dependsOn": [
@@ -848,9 +848,9 @@
       "scope": "unstable",
       "dependsOn": [
         "ogc.sosa.properties.observation",
-        "ogc.sosa.features.observationCollection",
         "ogc.bbr.examples.observation.vectorObservation",
-        "ogc.sosa.features.observation"
+        "ogc.sosa.features.observation",
+        "ogc.sosa.features.observationCollection"
       ],
       "tags": [
         "sosa",
@@ -861,12 +861,12 @@
       ],
       "group": "Examples",
       "highlighted": true,
-      "shaclRules": {
+      "shaclShapes": {
         "ogc.bbr.examples.observation.vectorObservationFeature": [
           "https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservationFeature/rules.shacl"
         ],
         "ogc.sosa.properties.observation": [
-          "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl"
+          "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl"
         ]
       },
       "schema": {

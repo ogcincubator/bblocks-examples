@@ -66,8 +66,18 @@ In this case Latitude and Longitude are converted to more common options.
 
 #### ttl
 ```ttl
+@prefix geojson: <https://purl.org/geojson/vocab#> .
+@prefix ns1: <https://smartdatamodels.org/dataModel.ACRIS/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.com/features/f1> a <http://example.com/features/Feature> .
+<http://example.com/features/f1> a geojson:Feature,
+        ns1:AirportFacility ;
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 5.935444e+01 1.793972e+01 ) ] ;
+    ns1:IataCode "BMA" ;
+    ns1:IcaoCode "ESSB" ;
+    ns1:Name "control" .
 
 
 ```
@@ -99,6 +109,55 @@ Links to the schema:
 ```jsonld
 {
   "@context": {
+    "type": "@type",
+    "id": "@id",
+    "properties": "@nest",
+    "geometry": {
+      "@context": {
+        "coordinates": {
+          "@container": "@list",
+          "@id": "geojson:coordinates"
+        }
+      },
+      "@id": "geojson:geometry"
+    },
+    "bbox": {
+      "@container": "@list",
+      "@id": "geojson:bbox"
+    },
+    "Feature": "geojson:Feature",
+    "FeatureCollection": "geojson:FeatureCollection",
+    "GeometryCollection": "geojson:GeometryCollection",
+    "LineString": "geojson:LineString",
+    "MultiLineString": "geojson:MultiLineString",
+    "MultiPoint": "geojson:MultiPoint",
+    "MultiPolygon": "geojson:MultiPolygon",
+    "Point": "geojson:Point",
+    "Polygon": "geojson:Polygon",
+    "features": {
+      "@container": "@set",
+      "@id": "geojson:features"
+    },
+    "links": {
+      "@context": {
+        "href": {
+          "@type": "@id",
+          "@id": "oa:hasTarget"
+        },
+        "rel": {
+          "@context": {
+            "@base": "http://www.iana.org/assignments/relation/"
+          },
+          "@id": "http://www.iana.org/assignments/relation",
+          "@type": "@id"
+        },
+        "type": "dct:type",
+        "hreflang": "dct:language",
+        "title": "rdfs:label",
+        "length": "dct:extent"
+      },
+      "@id": "rdfs:seeAlso"
+    },
     "AirportElevation": "https://smartdatamodels.org/dataModel.ACRIS/AirportElevation",
     "AirportElevationUnitOfMeasurement": "https://smartdatamodels.org/dataModel.ACRIS/AirportElevationUnitOfMeasurement",
     "AirportFacility": "https://smartdatamodels.org/dataModel.ACRIS/AirportFacility",
@@ -139,8 +198,10 @@ Links to the schema:
     "Value": "https://smartdatamodels.org/dataModel.ACRIS/Value",
     "WaitTime": "https://smartdatamodels.org/dataModel.ACRIS/WaitTime",
     "ZoneAreaLocation": "https://smartdatamodels.org/dataModel.ACRIS/ZoneAreaLocation",
-    "id": "@id",
-    "type": "@type",
+    "geojson": "https://purl.org/geojson/vocab#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "oa": "http://www.w3.org/ns/oa#",
+    "dct": "http://purl.org/dc/terms/",
     "ngsi-ld": "https://uri.etsi.org/ngsi-ld/",
     "@version": 1.1
   }

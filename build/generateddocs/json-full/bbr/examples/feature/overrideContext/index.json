@@ -34,7 +34,7 @@
     "examples"
   ],
   "group": "Examples",
-  "shaclRules": {},
+  "shaclShapes": {},
   "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/overrideContext/context.jsonld",
   "schema": {
     "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/overrideContext/schema.yaml",
@@ -66,7 +66,7 @@
         },
         {
           "language": "ttl",
-          "code": "\n<http://example.com/features/f1> a <http://example.com/features/Feature> .\n\n",
+          "code": "@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix ns1: <https://smartdatamodels.org/dataModel.ACRIS/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<http://example.com/features/f1> a geojson:Feature,\n        ns1:AirportFacility ;\n    geojson:geometry [ a geojson:Point ;\n            geojson:coordinates ( 5.935444e+01 1.793972e+01 ) ] ;\n    ns1:IataCode \"BMA\" ;\n    ns1:IcaoCode \"ESSB\" ;\n    ns1:Name \"control\" .\n\n",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/feature/overrideContext/example_1_1.ttl"
         }
       ]

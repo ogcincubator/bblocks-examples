@@ -27,9 +27,9 @@
     "examples"
   ],
   "group": "Examples",
-  "shaclRules": {
+  "shaclShapes": {
     "ogc.sosa.properties.observation": [
-      "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl"
+      "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl"
     ]
   },
   "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/context.jsonld",
