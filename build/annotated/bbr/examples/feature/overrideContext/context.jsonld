@@ -1,28 +1,5 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "description": "Example of a simple GeoJSON Feature specialisation using an externally defined JSON-LD context.",
-  "$defs": {
-    "MyFeature": {
-      "allOf": [
-        {
-          "$ref": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.json"
-        },
-        {
-          "properties": {
-            "properties": {
-              "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.ACRIS/master/AirportFacility/schema.json"
-            }
-          }
-        }
-      ]
-    }
-  },
-  "anyOf": [
-    {
-      "$ref": "#/$defs/MyFeature"
-    }
-  ],
-  "x-jsonld-extra-terms": {
+  "@context": {
     "AirportElevation": "https://smartdatamodels.org/dataModel.ACRIS/AirportElevation",
     "AirportElevationUnitOfMeasurement": "https://smartdatamodels.org/dataModel.ACRIS/AirportElevationUnitOfMeasurement",
     "AirportFacility": "https://smartdatamodels.org/dataModel.ACRIS/AirportFacility",
@@ -64,9 +41,8 @@
     "WaitTime": "https://smartdatamodels.org/dataModel.ACRIS/WaitTime",
     "ZoneAreaLocation": "https://smartdatamodels.org/dataModel.ACRIS/ZoneAreaLocation",
     "id": "@id",
-    "type": "@type"
-  },
-  "x-jsonld-prefixes": {
-    "ngsi-ld": "https://uri.etsi.org/ngsi-ld/"
+    "type": "@type",
+    "ngsi-ld": "https://uri.etsi.org/ngsi-ld/",
+    "@version": 1.1
   }
 }

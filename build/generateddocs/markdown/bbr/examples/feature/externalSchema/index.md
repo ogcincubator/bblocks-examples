@@ -11,11 +11,11 @@ This example shows a simple customisation for OGC API Feature using an externall
 
 ## Feature Type based on a published schema
 
-This example shows how an existing schema can be used to define a payload for a container model such as the OGC API Features feature schema.
+This example shows how an existing schema can be used to define a payload for a _container model_ such as the OGC API Features ```feature``` schema.
 
-This particular example uses a schema defined in another message-oriented environment, and **highlights an existing practice of using JSON-LD contexts defined for components.**
+This particular example uses a schema defined in another message-oriented environment, and **highlights support for the practice of using JSON-LD contexts to document schemas.**
 
-The OGC Building Blocks uses the same approach, with the added capabilities around example validation and mechanisms composition into other structures with transparent dependencies.
+The OGC Building Blocks uses the same approach, with the added capabilities around example validation and mechanisms for composition into other structures. BuildingBlocks provides for transparent dependencies.
 
 
 
@@ -90,7 +90,8 @@ The OGC Building Blocks uses the same approach, with the added capabilities arou
 
 ```yaml
 $schema: https://json-schema.org/draft/2020-12/schema
-description: Example of a sinmple GeoJSON Feature specialisation
+description: Example of a simple GeoJSON Feature specialisation using an externally
+  defined JSON-LD context.
 $defs:
   MyFeature:
     allOf:

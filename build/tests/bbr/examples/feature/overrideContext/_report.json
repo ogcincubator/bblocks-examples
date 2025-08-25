@@ -1,16 +1,16 @@
 {
-  "title": "Validation report for ogc.bbr.examples.feature.externalSchema - External Schema (Smart Data Models)",
-  "bblockName": "External Schema (Smart Data Models)",
-  "bblockId": "ogc.bbr.examples.feature.externalSchema",
-  "generated": "2025-08-25T08:06:57.049916+00:00",
+  "title": "Validation report for ogc.bbr.examples.feature.overrideContext - Test Context Override",
+  "bblockName": "Test Context Override",
+  "bblockId": "ogc.bbr.examples.feature.overrideContext",
+  "generated": "2025-08-25T08:06:57.665766+00:00",
   "result": true,
   "items": [
     {
       "source": {
         "type": "EXAMPLE",
         "requireFail": false,
-        "filename": "build/tests/bbr/examples/feature/externalSchema/example_1_1.json",
-        "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/feature/externalSchema/example_1_1.json",
+        "filename": "build/tests/bbr/examples/feature/overrideContext/example_1_1.json",
+        "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/feature/overrideContext/example_1_1.json",
         "exampleIndex": 1,
         "snippetIndex": 1,
         "language": "application/json"
@@ -40,7 +40,7 @@
               "op": "ttl-create",
               "empty": false,
               "filename": "example_1_1.ttl",
-              "size": 12,
+              "size": 1,
               "isError": false,
               "message": "Output Turtle example_1_1.ttl created"
             }

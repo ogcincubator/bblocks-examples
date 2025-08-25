@@ -1,0 +1,3 @@
+
+<http://example.com/features/f1> a <http://example.com/features/Feature> .
+

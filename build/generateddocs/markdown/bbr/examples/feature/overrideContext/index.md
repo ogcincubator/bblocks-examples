@@ -1,28 +1,104 @@
+
+# Test Context Override (Schema)
+
+`ogc.bbr.examples.feature.overrideContext` *v1.0*
+
+This example shows a simple customisation for OGC API Feature using an externally defined domain schema.
+
+[*Status*](http://www.opengis.net/def/status): Under development
+
+## Description
+
+## Feature Type based on a published schema
+
+Test for overriding a schema element.
+
+In this case Latitude and Longitude are converted to more common options.
+
+## Examples
+
+### GeoJSON - specialisation example.
+#### json
+```json
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "description": "Example of a simple GeoJSON Feature specialisation using an externally defined JSON-LD context.",
-  "$defs": {
-    "MyFeature": {
-      "allOf": [
-        {
-          "$ref": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.json"
-        },
-        {
-          "properties": {
-            "properties": {
-              "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.ACRIS/master/AirportFacility/schema.json"
-            }
-          }
-        }
-      ]
-    }
+  "id": "f1",
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      59.354444,
+      17.939722
+    ]
   },
-  "anyOf": [
-    {
-      "$ref": "#/$defs/MyFeature"
-    }
-  ],
-  "x-jsonld-extra-terms": {
+  "properties": {
+    "id": "urn:ngsi-ld:AirportFacility:id:IUXP:30337114",
+    "type": "AirportFacility",
+    "IataCode": "BMA",
+    "IcaoCode": "ESSB",
+    "Name": "control"
+  }
+}
+
+```
+
+#### jsonld
+```jsonld
+{
+  "@context": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/overrideContext/context.jsonld",
+  "id": "f1",
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      59.354444,
+      17.939722
+    ]
+  },
+  "properties": {
+    "id": "urn:ngsi-ld:AirportFacility:id:IUXP:30337114",
+    "type": "AirportFacility",
+    "IataCode": "BMA",
+    "IcaoCode": "ESSB",
+    "Name": "control"
+  }
+}
+```
+
+#### ttl
+```ttl
+
+<http://example.com/features/f1> a <http://example.com/features/Feature> .
+
+
+```
+
+## Schema
+
+```yaml
+$schema: https://json-schema.org/draft/2020-12/schema
+description: Example of a simple GeoJSON Feature specialisation
+$defs:
+  MyFeature:
+    allOf:
+    - $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema.yaml
+anyOf:
+- $ref: '#/$defs/MyFeature'
+x-jsonld-extra-terms:
+  Name: rdfs:label
+
+```
+
+Links to the schema:
+
+* YAML version: [schema.yaml](https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/overrideContext/schema.json)
+* JSON version: [schema.json](https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/overrideContext/schema.yaml)
+
+
+# JSON-LD Context
+
+```jsonld
+{
+  "@context": {
     "AirportElevation": "https://smartdatamodels.org/dataModel.ACRIS/AirportElevation",
     "AirportElevationUnitOfMeasurement": "https://smartdatamodels.org/dataModel.ACRIS/AirportElevationUnitOfMeasurement",
     "AirportFacility": "https://smartdatamodels.org/dataModel.ACRIS/AirportFacility",
@@ -64,9 +140,26 @@
     "WaitTime": "https://smartdatamodels.org/dataModel.ACRIS/WaitTime",
     "ZoneAreaLocation": "https://smartdatamodels.org/dataModel.ACRIS/ZoneAreaLocation",
     "id": "@id",
-    "type": "@type"
-  },
-  "x-jsonld-prefixes": {
-    "ngsi-ld": "https://uri.etsi.org/ngsi-ld/"
+    "type": "@type",
+    "ngsi-ld": "https://uri.etsi.org/ngsi-ld/",
+    "@version": 1.1
   }
 }
+```
+
+You can find the full JSON-LD context here:
+[context.jsonld](https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/overrideContext/context.jsonld)
+
+## Sources
+
+* [OGC API - Features, Part 1, 7.16.2: Feature Response](https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7)
+* [Smart Data models](https://smartdatamodels.org/)
+* [Smart Data Model: Airport Facility](https://github.com/smart-data-models/dataModel.ACRIS/tree/master/AirportFacility)
+
+# For developers
+
+The source code for this Building Block can be found in the following repository:
+
+* URL: [https://github.com/ogcincubator/bblocks-examples](https://github.com/ogcincubator/bblocks-examples)
+* Path: `_sources/feature/overrideContext`
+
