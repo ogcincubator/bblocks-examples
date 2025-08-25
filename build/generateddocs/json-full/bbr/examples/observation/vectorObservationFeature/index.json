@@ -20,8 +20,8 @@
   "scope": "unstable",
   "dependsOn": [
     "ogc.sosa.properties.observation",
-    "ogc.bbr.examples.observation.vectorObservation",
     "ogc.sosa.features.observation",
+    "ogc.bbr.examples.observation.vectorObservation",
     "ogc.sosa.features.observationCollection"
   ],
   "tags": [

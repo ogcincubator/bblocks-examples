@@ -69,15 +69,16 @@ In this case Latitude and Longitude are converted to more common options.
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix ns1: <https://smartdatamodels.org/dataModel.ACRIS/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://example.com/features/f1> a geojson:Feature,
         ns1:AirportFacility ;
+    rdfs:label "control" ;
     geojson:geometry [ a geojson:Point ;
             geojson:coordinates ( 5.935444e+01 1.793972e+01 ) ] ;
     ns1:IataCode "BMA" ;
-    ns1:IcaoCode "ESSB" ;
-    ns1:Name "control" .
+    ns1:IcaoCode "ESSB" .
 
 
 ```
@@ -91,10 +92,13 @@ $defs:
   MyFeature:
     allOf:
     - $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema.yaml
+    - properties:
+        properties:
+          properties:
+            Name:
+              x-jsonld-id: rdfs:label
 anyOf:
 - $ref: '#/$defs/MyFeature'
-x-jsonld-extra-terms:
-  Name: rdfs:label
 
 ```
 
@@ -179,7 +183,7 @@ Links to the schema:
     "MeasurementDevice": "https://smartdatamodels.org/dataModel.ACRIS/MeasurementDevice",
     "MeasurementDeviceLocation": "https://smartdatamodels.org/dataModel.ACRIS/MeasurementDeviceLocation",
     "MeasurementTimePeriod": "https://smartdatamodels.org/dataModel.ACRIS/MeasurementTimePeriod",
-    "Name": "https://smartdatamodels.org/dataModel.ACRIS/Name",
+    "Name": "rdfs:label",
     "Occupancy": "https://smartdatamodels.org/dataModel.ACRIS/Occupancy",
     "OpeningTime": "https://smartdatamodels.org/dataModel.ACRIS/OpeningTime",
     "OperationTimePeriod": "https://smartdatamodels.org/dataModel.ACRIS/OperationTimePeriod",

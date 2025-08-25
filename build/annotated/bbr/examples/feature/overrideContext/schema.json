@@ -6,6 +6,17 @@
       "allOf": [
         {
           "$ref": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema.json"
+        },
+        {
+          "properties": {
+            "properties": {
+              "properties": {
+                "Name": {
+                  "x-jsonld-id": "rdfs:label"
+                }
+              }
+            }
+          }
         }
       ]
     }
@@ -14,8 +25,5 @@
     {
       "$ref": "#/$defs/MyFeature"
     }
-  ],
-  "x-jsonld-extra-terms": {
-    "Name": "rdfs:label"
-  }
+  ]
 }

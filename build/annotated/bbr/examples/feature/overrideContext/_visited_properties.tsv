@@ -23,4 +23,4 @@ path	@id
 /properties/type	
 /properties/IataCode	
 /properties/IcaoCode	
-/properties/Name	
+/properties/Name	rdfs:label

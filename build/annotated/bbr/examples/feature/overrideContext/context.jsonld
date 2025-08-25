@@ -70,7 +70,7 @@
     "MeasurementDevice": "https://smartdatamodels.org/dataModel.ACRIS/MeasurementDevice",
     "MeasurementDeviceLocation": "https://smartdatamodels.org/dataModel.ACRIS/MeasurementDeviceLocation",
     "MeasurementTimePeriod": "https://smartdatamodels.org/dataModel.ACRIS/MeasurementTimePeriod",
-    "Name": "https://smartdatamodels.org/dataModel.ACRIS/Name",
+    "Name": "rdfs:label",
     "Occupancy": "https://smartdatamodels.org/dataModel.ACRIS/Occupancy",
     "OpeningTime": "https://smartdatamodels.org/dataModel.ACRIS/OpeningTime",
     "OperationTimePeriod": "https://smartdatamodels.org/dataModel.ACRIS/OperationTimePeriod",
