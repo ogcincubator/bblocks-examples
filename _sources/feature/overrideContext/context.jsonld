@@ -1,0 +1,7 @@
+{
+  "@context": {
+    "Name": {
+      "@id": "rdfs:label"
+    }
+  }
+}

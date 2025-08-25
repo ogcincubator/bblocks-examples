@@ -1,0 +1,8 @@
+"$schema": https://json-schema.org/draft/2020-12/schema
+description: 'Example of a simple GeoJSON Feature specialisation'
+$defs:
+  MyFeature:
+    allOf:
+      - $ref: bblocks://ogc.bbr.examples.feature.externalSchema
+anyOf:
+  - $ref: "#/$defs/MyFeature"
