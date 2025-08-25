@@ -4,5 +4,9 @@ $defs:
   MyFeature:
     allOf:
       - $ref: bblocks://ogc.bbr.examples.feature.externalSchema
+      - properties:
+          properties:
+            properties:
+              Name: {}
 anyOf:
   - $ref: "#/$defs/MyFeature"
