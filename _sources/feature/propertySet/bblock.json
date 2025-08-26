@@ -16,7 +16,6 @@
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "ogc.sosa.properties.observation"
   ],
   "tags": [
     "properties",

@@ -1,5 +1,5 @@
 {
-  "name": "Custom Feature",
+  "name": "Custom GeoJSON Feature",
   "abstract": "This example shows a simple customisation method for OGC API Feature schemas",
   "status": "under-development",
   "dateTimeAddition": "2023-05-19T00:00:00Z",

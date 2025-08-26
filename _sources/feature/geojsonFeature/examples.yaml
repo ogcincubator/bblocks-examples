@@ -1,7 +1,8 @@
 - title: GeoJSON - specialisation example.
   comment:
     This examples shows how to define a customised schema based on an existing building block - in this case the OGC API Features basic GeoJSON Feature response
-  
+#  prefixes:
+#    - "myProp": "http://example.org/myModel/myProp"
   base-uri: http://example.com/features/
   snippets:
     - language: json
