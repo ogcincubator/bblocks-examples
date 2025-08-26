@@ -2,7 +2,7 @@
   "name": "Building Blocks Examples",
   "abstract": "This register provides a collection of **examples** designed to illustrate capabilities and implementation patterns for [Building Blocks (see more)](https://ogcincubator.github.io/bblocks-docs). \n\n*These buildings blocks may be copied and edited into a new repository based on the [template](https://github.com/opengeospatial/bblock-template) - but should not be referenced and extended for reuse*\n",
   "description": "The aim of the highlighted examples is to illustrate implementation patterns for reusing OGC building blocks. The emphasis is on typical requirements to extend or constrain generic or abstract models such as OGC API Features, Observations etc. \n\n Other examples will illustrate different possible ways to use the Building Block machinery to semantically annotate externally defines schemas, develop and test logical constraints, or simply test examples using a published specification.\n\nMore complex examples will include transformation testing - testing a format can be transformed into a related structure and/or data model.\n",
-  "modified": "2025-08-26T07:21:10.172510",
+  "modified": "2025-08-26T23:38:46.996581",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"7706428cacea50013f04585b5be2d7d29b7b2d9b",
@@ -20,6 +20,58 @@
     "https://opengeospatial.github.io/ogcapi-sosa/build/register.json"
   ],
   "bblocks": [
+    {
+      "itemIdentifier": "ogc.bbr.examples.feature.propertySet",
+      "name": "Example property set for Features",
+      "abstract": "This shows how to define a propertyset for a feature - which can be re-used in different containers - such as a GeoJSON Feature schema",
+      "status": "under-development",
+      "dateTimeAddition": "2023-05-19T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-building-block-examples",
+      "version": "1.0",
+      "dateOfLastChange": "2025-08-26",
+      "sources": [
+        {
+          "title": "Semantic Sensor Network Ontology",
+          "link": "https://www.w3.org/TR/vocab-ssn/"
+        }
+      ],
+      "maturity": "development",
+      "scope": "unstable",
+      "dependsOn": [],
+      "tags": [
+        "properties",
+        "features",
+        "examples"
+      ],
+      "group": "Examples",
+      "shaclShapes": {},
+      "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/context.jsonld",
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/propertySet/schema.yaml",
+      "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/propertySet/context.jsonld",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/propertySet/",
+      "rdfData": [],
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/propertySet/",
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/propertySet/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/propertySet/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.propertySet"
+        }
+      }
+    },
     {
       "itemIdentifier": "ogc.bbr.examples.semantic-uplift.pre-and-post-uplift",
       "name": "Pre and Post Semantic Uplift example",
@@ -331,9 +383,9 @@
       }
     },
     {
-      "itemIdentifier": "ogc.bbr.examples.feature.propertySet",
-      "name": "Example property set for Features",
-      "abstract": "This shows how to define a propertyset for a feature - which can be re-used in different containers - such as a GeoJSON Feature schema",
+      "itemIdentifier": "ogc.bbr.examples.feature.geojsonFeature",
+      "name": "Custom GeoJSON Feature",
+      "abstract": "This example shows a simple customisation method for OGC API Feature schemas",
       "status": "under-development",
       "dateTimeAddition": "2023-05-19T00:00:00Z",
       "itemClass": "schema",
@@ -342,49 +394,94 @@
       "dateOfLastChange": "2025-08-26",
       "sources": [
         {
-          "title": "Semantic Sensor Network Ontology",
-          "link": "https://www.w3.org/TR/vocab-ssn/"
+          "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
+          "link": "https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7"
         }
       ],
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.sosa.properties.observation"
+        "ogc.bbr.examples.feature.propertySet",
+        "ogc.geo.features.feature"
       ],
       "tags": [
-        "properties",
-        "features",
+        "feature",
         "examples"
       ],
       "group": "Examples",
-      "shaclShapes": {
-        "ogc.sosa.properties.observation": [
-          "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl"
-        ]
-      },
-      "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/context.jsonld",
+      "highlighted": true,
+      "shaclShapes": {},
       "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/schema.json"
+        "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/schema.json"
       },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/propertySet/schema.yaml",
-      "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/propertySet/context.jsonld",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/propertySet/",
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geojsonFeature/schema.yaml",
+      "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/context.jsonld",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geojsonFeature/",
       "rdfData": [],
       "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/propertySet/",
+      "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/geojsonFeature/",
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/propertySet/index.json"
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/geojsonFeature/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/propertySet/index.md"
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/geojsonFeature/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.propertySet"
+          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.geojsonFeature"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.examples.feature.geosparqlFeature",
+      "name": "GeoJSON transformed to GeoSPARQL geometry",
+      "highlighted": true,
+      "abstract": "This example includes an uplift step to use a GeoSPARQL geometry in a GeoJSON object",
+      "status": "under-development",
+      "dateTimeAddition": "2024-07-30T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-building-block-examples",
+      "version": "1.0",
+      "dateOfLastChange": "2025-08-26",
+      "maturity": "development",
+      "scope": "unstable",
+      "tags": [
+        "feature",
+        "examples"
+      ],
+      "group": "Examples",
+      "shaclShapes": {},
+      "dependsOn": [
+        "ogc.bbr.examples.feature.propertySet",
+        "ogc.geo.features.feature"
+      ],
+      "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/context.jsonld",
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geosparqlFeature/schema.yaml",
+      "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geosparqlFeature/context.jsonld",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geosparqlFeature/",
+      "rdfData": [],
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/geosparqlFeature/",
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/geosparqlFeature/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/geosparqlFeature/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.geosparqlFeature"
         }
       }
     },
@@ -441,6 +538,53 @@
         "bblocks-viewer": {
           "mediatype": "text/html",
           "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.observation.vectorObservation"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.examples.feature.geojsonFeatureFGLenient",
+      "name": "Custom JSON-FG (lenient) Feature",
+      "abstract": "This example shows a simple customisation method for a JSON-FG (lenient) feature",
+      "status": "under-development",
+      "dateTimeAddition": "2024-07-25T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-building-block-examples",
+      "version": "1.0",
+      "dateOfLastChange": "2025-08-26",
+      "maturity": "development",
+      "scope": "unstable",
+      "tags": [
+        "feature",
+        "examples"
+      ],
+      "group": "Examples",
+      "shaclShapes": {},
+      "dependsOn": [
+        "ogc.geo.json-fg.feature-lenient",
+        "ogc.bbr.examples.feature.propertySet"
+      ],
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geojsonFeatureFGLenient/schema.yaml",
+      "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/context.jsonld",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geojsonFeatureFGLenient/",
+      "rdfData": [],
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/geojsonFeatureFGLenient/",
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/geojsonFeatureFGLenient/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/geojsonFeatureFGLenient/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.geojsonFeatureFGLenient"
         }
       }
     },
@@ -506,168 +650,6 @@
       }
     },
     {
-      "itemIdentifier": "ogc.bbr.examples.feature.geojsonFeature",
-      "name": "Custom Feature",
-      "abstract": "This example shows a simple customisation method for OGC API Feature schemas",
-      "status": "under-development",
-      "dateTimeAddition": "2023-05-19T00:00:00Z",
-      "itemClass": "schema",
-      "register": "ogc-building-block-examples",
-      "version": "1.0",
-      "dateOfLastChange": "2025-08-26",
-      "sources": [
-        {
-          "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
-          "link": "https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7"
-        }
-      ],
-      "maturity": "development",
-      "scope": "unstable",
-      "dependsOn": [
-        "ogc.bbr.examples.feature.propertySet",
-        "ogc.geo.features.feature"
-      ],
-      "tags": [
-        "feature",
-        "examples"
-      ],
-      "group": "Examples",
-      "highlighted": true,
-      "shaclShapes": {
-        "ogc.sosa.properties.observation": [
-          "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl"
-        ]
-      },
-      "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/schema.json"
-      },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geojsonFeature/schema.yaml",
-      "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/context.jsonld",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geojsonFeature/",
-      "rdfData": [],
-      "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/geojsonFeature/",
-      "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/geojsonFeature/index.json"
-        },
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/geojsonFeature/index.md"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.geojsonFeature"
-        }
-      }
-    },
-    {
-      "itemIdentifier": "ogc.bbr.examples.feature.geojsonFeatureFGLenient",
-      "name": "Custom JSON-FG (lenient) Feature",
-      "abstract": "This example shows a simple customisation method for a JSON-FG (lenient) feature",
-      "status": "under-development",
-      "dateTimeAddition": "2024-07-25T00:00:00Z",
-      "itemClass": "schema",
-      "register": "ogc-building-block-examples",
-      "version": "1.0",
-      "dateOfLastChange": "2025-08-26",
-      "maturity": "development",
-      "scope": "unstable",
-      "tags": [
-        "feature",
-        "examples"
-      ],
-      "group": "Examples",
-      "shaclShapes": {
-        "ogc.sosa.properties.observation": [
-          "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl"
-        ]
-      },
-      "dependsOn": [
-        "ogc.geo.json-fg.feature-lenient",
-        "ogc.bbr.examples.feature.propertySet"
-      ],
-      "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/schema.json"
-      },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geojsonFeatureFGLenient/schema.yaml",
-      "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/context.jsonld",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geojsonFeatureFGLenient/",
-      "rdfData": [],
-      "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/geojsonFeatureFGLenient/",
-      "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/geojsonFeatureFGLenient/index.json"
-        },
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/geojsonFeatureFGLenient/index.md"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.geojsonFeatureFGLenient"
-        }
-      }
-    },
-    {
-      "itemIdentifier": "ogc.bbr.examples.feature.geosparqlFeature",
-      "name": "GeoJSON transformed to GeoSPARQL geometry",
-      "highlighted": true,
-      "abstract": "This example includes an uplift step to use a GeoSPARQL geometry in a GeoJSON object",
-      "status": "under-development",
-      "dateTimeAddition": "2024-07-30T00:00:00Z",
-      "itemClass": "schema",
-      "register": "ogc-building-block-examples",
-      "version": "1.0",
-      "dateOfLastChange": "2025-08-26",
-      "maturity": "development",
-      "scope": "unstable",
-      "tags": [
-        "feature",
-        "examples"
-      ],
-      "group": "Examples",
-      "shaclShapes": {
-        "ogc.sosa.properties.observation": [
-          "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl"
-        ]
-      },
-      "dependsOn": [
-        "ogc.bbr.examples.feature.propertySet",
-        "ogc.geo.features.feature"
-      ],
-      "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/context.jsonld",
-      "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/schema.json"
-      },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geosparqlFeature/schema.yaml",
-      "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geosparqlFeature/context.jsonld",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geosparqlFeature/",
-      "rdfData": [],
-      "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/geosparqlFeature/",
-      "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/geosparqlFeature/index.json"
-        },
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/geosparqlFeature/index.md"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.geosparqlFeature"
-        }
-      }
-    },
-    {
       "itemIdentifier": "ogc.bbr.examples.observation.vectorObservationFeature",
       "name": "Custom Result for Observation Feature",
       "abstract": "This building block defines an example specialisation of an existing Feature specialisation (SOSA Observation), using another schema to define a result set - in this case the GeoPose model",
@@ -688,8 +670,8 @@
       "dependsOn": [
         "ogc.sosa.properties.observation",
         "ogc.sosa.features.observationCollection",
-        "ogc.sosa.features.observation",
-        "ogc.bbr.examples.observation.vectorObservation"
+        "ogc.bbr.examples.observation.vectorObservation",
+        "ogc.sosa.features.observation"
       ],
       "tags": [
         "sosa",

@@ -1,5 +1,5 @@
 
-# Custom Feature (Schema)
+# Custom GeoJSON Feature (Schema)
 
 `ogc.bbr.examples.feature.geojsonFeature` *v1.0*
 
@@ -96,7 +96,12 @@ This building block **inherits** reusable semantic annotations for the Feature s
 
 ```yaml
 $schema: https://json-schema.org/draft/2020-12/schema
-description: Example of a sinmple GeoJSON Feature specialisation
+description: Example of a simple GeoJSON Feature specialisation. This example adds
+  some custom properties from a reusable building block that could define properties
+  for different Feature structures. This means that the semantic uplift (JSON-LD)
+  context for the properties is simple and reusable, without the complications of
+  mapping the Feature model to RDF - which is supported by the generic Feature building
+  block, and combined here by the BuildingBlock tooling.
 $defs:
   MyFeature:
     allOf:

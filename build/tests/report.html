@@ -51,7 +51,7 @@
     <body>
         <div class="container">
             <h1 class="title">Building blocks validation report</h1>
-            <small class="datetime">Generated at 2025-08-26T07:21:22.865591+00:00</small>
+            <small class="datetime">Generated at 2025-08-26T23:38:59.200210+00:00</small>
                 <p class="summary fw-semibold text-success">
                     Number of passing building blocks: 10 / 10 (100%)
                 </p>
@@ -60,6 +60,59 @@
                 <a href="#" class="collapse-all">Collapse all</a>
             </div>
                 <div class="accordion mt-2" id="bblock-reports">
+                        <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.examples.feature.propertySet" id="bblock-ogc.bbr.examples.feature.propertySet">
+                            <h2 class="accordion-header bblock-title">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-ogc\.bbr\.examples\.feature\.propertySet">
+                                    <div class="flex-fill">
+                                        Example property set for Features
+                                        <small class="ms-2 bblock-id">ogc.bbr.examples.feature.propertySet</small>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (100% passed)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.bbr.examples.feature.propertySet">
+                                <div class="accordion-body">
+                                        <p class="summary fw-semibold text-success">
+                                            Test passed: 1 / 1
+                                        </p>
+                                        <div class="card mb-2 validation-item ">
+                                            <div class="card-body">
+                                                <div class="card-title mb-0">
+                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-1"
+                                                            aria-expanded="false" aria-controls="uid-1"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                                        <i class="bi bi-caret-right-fill caret"></i>
+                                                        Details
+                                                    </button>
+                                                    <a href="bbr/examples/feature/propertySet/example_1_1.json" target="_blank">example_1_1.json</a>
+                                                    <span class="badge bg-secondary example">Example</span>
+                                                    <div class="float-end">
+                                                            <span class="badge text-bg-success me-2">Passed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-1">
+                                                    <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using example_1_1.json from examples</div>
+                                                                    <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output JSON-LD example_1_1.jsonld created</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
+                                                                    <div class="font-monospace subsection-title mt-2">JSON Schema</div>
+                                                                    <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.examples.semantic-uplift.pre-and-post-uplift" id="bblock-ogc.bbr.examples.semantic-uplift.pre-and-post-uplift">
                             <h2 class="accordion-header bblock-title">
                                 <button class="accordion-button collapsed" type="button"
@@ -85,8 +138,8 @@
                                             <div class="card-body">
                                                 <div class="card-title mb-0">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-1"
-                                                            aria-expanded="false" aria-controls="uid-1"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-2"
+                                                            aria-expanded="false" aria-controls="uid-2"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
@@ -97,7 +150,7 @@
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-1">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-2">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                     <div class="font-monospace entry-message section-files ">Using example_1_1.json from examples</div>
@@ -112,7 +165,7 @@
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/semantic-uplift/pre-and-post-uplift/rules.shacl:
- - Shape &lt;http://example.com/rules#testHasOneIs1&gt;: _:N79e620bba6154a4981cc290e20d79361
+ - Shape &lt;http://example.com/rules#testHasOneIs1&gt;: _:Nfdc1f17043ce4a0692a98028a3f1dbba
 </div>
                                                                     <div class="font-monospace subsection-title mt-2">Semantic Uplift</div>
                                                                     <div class="font-monospace entry-message section-semantic_uplift ">Running pre-uplift jq transform step from inline code</div>
@@ -149,8 +202,8 @@
                                             <div class="card-body">
                                                 <div class="card-title mb-0">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-2"
-                                                            aria-expanded="false" aria-controls="uid-2"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-3"
+                                                            aria-expanded="false" aria-controls="uid-3"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
@@ -161,7 +214,7 @@
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-2">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-3">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                     <div class="font-monospace entry-message section-files ">Using example_1_1.json from examples</div>
@@ -202,8 +255,8 @@
                                             <div class="card-body">
                                                 <div class="card-title mb-0">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-3"
-                                                            aria-expanded="false" aria-controls="uid-3"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-4"
+                                                            aria-expanded="false" aria-controls="uid-4"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
@@ -214,7 +267,7 @@
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-3">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-4">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                     <div class="font-monospace entry-message section-files ">Using example_1_1.json from examples</div>
@@ -230,14 +283,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.examples.feature.propertySet" id="bblock-ogc.bbr.examples.feature.propertySet">
+                        <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.examples.feature.geojsonFeature" id="bblock-ogc.bbr.examples.feature.geojsonFeature">
                             <h2 class="accordion-header bblock-title">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
-                                    data-bs-target="#bblock-collapse-ogc\.bbr\.examples\.feature\.propertySet">
+                                    data-bs-target="#bblock-collapse-ogc\.bbr\.examples\.feature\.geojsonFeature">
                                     <div class="flex-fill">
-                                        Example property set for Features
-                                        <small class="ms-2 bblock-id">ogc.bbr.examples.feature.propertySet</small>
+                                        Custom GeoJSON Feature
+                                        <small class="ms-2 bblock-id">ogc.bbr.examples.feature.geojsonFeature</small>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -246,28 +299,69 @@
                                     </span>
                                 </button>
                             </h2>
-                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.bbr.examples.feature.propertySet">
+                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.bbr.examples.feature.geojsonFeature">
                                 <div class="accordion-body">
                                         <p class="summary fw-semibold text-success">
-                                            Test passed: 1 / 1
+                                            Test passed: 2 / 2
                                         </p>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item require-fail">
                                             <div class="card-body">
                                                 <div class="card-title mb-0">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-4"
-                                                            aria-expanded="false" aria-controls="uid-4"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-5"
+                                                            aria-expanded="false" aria-controls="uid-5"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
                                                     </button>
-                                                    <a href="bbr/examples/feature/propertySet/example_1_1.json" target="_blank">example_1_1.json</a>
+                                                    <a href="../../_sources/feature/geojsonFeature/tests/feature-fail.json" target="_blank">feature-fail.json</a>
+                                                    <span class="badge bg-secondary test_resource">Test resource</span>
+                                                        <span class="badge text-bg-info">Requires fail</span>
+                                                    <div class="float-end">
+                                                            <span class="badge text-bg-success me-2">Passed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-5">
+                                                    <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">General</div>
+                                                                    <div class="font-monospace entry-message section-general ">Test was expected to fail and it did.</div>
+                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using feature-fail.json from test resources</div>
+                                                                    <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output JSON-LD feature-fail.jsonld created</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output Turtle feature-fail.ttl created</div>
+                                                                    <div class="font-monospace subsection-title mt-2">JSON Schema</div>
+                                                                    <div class="font-monospace entry-message section-json_schema text-danger">ValidationError: &#x27;myProp&#x27; is a required property
+
+Failed validating &#x27;required&#x27; in schema[0][&#x27;allOf&#x27;][1][&#x27;properties&#x27;][&#x27;properties&#x27;][&#x27;allOf&#x27;][0]:
+    {&#x27;properties&#x27;: {&#x27;myProp&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;,
+                               &#x27;x-jsonld-id&#x27;: &#x27;http://example.org/myModel/myProp&#x27;}},
+     &#x27;required&#x27;: [&#x27;myProp&#x27;],
+     &#x27;type&#x27;: &#x27;object&#x27;}
+
+On instance[&#x27;properties&#x27;]:
+    {&#x27;notMyProp&#x27;: &#x27;Mandatory property example&#x27;}</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-2 validation-item ">
+                                            <div class="card-body">
+                                                <div class="card-title mb-0">
+                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-6"
+                                                            aria-expanded="false" aria-controls="uid-6"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                                        <i class="bi bi-caret-right-fill caret"></i>
+                                                        Details
+                                                    </button>
+                                                    <a href="bbr/examples/feature/geojsonFeature/example_1_1.json" target="_blank">example_1_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-4">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-6">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                     <div class="font-monospace entry-message section-files ">Using example_1_1.json from examples</div>
@@ -276,21 +370,61 @@
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
                                                                     <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
-                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:
- - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedProperty&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testResult&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testFeatureOfInterest&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testRequiredTime&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testSimpleResultLiteral&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValues&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testResultNotEmptyNode&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval&gt;: *none*
-</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.examples.feature.geosparqlFeature" id="bblock-ogc.bbr.examples.feature.geosparqlFeature">
+                            <h2 class="accordion-header bblock-title">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-ogc\.bbr\.examples\.feature\.geosparqlFeature">
+                                    <div class="flex-fill">
+                                        GeoJSON transformed to GeoSPARQL geometry
+                                        <small class="ms-2 bblock-id">ogc.bbr.examples.feature.geosparqlFeature</small>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (100% passed)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.bbr.examples.feature.geosparqlFeature">
+                                <div class="accordion-body">
+                                        <p class="summary fw-semibold text-success">
+                                            Test passed: 1 / 1
+                                        </p>
+                                        <div class="card mb-2 validation-item ">
+                                            <div class="card-body">
+                                                <div class="card-title mb-0">
+                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-7"
+                                                            aria-expanded="false" aria-controls="uid-7"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                                        <i class="bi bi-caret-right-fill caret"></i>
+                                                        Details
+                                                    </button>
+                                                    <a href="bbr/examples/feature/geosparqlFeature/example_1_1.json" target="_blank">example_1_1.json</a>
+                                                    <span class="badge bg-secondary example">Example</span>
+                                                    <div class="float-end">
+                                                            <span class="badge text-bg-success me-2">Passed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-7">
+                                                    <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using example_1_1.json from examples</div>
+                                                                    <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output JSON-LD example_1_1.jsonld created</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
+                                                                    <div class="font-monospace subsection-title mt-2">JSON Schema</div>
+                                                                    <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
+                                                                    <div class="font-monospace subsection-title mt-2">Semantic Uplift</div>
+                                                                    <div class="font-monospace entry-message section-semantic_uplift ">Running post-uplift shacl transform step from uplift/geometry.shacl</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -323,190 +457,13 @@
                                             <div class="card-body">
                                                 <div class="card-title mb-0">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-5"
-                                                            aria-expanded="false" aria-controls="uid-5"
-                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                                                        <i class="bi bi-caret-right-fill caret"></i>
-                                                        Details
-                                                    </button>
-                                                    <a href="bbr/examples/observation/vectorObservation/example_1_1.json" target="_blank">example_1_1.json</a>
-                                                    <span class="badge bg-secondary example">Example</span>
-                                                    <div class="float-end">
-                                                            <span class="badge text-bg-success me-2">Passed</span>
-                                                    </div>
-                                                </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-5">
-                                                    <div class="validation-text-inner">
-                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using example_1_1.json from examples</div>
-                                                                    <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
-                                                                    <div class="font-monospace entry-message section-files ">Output JSON-LD example_1_1.jsonld created</div>
-                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
-                                                                    <div class="font-monospace subsection-title mt-2">JSON Schema</div>
-                                                                    <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
-                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:
- - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedProperty&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testResult&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testFeatureOfInterest&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testRequiredTime&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testSimpleResultLiteral&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValues&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testResultNotEmptyNode&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval&gt;: *none*
-</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.examples.feature.overrideContext" id="bblock-ogc.bbr.examples.feature.overrideContext">
-                            <h2 class="accordion-header bblock-title">
-                                <button class="accordion-button collapsed" type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#bblock-collapse-ogc\.bbr\.examples\.feature\.overrideContext">
-                                    <div class="flex-fill">
-                                        Test Context Override
-                                        <small class="ms-2 bblock-id">ogc.bbr.examples.feature.overrideContext</small>
-                                    </div>
-
-                                    <span class="badge text-bg-success me-2">
-                                            Passed
-                                            (100% passed)
-                                    </span>
-                                </button>
-                            </h2>
-                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.bbr.examples.feature.overrideContext">
-                                <div class="accordion-body">
-                                        <p class="summary fw-semibold text-success">
-                                            Test passed: 1 / 1
-                                        </p>
-                                        <div class="card mb-2 validation-item ">
-                                            <div class="card-body">
-                                                <div class="card-title mb-0">
-                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-6"
-                                                            aria-expanded="false" aria-controls="uid-6"
-                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                                                        <i class="bi bi-caret-right-fill caret"></i>
-                                                        Details
-                                                    </button>
-                                                    <a href="bbr/examples/feature/overrideContext/example_1_1.json" target="_blank">example_1_1.json</a>
-                                                    <span class="badge bg-secondary example">Example</span>
-                                                    <div class="float-end">
-                                                            <span class="badge text-bg-success me-2">Passed</span>
-                                                    </div>
-                                                </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-6">
-                                                    <div class="validation-text-inner">
-                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using example_1_1.json from examples</div>
-                                                                    <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
-                                                                    <div class="font-monospace entry-message section-files ">Output JSON-LD example_1_1.jsonld created</div>
-                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
-                                                                    <div class="font-monospace subsection-title mt-2">JSON Schema</div>
-                                                                    <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.examples.feature.geojsonFeature" id="bblock-ogc.bbr.examples.feature.geojsonFeature">
-                            <h2 class="accordion-header bblock-title">
-                                <button class="accordion-button collapsed" type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#bblock-collapse-ogc\.bbr\.examples\.feature\.geojsonFeature">
-                                    <div class="flex-fill">
-                                        Custom Feature
-                                        <small class="ms-2 bblock-id">ogc.bbr.examples.feature.geojsonFeature</small>
-                                    </div>
-
-                                    <span class="badge text-bg-success me-2">
-                                            Passed
-                                            (100% passed)
-                                    </span>
-                                </button>
-                            </h2>
-                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.bbr.examples.feature.geojsonFeature">
-                                <div class="accordion-body">
-                                        <p class="summary fw-semibold text-success">
-                                            Test passed: 2 / 2
-                                        </p>
-                                        <div class="card mb-2 validation-item require-fail">
-                                            <div class="card-body">
-                                                <div class="card-title mb-0">
-                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-7"
-                                                            aria-expanded="false" aria-controls="uid-7"
-                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                                                        <i class="bi bi-caret-right-fill caret"></i>
-                                                        Details
-                                                    </button>
-                                                    <a href="../../_sources/feature/geojsonFeature/tests/feature-fail.json" target="_blank">feature-fail.json</a>
-                                                    <span class="badge bg-secondary test_resource">Test resource</span>
-                                                        <span class="badge text-bg-info">Requires fail</span>
-                                                    <div class="float-end">
-                                                            <span class="badge text-bg-success me-2">Passed</span>
-                                                    </div>
-                                                </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-7">
-                                                    <div class="validation-text-inner">
-                                                                    <div class="font-monospace subsection-title mt-2">General</div>
-                                                                    <div class="font-monospace entry-message section-general ">Test was expected to fail and it did.</div>
-                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using feature-fail.json from test resources</div>
-                                                                    <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
-                                                                    <div class="font-monospace entry-message section-files ">Output JSON-LD feature-fail.jsonld created</div>
-                                                                    <div class="font-monospace entry-message section-files ">Output Turtle feature-fail.ttl created</div>
-                                                                    <div class="font-monospace subsection-title mt-2">JSON Schema</div>
-                                                                    <div class="font-monospace entry-message section-json_schema text-danger">ValidationError: &#x27;myProp&#x27; is a required property
-
-Failed validating &#x27;required&#x27; in schema[0][&#x27;allOf&#x27;][1][&#x27;properties&#x27;][&#x27;properties&#x27;][&#x27;allOf&#x27;][0]:
-    {&#x27;properties&#x27;: {&#x27;myProp&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;,
-                               &#x27;x-jsonld-id&#x27;: &#x27;http://example.org/myModel/myProp&#x27;}},
-     &#x27;required&#x27;: [&#x27;myProp&#x27;],
-     &#x27;type&#x27;: &#x27;object&#x27;}
-
-On instance[&#x27;properties&#x27;]:
-    {&#x27;notMyProp&#x27;: &#x27;Mandatory property example&#x27;}</div>
-                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:
- - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedProperty&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testResult&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testFeatureOfInterest&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testRequiredTime&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testSimpleResultLiteral&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValues&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testResultNotEmptyNode&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval&gt;: *none*
-</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card mb-2 validation-item ">
-                                            <div class="card-body">
-                                                <div class="card-title mb-0">
-                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-8"
                                                             aria-expanded="false" aria-controls="uid-8"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
                                                     </button>
-                                                    <a href="bbr/examples/feature/geojsonFeature/example_1_1.json" target="_blank">example_1_1.json</a>
+                                                    <a href="bbr/examples/observation/vectorObservation/example_1_1.json" target="_blank">example_1_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
@@ -527,14 +484,14 @@ On instance[&#x27;properties&#x27;]:
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:
- - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedProperty&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testResult&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testFeatureOfInterest&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testRequiredTime&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testSimpleResultLiteral&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValues&gt;: *none*
  - Shape &lt;https://www.ogc.org/rules/sosa/#testResultNotEmptyNode&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValues&gt;: *none*
  - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testRequiredTime&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedProperty&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testFeatureOfInterest&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testSimpleResultLiteral&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testResult&gt;: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -589,21 +546,6 @@ On instance[&#x27;properties&#x27;]:
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
                                                                     <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
-                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:
- - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedProperty&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testResult&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testFeatureOfInterest&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testRequiredTime&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testSimpleResultLiteral&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValues&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testResultNotEmptyNode&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval&gt;: *none*
-</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -611,14 +553,14 @@ On instance[&#x27;properties&#x27;]:
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.examples.feature.geosparqlFeature" id="bblock-ogc.bbr.examples.feature.geosparqlFeature">
+                        <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.examples.feature.overrideContext" id="bblock-ogc.bbr.examples.feature.overrideContext">
                             <h2 class="accordion-header bblock-title">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
-                                    data-bs-target="#bblock-collapse-ogc\.bbr\.examples\.feature\.geosparqlFeature">
+                                    data-bs-target="#bblock-collapse-ogc\.bbr\.examples\.feature\.overrideContext">
                                     <div class="flex-fill">
-                                        GeoJSON transformed to GeoSPARQL geometry
-                                        <small class="ms-2 bblock-id">ogc.bbr.examples.feature.geosparqlFeature</small>
+                                        Test Context Override
+                                        <small class="ms-2 bblock-id">ogc.bbr.examples.feature.overrideContext</small>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -627,7 +569,7 @@ On instance[&#x27;properties&#x27;]:
                                     </span>
                                 </button>
                             </h2>
-                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.bbr.examples.feature.geosparqlFeature">
+                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.bbr.examples.feature.overrideContext">
                                 <div class="accordion-body">
                                         <p class="summary fw-semibold text-success">
                                             Test passed: 1 / 1
@@ -642,7 +584,7 @@ On instance[&#x27;properties&#x27;]:
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
                                                     </button>
-                                                    <a href="bbr/examples/feature/geosparqlFeature/example_1_1.json" target="_blank">example_1_1.json</a>
+                                                    <a href="bbr/examples/feature/overrideContext/example_1_1.json" target="_blank">example_1_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
@@ -657,23 +599,6 @@ On instance[&#x27;properties&#x27;]:
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
                                                                     <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
-                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:
- - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedProperty&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testResult&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testFeatureOfInterest&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testRequiredTime&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testSimpleResultLiteral&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValues&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testResultNotEmptyNode&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval&gt;: *none*
-</div>
-                                                                    <div class="font-monospace subsection-title mt-2">Semantic Uplift</div>
-                                                                    <div class="font-monospace entry-message section-semantic_uplift ">Running post-uplift shacl transform step from uplift/geometry.shacl</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -733,9 +658,9 @@ On instance[&#x27;properties&#x27;]:
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/observation/vectorObservationFeature/rules.shacl:
- - Shape &lt;http://example.com/rules#testGeometryHasCoordinates&gt;: &lt;http://example.com/features/vector-obs-1&gt;/geojson:geometry
  - Shape &lt;http://example.com/rules#testVectorObservationFeatureHasOneGeometry&gt;: &lt;http://example.com/features/vector-obs-1&gt;
  - Shape &lt;http://example.com/rules#testGeometryCoordinatesIsList&gt;: &lt;http://example.com/features/vector-obs-1&gt;/geojson:geometry
+ - Shape &lt;http://example.com/rules#testGeometryHasCoordinates&gt;: &lt;http://example.com/features/vector-obs-1&gt;/geojson:geometry
 </div>
                                                     </div>
                                                 </div>
@@ -772,9 +697,9 @@ On instance[&#x27;properties&#x27;]:
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/observation/vectorObservationFeature/rules.shacl:
- - Shape &lt;http://example.com/rules#testGeometryHasCoordinates&gt;: &lt;http://example.com/features/vector-obs-1&gt;/geojson:geometry
  - Shape &lt;http://example.com/rules#testVectorObservationFeatureHasOneGeometry&gt;: &lt;http://example.com/features/vector-obs-1&gt;
  - Shape &lt;http://example.com/rules#testGeometryCoordinatesIsList&gt;: &lt;http://example.com/features/vector-obs-1&gt;/geojson:geometry
+ - Shape &lt;http://example.com/rules#testGeometryHasCoordinates&gt;: &lt;http://example.com/features/vector-obs-1&gt;/geojson:geometry
 </div>
                                                     </div>
                                                 </div>

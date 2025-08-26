@@ -18,11 +18,7 @@
     "examples"
   ],
   "group": "Examples",
-  "shaclShapes": {
-    "ogc.sosa.properties.observation": [
-      "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl"
-    ]
-  },
+  "shaclShapes": {},
   "dependsOn": [
     "ogc.bbr.examples.feature.propertySet",
     "ogc.geo.features.feature"
