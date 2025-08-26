@@ -1,6 +1,7 @@
 {
   "@context": {
-    "myProp": "http://example.org/myModel/myProp",
+    "myProp": "myNamespace:myProp",
+    "myNamespace": "http://example.org/myModel/",
     "@version": 1.1
   }
 }

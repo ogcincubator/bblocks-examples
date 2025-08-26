@@ -28,9 +28,9 @@ This shows how to define a propertyset for a feature - which can be re-used in d
 
 #### ttl
 ```ttl
-@prefix ns1: <http://example.org/myModel/> .
+@prefix myNamespace: <http://example.org/myModel/> .
 
-[] ns1:myProp "Very smooth" .
+[] myNamespace:myProp "Very smooth" .
 
 
 ```
@@ -48,6 +48,8 @@ allOf:
       x-jsonld-id: http://example.org/myModel/myProp
   required:
   - myProp
+x-jsonld-prefixes:
+  myNamespace: http://example.org/myModel/
 
 ```
 
@@ -62,7 +64,8 @@ Links to the schema:
 ```jsonld
 {
   "@context": {
-    "myProp": "http://example.org/myModel/myProp",
+    "myProp": "myNamespace:myProp",
+    "myNamespace": "http://example.org/myModel/",
     "@version": 1.1
   }
 }

@@ -2,7 +2,7 @@
   "name": "Building Blocks Examples",
   "abstract": "This register provides a collection of **examples** designed to illustrate capabilities and implementation patterns for [Building Blocks (see more)](https://ogcincubator.github.io/bblocks-docs). \n\n*These buildings blocks may be copied and edited into a new repository based on the [template](https://github.com/opengeospatial/bblock-template) - but should not be referenced and extended for reuse*\n",
   "description": "The aim of the highlighted examples is to illustrate implementation patterns for reusing OGC building blocks. The emphasis is on typical requirements to extend or constrain generic or abstract models such as OGC API Features, Observations etc. \n\n Other examples will illustrate different possible ways to use the Building Block machinery to semantically annotate externally defines schemas, develop and test logical constraints, or simply test examples using a published specification.\n\nMore complex examples will include transformation testing - testing a format can be transformed into a related structure and/or data model.\n",
-  "modified": "2025-08-25T11:53:59.147733",
+  "modified": "2025-08-26T07:21:10.172510",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"7706428cacea50013f04585b5be2d7d29b7b2d9b",
@@ -28,7 +28,7 @@
       "dateTimeAddition": "2024-10-03T11:31:00+02:00",
       "itemClass": "schema",
       "version": "0.1",
-      "dateOfLastChange": "2025-08-25",
+      "dateOfLastChange": "2025-08-26",
       "shaclShapes": {
         "ogc.bbr.examples.semantic-uplift.pre-and-post-uplift": [
           "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/pre-and-post-uplift/rules.shacl"
@@ -68,7 +68,7 @@
       "dateTimeAddition": "2024-10-03T11:31:00+02:00",
       "itemClass": "schema",
       "version": "0.1",
-      "dateOfLastChange": "2025-08-25",
+      "dateOfLastChange": "2025-08-26",
       "shaclShapes": {},
       "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/context.jsonld",
       "schema": {
@@ -278,7 +278,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2025-08-25",
+      "dateOfLastChange": "2025-08-26",
       "sources": [
         {
           "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -339,7 +339,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2025-08-25",
+      "dateOfLastChange": "2025-08-26",
       "sources": [
         {
           "title": "Semantic Sensor Network Ontology",
@@ -397,7 +397,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2025-08-25",
+      "dateOfLastChange": "2025-08-26",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
@@ -453,7 +453,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2025-08-25",
+      "dateOfLastChange": "2025-08-26",
       "sources": [
         {
           "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -514,7 +514,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2025-08-25",
+      "dateOfLastChange": "2025-08-26",
       "sources": [
         {
           "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -524,8 +524,8 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.geo.features.feature",
-        "ogc.bbr.examples.feature.propertySet"
+        "ogc.bbr.examples.feature.propertySet",
+        "ogc.geo.features.feature"
       ],
       "tags": [
         "feature",
@@ -572,7 +572,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2025-08-25",
+      "dateOfLastChange": "2025-08-26",
       "maturity": "development",
       "scope": "unstable",
       "tags": [
@@ -624,7 +624,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2025-08-25",
+      "dateOfLastChange": "2025-08-26",
       "maturity": "development",
       "scope": "unstable",
       "tags": [
@@ -638,8 +638,8 @@
         ]
       },
       "dependsOn": [
-        "ogc.geo.features.feature",
-        "ogc.bbr.examples.feature.propertySet"
+        "ogc.bbr.examples.feature.propertySet",
+        "ogc.geo.features.feature"
       ],
       "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/context.jsonld",
       "schema": {
@@ -676,7 +676,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2025-08-25",
+      "dateOfLastChange": "2025-08-26",
       "sources": [
         {
           "title": "Semantic Sensor Network Ontology",
@@ -687,9 +687,9 @@
       "scope": "unstable",
       "dependsOn": [
         "ogc.sosa.properties.observation",
+        "ogc.sosa.features.observationCollection",
         "ogc.sosa.features.observation",
-        "ogc.bbr.examples.observation.vectorObservation",
-        "ogc.sosa.features.observationCollection"
+        "ogc.bbr.examples.observation.vectorObservation"
       ],
       "tags": [
         "sosa",

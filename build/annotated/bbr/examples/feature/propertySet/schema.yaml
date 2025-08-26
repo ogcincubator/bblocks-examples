@@ -8,3 +8,5 @@ allOf:
       x-jsonld-id: http://example.org/myModel/myProp
   required:
   - myProp
+x-jsonld-prefixes:
+  myNamespace: http://example.org/myModel/

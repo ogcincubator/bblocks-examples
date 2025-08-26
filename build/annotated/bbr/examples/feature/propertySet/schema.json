@@ -14,5 +14,8 @@
         "myProp"
       ]
     }
-  ]
+  ],
+  "x-jsonld-prefixes": {
+    "myNamespace": "http://example.org/myModel/"
+  }
 }
