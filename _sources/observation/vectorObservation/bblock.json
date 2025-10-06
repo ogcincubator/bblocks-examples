@@ -1,5 +1,6 @@
 {
   "name": "Observation Result (Vector based on GeoPose)",
+  "highlighted": true,
   "abstract": "This building block defines the *property set* for an example specialisation of a SOSA Observation using the GeoPose standard as a result. These two patterns are defined by other Building Blocks.",
   "status": "under-development",
   "dateTimeAddition": "2023-05-19T00:00:00Z",

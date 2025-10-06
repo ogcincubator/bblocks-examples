@@ -1,5 +1,6 @@
 {
   "name": "External Schema (Smart Data Models)",
+  "highlighted": true,
   "abstract": "This example shows a simple customisation for OGC API Feature using an externally defined domain schema.",
   "status": "under-development",
   "dateTimeAddition": "2023-05-19T00:00:00Z",
