@@ -114,7 +114,6 @@ This building block defines an example specialisation of an existing Feature spe
 
 #### ttl
 ```ttl
-@prefix geo1: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix geopose: <http://example.com/geopose/> .
 @prefix ns1: <http://example.org/resultschema/> .
@@ -125,12 +124,8 @@ This building block defines an example specialisation of an existing Feature spe
 <http://example.com/features/vector-obs-1> a geojson:Feature ;
     sosa:hasFeatureOfInterest <eg:Traverse-P1-P2> ;
     sosa:hasResult [ ns1:distance 6.889234e+06 ;
-            ns1:pose [ geopose:angles [ geopose:pitch -1e-02 ;
-                            geopose:roll 0 ;
-                            geopose:yaw 1.535e+01 ] ;
-                    geopose:position [ geopose:h 5e-01 ;
-                            geo1:lat -1.116718e+02 ;
-                            geo1:long 4.005671e+01 ] ] ] ;
+            ns1:pose [ geopose:angles [ ] ;
+                    geopose:position [ ] ] ] ;
     sosa:observedProperty <http://example.com/features/> ;
     sosa:resultTime "2023-05-22T16:41:00+2" ;
     geojson:geometry [ a geojson:LineString ;
@@ -266,7 +261,6 @@ This building block defines an example specialisation of an existing Feature spe
 
 #### ttl
 ```ttl
-@prefix geo1: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix geopose: <http://example.com/geopose/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -283,12 +277,8 @@ This building block defines an example specialisation of an existing Feature spe
 <http://example.com/features/vector-obs-1> a geojson:Feature ;
     sosa:hasFeatureOfInterest <eg:Traverse-P1-P2> ;
     sosa:hasResult [ resultschema:distance 6.889234e+06 ;
-            resultschema:pose [ geopose:angles [ geopose:pitch -1e-02 ;
-                            geopose:roll 0 ;
-                            geopose:yaw 1.535e+01 ] ;
-                    geopose:position [ geopose:h 5e-01 ;
-                            geo1:lat -1.116718e+02 ;
-                            geo1:long 4.005671e+01 ] ] ] ;
+            resultschema:pose [ geopose:angles [ ] ;
+                    geopose:position [ ] ] ] ;
     sosa:resultTime "2023-05-22T16:41:00+2" ;
     geojson:geometry [ a geojson:LineString ;
             geojson:coordinates ( ( -1.116718e+02 4.005671e+01 ) ( -1.116718e+02 4.005671e+01 ) ) ] .
@@ -335,14 +325,6 @@ Links to the schema:
 ```jsonld
 {
   "@context": {
-    "type": "@type",
-    "id": "@id",
-    "properties": "@nest",
-    "geometry": "geojson:geometry",
-    "bbox": {
-      "@container": "@list",
-      "@id": "geojson:bbox"
-    },
     "Feature": "geojson:Feature",
     "FeatureCollection": "geojson:FeatureCollection",
     "GeometryCollection": "geojson:GeometryCollection",
@@ -356,6 +338,14 @@ Links to the schema:
       "@container": "@set",
       "@id": "sosa:hasMember",
       "@type": "@id"
+    },
+    "type": "@type",
+    "id": "@id",
+    "properties": "@nest",
+    "geometry": "geojson:geometry",
+    "bbox": {
+      "@container": "@list",
+      "@id": "geojson:bbox"
     },
     "links": {
       "@context": {
@@ -420,27 +410,6 @@ Links to the schema:
     "geometries": {
       "@id": "geojson:geometry",
       "@container": "@list"
-    },
-    "resultTime": "sosa:resultTime",
-    "phenomenonTime": {
-      "@id": "sosa:phenomenonTime",
-      "@type": "@id"
-    },
-    "hasFeatureOfInterest": {
-      "@id": "sosa:hasFeatureOfInterest",
-      "@type": "@id"
-    },
-    "observedProperty": {
-      "@id": "sosa:observedProperty",
-      "@type": "@id"
-    },
-    "usedProcedure": {
-      "@id": "sosa:usedProcedure",
-      "@type": "@id"
-    },
-    "madeBySensor": {
-      "@id": "sosa:madeBySensor",
-      "@type": "@id"
     },
     "ActuatableProperty": {
       "@id": "sosa:ActuatableProperty",
@@ -800,22 +769,29 @@ Links to the schema:
       "@id": "ssn-system:qualityOfObservation",
       "@type": "@id"
     },
-    "position": {
-      "@context": {
-        "lat": "geo:lat",
-        "lon": "geo:long",
-        "h": "geopose:h"
-      },
-      "@id": "geopose:position"
+    "resultTime": "sosa:resultTime",
+    "phenomenonTime": {
+      "@id": "sosa:phenomenonTime",
+      "@type": "@id"
     },
-    "angles": {
-      "@context": {
-        "yaw": "geopose:yaw",
-        "pitch": "geopose:pitch",
-        "roll": "geopose:roll"
-      },
-      "@id": "geopose:angles"
+    "hasFeatureOfInterest": {
+      "@id": "sosa:hasFeatureOfInterest",
+      "@type": "@id"
     },
+    "observedProperty": {
+      "@id": "sosa:observedProperty",
+      "@type": "@id"
+    },
+    "usedProcedure": {
+      "@id": "sosa:usedProcedure",
+      "@type": "@id"
+    },
+    "madeBySensor": {
+      "@id": "sosa:madeBySensor",
+      "@type": "@id"
+    },
+    "position": "geopose:position",
+    "angles": "geopose:angles",
     "geojson": "https://purl.org/geojson/vocab#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "oa": "http://www.w3.org/ns/oa#",

@@ -92,11 +92,11 @@ Links to the schema:
 ```jsonld
 {
   "@context": {
+    "three": "ex:exHasGenThree",
+    "doubleString": "ex:hasGenDoubleString",
     "one": "ex:hasOne",
     "two": "ex:hasTwo",
     "string": "ex:hasString",
-    "three": "ex:exHasGenThree",
-    "doubleString": "ex:hasGenDoubleString",
     "ex": "http://example.com/",
     "@version": 1.1
   }

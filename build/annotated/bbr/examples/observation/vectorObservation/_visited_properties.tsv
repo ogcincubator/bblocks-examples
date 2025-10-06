@@ -11,11 +11,11 @@ path	@id
 /hasSimpleResult	
 /hasResult/pose	
 /hasResult/pose/position	http://example.com/geopose/position
-/hasResult/pose/position/lat	http://www.w3.org/2003/01/geo/wgs84_pos#lat
-/hasResult/pose/position/lon	http://www.w3.org/2003/01/geo/wgs84_pos#long
-/hasResult/pose/position/h	http://example.com/geopose/h
+/hasResult/pose/position/lat	
+/hasResult/pose/position/lon	
+/hasResult/pose/position/h	
 /hasResult/pose/angles	http://example.com/geopose/angles
-/hasResult/pose/angles/yaw	http://example.com/geopose/yaw
-/hasResult/pose/angles/pitch	http://example.com/geopose/pitch
-/hasResult/pose/angles/roll	http://example.com/geopose/roll
+/hasResult/pose/angles/yaw	
+/hasResult/pose/angles/pitch	
+/hasResult/pose/angles/roll	
 /hasResult/distance	

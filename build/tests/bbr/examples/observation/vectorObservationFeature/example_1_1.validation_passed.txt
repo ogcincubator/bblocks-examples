@@ -1,5 +1,5 @@
 Validation report for ogc.bbr.examples.observation.vectorObservationFeature - Custom Result for Observation Feature
-Generated 2025-08-26T23:38:58.477493+00:00
+Generated 2025-10-06T09:30:13.427392+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting
@@ -17,8 +17,8 @@ Validation result for _sources/observation/vectorObservationFeature/rules.shacl:
   Conforms: True
   
 Focus nodes for _sources/observation/vectorObservationFeature/rules.shacl:
- - Shape <http://example.com/rules#testVectorObservationFeatureHasOneGeometry>: <http://example.com/features/vector-obs-1>
  - Shape <http://example.com/rules#testGeometryCoordinatesIsList>: <http://example.com/features/vector-obs-1>/geojson:geometry
+ - Shape <http://example.com/rules#testVectorObservationFeatureHasOneGeometry>: <http://example.com/features/vector-obs-1>
  - Shape <http://example.com/rules#testGeometryHasCoordinates>: <http://example.com/features/vector-obs-1>/geojson:geometry
 
 === End SHACL ===

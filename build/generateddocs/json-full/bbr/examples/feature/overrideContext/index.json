@@ -3,13 +3,14 @@
 {
   "itemIdentifier": "ogc.bbr.examples.feature.overrideContext",
   "name": "Test Context Override",
+  "highlighted": true,
   "abstract": "This example shows a simple customisation for OGC API Feature using an externally defined domain schema.",
   "status": "under-development",
   "dateTimeAddition": "2023-05-19T00:00:00Z",
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2025-08-26",
+  "dateOfLastChange": "2025-10-06",
   "sources": [
     {
       "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",

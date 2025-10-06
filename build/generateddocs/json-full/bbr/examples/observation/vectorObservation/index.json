@@ -3,13 +3,14 @@
 {
   "itemIdentifier": "ogc.bbr.examples.observation.vectorObservation",
   "name": "Observation Result (Vector based on GeoPose)",
+  "highlighted": true,
   "abstract": "This building block defines the *property set* for an example specialisation of a SOSA Observation using the GeoPose standard as a result. These two patterns are defined by other Building Blocks.",
   "status": "under-development",
   "dateTimeAddition": "2023-05-19T00:00:00Z",
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2025-08-26",
+  "dateOfLastChange": "2025-10-06",
   "sources": [],
   "maturity": "development",
   "scope": "unstable",
@@ -56,7 +57,7 @@
         },
         {
           "language": "ttl",
-          "code": "@prefix geo1: <http://www.w3.org/2003/01/geo/wgs84_pos#> .\n@prefix geopose: <http://example.com/geopose/> .\n@prefix ns1: <http://example.org/resultschema/> .\n@prefix sosa: <http://www.w3.org/ns/sosa/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] sosa:hasFeatureOfInterest <https://demo.pygeoapi.io/master/collections/utah_city_locations/items/Salem> ;\n    sosa:hasResult [ ns1:pose [ geopose:angles [ geopose:pitch -9.2e-01 ;\n                            geopose:roll 3.3e-01 ;\n                            geopose:yaw 5.553e+00 ] ;\n                    geopose:position [ geopose:h 5e-01 ;\n                            geo1:lat 4.346498e+01 ;\n                            geo1:long -3.803638e+00 ] ] ] ;\n    sosa:observedProperty <file:///github/workspace/p1> ;\n    sosa:resultTime \"2023-05-22T16:41:00+2\" .\n\n",
+          "code": "@prefix geopose: <http://example.com/geopose/> .\n@prefix ns1: <http://example.org/resultschema/> .\n@prefix sosa: <http://www.w3.org/ns/sosa/> .\n\n[] sosa:hasFeatureOfInterest <https://demo.pygeoapi.io/master/collections/utah_city_locations/items/Salem> ;\n    sosa:hasResult [ ns1:pose [ geopose:angles [ ] ;\n                    geopose:position [ ] ] ] ;\n    sosa:observedProperty <file:///github/workspace/p1> ;\n    sosa:resultTime \"2023-05-22T16:41:00+2\" .\n\n",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/observation/vectorObservation/example_1_1.ttl"
         }
       ]

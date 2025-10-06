@@ -74,19 +74,13 @@ This building block defines the *property set* for an example specialisation of 
 
 #### ttl
 ```ttl
-@prefix geo1: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix geopose: <http://example.com/geopose/> .
 @prefix ns1: <http://example.org/resultschema/> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 [] sosa:hasFeatureOfInterest <https://demo.pygeoapi.io/master/collections/utah_city_locations/items/Salem> ;
-    sosa:hasResult [ ns1:pose [ geopose:angles [ geopose:pitch -9.2e-01 ;
-                            geopose:roll 3.3e-01 ;
-                            geopose:yaw 5.553e+00 ] ;
-                    geopose:position [ geopose:h 5e-01 ;
-                            geo1:lat 4.346498e+01 ;
-                            geo1:long -3.803638e+00 ] ] ] ;
+    sosa:hasResult [ ns1:pose [ geopose:angles [ ] ;
+                    geopose:position [ ] ] ] ;
     sosa:observedProperty <file:///github/workspace/p1> ;
     sosa:resultTime "2023-05-22T16:41:00+2" .
 
@@ -127,27 +121,6 @@ Links to the schema:
 ```jsonld
 {
   "@context": {
-    "resultTime": "sosa:resultTime",
-    "phenomenonTime": {
-      "@id": "sosa:phenomenonTime",
-      "@type": "@id"
-    },
-    "hasFeatureOfInterest": {
-      "@id": "sosa:hasFeatureOfInterest",
-      "@type": "@id"
-    },
-    "observedProperty": {
-      "@id": "sosa:observedProperty",
-      "@type": "@id"
-    },
-    "usedProcedure": {
-      "@id": "sosa:usedProcedure",
-      "@type": "@id"
-    },
-    "madeBySensor": {
-      "@id": "sosa:madeBySensor",
-      "@type": "@id"
-    },
     "id": "@id",
     "properties": "@nest",
     "featureType": "@type",
@@ -513,22 +486,29 @@ Links to the schema:
       "@id": "ssn-system:qualityOfObservation",
       "@type": "@id"
     },
-    "position": {
-      "@context": {
-        "lat": "geo:lat",
-        "lon": "geo:long",
-        "h": "geopose:h"
-      },
-      "@id": "geopose:position"
+    "resultTime": "sosa:resultTime",
+    "phenomenonTime": {
+      "@id": "sosa:phenomenonTime",
+      "@type": "@id"
     },
-    "angles": {
-      "@context": {
-        "yaw": "geopose:yaw",
-        "pitch": "geopose:pitch",
-        "roll": "geopose:roll"
-      },
-      "@id": "geopose:angles"
+    "hasFeatureOfInterest": {
+      "@id": "sosa:hasFeatureOfInterest",
+      "@type": "@id"
     },
+    "observedProperty": {
+      "@id": "sosa:observedProperty",
+      "@type": "@id"
+    },
+    "usedProcedure": {
+      "@id": "sosa:usedProcedure",
+      "@type": "@id"
+    },
+    "madeBySensor": {
+      "@id": "sosa:madeBySensor",
+      "@type": "@id"
+    },
+    "position": "geopose:position",
+    "angles": "geopose:angles",
     "sosa": "http://www.w3.org/ns/sosa/",
     "ssn-system": "ssn:systems/",
     "ssn": "http://www.w3.org/ns/ssn/",

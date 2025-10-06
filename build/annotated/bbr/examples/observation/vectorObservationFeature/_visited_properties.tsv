@@ -31,13 +31,23 @@ path	@id
 /place	http://purl.org/dc/terms/spatial
 /place/type	
 /place/coordRefSys	
+/place/measures	
+/place/measures/enabled	
+/place/measures/unit	
+/place/measures/description	
 /place/coordinates	
 /place/bbox	
+/place/geometries	
 /place/base	
 /place/lower	
 /place/upper	
 /place/prisms	
+/place/geometries/type	
 /geometry/coordRefSys	
+/geometry/measures	
+/geometry/measures/enabled	
+/geometry/measures/unit	
+/geometry/measures/description	
 /properties/resultTime	http://www.w3.org/ns/sosa/resultTime
 /properties/phenomenonTime	http://www.w3.org/ns/sosa/phenomenonTime
 /properties/hasFeatureOfInterest	http://www.w3.org/ns/sosa/hasFeatureOfInterest
@@ -50,13 +60,13 @@ path	@id
 /properties/hasSimpleResult	
 /properties/hasResult/pose	
 /properties/hasResult/pose/position	http://example.com/geopose/position
-/properties/hasResult/pose/position/lat	http://www.w3.org/2003/01/geo/wgs84_pos#lat
-/properties/hasResult/pose/position/lon	http://www.w3.org/2003/01/geo/wgs84_pos#long
-/properties/hasResult/pose/position/h	http://example.com/geopose/h
+/properties/hasResult/pose/position/lat	
+/properties/hasResult/pose/position/lon	
+/properties/hasResult/pose/position/h	
 /properties/hasResult/pose/angles	http://example.com/geopose/angles
-/properties/hasResult/pose/angles/yaw	http://example.com/geopose/yaw
-/properties/hasResult/pose/angles/pitch	http://example.com/geopose/pitch
-/properties/hasResult/pose/angles/roll	http://example.com/geopose/roll
+/properties/hasResult/pose/angles/yaw	
+/properties/hasResult/pose/angles/pitch	
+/properties/hasResult/pose/angles/roll	
 /properties/hasResult/distance	
 /geometryDimension	
 /features	http://www.w3.org/ns/sosa/hasMember
@@ -89,13 +99,22 @@ path	@id
 /features/place	http://purl.org/dc/terms/spatial
 /features/place/type	
 /features/place/coordRefSys	
+/features/place/measures	
+/features/place/measures/enabled	
+/features/place/measures/unit	
+/features/place/measures/description	
 /features/place/coordinates	
 /features/place/bbox	
+/features/place/geometries	
 /features/place/base	
 /features/place/lower	
 /features/place/upper	
 /features/place/prisms	
 /features/geometry/coordRefSys	
+/features/geometry/measures	
+/features/geometry/measures/enabled	
+/features/geometry/measures/unit	
+/features/geometry/measures/description	
 /timeStamp	
 /numberMatched	
 /numberReturned	

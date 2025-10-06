@@ -112,12 +112,12 @@
   "name": "Building Blocks - Building Blocks Examples",
   "abstract": "This register provides a collection of **examples** designed to illustrate capabilities and implementation patterns for [Building Blocks (see more)](https://ogcincubator.github.io/bblocks-docs). \n\n*These buildings blocks may be copied and edited into a new repository based on the [template](https://github.com/opengeospatial/bblock-template) - but should not be referenced and extended for reuse*\n",
   "description": "The aim of the highlighted examples is to illustrate implementation patterns for reusing OGC building blocks. The emphasis is on typical requirements to extend or constrain generic or abstract models such as OGC API Features, Observations etc. \n\n Other examples will illustrate different possible ways to use the Building Block machinery to semantically annotate externally defines schemas, develop and test logical constraints, or simply test examples using a published specification.\n\nMore complex examples will include transformation testing - testing a format can be transformed into a related structure and/or data model.\n",
-  "modified": "2025-08-26T23:38:46.996581",
+  "modified": "2025-10-06T09:30:02.249209",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"7706428cacea50013f04585b5be2d7d29b7b2d9b",
-      "shortCommitId": "\"770642",
-      "date": "2025-08-25T11:10:01+00:00\""
+      "commitId": "\"cbdf0741daa8bb5e8edcce157ff8f4bb6d0d71fa",
+      "shortCommitId": "\"cbdf07",
+      "date": "2025-09-30T10:25:21+00:00\""
     }
   },
   "gitRepository": "https://github.com/ogcincubator/bblocks-examples",
@@ -145,7 +145,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2025-08-26",
+      "dateOfLastChange": "2025-10-06",
       "sources": [
         {
           "title": "Semantic Sensor Network Ontology",
@@ -174,13 +174,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/propertySet/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/propertySet/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/propertySet/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/propertySet/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -201,7 +201,7 @@
       "dateTimeAddition": "2024-10-03T11:31:00+02:00",
       "itemClass": "schema",
       "version": "0.1",
-      "dateOfLastChange": "2025-08-26",
+      "dateOfLastChange": "2025-10-06",
       "shaclShapes": {
         "ogc.bbr.examples.semantic-uplift.pre-and-post-uplift": [
           "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/pre-and-post-uplift/rules.shacl"
@@ -219,13 +219,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/semantic-uplift/pre-and-post-uplift/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/semantic-uplift/pre-and-post-uplift/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/semantic-uplift/pre-and-post-uplift/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/semantic-uplift/pre-and-post-uplift/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -241,12 +241,13 @@
     {
       "itemIdentifier": "ogc.bbr.examples.transforms.transforms-example",
       "name": "Transforms example",
+      "highlighted": true,
       "abstract": "A sample building block to showcase transforms",
       "status": "under-development",
       "dateTimeAddition": "2024-10-03T11:31:00+02:00",
       "itemClass": "schema",
       "version": "0.1",
-      "dateOfLastChange": "2025-08-26",
+      "dateOfLastChange": "2025-10-06",
       "shaclShapes": {},
       "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/context.jsonld",
       "schema": {
@@ -362,7 +363,7 @@
           "id": "inline-transform",
           "description": "A transform's code can also be defined inside the transform's object",
           "type": "jq",
-          "code": ".test = \"test\"\n",
+          "code": ".explanation = \"for example - adding an element to define an implicit type\"\n.type = \"ex:Foo\"\n",
           "inputs": {
             "mediaTypes": [
               {
@@ -433,13 +434,13 @@
         }
       ],
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/transforms/transforms-example/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/transforms/transforms-example/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/transforms/transforms-example/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -455,13 +456,14 @@
     {
       "itemIdentifier": "ogc.bbr.examples.feature.externalSchema",
       "name": "External Schema (Smart Data Models)",
+      "highlighted": true,
       "abstract": "This example shows a simple customisation for OGC API Feature using an externally defined domain schema.",
       "status": "under-development",
       "dateTimeAddition": "2023-05-19T00:00:00Z",
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2025-08-26",
+      "dateOfLastChange": "2025-10-06",
       "sources": [
         {
           "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -499,13 +501,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/externalSchema/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/externalSchema/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/externalSchema/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/externalSchema/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -527,7 +529,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2025-08-26",
+      "dateOfLastChange": "2025-10-06",
       "sources": [
         {
           "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -537,8 +539,8 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.bbr.examples.feature.propertySet",
-        "ogc.geo.features.feature"
+        "ogc.geo.features.feature",
+        "ogc.bbr.examples.feature.propertySet"
       ],
       "tags": [
         "feature",
@@ -558,13 +560,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/geojsonFeature/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/geojsonFeature/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/geojsonFeature/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/geojsonFeature/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -587,7 +589,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2025-08-26",
+      "dateOfLastChange": "2025-10-06",
       "maturity": "development",
       "scope": "unstable",
       "tags": [
@@ -597,8 +599,8 @@
       "group": "Examples",
       "shaclShapes": {},
       "dependsOn": [
-        "ogc.bbr.examples.feature.propertySet",
-        "ogc.geo.features.feature"
+        "ogc.geo.features.feature",
+        "ogc.bbr.examples.feature.propertySet"
       ],
       "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/context.jsonld",
       "schema": {
@@ -612,13 +614,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/geosparqlFeature/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/geosparqlFeature/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/geosparqlFeature/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/geosparqlFeature/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -634,13 +636,14 @@
     {
       "itemIdentifier": "ogc.bbr.examples.observation.vectorObservation",
       "name": "Observation Result (Vector based on GeoPose)",
+      "highlighted": true,
       "abstract": "This building block defines the *property set* for an example specialisation of a SOSA Observation using the GeoPose standard as a result. These two patterns are defined by other Building Blocks.",
       "status": "under-development",
       "dateTimeAddition": "2023-05-19T00:00:00Z",
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2025-08-26",
+      "dateOfLastChange": "2025-10-06",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
@@ -673,13 +676,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/observation/vectorObservation/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/observation/vectorObservation/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/observation/vectorObservation/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/observation/vectorObservation/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -701,7 +704,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2025-08-26",
+      "dateOfLastChange": "2025-10-06",
       "maturity": "development",
       "scope": "unstable",
       "tags": [
@@ -725,13 +728,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/geojsonFeatureFGLenient/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/geojsonFeatureFGLenient/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/geojsonFeatureFGLenient/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/geojsonFeatureFGLenient/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -747,13 +750,14 @@
     {
       "itemIdentifier": "ogc.bbr.examples.feature.overrideContext",
       "name": "Test Context Override",
+      "highlighted": true,
       "abstract": "This example shows a simple customisation for OGC API Feature using an externally defined domain schema.",
       "status": "under-development",
       "dateTimeAddition": "2023-05-19T00:00:00Z",
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2025-08-26",
+      "dateOfLastChange": "2025-10-06",
       "sources": [
         {
           "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -791,13 +795,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/overrideContext/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/overrideContext/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/overrideContext/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/overrideContext/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -819,7 +823,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2025-08-26",
+      "dateOfLastChange": "2025-10-06",
       "sources": [
         {
           "title": "Semantic Sensor Network Ontology",
@@ -829,10 +833,10 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.sosa.properties.observation",
         "ogc.sosa.features.observationCollection",
-        "ogc.bbr.examples.observation.vectorObservation",
-        "ogc.sosa.features.observation"
+        "ogc.sosa.features.observation",
+        "ogc.sosa.properties.observation",
+        "ogc.bbr.examples.observation.vectorObservation"
       ],
       "tags": [
         "sosa",
@@ -862,13 +866,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/observation/vectorObservationFeature/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/observation/vectorObservationFeature/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/observation/vectorObservationFeature/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/observation/vectorObservationFeature/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",

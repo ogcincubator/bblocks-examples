@@ -1,26 +1,5 @@
 {
   "@context": {
-    "resultTime": "sosa:resultTime",
-    "phenomenonTime": {
-      "@id": "sosa:phenomenonTime",
-      "@type": "@id"
-    },
-    "hasFeatureOfInterest": {
-      "@id": "sosa:hasFeatureOfInterest",
-      "@type": "@id"
-    },
-    "observedProperty": {
-      "@id": "sosa:observedProperty",
-      "@type": "@id"
-    },
-    "usedProcedure": {
-      "@id": "sosa:usedProcedure",
-      "@type": "@id"
-    },
-    "madeBySensor": {
-      "@id": "sosa:madeBySensor",
-      "@type": "@id"
-    },
     "id": "@id",
     "properties": "@nest",
     "featureType": "@type",
@@ -386,22 +365,29 @@
       "@id": "ssn-system:qualityOfObservation",
       "@type": "@id"
     },
-    "position": {
-      "@context": {
-        "lat": "geo:lat",
-        "lon": "geo:long",
-        "h": "geopose:h"
-      },
-      "@id": "geopose:position"
+    "resultTime": "sosa:resultTime",
+    "phenomenonTime": {
+      "@id": "sosa:phenomenonTime",
+      "@type": "@id"
     },
-    "angles": {
-      "@context": {
-        "yaw": "geopose:yaw",
-        "pitch": "geopose:pitch",
-        "roll": "geopose:roll"
-      },
-      "@id": "geopose:angles"
+    "hasFeatureOfInterest": {
+      "@id": "sosa:hasFeatureOfInterest",
+      "@type": "@id"
     },
+    "observedProperty": {
+      "@id": "sosa:observedProperty",
+      "@type": "@id"
+    },
+    "usedProcedure": {
+      "@id": "sosa:usedProcedure",
+      "@type": "@id"
+    },
+    "madeBySensor": {
+      "@id": "sosa:madeBySensor",
+      "@type": "@id"
+    },
+    "position": "geopose:position",
+    "angles": "geopose:angles",
     "sosa": "http://www.w3.org/ns/sosa/",
     "ssn-system": "ssn:systems/",
     "ssn": "http://www.w3.org/ns/ssn/",

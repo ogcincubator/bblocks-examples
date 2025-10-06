@@ -3,12 +3,13 @@
 {
   "itemIdentifier": "ogc.bbr.examples.transforms.transforms-example",
   "name": "Transforms example",
+  "highlighted": true,
   "abstract": "A sample building block to showcase transforms",
   "status": "under-development",
   "dateTimeAddition": "2024-10-03T11:31:00+02:00",
   "itemClass": "schema",
   "version": "0.1",
-  "dateOfLastChange": "2025-08-26",
+  "dateOfLastChange": "2025-10-06",
   "shaclShapes": {},
   "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/context.jsonld",
   "schema": {
@@ -124,7 +125,7 @@
       "id": "inline-transform",
       "description": "A transform's code can also be defined inside the transform's object",
       "type": "jq",
-      "code": ".test = \"test\"\n",
+      "code": ".explanation = \"for example - adding an element to define an implicit type\"\n.type = \"ex:Foo\"\n",
       "inputs": {
         "mediaTypes": [
           {
@@ -194,6 +195,7 @@
       }
     }
   ],
+  "description": "This showcases the potential to define and execute **transforms**\n\nThis capability is still in early development.\n\nTransforms are defined in the file [transforms.yaml](transforms.yaml) in the form:\n\n```yaml\n  - id: inline-transform\n    description: A transform's code can also be defined inside the transform's object\n    type: jq\n    code: |\n      .explanation = \"for example - adding an element to define an implicit type\"\n      .type = \"ex:Foo\"\n```\n\nCurrent transform types supported are:\n\n- **jq** \n- **sparql-update**\n- **sparql-construct**\n- **xslt**\n\nDepending on the language of the example all available transforms will be executed and visible via the **transform results** button in the **examples tab**.\n\n## Future planned functionality\n\n### Pluggable transformation engines\n\nAbility to define a custom transformer in a specific repository\n\n### Post transform validation \n\nAbility to define target profiles to validate post-transform results\n\n### FAIR transforms\n\nstandardisation of publication of transformation specifications\n\n### Improved user experience\n\nTBD\n\n### Inheritance of sub-schema transformations\n\nAbility to create a transformation for a composite using multiple transformable building block dependencies.\n\n",
   "examples": [
     {
       "title": "Example for transforms",
@@ -202,8 +204,7 @@
           "language": "json",
           "code": "{\n  \"one\": 1,\n  \"two\": 2,\n  \"string\": \"value\"\n}\n",
           "transformResults": {
-            "prefix-keys": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.prefix-keys.json",
-            "inline-transform": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.inline-transform.json"
+            "prefix-keys": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.prefix-keys.json"
           },
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/example_1_1.json"
         },
