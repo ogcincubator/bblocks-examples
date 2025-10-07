@@ -13,7 +13,7 @@ transforms:
     description: A transform's code can also be defined inside the transform's object
     type: jq
     code: |
-      .explanation = "for example - adding an element to define an implicit type"
+      .explanation = "for example - adding an element to define an implicit type" |
       .type = "ex:Foo"
 
   - id: sample-xslt
