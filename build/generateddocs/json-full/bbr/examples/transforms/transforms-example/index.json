@@ -9,7 +9,7 @@
   "dateTimeAddition": "2024-10-03T11:31:00+02:00",
   "itemClass": "schema",
   "version": "0.1",
-  "dateOfLastChange": "2025-10-06",
+  "dateOfLastChange": "2025-10-07",
   "shaclShapes": {},
   "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/context.jsonld",
   "schema": {
@@ -125,7 +125,7 @@
       "id": "inline-transform",
       "description": "A transform's code can also be defined inside the transform's object",
       "type": "jq",
-      "code": ".explanation = \"for example - adding an element to define an implicit type\"\n.type = \"ex:Foo\"\n",
+      "code": ".explanation = \"for example - adding an element to define an implicit type\" |\n.type = \"ex:Foo\"\n",
       "inputs": {
         "mediaTypes": [
           {
@@ -204,7 +204,8 @@
           "language": "json",
           "code": "{\n  \"one\": 1,\n  \"two\": 2,\n  \"string\": \"value\"\n}\n",
           "transformResults": {
-            "prefix-keys": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.prefix-keys.json"
+            "prefix-keys": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.prefix-keys.json",
+            "inline-transform": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.inline-transform.json"
           },
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/example_1_1.json"
         },

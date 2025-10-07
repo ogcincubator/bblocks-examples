@@ -1,0 +1,7 @@
+{
+  "one": 1,
+  "two": 2,
+  "string": "value",
+  "explanation": "for example - adding an element to define an implicit type",
+  "type": "ex:Foo"
+}

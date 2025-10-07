@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.bbr.examples.observation.vectorObservationFeature - Custom Result for Observation Feature",
   "bblockName": "Custom Result for Observation Feature",
   "bblockId": "ogc.bbr.examples.observation.vectorObservationFeature",
-  "generated": "2025-10-06T09:30:14.310383+00:00",
+  "generated": "2025-10-07T08:45:51.175855+00:00",
   "result": true,
   "items": [
     {
@@ -72,7 +72,7 @@
             {
               "shaclFile": "_sources/observation/vectorObservationFeature/rules.shacl",
               "focusNodes": {
-                "<http://example.com/rules#testGeometryCoordinatesIsList>": {
+                "<http://example.com/rules#testGeometryHasCoordinates>": {
                   "nodes": [
                     "<http://example.com/features/vector-obs-1>/geojson:geometry"
                   ]
@@ -82,14 +82,14 @@
                     "<http://example.com/features/vector-obs-1>"
                   ]
                 },
-                "<http://example.com/rules#testGeometryHasCoordinates>": {
+                "<http://example.com/rules#testGeometryCoordinatesIsList>": {
                   "nodes": [
                     "<http://example.com/features/vector-obs-1>/geojson:geometry"
                   ]
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/observation/vectorObservationFeature/rules.shacl:\n - Shape <http://example.com/rules#testGeometryCoordinatesIsList>: <http://example.com/features/vector-obs-1>/geojson:geometry\n - Shape <http://example.com/rules#testVectorObservationFeatureHasOneGeometry>: <http://example.com/features/vector-obs-1>\n - Shape <http://example.com/rules#testGeometryHasCoordinates>: <http://example.com/features/vector-obs-1>/geojson:geometry\n"
+              "message": "Focus nodes for _sources/observation/vectorObservationFeature/rules.shacl:\n - Shape <http://example.com/rules#testGeometryHasCoordinates>: <http://example.com/features/vector-obs-1>/geojson:geometry\n - Shape <http://example.com/rules#testVectorObservationFeatureHasOneGeometry>: <http://example.com/features/vector-obs-1>\n - Shape <http://example.com/rules#testGeometryCoordinatesIsList>: <http://example.com/features/vector-obs-1>/geojson:geometry\n"
             }
           ]
         }
@@ -162,7 +162,7 @@
             {
               "shaclFile": "_sources/observation/vectorObservationFeature/rules.shacl",
               "focusNodes": {
-                "<http://example.com/rules#testGeometryCoordinatesIsList>": {
+                "<http://example.com/rules#testGeometryHasCoordinates>": {
                   "nodes": [
                     "<http://example.com/features/vector-obs-1>/geojson:geometry"
                   ]
@@ -172,14 +172,14 @@
                     "<http://example.com/features/vector-obs-1>"
                   ]
                 },
-                "<http://example.com/rules#testGeometryHasCoordinates>": {
+                "<http://example.com/rules#testGeometryCoordinatesIsList>": {
                   "nodes": [
                     "<http://example.com/features/vector-obs-1>/geojson:geometry"
                   ]
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/observation/vectorObservationFeature/rules.shacl:\n - Shape <http://example.com/rules#testGeometryCoordinatesIsList>: <http://example.com/features/vector-obs-1>/geojson:geometry\n - Shape <http://example.com/rules#testVectorObservationFeatureHasOneGeometry>: <http://example.com/features/vector-obs-1>\n - Shape <http://example.com/rules#testGeometryHasCoordinates>: <http://example.com/features/vector-obs-1>/geojson:geometry\n"
+              "message": "Focus nodes for _sources/observation/vectorObservationFeature/rules.shacl:\n - Shape <http://example.com/rules#testGeometryHasCoordinates>: <http://example.com/features/vector-obs-1>/geojson:geometry\n - Shape <http://example.com/rules#testVectorObservationFeatureHasOneGeometry>: <http://example.com/features/vector-obs-1>\n - Shape <http://example.com/rules#testGeometryCoordinatesIsList>: <http://example.com/features/vector-obs-1>/geojson:geometry\n"
             }
           ]
         }
