@@ -1,5 +1,5 @@
 Validation report for ogc.bbr.examples.feature.propertySet - Example property set for Features
-Generated 2025-10-07T08:45:43.095224+00:00
+Generated 2025-10-28T10:38:44.476799+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting
