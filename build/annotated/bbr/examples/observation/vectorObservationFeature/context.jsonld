@@ -490,7 +490,7 @@
     "sosa": "http://www.w3.org/ns/sosa/",
     "ssn-system": "ssn:systems/",
     "ssn": "http://www.w3.org/ns/ssn/",
-    "geopose": "http://example.com/geopose/",
+    "geopose": "https://w3id.org/ogc/geopose/",
     "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
     "@version": 1.1
   }

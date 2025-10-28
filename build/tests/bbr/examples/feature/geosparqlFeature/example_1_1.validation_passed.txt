@@ -1,5 +1,5 @@
 Validation report for ogc.bbr.examples.feature.geosparqlFeature - GeoJSON transformed to GeoSPARQL geometry
-Generated 2025-10-28T11:34:03.418296+00:00
+Generated 2025-10-28T11:55:27.435787+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting

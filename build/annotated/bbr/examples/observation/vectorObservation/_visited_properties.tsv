@@ -10,12 +10,12 @@ path	@id
 /result@links	
 /hasSimpleResult	
 /hasResult/pose	
-/hasResult/pose/position	http://example.com/geopose/position
+/hasResult/pose/position	https://w3id.org/ogc/geopose/position
 /hasResult/pose/position/lat	http://www.w3.org/2003/01/geo/wgs84_pos#lat
 /hasResult/pose/position/lon	http://www.w3.org/2003/01/geo/wgs84_pos#long
-/hasResult/pose/position/h	http://example.com/geopose/h
-/hasResult/pose/angles	http://example.com/geopose/angles
-/hasResult/pose/angles/yaw	http://example.com/geopose/yaw
-/hasResult/pose/angles/pitch	http://example.com/geopose/pitch
-/hasResult/pose/angles/roll	http://example.com/geopose/roll
+/hasResult/pose/position/h	https://w3id.org/ogc/geopose/h
+/hasResult/pose/angles	https://w3id.org/ogc/geopose/angles
+/hasResult/pose/angles/yaw	https://w3id.org/ogc/geopose/yaw
+/hasResult/pose/angles/pitch	https://w3id.org/ogc/geopose/pitch
+/hasResult/pose/angles/roll	https://w3id.org/ogc/geopose/roll
 /hasResult/distance	

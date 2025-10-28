@@ -116,7 +116,7 @@ This building block defines an example specialisation of an existing Feature spe
 ```ttl
 @prefix geo1: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
-@prefix geopose: <http://example.com/geopose/> .
+@prefix geopose: <https://w3id.org/ogc/geopose/> .
 @prefix ns1: <http://example.org/resultschema/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
@@ -128,9 +128,9 @@ This building block defines an example specialisation of an existing Feature spe
             ns1:pose [ geopose:angles [ geopose:pitch -1e-02 ;
                             geopose:roll 0 ;
                             geopose:yaw 1.535e+01 ] ;
-                    geopose:position [ geopose:h 5e-01 ;
-                            geo1:lat -1.116718e+02 ;
-                            geo1:long 4.005671e+01 ] ] ] ;
+                    geopose:position [ geo1:lat -1.116718e+02 ;
+                            geo1:long 4.005671e+01 ;
+                            geopose:h 5e-01 ] ] ] ;
     sosa:observedProperty <http://example.com/features/> ;
     sosa:resultTime "2023-05-22T16:41:00+2" ;
     geojson:geometry [ a geojson:LineString ;
@@ -262,7 +262,7 @@ This building block defines an example specialisation of an existing Feature spe
 ```ttl
 @prefix geo1: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
-@prefix geopose: <http://example.com/geopose/> .
+@prefix geopose: <https://w3id.org/ogc/geopose/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix resultschema: <http://example.org/resultschema/> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
@@ -279,9 +279,9 @@ This building block defines an example specialisation of an existing Feature spe
             resultschema:pose [ geopose:angles [ geopose:pitch -1e-02 ;
                             geopose:roll 0 ;
                             geopose:yaw 1.535e+01 ] ;
-                    geopose:position [ geopose:h 5e-01 ;
-                            geo1:lat -1.116718e+02 ;
-                            geo1:long 4.005671e+01 ] ] ] ;
+                    geopose:position [ geo1:lat -1.116718e+02 ;
+                            geo1:long 4.005671e+01 ;
+                            geopose:h 5e-01 ] ] ] ;
     sosa:resultTime "2023-05-22T16:41:00+2" ;
     geojson:geometry [ a geojson:LineString ;
             geojson:coordinates ( ( -1.116718e+02 4.005671e+01 ) ( -1.116718e+02 4.005671e+01 ) ) ] .
@@ -818,7 +818,7 @@ Links to the schema:
     "sosa": "http://www.w3.org/ns/sosa/",
     "ssn-system": "ssn:systems/",
     "ssn": "http://www.w3.org/ns/ssn/",
-    "geopose": "http://example.com/geopose/",
+    "geopose": "https://w3id.org/ogc/geopose/",
     "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
     "@version": 1.1
   }

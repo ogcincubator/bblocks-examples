@@ -59,14 +59,14 @@ path	@id
 /properties/result@links	
 /properties/hasSimpleResult	
 /properties/hasResult/pose	
-/properties/hasResult/pose/position	http://example.com/geopose/position
+/properties/hasResult/pose/position	https://w3id.org/ogc/geopose/position
 /properties/hasResult/pose/position/lat	http://www.w3.org/2003/01/geo/wgs84_pos#lat
 /properties/hasResult/pose/position/lon	http://www.w3.org/2003/01/geo/wgs84_pos#long
-/properties/hasResult/pose/position/h	http://example.com/geopose/h
-/properties/hasResult/pose/angles	http://example.com/geopose/angles
-/properties/hasResult/pose/angles/yaw	http://example.com/geopose/yaw
-/properties/hasResult/pose/angles/pitch	http://example.com/geopose/pitch
-/properties/hasResult/pose/angles/roll	http://example.com/geopose/roll
+/properties/hasResult/pose/position/h	https://w3id.org/ogc/geopose/h
+/properties/hasResult/pose/angles	https://w3id.org/ogc/geopose/angles
+/properties/hasResult/pose/angles/yaw	https://w3id.org/ogc/geopose/yaw
+/properties/hasResult/pose/angles/pitch	https://w3id.org/ogc/geopose/pitch
+/properties/hasResult/pose/angles/roll	https://w3id.org/ogc/geopose/roll
 /properties/hasResult/distance	
 /geometryDimension	
 /features	http://www.w3.org/ns/sosa/hasMember

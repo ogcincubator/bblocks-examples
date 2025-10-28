@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.bbr.examples.observation.vectorObservationFeature - Custom Result for Observation Feature",
   "bblockName": "Custom Result for Observation Feature",
   "bblockId": "ogc.bbr.examples.observation.vectorObservationFeature",
-  "generated": "2025-10-28T11:34:10.934329+00:00",
+  "generated": "2025-10-28T11:55:32.640754+00:00",
   "result": true,
   "items": [
     {
@@ -104,6 +104,12 @@
                 "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
                   "nodes": []
                 },
+                "<https://www.ogc.org/rules/sosa/#testResult>": {
+                  "nodes": []
+                },
+                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>": {
+                  "nodes": []
+                },
                 "<https://www.ogc.org/rules/sosa/#testObservedProperty>": {
                   "nodes": []
                 },
@@ -113,21 +119,15 @@
                 "<https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>": {
                   "nodes": []
                 },
-                "<https://www.ogc.org/rules/sosa/#testResult>": {
-                  "nodes": []
-                },
-                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>": {
+                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>": {
                   "nodes": []
                 },
                 "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
                   "nodes": []
-                },
-                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>": {
-                  "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testObservedProperty>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: *none*\n"
+              "message": "Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testObservedProperty>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: *none*\n"
             }
           ]
         }
@@ -232,6 +232,14 @@
                 "<https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>": {
                   "nodes": []
                 },
+                "<https://www.ogc.org/rules/sosa/#testResult>": {
+                  "nodes": []
+                },
+                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>": {
+                  "nodes": [
+                    "<http://example.com/features/c1>"
+                  ]
+                },
                 "<https://www.ogc.org/rules/sosa/#testObservedProperty>": {
                   "nodes": []
                 },
@@ -241,25 +249,17 @@
                 "<https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>": {
                   "nodes": []
                 },
-                "<https://www.ogc.org/rules/sosa/#testResult>": {
-                  "nodes": []
-                },
-                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>": {
+                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>": {
                   "nodes": [
                     "<http://example.com/features/c1>"
                   ]
                 },
                 "<https://www.ogc.org/rules/sosa/#testFeatureOfInterest>": {
                   "nodes": []
-                },
-                "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>": {
-                  "nodes": [
-                    "<http://example.com/features/c1>"
-                  ]
                 }
               },
               "isError": false,
-              "message": "Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testObservedProperty>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: <http://example.com/features/c1>\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: <http://example.com/features/c1>\n"
+              "message": "Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: <http://example.com/features/c1>\n - Shape <https://www.ogc.org/rules/sosa/#testObservedProperty>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: <http://example.com/features/c1>\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: *none*\n"
             }
           ]
         }
