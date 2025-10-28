@@ -155,9 +155,6 @@ This building block defines an example specialisation of an existing Feature spe
   "type": "FeatureCollection",
   "featureType": "sosa:ObservationCollection",
   "observedProperty": "Geopose (or a URI for this concept)",
-  "properties": {
-    "resultTime": "1999"
-  },
   "features": [
     {
       "@id": "vector-obs-1",
@@ -218,9 +215,6 @@ This building block defines an example specialisation of an existing Feature spe
   "type": "FeatureCollection",
   "featureType": "sosa:ObservationCollection",
   "observedProperty": "Geopose (or a URI for this concept)",
-  "properties": {
-    "resultTime": "1999"
-  },
   "features": [
     {
       "@id": "vector-obs-1",
@@ -277,8 +271,7 @@ This building block defines an example specialisation of an existing Feature spe
 <http://example.com/features/c1> a sosa:ObservationCollection,
         geojson:FeatureCollection ;
     sosa:hasMember <http://example.com/features/vector-obs-1> ;
-    sosa:observedProperty <http://example.com/features/> ;
-    sosa:resultTime "1999" .
+    sosa:observedProperty <http://example.com/features/> .
 
 <http://example.com/features/vector-obs-1> a geojson:Feature ;
     sosa:hasFeatureOfInterest <eg:Traverse-P1-P2> ;
