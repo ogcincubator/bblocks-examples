@@ -32,7 +32,7 @@ This building block defines an example specialisation of an existing Feature spe
   "place": null,
   "properties": {
     "hasFeatureOfInterest": "eg:Traverse-P1-P2",
-    "observedProperty": "Geopose (or a URI for this concept)",
+    "observedProperty": "https://w3id.org/ad4gd/air-quality/properties/CO2",
     "resultTime": "2023-05-22T16:41:00+2",
     "hasResult": {
       "@context": {
@@ -84,7 +84,7 @@ This building block defines an example specialisation of an existing Feature spe
   "place": null,
   "properties": {
     "hasFeatureOfInterest": "eg:Traverse-P1-P2",
-    "observedProperty": "Geopose (or a URI for this concept)",
+    "observedProperty": "https://w3id.org/ad4gd/air-quality/properties/CO2",
     "resultTime": "2023-05-22T16:41:00+2",
     "hasResult": {
       "@context": {
@@ -131,7 +131,7 @@ This building block defines an example specialisation of an existing Feature spe
                     geopose:position [ geo1:lat -1.116718e+02 ;
                             geo1:long 4.005671e+01 ;
                             geopose:h 5e-01 ] ] ] ;
-    sosa:observedProperty <http://example.com/features/> ;
+    sosa:observedProperty <https://w3id.org/ad4gd/air-quality/properties/CO2> ;
     sosa:resultTime "2023-05-22T16:41:00+2" ;
     geojson:geometry [ a geojson:LineString ;
             geojson:coordinates ( ( -1.116718e+02 4.005671e+01 ) ( -1.1171e+02 4.015671e+01 ) ) ] .

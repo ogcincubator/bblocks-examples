@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2025-10-28",
+  "dateOfLastChange": "2025-10-29",
   "maturity": "development",
   "scope": "unstable",
   "tags": [
@@ -19,8 +19,8 @@
   "group": "Examples",
   "shaclShapes": {},
   "dependsOn": [
-    "ogc.bbr.examples.feature.propertySet",
-    "ogc.geo.json-fg.feature-lenient"
+    "ogc.geo.json-fg.feature-lenient",
+    "ogc.bbr.examples.feature.propertySet"
   ],
   "schema": {
     "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/schema.yaml",
