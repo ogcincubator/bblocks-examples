@@ -21,8 +21,8 @@
   "dependsOn": [
     "ogc.bbr.examples.observation.vectorObservation",
     "ogc.sosa.features.observation",
-    "ogc.sosa.properties.observation",
-    "ogc.sosa.features.observationCollection"
+    "ogc.sosa.features.observationCollection",
+    "ogc.sosa.properties.observation"
   ],
   "tags": [
     "sosa",
