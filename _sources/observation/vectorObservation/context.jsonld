@@ -1,8 +1,10 @@
 {
   "@context": {
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "resultschema": "https://w3id.org/ogc/hosted/examples/resultschema/",
     "hasResult": {
+      "@id": "sosa:hasResult",
       "@context": {
-        "resultschema": "http//w3id.org/ogc/hosted/examples/resultschema/",
         "pose": "resultschema:pose",
         "distance": {
           "@id": "resultschema:distance"
