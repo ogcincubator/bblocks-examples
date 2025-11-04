@@ -2,7 +2,7 @@
   "@context": {
     "hasResult": {
       "@context": {
-        "resultschema": "http//example.org/resultschema/",
+        "resultschema": "http//w3id.org/ogc/hosted/examples/resultschema/",
         "pose": "resultschema:pose",
         "distance": {
           "@id": "resultschema:distance"

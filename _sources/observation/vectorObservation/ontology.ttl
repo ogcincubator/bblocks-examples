@@ -1,0 +1,39 @@
+@prefix : <https://w3id.org/ogc/hosted/examples/resultchema/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix geopose: <https://w3id.org/ogc/geopose/> .
+
+
+<https://w3id.org/ogc/hosted/examples/resultchema> rdf:type owl:Ontology ;
+                            owl:versionIRI <https://w3id.org/ogc/hosted/examples/resultchema/1.0.0> ;
+                            <http://purl.org/dc/elements/1.1/abstract> "Ontology describing the elements of the vector observation example"@en ;
+                            <http://purl.org/dc/elements/1.1/description> "This is an example ontology to support the full Linked Data experience - these will be published on the OGC demo servers."@en ;
+                            <http://purl.org/dc/elements/1.1/title> "Example ontology - vector result elements"@en ;
+                            .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/ogc/hosted/examples/resultchema#hasMember
+:pose rdf:type owl:ObjectProperty ;
+           rdfs:range geopose:GeoPose ;
+           rdfs:comment "The GeoPose of the Vector"@en ;
+           rdfs:label "geopose"@en .
+
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/ogc/hosted/examples/resultchema#foundedIn
+:distance rdf:type owl:DatatypeProperty ;
+           rdfs:range xsd:number ;
+           rdfs:comment "Distance (in Metres)""@en ;
+           rdfs:label "Distance "@en .
+
