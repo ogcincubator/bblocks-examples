@@ -1,5 +1,5 @@
 Validation report for ogc.bbr.examples.feature.overrideContext - Test Context Override
-Generated 2025-11-04T10:56:46.449355+00:00
+Generated 2025-11-04T11:05:15.426448+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting
