@@ -1,0 +1,23 @@
+@prefix : <https://w3id.org/ogc/hosted/examples/resultchema/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix geopose: <https://w3id.org/ogc/geopose/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/ogc/hosted/examples/resultchema> a owl:Ontology ;
+    dc:abstract "Ontology describing the elements of the vector observation example"@en ;
+    dc:description "This is an example ontology to support the full Linked Data experience - these will be published on the OGC demo servers."@en ;
+    dc:title "Example ontology - vector result elements"@en ;
+    owl:versionIRI :1.0.0 .
+
+:distance a owl:DatatypeProperty ;
+    rdfs:label "Distance "@en ;
+    rdfs:comment "Distance (in Metres)"@en ;
+    rdfs:range xsd:number .
+
+:pose a owl:ObjectProperty ;
+    rdfs:label "geopose"@en ;
+    rdfs:comment "The GeoPose of the Vector"@en ;
+    rdfs:range geopose:GeoPose .
+
