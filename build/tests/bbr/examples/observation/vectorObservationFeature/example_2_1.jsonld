@@ -1,14 +1,5 @@
 {
-  "@context": [
-    "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld",
-    {
-      "resultschema": "http://example.org/resultschema/",
-      "pose": "resultschema:pose",
-      "distance": {
-        "@id": "resultschema:distance"
-      }
-    }
-  ],
+  "@context": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld",
   "@id": "c1",
   "type": "FeatureCollection",
   "featureType": "sosa:ObservationCollection",

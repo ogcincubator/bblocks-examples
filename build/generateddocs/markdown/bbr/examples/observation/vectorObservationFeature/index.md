@@ -130,13 +130,6 @@ This building block defines an example specialisation of an existing Feature spe
 #### json
 ```json
 {
-  "@context": {
-    "resultschema": "http://example.org/resultschema/",
-    "pose": "resultschema:pose",
-    "distance": {
-      "@id": "resultschema:distance"
-    }
-  },
   "@id": "c1",
   "type": "FeatureCollection",
   "featureType": "sosa:ObservationCollection",
@@ -187,16 +180,7 @@ This building block defines an example specialisation of an existing Feature spe
 #### jsonld
 ```jsonld
 {
-  "@context": [
-    "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld",
-    {
-      "resultschema": "http://example.org/resultschema/",
-      "pose": "resultschema:pose",
-      "distance": {
-        "@id": "resultschema:distance"
-      }
-    }
-  ],
+  "@context": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld",
   "@id": "c1",
   "type": "FeatureCollection",
   "featureType": "sosa:ObservationCollection",
@@ -250,7 +234,7 @@ This building block defines an example specialisation of an existing Feature spe
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix geopose: <https://w3id.org/ogc/geopose/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix resultschema: <http://example.org/resultschema/> .
+@prefix resultschema: <https://w3id.org/ogc/hosted/examples/resultschema/> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
