@@ -1,11 +1,4 @@
 {
-  "@context": {
-    "resultschema": "http://example.org/resultschema/",
-    "pose": "resultschema:pose",
-    "distance": {
-      "@id": "resultschema:distance"
-    }
-  },
   "@id": "c1",
   "type": "FeatureCollection",
   "featureType": "sosa:ObservationCollection",
