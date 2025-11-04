@@ -1,5 +1,5 @@
 Validation report for ogc.bbr.examples.feature.geojsonFeature - Custom GeoJSON Feature
-Generated 2025-11-04T11:15:26.638981+00:00
+Generated 2025-11-04T11:35:17.815790+00:00
 === General ===
 Test was expected to fail and it did.
 === End General ===

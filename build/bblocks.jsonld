@@ -113,12 +113,12 @@
   "abstract": "This register provides a collection of **examples** designed to illustrate capabilities and implementation patterns for [Building Blocks (see more)](https://ogcincubator.github.io/bblocks-docs). \n\n*These buildings blocks may be copied and edited into a new repository based on the [template](https://github.com/opengeospatial/bblock-template) - but should not be referenced and extended for reuse*\n",
   "description": "The aim of the highlighted examples is to illustrate implementation patterns for reusing OGC building blocks. The emphasis is on typical requirements to extend or constrain generic or abstract models such as OGC API Features, Observations etc. \n\nOther examples will illustrate different possible ways to use the Building Block machinery to semantically annotate externally defines schemas, develop and test logical constraints, or simply test examples using a published specification.\n\nMore complex examples will include transformation testing - testing a format can be transformed into a related structure and/or data model.\n",
   "sparqlEndpoint": "https://defs-hosted.opengis.net/fuseki-hosted/query",
-  "modified": "2025-11-04T11:15:20.979026",
+  "modified": "2025-11-04T11:35:09.402480",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"9cb190e8c75c22ef27f791db52d14040c16f9b06",
-      "shortCommitId": "\"9cb190",
-      "date": "2025-11-04T11:04:28+00:00\""
+      "commitId": "\"8b74d36d223da9cdf34a815c9b093ffcf8effdf4",
+      "shortCommitId": "\"8b74d3",
+      "date": "2025-11-04T11:14:53+00:00\""
     }
   },
   "gitRepository": "https://github.com/ogcincubator/bblocks-examples",
@@ -649,8 +649,8 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.geo.geopose.basic.ypr",
-        "ogc.sosa.properties.observation"
+        "ogc.sosa.properties.observation",
+        "ogc.geo.geopose.basic.ypr"
       ],
       "tags": [
         "examples",
@@ -717,8 +717,8 @@
       "group": "Examples",
       "shaclShapes": {},
       "dependsOn": [
-        "ogc.geo.json-fg.feature-lenient",
-        "ogc.bbr.examples.feature.propertySet"
+        "ogc.bbr.examples.feature.propertySet",
+        "ogc.geo.json-fg.feature-lenient"
       ],
       "schema": {
         "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/schema.yaml",
@@ -836,10 +836,10 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.bbr.examples.observation.vectorObservation",
+        "ogc.sosa.features.observationCollection",
         "ogc.sosa.features.observation",
         "ogc.sosa.properties.observation",
-        "ogc.sosa.features.observationCollection"
+        "ogc.bbr.examples.observation.vectorObservation"
       ],
       "tags": [
         "sosa",
