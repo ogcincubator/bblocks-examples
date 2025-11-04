@@ -34,6 +34,6 @@
 ###  https://w3id.org/ogc/hosted/examples/resultchema#foundedIn
 :distance rdf:type owl:DatatypeProperty ;
            rdfs:range xsd:number ;
-           rdfs:comment "Distance (in Metres)""@en ;
+           rdfs:comment "Distance (in Metres)"@en ;
            rdfs:label "Distance "@en .
 
