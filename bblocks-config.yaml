@@ -17,3 +17,10 @@ description: |
   Other examples will illustrate different possible ways to use the Building Block machinery to semantically annotate externally defines schemas, develop and test logical constraints, or simply test examples using a published specification.
   
   More complex examples will include transformation testing - testing a format can be transformed into a related structure and/or data model.
+
+sparql:
+  push: https://defs-hosted.opengis.net/fuseki-hosted/data
+  graph: https://w3id.org/ogc/examples/
+  query: https://defs-hosted.opengis.net/fuseki-hosted/query
+  resources:
+    ontologies: true
