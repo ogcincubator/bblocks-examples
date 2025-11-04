@@ -17,13 +17,6 @@ This building block defines the *property set* for an example specialisation of 
   "resultTime": "2023-05-22T16:41:00+2",
   "observedProperty": "p1",
   "hasResult": {
-    "@context": {
-       "resultschema": "http://example.org/resultschema/",
-       "pose": "resultschema:pose",
-       "distance": {
-         "@id": "resultschema:distance"
-       }
-     },
     "pose": {
       "position": {
         "lat": 43.46498208387333,
@@ -49,13 +42,6 @@ This building block defines the *property set* for an example specialisation of 
   "resultTime": "2023-05-22T16:41:00+2",
   "observedProperty": "p1",
   "hasResult": {
-    "@context": {
-      "resultschema": "http://example.org/resultschema/",
-      "pose": "resultschema:pose",
-      "distance": {
-        "@id": "resultschema:distance"
-      }
-    },
     "pose": {
       "position": {
         "lat": 43.46498208387333,
@@ -76,12 +62,12 @@ This building block defines the *property set* for an example specialisation of 
 ```ttl
 @prefix geo1: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix geopose: <https://w3id.org/ogc/geopose/> .
-@prefix ns1: <http://example.org/resultschema/> .
+@prefix resultschema: <https://w3id.org/ogc/hosted/examples/resultschema/> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 [] sosa:hasFeatureOfInterest <https://demo.pygeoapi.io/master/collections/utah_city_locations/items/Salem> ;
-    sosa:hasResult [ ns1:pose [ geopose:angles [ geopose:pitch -9.2e-01 ;
+    sosa:hasResult [ resultschema:pose [ geopose:angles [ geopose:pitch -9.2e-01 ;
                             geopose:roll 3.3e-01 ;
                             geopose:yaw 5.553e+00 ] ;
                     geopose:position [ geo1:lat 4.346498e+01 ;
@@ -106,13 +92,19 @@ allOf:
       properties:
         pose:
           $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/schema.yaml
+          x-jsonld-id: https://w3id.org/ogc/hosted/examples/resultschema/pose
         distance:
           type: number
+          x-jsonld-id: https://w3id.org/ogc/hosted/examples/resultschema/distance
+      x-jsonld-id: http://www.w3.org/ns/sosa/hasResult
   required:
   - hasResult
   not:
     required:
     - hasSimpleResult
+x-jsonld-prefixes:
+  sosa: http://www.w3.org/ns/sosa/
+  resultschema: https://w3id.org/ogc/hosted/examples/resultschema/
 
 ```
 
@@ -260,7 +252,31 @@ Links to the schema:
     },
     "hasResult": {
       "@id": "sosa:hasResult",
-      "@type": "@id"
+      "@type": "@id",
+      "@context": {
+        "pose": {
+          "@context": {
+            "position": {
+              "@context": {
+                "lat": "geo:lat",
+                "lon": "geo:long",
+                "h": "geopose:h"
+              },
+              "@id": "geopose:position"
+            },
+            "angles": {
+              "@context": {
+                "yaw": "geopose:yaw",
+                "pitch": "geopose:pitch",
+                "roll": "geopose:roll"
+              },
+              "@id": "geopose:angles"
+            }
+          },
+          "@id": "resultschema:pose"
+        },
+        "distance": "resultschema:distance"
+      }
     },
     "hasResultQuality": {
       "@id": "sosa:hasResultQuality",
@@ -513,25 +529,10 @@ Links to the schema:
       "@id": "sosa:madeBySensor",
       "@type": "@id"
     },
-    "position": {
-      "@context": {
-        "lat": "geo:lat",
-        "lon": "geo:long",
-        "h": "geopose:h"
-      },
-      "@id": "geopose:position"
-    },
-    "angles": {
-      "@context": {
-        "yaw": "geopose:yaw",
-        "pitch": "geopose:pitch",
-        "roll": "geopose:roll"
-      },
-      "@id": "geopose:angles"
-    },
     "sosa": "http://www.w3.org/ns/sosa/",
     "ssn-system": "ssn:systems/",
     "ssn": "http://www.w3.org/ns/ssn/",
+    "resultschema": "https://w3id.org/ogc/hosted/examples/resultschema/",
     "geopose": "https://w3id.org/ogc/geopose/",
     "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
     "@version": 1.1

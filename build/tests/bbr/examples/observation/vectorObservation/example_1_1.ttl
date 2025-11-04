@@ -1,11 +1,11 @@
 @prefix geo1: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix geopose: <https://w3id.org/ogc/geopose/> .
-@prefix ns1: <http://example.org/resultschema/> .
+@prefix resultschema: <https://w3id.org/ogc/hosted/examples/resultschema/> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 [] sosa:hasFeatureOfInterest <https://demo.pygeoapi.io/master/collections/utah_city_locations/items/Salem> ;
-    sosa:hasResult [ ns1:pose [ geopose:angles [ geopose:pitch -9.2e-01 ;
+    sosa:hasResult [ resultschema:pose [ geopose:angles [ geopose:pitch -9.2e-01 ;
                             geopose:roll 3.3e-01 ;
                             geopose:yaw 5.553e+00 ] ;
                     geopose:position [ geo1:lat 4.346498e+01 ;

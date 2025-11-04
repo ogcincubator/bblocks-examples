@@ -8,10 +8,16 @@ allOf:
       properties:
         pose:
           $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/schema.yaml
+          x-jsonld-id: https://w3id.org/ogc/hosted/examples/resultschema/pose
         distance:
           type: number
+          x-jsonld-id: https://w3id.org/ogc/hosted/examples/resultschema/distance
+      x-jsonld-id: http://www.w3.org/ns/sosa/hasResult
   required:
   - hasResult
   not:
     required:
     - hasSimpleResult
+x-jsonld-prefixes:
+  sosa: http://www.w3.org/ns/sosa/
+  resultschema: https://w3id.org/ogc/hosted/examples/resultschema/
