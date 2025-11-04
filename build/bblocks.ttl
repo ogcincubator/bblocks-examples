@@ -9,18 +9,18 @@
 
 <https://ogcincubator.github.io/bblocks-examples/build/bblocks.ttl> a prov:Entity ;
     dct:format "text/turtle" ;
-    prov:wasAttributedTo _:N58239a7781034a558f7ed661061f5ae4 ;
+    prov:wasAttributedTo _:N6e87b5c2b44a479ba7177f9ab362fa25 ;
     prov:wasGeneratedBy [ a prov:Activity ;
-            prov:endedAtTime "2025-11-04T09:52:07.706606"^^xsd:dateTime ;
-            prov:startedAtTime "2025-11-04T09:52:07.623453"^^xsd:dateTime ;
+            prov:endedAtTime "2025-11-04T09:56:27.223738"^^xsd:dateTime ;
+            prov:startedAtTime "2025-11-04T09:56:27.143395"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
-                    dct:format "application/json" ;
-                    dct:hasVersion "git:f84741bcf25acd42440691b2cb2ae25c3ce25759" ;
-                    rdfs:seeAlso <https://ogcincubator.github.io/bblocks-examples/build/register.json> ],
-                [ a prov:Entity ;
                     dct:format "application/yaml" ;
-                    rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
-            prov:wasAssociatedWith _:N58239a7781034a558f7ed661061f5ae4 ] .
+                    rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
+                [ a prov:Entity ;
+                    dct:format "application/json" ;
+                    dct:hasVersion "git:6ca11b8c47b214b0eb8862a302c3cd1b1348c41b" ;
+                    rdfs:seeAlso <https://ogcincubator.github.io/bblocks-examples/build/register.json> ] ;
+            prov:wasAssociatedWith _:N6e87b5c2b44a479ba7177f9ab362fa25 ] .
 
 <https://ogcincubator.github.io/ogc.bbr.examples.feature.geojsonFeature> a skos:Concept,
         dcat:Dataset,
@@ -28,12 +28,12 @@
     rdfs:label "Custom GeoJSON Feature" ;
     dct:abstract "This example shows a simple customisation method for OGC API Feature schemas"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/geojsonFeature/index.json" ],
-        [ dct:format "text/markdown" ;
+    dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/geojsonFeature/index.md" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.geojsonFeature" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.geojsonFeature" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/geojsonFeature/index.json" ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2025-11-04"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7> ;
@@ -54,10 +54,10 @@
     rdfs:label "Custom JSON-FG (lenient) Feature" ;
     dct:abstract "This example shows a simple customisation method for a JSON-FG (lenient) feature"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2024-07-25T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/geojsonFeatureFGLenient/index.md" ],
-        [ dct:format "application/json" ;
+    dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/geojsonFeatureFGLenient/index.json" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/geojsonFeatureFGLenient/index.md" ],
         [ dct:format "text/html" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.geojsonFeatureFGLenient" ] ;
     dct:hasVersion "1.0" ;
@@ -79,12 +79,12 @@
     rdfs:label "GeoJSON transformed to GeoSPARQL geometry" ;
     dct:abstract "This example includes an uplift step to use a GeoSPARQL geometry in a GeoJSON object"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2024-07-30T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/geosparqlFeature/index.json" ],
-        [ dct:format "text/html" ;
+    dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.geosparqlFeature" ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/geosparqlFeature/index.md" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/geosparqlFeature/index.md" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/geosparqlFeature/index.json" ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2025-11-04"^^xsd:date ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-examples/> ;
@@ -105,10 +105,10 @@
     rdfs:label "Test Context Override" ;
     dct:abstract "This example shows a simple customisation for OGC API Feature using an externally defined domain schema."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.overrideContext" ],
-        [ dct:format "text/markdown" ;
+    dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/overrideContext/index.md" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.overrideContext" ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/overrideContext/index.json" ] ;
     dct:hasVersion "1.0" ;
@@ -133,10 +133,10 @@
     rdfs:label "Custom Result for Observation Feature" ;
     dct:abstract "This building block defines an example specialisation of an existing Feature specialisation (SOSA Observation), using another schema to define a result set - in this case the GeoPose model"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/observation/vectorObservationFeature/index.md" ],
-        [ dct:format "application/json" ;
+    dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/observation/vectorObservationFeature/index.json" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/observation/vectorObservationFeature/index.md" ],
         [ dct:format "text/html" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.observation.vectorObservationFeature" ] ;
     dct:hasVersion "1.0" ;
@@ -166,12 +166,12 @@
     rdfs:label "Pre and Post Semantic Uplift example" ;
     dct:abstract "A sample building block to show how semantic uplift can be customized"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2024-10-03T11:31:00+02:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.semantic-uplift.pre-and-post-uplift" ],
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/semantic-uplift/pre-and-post-uplift/index.json" ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/semantic-uplift/pre-and-post-uplift/index.md" ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/semantic-uplift/pre-and-post-uplift/index.json" ] ;
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.semantic-uplift.pre-and-post-uplift" ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2025-11-04"^^xsd:date ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-examples/> ;
@@ -188,12 +188,12 @@
     rdfs:label "Transforms example" ;
     dct:abstract "A sample building block to showcase transforms"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2024-10-03T11:31:00+02:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.transforms.transforms-example" ],
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/transforms/transforms-example/index.md" ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/transforms/transforms-example/index.json" ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/transforms/transforms-example/index.md" ] ;
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.transforms.transforms-example" ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2025-11-04"^^xsd:date ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-examples/> ;
@@ -209,10 +209,10 @@
     rdfs:label "External Schema (Smart Data Models)" ;
     dct:abstract "This example shows a simple customisation for OGC API Feature using an externally defined domain schema."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/externalSchema/index.json" ],
-        [ dct:format "text/markdown" ;
+    dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/externalSchema/index.md" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/externalSchema/index.json" ],
         [ dct:format "text/html" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.externalSchema" ] ;
     dct:hasVersion "1.0" ;
@@ -239,10 +239,10 @@
     dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/observation/vectorObservation/index.json" ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/observation/vectorObservation/index.md" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.observation.vectorObservation" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.observation.vectorObservation" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/observation/vectorObservation/index.md" ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2025-11-04"^^xsd:date ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-examples/> ;
@@ -277,10 +277,10 @@
     dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/propertySet/index.md" ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/propertySet/index.json" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.propertySet" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.propertySet" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/propertySet/index.json" ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2025-11-04"^^xsd:date ;
     dct:source <https://www.w3.org/TR/vocab-ssn/> ;
@@ -313,7 +313,7 @@ More complex examples will include transformation testing - testing a format can
     bblocks:imports <https://opengeospatial.github.io/bblocks/register.json>,
         <https://opengeospatial.github.io/ogcapi-sosa/build/register.json> .
 
-_:N58239a7781034a558f7ed661061f5ae4 a prov:Agent,
+_:N6e87b5c2b44a479ba7177f9ab362fa25 a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
     dct:hasVersion "0.4.9" ;

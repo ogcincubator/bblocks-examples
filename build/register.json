@@ -3,7 +3,7 @@
   "abstract": "This register provides a collection of **examples** designed to illustrate capabilities and implementation patterns for [Building Blocks (see more)](https://ogcincubator.github.io/bblocks-docs). \n\n*These buildings blocks may be copied and edited into a new repository based on the [template](https://github.com/opengeospatial/bblock-template) - but should not be referenced and extended for reuse*\n",
   "description": "The aim of the highlighted examples is to illustrate implementation patterns for reusing OGC building blocks. The emphasis is on typical requirements to extend or constrain generic or abstract models such as OGC API Features, Observations etc. \n\nOther examples will illustrate different possible ways to use the Building Block machinery to semantically annotate externally defines schemas, develop and test logical constraints, or simply test examples using a published specification.\n\nMore complex examples will include transformation testing - testing a format can be transformed into a related structure and/or data model.\n",
   "sparqlEndpoint": "https://defs-hosted.opengis.net/fuseki-hosted/query",
-  "modified": "2025-11-04T09:51:55.519996",
+  "modified": "2025-11-04T09:56:11.294200",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"00a37834466db222c53ad4307570ca00cfef3c26",
@@ -565,8 +565,8 @@
       "group": "Examples",
       "shaclShapes": {},
       "dependsOn": [
-        "ogc.geo.json-fg.feature-lenient",
-        "ogc.bbr.examples.feature.propertySet"
+        "ogc.bbr.examples.feature.propertySet",
+        "ogc.geo.json-fg.feature-lenient"
       ],
       "schema": {
         "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/schema.yaml",
@@ -675,9 +675,9 @@
       "scope": "unstable",
       "dependsOn": [
         "ogc.bbr.examples.observation.vectorObservation",
+        "ogc.sosa.features.observation",
         "ogc.sosa.properties.observation",
-        "ogc.sosa.features.observationCollection",
-        "ogc.sosa.features.observation"
+        "ogc.sosa.features.observationCollection"
       ],
       "tags": [
         "sosa",
