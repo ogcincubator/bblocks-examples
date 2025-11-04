@@ -22,13 +22,6 @@
     "observedProperty": "https://w3id.org/ad4gd/air-quality/properties/CO2",
     "resultTime": "2023-05-22T16:41:00+2",
     "hasResult": {
-      "@context": {
-        "resultschema": "http://example.org/resultschema/",
-        "pose": "resultschema:pose",
-        "distance": {
-          "@id": "resultschema:distance"
-        }
-      },
       "pose": {
         "position": {
           "lat": -111.67183507997295,

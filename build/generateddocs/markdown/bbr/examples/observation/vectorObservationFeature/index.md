@@ -35,13 +35,6 @@ This building block defines an example specialisation of an existing Feature spe
     "observedProperty": "https://w3id.org/ad4gd/air-quality/properties/CO2",
     "resultTime": "2023-05-22T16:41:00+2",
     "hasResult": {
-      "@context": {
-        "resultschema": "http://example.org/resultschema/",
-        "pose": "resultschema:pose",
-        "distance": {
-          "@id": "resultschema:distance"
-        }
-      },
       "pose": {
         "position": {
           "lat": -111.67183507997295,
@@ -87,13 +80,6 @@ This building block defines an example specialisation of an existing Feature spe
     "observedProperty": "https://w3id.org/ad4gd/air-quality/properties/CO2",
     "resultTime": "2023-05-22T16:41:00+2",
     "hasResult": {
-      "@context": {
-        "resultschema": "http://example.org/resultschema/",
-        "pose": "resultschema:pose",
-        "distance": {
-          "@id": "resultschema:distance"
-        }
-      },
       "pose": {
         "position": {
           "lat": -111.67183507997295,
@@ -114,16 +100,23 @@ This building block defines an example specialisation of an existing Feature spe
 
 #### ttl
 ```ttl
+@prefix geo1: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
-@prefix ns1: <http://example.org/resultschema/> .
+@prefix geopose: <https://w3id.org/ogc/geopose/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix resultschema: <https://w3id.org/ogc/hosted/examples/resultschema/> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://example.com/features/vector-obs-1> a geojson:Feature ;
     sosa:hasFeatureOfInterest <eg:Traverse-P1-P2> ;
-    sosa:hasResult [ ns1:distance 6.889234e+06 ;
-            ns1:pose [ ] ] ;
+    sosa:hasResult [ resultschema:distance 6.889234e+06 ;
+            resultschema:pose [ geopose:angles [ geopose:pitch -1e-02 ;
+                            geopose:roll 0 ;
+                            geopose:yaw 1.535e+01 ] ;
+                    geopose:position [ geo1:lat -1.116718e+02 ;
+                            geo1:long 4.005671e+01 ;
+                            geopose:h 5e-01 ] ] ] ;
     sosa:observedProperty <https://w3id.org/ad4gd/air-quality/properties/CO2> ;
     sosa:resultTime "2023-05-22T16:41:00+2" ;
     geojson:geometry [ a geojson:LineString ;
@@ -160,9 +153,9 @@ This building block defines an example specialisation of an existing Feature spe
             40.056709946862874
           ],
           [
-            -111.67183507997295,
-            40.056709946862874
-          ]
+        -111.71,
+        40.156709946862874
+      ]
         ]
       },
       "time": null,
@@ -220,8 +213,8 @@ This building block defines an example specialisation of an existing Feature spe
             40.056709946862874
           ],
           [
-            -111.67183507997295,
-            40.056709946862874
+            -111.71,
+            40.156709946862875
           ]
         ]
       },
@@ -277,7 +270,7 @@ This building block defines an example specialisation of an existing Feature spe
                             geopose:h 5e-01 ] ] ] ;
     sosa:resultTime "2023-05-22T16:41:00+2" ;
     geojson:geometry [ a geojson:LineString ;
-            geojson:coordinates ( ( -1.116718e+02 4.005671e+01 ) ( -1.116718e+02 4.005671e+01 ) ) ] .
+            geojson:coordinates ( ( -1.116718e+02 4.005671e+01 ) ( -1.1171e+02 4.015671e+01 ) ) ] .
 
 
 ```
