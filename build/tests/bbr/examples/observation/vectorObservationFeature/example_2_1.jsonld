@@ -1,12 +1,12 @@
 {
   "@context": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld",
-  "@id": "c1",
+  "id": "c1",
   "type": "FeatureCollection",
   "featureType": "sosa:ObservationCollection",
   "observedProperty": "Geopose (or a URI for this concept)",
   "features": [
     {
-      "@id": "vector-obs-1",
+      "id": "vector-obs-1",
       "type": "Feature",
       "geometry": {
         "type": "LineString",

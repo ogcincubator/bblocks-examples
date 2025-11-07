@@ -1,6 +1,6 @@
 {
   "@context": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/context.jsonld",
-  "@id": "f1",
+  "id": "f1",
   "type": "Feature",
   "geometry": {
     "type": "LineString",

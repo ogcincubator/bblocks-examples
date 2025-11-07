@@ -13,7 +13,7 @@ This building block defines an example specialisation of an existing Feature spe
 #### json
 ```json
 {
-  "@id": "vector-obs-1",
+  "id": "vector-obs-1",
   "type": "Feature",
   "geometry": {
     "type": "LineString",
@@ -58,7 +58,7 @@ This building block defines an example specialisation of an existing Feature spe
 ```jsonld
 {
   "@context": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld",
-  "@id": "vector-obs-1",
+  "id": "vector-obs-1",
   "type": "Feature",
   "geometry": {
     "type": "LineString",
@@ -130,13 +130,13 @@ This building block defines an example specialisation of an existing Feature spe
 #### json
 ```json
 {
-  "@id": "c1",
+  "id": "c1",
   "type": "FeatureCollection",
   "featureType": "sosa:ObservationCollection",
   "observedProperty": "Geopose (or a URI for this concept)",
   "features": [
     {
-      "@id": "vector-obs-1",
+      "id": "vector-obs-1",
       "type": "Feature",
       "geometry": {
         "type": "LineString",
@@ -181,13 +181,13 @@ This building block defines an example specialisation of an existing Feature spe
 ```jsonld
 {
   "@context": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld",
-  "@id": "c1",
+  "id": "c1",
   "type": "FeatureCollection",
   "featureType": "sosa:ObservationCollection",
   "observedProperty": "Geopose (or a URI for this concept)",
   "features": [
     {
-      "@id": "vector-obs-1",
+      "id": "vector-obs-1",
       "type": "Feature",
       "geometry": {
         "type": "LineString",
