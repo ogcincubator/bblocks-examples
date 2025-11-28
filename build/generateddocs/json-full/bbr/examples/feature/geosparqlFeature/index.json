@@ -10,7 +10,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2025-11-07",
+  "dateOfLastChange": "2025-11-28",
   "maturity": "development",
   "scope": "unstable",
   "tags": [
@@ -52,7 +52,7 @@
         },
         {
           "language": "ttl",
-          "code": "@prefix geo: <http://www.opengis.net/ont/geosparql#> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix myNamespace: <http://example.org/myModel/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n\n<http://example.com/features/f1> a geojson:Feature ;\n    myNamespace:myProp \"Mandatory property example\" ;\n    geo:hasGeometry [ geo:asGeoJson \"{\\\"coordinates\\\":[[-111.67183507997295,40.056709946862874],[-111.71,40.156709946862875]],\\\"type\\\":\\\"LineString\\\"}\"^^geo:geoJSONLiteral ] ;\n    geojson:geometry \"{\\\"coordinates\\\":[[-111.67183507997295,40.056709946862874],[-111.71,40.156709946862875]],\\\"type\\\":\\\"LineString\\\"}\"^^rdf:JSON .\n\n",
+          "code": "@prefix geo: <http://www.opengis.net/ont/geosparql#> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n\n<http://example.com/features/f1> a geojson:Feature ;\n    geo:hasGeometry [ geo:asGeoJson \"{\\\"coordinates\\\":[[-111.67183507997295,40.056709946862874],[-111.71,40.156709946862875]],\\\"type\\\":\\\"LineString\\\"}\"^^geo:geoJSONLiteral ] ;\n    geojson:geometry \"{\\\"coordinates\\\":[[-111.67183507997295,40.056709946862874],[-111.71,40.156709946862875]],\\\"type\\\":\\\"LineString\\\"}\"^^rdf:JSON .\n\n",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/feature/geosparqlFeature/example_1_1.ttl"
         }
       ]

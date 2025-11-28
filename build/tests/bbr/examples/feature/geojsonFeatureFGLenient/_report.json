@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.bbr.examples.feature.geojsonFeatureFGLenient - Custom JSON-FG (lenient) Feature",
   "bblockName": "Custom JSON-FG (lenient) Feature",
   "bblockId": "ogc.bbr.examples.feature.geojsonFeatureFGLenient",
-  "generated": "2025-11-07T14:24:47.193056+00:00",
+  "generated": "2025-11-28T23:29:24.130888+00:00",
   "result": true,
   "items": [
     {
@@ -40,7 +40,7 @@
               "op": "ttl-create",
               "empty": false,
               "filename": "example_1_1.ttl",
-              "size": 25,
+              "size": 24,
               "isError": false,
               "message": "Output Turtle example_1_1.ttl created"
             }
