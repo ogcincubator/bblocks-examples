@@ -1,5 +1,5 @@
 - title: VectorObservation - specialisation example.
-  comment:
+  content:
     Example of Specialised Observation being a vector, using GeoPose as part of a complex result.
 
     View [live example](https://defs-dev.opengis.net/bblocks-pygeoapi/collections/ogc.bbr.examples.observation.vectorObservationFeature/items/vector-obs-1) - using PyGeoAPI, configured to use this BuildingBlock to provide a JSON-LD context, and a client Linked Data library.
@@ -10,7 +10,7 @@
       ref: examples/observation.json
 
 - title: VectorObservationCollection
-  comment:
+  content:
     Example of Specialised ObservationCollection being a vector, using GeoPose as part of a complex result
 
   base-uri: http://example.com/features/
