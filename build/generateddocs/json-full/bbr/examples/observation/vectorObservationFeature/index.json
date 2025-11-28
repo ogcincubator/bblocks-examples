@@ -19,10 +19,10 @@
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "ogc.sosa.properties.observation",
     "ogc.sosa.features.observation",
     "ogc.sosa.features.observationCollection",
-    "ogc.bbr.examples.observation.vectorObservation"
+    "ogc.bbr.examples.observation.vectorObservation",
+    "ogc.sosa.properties.observation"
   ],
   "tags": [
     "sosa",
@@ -54,7 +54,7 @@
   "examples": [
     {
       "title": "VectorObservation - specialisation example.",
-      "comment": "Example of Specialised Observation being a vector, using GeoPose as part of a complex result.\nView [live example](https://defs-dev.opengis.net/bblocks-pygeoapi/collections/ogc.bbr.examples.observation.vectorObservationFeature/items/vector-obs-1) - using PyGeoAPI, configured to use this BuildingBlock to provide a JSON-LD context, and a client Linked Data library.",
+      "content": "Example of Specialised Observation being a vector, using GeoPose as part of a complex result.\nView [live example](https://defs-dev.opengis.net/bblocks-pygeoapi/collections/ogc.bbr.examples.observation.vectorObservationFeature/items/vector-obs-1) - using PyGeoAPI, configured to use this BuildingBlock to provide a JSON-LD context, and a client Linked Data library.",
       "base-uri": "http://example.com/features/",
       "snippets": [
         {
@@ -77,7 +77,7 @@
     },
     {
       "title": "VectorObservationCollection",
-      "comment": "Example of Specialised ObservationCollection being a vector, using GeoPose as part of a complex result",
+      "content": "Example of Specialised ObservationCollection being a vector, using GeoPose as part of a complex result",
       "base-uri": "http://example.com/features/",
       "snippets": [
         {

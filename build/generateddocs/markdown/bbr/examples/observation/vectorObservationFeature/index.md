@@ -10,6 +10,8 @@ This building block defines an example specialisation of an existing Feature spe
 ## Examples
 
 ### VectorObservation - specialisation example.
+Example of Specialised Observation being a vector, using GeoPose as part of a complex result.
+View [live example](https://defs-dev.opengis.net/bblocks-pygeoapi/collections/ogc.bbr.examples.observation.vectorObservationFeature/items/vector-obs-1) - using PyGeoAPI, configured to use this BuildingBlock to provide a JSON-LD context, and a client Linked Data library.
 #### json
 ```json
 {
@@ -118,6 +120,7 @@ This building block defines an example specialisation of an existing Feature spe
 
 
 ### VectorObservationCollection
+Example of Specialised ObservationCollection being a vector, using GeoPose as part of a complex result
 #### json
 ```json
 {
