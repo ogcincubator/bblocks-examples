@@ -21,7 +21,8 @@
         "coordinates": {
           "@container": "@list",
           "@id": "geojson:coordinates"
-        }
+        },
+        "geometries": {}
       },
       "@id": "geojson:geometry"
     },
@@ -42,6 +43,7 @@
           "@id": "http://www.iana.org/assignments/relation",
           "@type": "@id"
         },
+        "anchor": {},
         "type": "dct:type",
         "hreflang": "dct:language",
         "title": "rdfs:label",
@@ -49,6 +51,9 @@
       },
       "@id": "rdfs:seeAlso"
     },
+    "IataCode": {},
+    "IcaoCode": {},
+    "Name": {},
     "AirportElevation": "https://smartdatamodels.org/dataModel.ACRIS/AirportElevation",
     "AirportElevationUnitOfMeasurement": "https://smartdatamodels.org/dataModel.ACRIS/AirportElevationUnitOfMeasurement",
     "AirportFacility": "https://smartdatamodels.org/dataModel.ACRIS/AirportFacility",
@@ -62,15 +67,12 @@
     "ConcourseFacility": "https://smartdatamodels.org/dataModel.ACRIS/ConcourseFacility",
     "Description": "https://smartdatamodels.org/dataModel.ACRIS/Description",
     "EndTime": "https://smartdatamodels.org/dataModel.ACRIS/EndTime",
-    "IataCode": "https://smartdatamodels.org/dataModel.ACRIS/IataCode",
-    "IcaoCode": "https://smartdatamodels.org/dataModel.ACRIS/IcaoCode",
     "Identifier": "https://smartdatamodels.org/dataModel.ACRIS/Identifier",
     "Latitude": "https://smartdatamodels.org/dataModel.ACRIS/Latitude",
     "Longitude": "https://smartdatamodels.org/dataModel.ACRIS/Longitude",
     "MeasurementDevice": "https://smartdatamodels.org/dataModel.ACRIS/MeasurementDevice",
     "MeasurementDeviceLocation": "https://smartdatamodels.org/dataModel.ACRIS/MeasurementDeviceLocation",
     "MeasurementTimePeriod": "https://smartdatamodels.org/dataModel.ACRIS/MeasurementTimePeriod",
-    "Name": "https://smartdatamodels.org/dataModel.ACRIS/Name",
     "Occupancy": "https://smartdatamodels.org/dataModel.ACRIS/Occupancy",
     "OpeningTime": "https://smartdatamodels.org/dataModel.ACRIS/OpeningTime",
     "OperationTimePeriod": "https://smartdatamodels.org/dataModel.ACRIS/OperationTimePeriod",

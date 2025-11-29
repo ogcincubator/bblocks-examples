@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.bbr.examples.feature.geojsonFeature - Custom GeoJSON Feature",
   "bblockName": "Custom GeoJSON Feature",
   "bblockId": "ogc.bbr.examples.feature.geojsonFeature",
-  "generated": "2025-11-28T23:32:16.401316+00:00",
+  "generated": "2025-11-29T00:52:57.728831+00:00",
   "result": true,
   "items": [
     {
@@ -106,7 +106,7 @@
               "op": "ttl-create",
               "empty": false,
               "filename": "example_1_1.ttl",
-              "size": 16,
+              "size": 17,
               "isError": false,
               "message": "Output Turtle example_1_1.ttl created"
             }

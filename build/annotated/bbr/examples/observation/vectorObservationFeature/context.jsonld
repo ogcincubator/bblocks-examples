@@ -12,12 +12,39 @@
     "features": {
       "@container": "@set",
       "@id": "sosa:hasMember",
-      "@type": "@id"
+      "@type": "@id",
+      "@context": {
+        "Prism": {
+          "@id": "geojson:Prism",
+          "@context": {
+            "base": "geojson:prismBase",
+            "lower": "geojson:prismLower",
+            "upper": "geojson:prismUpper"
+          }
+        },
+        "MultiPrism": {
+          "@id": "geojson:MultiPrism",
+          "@context": {
+            "prisms": "geojson:prisms"
+          }
+        }
+      }
     },
     "type": "@type",
     "id": "@id",
     "properties": "@nest",
-    "geometry": "geojson:geometry",
+    "geometry": {
+      "@context": {
+        "measures": {
+          "@context": {
+            "enabled": {},
+            "unit": {},
+            "description": {}
+          }
+        }
+      },
+      "@id": "geojson:geometry"
+    },
     "bbox": {
       "@container": "@list",
       "@id": "geojson:bbox"
@@ -35,6 +62,7 @@
           "@id": "http://www.iana.org/assignments/relation",
           "@type": "@id"
         },
+        "anchor": {},
         "type": "dct:type",
         "hreflang": "dct:language",
         "title": "rdfs:label",
@@ -60,8 +88,29 @@
       },
       "@id": "dct:time"
     },
-    "coordRefSys": "http://www.opengis.net/def/glossary/term/CoordinateReferenceSystemCRS",
-    "place": "dct:spatial",
+    "coordRefSys": {
+      "@context": {
+        "href": {},
+        "epoch": {}
+      },
+      "@id": "http://www.opengis.net/def/glossary/term/CoordinateReferenceSystemCRS"
+    },
+    "place": {
+      "@context": {
+        "measures": {
+          "@context": {
+            "enabled": {},
+            "unit": {},
+            "description": {}
+          }
+        },
+        "base": {},
+        "lower": {},
+        "upper": {},
+        "prisms": {}
+      },
+      "@id": "dct:spatial"
+    },
     "Polyhedron": "geojson:Polyhedron",
     "MultiPolyhedron": "geojson:MultiPolyhedron",
     "Prism": {
@@ -212,7 +261,31 @@
     },
     "hasResult": {
       "@id": "sosa:hasResult",
-      "@type": "@id"
+      "@type": "@id",
+      "@context": {
+        "pose": {
+          "@context": {
+            "position": {
+              "@context": {
+                "lat": "geo:lat",
+                "lon": "geo:long",
+                "h": "geopose:h"
+              },
+              "@id": "geopose:position"
+            },
+            "angles": {
+              "@context": {
+                "yaw": "geopose:yaw",
+                "pitch": "geopose:pitch",
+                "roll": "geopose:roll"
+              },
+              "@id": "geopose:angles"
+            }
+          },
+          "@id": "resultschema:pose"
+        },
+        "distance": "resultschema:distance"
+      }
     },
     "hasResultQuality": {
       "@id": "sosa:hasResultQuality",
@@ -465,6 +538,10 @@
       "@id": "sosa:madeBySensor",
       "@type": "@id"
     },
+    "geometryDimension": {},
+    "timeStamp": {},
+    "numberMatched": {},
+    "numberReturned": {},
     "geojson": "https://purl.org/geojson/vocab#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "oa": "http://www.w3.org/ns/oa#",
@@ -474,6 +551,9 @@
     "sosa": "http://www.w3.org/ns/sosa/",
     "ssn-system": "ssn:systems/",
     "ssn": "http://www.w3.org/ns/ssn/",
+    "resultschema": "https://w3id.org/ogc/hosted/examples/resultschema/",
+    "geopose": "https://w3id.org/ogc/geopose/",
+    "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
     "@version": 1.1
   }
 }
