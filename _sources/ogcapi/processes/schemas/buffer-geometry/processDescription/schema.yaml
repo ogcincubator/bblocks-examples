@@ -1,0 +1,9 @@
+allOf:
+  - $ref: bblocks://ogc.api.processes.v1.schemas.process
+  - properties:
+      inputs:
+        $ref: bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputDescription
+        additionalProperties: false
+      outputs:
+        $ref: bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputDescription
+        additionalProperties: false

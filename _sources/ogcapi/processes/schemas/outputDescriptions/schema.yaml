@@ -1,0 +1,2 @@
+anyOf:
+  - $ref: bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputDescription

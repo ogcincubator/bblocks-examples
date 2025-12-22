@@ -5,6 +5,7 @@ name: Building Blocks Examples
 imports:
   - default
   - https://opengeospatial.github.io/ogcapi-sosa/build/register.json
+  - https://ogcincubator.github.io/bblocks-ogcapi-processes/build/register.json
 
 abstract: |
   This register provides a collection of **examples** designed to illustrate capabilities and implementation patterns for [Building Blocks (see more)](https://ogcincubator.github.io/bblocks-docs). 
