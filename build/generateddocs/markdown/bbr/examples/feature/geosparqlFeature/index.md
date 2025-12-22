@@ -116,22 +116,11 @@ Links to the schema:
     },
     "type": "@type",
     "id": "@id",
-    "properties": "@nest",
     "geometry": {
-      "@context": {
-        "coordinates": {
-          "@container": "@list",
-          "@id": "geojson:coordinates"
-        },
-        "geometries": {}
-      },
       "@id": "geojson:geometry",
       "@type": "@json"
     },
-    "bbox": {
-      "@container": "@list",
-      "@id": "geojson:bbox"
-    },
+    "bbox": "geojson:bbox",
     "links": {
       "@context": {
         "href": {
@@ -145,7 +134,6 @@ Links to the schema:
           "@id": "http://www.iana.org/assignments/relation",
           "@type": "@id"
         },
-        "anchor": {},
         "type": "dct:type",
         "hreflang": "dct:language",
         "title": "rdfs:label",

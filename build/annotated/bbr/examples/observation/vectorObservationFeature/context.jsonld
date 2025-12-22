@@ -10,45 +10,46 @@
     "Point": "geojson:Point",
     "Polygon": "geojson:Polygon",
     "features": {
-      "@container": "@set",
-      "@id": "sosa:hasMember",
-      "@type": "@id",
       "@context": {
-        "Prism": {
-          "@id": "geojson:Prism",
-          "@context": {
-            "base": "geojson:prismBase",
-            "lower": "geojson:prismLower",
-            "upper": "geojson:prismUpper"
-          }
+        "features": {
+          "@id": "sosa:hasMember",
+          "@type": "@id"
         },
-        "MultiPrism": {
-          "@id": "geojson:MultiPrism",
+        "hasResult": {
           "@context": {
-            "prisms": "geojson:prisms"
-          }
+            "pose": {
+              "@context": {
+                "position": {
+                  "@context": {
+                    "lat": "geo:lat",
+                    "lon": "geo:long",
+                    "h": "geopose:h"
+                  },
+                  "@id": "geopose:position"
+                },
+                "angles": {
+                  "@context": {
+                    "yaw": "geopose:yaw",
+                    "pitch": "geopose:pitch",
+                    "roll": "geopose:roll"
+                  },
+                  "@id": "geopose:angles"
+                }
+              },
+              "@id": "resultschema:pose"
+            },
+            "distance": "resultschema:distance"
+          },
+          "@id": "sosa:hasResult"
         }
-      }
+      },
+      "@id": "sosa:hasMember"
     },
     "type": "@type",
     "id": "@id",
     "properties": "@nest",
-    "geometry": {
-      "@context": {
-        "measures": {
-          "@context": {
-            "enabled": {},
-            "unit": {},
-            "description": {}
-          }
-        }
-      },
-      "@id": "geojson:geometry"
-    },
-    "bbox": {
-      "@container": "@list",
-      "@id": "geojson:bbox"
-    },
+    "geometry": "geojson:geometry",
+    "bbox": "geojson:bbox",
     "links": {
       "@context": {
         "href": {
@@ -62,7 +63,6 @@
           "@id": "http://www.iana.org/assignments/relation",
           "@type": "@id"
         },
-        "anchor": {},
         "type": "dct:type",
         "hreflang": "dct:language",
         "title": "rdfs:label",
@@ -88,29 +88,8 @@
       },
       "@id": "dct:time"
     },
-    "coordRefSys": {
-      "@context": {
-        "href": {},
-        "epoch": {}
-      },
-      "@id": "http://www.opengis.net/def/glossary/term/CoordinateReferenceSystemCRS"
-    },
-    "place": {
-      "@context": {
-        "measures": {
-          "@context": {
-            "enabled": {},
-            "unit": {},
-            "description": {}
-          }
-        },
-        "base": {},
-        "lower": {},
-        "upper": {},
-        "prisms": {}
-      },
-      "@id": "dct:spatial"
-    },
+    "coordRefSys": "http://www.opengis.net/def/glossary/term/CoordinateReferenceSystemCRS",
+    "place": "dct:spatial",
     "Polyhedron": "geojson:Polyhedron",
     "MultiPolyhedron": "geojson:MultiPolyhedron",
     "Prism": {
@@ -244,6 +223,12 @@
       "@type": "@id"
     },
     "hasMember": {
+      "@context": {
+        "features": {
+          "@id": "sosa:hasMember",
+          "@type": "@id"
+        }
+      },
       "@id": "sosa:hasMember",
       "@type": "@id"
     },
@@ -261,31 +246,7 @@
     },
     "hasResult": {
       "@id": "sosa:hasResult",
-      "@type": "@id",
-      "@context": {
-        "pose": {
-          "@context": {
-            "position": {
-              "@context": {
-                "lat": "geo:lat",
-                "lon": "geo:long",
-                "h": "geopose:h"
-              },
-              "@id": "geopose:position"
-            },
-            "angles": {
-              "@context": {
-                "yaw": "geopose:yaw",
-                "pitch": "geopose:pitch",
-                "roll": "geopose:roll"
-              },
-              "@id": "geopose:angles"
-            }
-          },
-          "@id": "resultschema:pose"
-        },
-        "distance": "resultschema:distance"
-      }
+      "@type": "@id"
     },
     "hasResultQuality": {
       "@id": "sosa:hasResultQuality",
@@ -538,10 +499,6 @@
       "@id": "sosa:madeBySensor",
       "@type": "@id"
     },
-    "geometryDimension": {},
-    "timeStamp": {},
-    "numberMatched": {},
-    "numberReturned": {},
     "geojson": "https://purl.org/geojson/vocab#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "oa": "http://www.w3.org/ns/oa#",

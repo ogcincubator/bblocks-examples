@@ -67,15 +67,18 @@ In this case Latitude and Longitude are converted to more common options.
 #### ttl
 ```ttl
 @prefix geojson: <https://purl.org/geojson/vocab#> .
+@prefix ns1: <https://smartdatamodels.org/dataModel.ACRIS/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://example.com/features/f1> a geojson:Feature,
-        <https://smartdatamodels.org/dataModel.ACRIS/AirportFacility> ;
+        ns1:AirportFacility ;
     rdfs:label "control" ;
     geojson:geometry [ a geojson:Point ;
-            geojson:coordinates ( 5.935444e+01 1.793972e+01 ) ] .
+            geojson:coordinates ( 5.935444e+01 1.793972e+01 ) ] ;
+    ns1:IataCode "BMA" ;
+    ns1:IcaoCode "ESSB" .
 
 
 ```
@@ -132,14 +135,14 @@ Links to the schema:
           "@container": "@list",
           "@id": "geojson:coordinates"
         },
-        "geometries": {}
+        "bbox": {
+          "@container": "@list",
+          "@id": "geojson:bbox"
+        }
       },
       "@id": "geojson:geometry"
     },
-    "bbox": {
-      "@container": "@list",
-      "@id": "geojson:bbox"
-    },
+    "bbox": "geojson:bbox",
     "links": {
       "@context": {
         "href": {
@@ -153,7 +156,6 @@ Links to the schema:
           "@id": "http://www.iana.org/assignments/relation",
           "@type": "@id"
         },
-        "anchor": {},
         "type": "dct:type",
         "hreflang": "dct:language",
         "title": "rdfs:label",
@@ -161,8 +163,8 @@ Links to the schema:
       },
       "@id": "rdfs:seeAlso"
     },
-    "IataCode": {},
-    "IcaoCode": {},
+    "IataCode": "https://smartdatamodels.org/dataModel.ACRIS/IataCode",
+    "IcaoCode": "https://smartdatamodels.org/dataModel.ACRIS/IcaoCode",
     "Name": "rdfs:label",
     "AirportElevation": "https://smartdatamodels.org/dataModel.ACRIS/AirportElevation",
     "AirportElevationUnitOfMeasurement": "https://smartdatamodels.org/dataModel.ACRIS/AirportElevationUnitOfMeasurement",

@@ -10,7 +10,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2025-11-28",
+  "dateOfLastChange": "2025-12-22",
   "sources": [
     {
       "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -67,7 +67,7 @@
         },
         {
           "language": "ttl",
-          "code": "@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<http://example.com/features/f1> a geojson:Feature,\n        <https://smartdatamodels.org/dataModel.ACRIS/AirportFacility> ;\n    rdfs:label \"control\" ;\n    geojson:geometry [ a geojson:Point ;\n            geojson:coordinates ( 5.935444e+01 1.793972e+01 ) ] .\n\n",
+          "code": "@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix ns1: <https://smartdatamodels.org/dataModel.ACRIS/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<http://example.com/features/f1> a geojson:Feature,\n        ns1:AirportFacility ;\n    rdfs:label \"control\" ;\n    geojson:geometry [ a geojson:Point ;\n            geojson:coordinates ( 5.935444e+01 1.793972e+01 ) ] ;\n    ns1:IataCode \"BMA\" ;\n    ns1:IcaoCode \"ESSB\" .\n\n",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/feature/overrideContext/example_1_1.ttl"
         }
       ]
