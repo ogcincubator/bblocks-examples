@@ -1,0 +1,20 @@
+{
+  "name": "Topo rules examples",
+  "abstract": "Demonstrates inheritance of rules (in this case for topology using feature references - that cannot be expressed in schemas.",
+  "status": "under-development",
+  "dateTimeAddition": "2023-05-19T00:00:00Z",
+  "itemClass": "schema",
+  "register": "isc",
+  "version": "1.0",
+  "dateOfLastChange": "2023-05-19",
+  "sources": [
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "dependsOn": [
+  ],
+  "tags": [
+    ],
+  "group": "Entities",
+  "highlighted": true
+}

@@ -1,0 +1,30 @@
+transforms:
+
+  - id: object-as-JSON
+    description: Transforms object to a form that can be uplifted with JSON-LD to **<object> <asJSON> "JSON literal"**
+    type: jq
+    code: | 
+      def jsoncontext:  (         
+               {
+                "asJSON": {
+                  "@id": "param:asJSON",
+                  "@type": "@json"
+                },
+                "param": "https://w3id.org/ogc/api/processes/",
+                "@version": 1.1
+                
+              } );
+        
+           
+      { 
+        "@id": (if .["@id"] then .["@id"] else .id end ),
+         "@context": (
+            
+            if ."@context" | type == "array" then
+              ."@context" + [ jsoncontext ]
+            else
+              ."@context" +  jsoncontext
+            end
+          ), 
+         "asJSON": (. | del(."@context"))
+      }

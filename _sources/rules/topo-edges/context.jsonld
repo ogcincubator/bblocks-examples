@@ -1,0 +1,6 @@
+{
+  "@context": {
+    "@vocab": "https://example.com/edges/",
+    "id": "@id"
+  }
+}

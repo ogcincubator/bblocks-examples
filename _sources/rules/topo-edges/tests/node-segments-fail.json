@@ -1,0 +1,36 @@
+{
+  "id": "node-segment-mismatch",
+  "nodes": [
+    {
+      "id": "e1",
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.32,
+          -33.825
+        ]
+      },
+      "properties": {
+        "name": "waypoint 1"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "type": "Feature",
+      "id": "LineP1P2",
+      "geometry": null,
+      "topology": {
+        "type": "LineString",
+        "references": [
+          "e1",
+          "e2"
+        ]
+      },
+      properties": null
+    }
+  ]
+
+}
+

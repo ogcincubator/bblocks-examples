@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft/2020-12/schema",
+  "title": "Nodes and Edges bundle",
+  "$defs": {
+    "TopoLine": {
+      "$ref": "bblocks://ogc.geo.topo.features.topo-line"
+    },
+    "FeatureOptions": {
+      "$ref": "bblocks://ogc.geo.topo.features.topo-feature-collection#FeatureOptions"
+    },
+    "PointFeature": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/FeatureOptions"
+        },
+        {
+          "properties": {
+            "geometry": {
+              "allOf": [
+                {
+                  "properties": {
+                    "type": {
+                      "type": "string",
+                      "const": "Point"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "required": [
+            "geometry"
+          ]
+        }
+      ]
+    }
+  },
+  "allOf": [
+
+    {
+      "properties": {
+        "id": {
+          "description":  "The unique id for this object that can be persisted in the knowledge base as an IRI, so it must conform to a full URI or a CURIE that references an appropriate namespace.",
+          "$ref": "bblocks://ogc.ogc-utils.iri-or-curie"
+        },
+
+        "nodes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/PointFeature"
+          }
+        },
+        "edges": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/TopoLine"
+          }
+        }
+      }
+    }
+  ]
+}
