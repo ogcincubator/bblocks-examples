@@ -8,6 +8,9 @@
     "FeatureOptions": {
       "$ref": "bblocks://ogc.geo.topo.features.topo-feature-collection#FeatureOptions"
     },
+    "FeatureCollectionOptions": {
+      "$ref": "bblocks://ogc.geo.topo.features.topo-feature-collection#FeatureCollectionOptions"
+    },
     "PointFeature": {
       "allOf": [
         {
@@ -35,28 +38,64 @@
       ]
     }
   },
-  "allOf": [
-
-    {
-      "properties": {
-        "id": {
-          "description":  "The unique id for this object that can be persisted in the knowledge base as an IRI, so it must conform to a full URI or a CURIE that references an appropriate namespace.",
-          "$ref": "bblocks://ogc.ogc-utils.iri-or-curie"
+  "properties": {
+    "id": {
+      "description": "The unique id for this object that can be persisted in the knowledge base as an IRI, so it must conform to a full URI or a CURIE that references an appropriate namespace.",
+      "$ref": "bblocks://ogc.ogc-utils.iri-or-curie"
+    },
+    "nodes": {
+      "anyOf": [
+        {
+          "allOf": [
+            {
+              "$ref": "#/$defs/FeatureCollectionOptions"
+            },
+            {
+              "properties": {
+                "features": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/$defs/PointFeature"
+                  }
+                }
+              }
+            }
+          ]
         },
-
-        "nodes": {
+        {
           "type": "array",
           "items": {
             "$ref": "#/$defs/PointFeature"
           }
-        },
-        "edges": {
+        }
+      ]
+    },
+    "edges": {
+      "anyOf": [
+        {
           "type": "array",
           "items": {
             "$ref": "#/$defs/TopoLine"
           }
+        },
+        {
+          "allOf": [
+            {
+              "$ref": "#/$defs/FeatureCollectionOptions"
+            },
+            {
+              "properties": {
+                "features": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/$defs/TopoLine"
+                  }
+                }
+              }
+            }
+          ]
         }
-      }
+      ]
     }
-  ]
+  }
 }
