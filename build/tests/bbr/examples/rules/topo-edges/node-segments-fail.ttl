@@ -1,0 +1,17 @@
+@prefix : <https://example.com/edges/> .
+@prefix geojson: <https://purl.org/geojson/vocab#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<file:///github/workspace/node-segment-mismatch> :edges <file:///github/workspace/LineP1P2> ;
+    :nodes <file:///github/workspace/e1> .
+
+<file:///github/workspace/LineP1P2> :topology [ :type "LineString" ;
+            geojson:relatedFeatures ( <file:///github/workspace/e1> <file:///github/workspace/e2> ) ] ;
+    :type "Feature" .
+
+<file:///github/workspace/e1> :geometry [ :type "Point" ;
+            geojson:coordinates ( 1.5132e+02 -3.3825e+01 ) ] ;
+    :name "waypoint 1" ;
+    :type "Feature" .
+

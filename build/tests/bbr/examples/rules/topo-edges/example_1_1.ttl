@@ -1,0 +1,24 @@
+@prefix : <https://example.com/edges/> .
+@prefix eg: <http://test-data/> .
+@prefix geojson: <https://purl.org/geojson/vocab#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+eg:eg1 :edges <http://example.com/nodes/LineP1P2> ;
+    :nodes <http://example.com/nodes/P1>,
+        <http://example.com/nodes/P2> .
+
+<http://example.com/nodes/LineP1P2> :topology [ :type "LineString" ;
+            geojson:relatedFeatures ( <http://example.com/nodes/P1> <http://example.com/nodes/P2> ) ] ;
+    :type "Feature" .
+
+<http://example.com/nodes/P1> :geometry [ :type "Point" ;
+            geojson:coordinates ( 1.5132e+02 -3.3825e+01 ) ] ;
+    :name "waypoint 1" ;
+    :type "Feature" .
+
+<http://example.com/nodes/P2> :geometry [ :type "Point" ;
+            geojson:coordinates ( 1.5134e+02 -3.2825e+01 ) ] ;
+    :name "waypoint 2" ;
+    :type "Feature" .
+

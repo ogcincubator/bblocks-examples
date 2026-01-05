@@ -1,0 +1,53 @@
+$schema: http://json-schema.org/draft/2020-12/schema
+title: Nodes and Edges bundle
+$defs:
+  TopoLine:
+    $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-line/schema.yaml
+  FeatureOptions:
+    $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml#FeatureOptions
+  FeatureCollectionOptions:
+    $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml#FeatureCollectionOptions
+  PointFeature:
+    allOf:
+    - $ref: '#/$defs/FeatureOptions'
+    - properties:
+        geometry:
+          allOf:
+          - properties:
+              type:
+                type: string
+                const: Point
+      required:
+      - geometry
+properties:
+  id:
+    description: The unique id for this object that can be persisted in the knowledge
+      base as an IRI, so it must conform to a full URI or a CURIE that references
+      an appropriate namespace.
+    $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml
+    x-jsonld-id: '@id'
+  nodes:
+    anyOf:
+    - allOf:
+      - $ref: '#/$defs/FeatureCollectionOptions'
+      - properties:
+          features:
+            type: array
+            items:
+              $ref: '#/$defs/PointFeature'
+    - type: array
+      items:
+        $ref: '#/$defs/PointFeature'
+  edges:
+    anyOf:
+    - type: array
+      items:
+        $ref: '#/$defs/TopoLine'
+    - allOf:
+      - $ref: '#/$defs/FeatureCollectionOptions'
+      - properties:
+          features:
+            type: array
+            items:
+              $ref: '#/$defs/TopoLine'
+x-jsonld-vocab: https://example.com/edges/

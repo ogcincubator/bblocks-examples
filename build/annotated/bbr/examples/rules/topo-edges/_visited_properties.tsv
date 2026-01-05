@@ -1,0 +1,107 @@
+path	@id
+/id	@id
+/nodes	
+/nodes/type	@type
+/nodes/features	https://purl.org/geojson/vocab#features
+/nodes/features/type	@type
+/nodes/features/id	@id
+/nodes/features/properties	@nest
+/nodes/features/geometry	https://purl.org/geojson/vocab#geometry
+/nodes/features/geometry/type	@type
+/nodes/features/geometry/coordinates	https://purl.org/geojson/vocab#coordinates
+/nodes/features/geometry/bbox	https://purl.org/geojson/vocab#bbox
+/nodes/features/geometry/geometries	
+/nodes/features/geometry/geometries/type	@type
+/nodes/features/geometry/geometries/coordinates	https://purl.org/geojson/vocab#coordinates
+/nodes/features/geometry/geometries/bbox	https://purl.org/geojson/vocab#bbox
+/nodes/features/bbox	https://purl.org/geojson/vocab#bbox
+/nodes/bbox	
+/nodes/links	http://www.w3.org/2000/01/rdf-schema#seeAlso
+/nodes/links/href	http://www.w3.org/ns/oa#hasTarget
+/nodes/links/rel	http://www.iana.org/assignments/relation
+/nodes/links/anchor	
+/nodes/links/type	http://purl.org/dc/terms/type
+/nodes/links/hreflang	http://purl.org/dc/terms/language
+/nodes/links/title	http://www.w3.org/2000/01/rdf-schema#label
+/nodes/links/length	http://purl.org/dc/terms/extent
+/nodes/timeStamp	
+/nodes/numberMatched	
+/nodes/numberReturned	
+/nodes/features/links	http://www.w3.org/2000/01/rdf-schema#seeAlso
+/nodes/features/links/href	http://www.w3.org/ns/oa#hasTarget
+/nodes/features/links/rel	http://www.iana.org/assignments/relation
+/nodes/features/links/anchor	
+/nodes/features/links/type	http://purl.org/dc/terms/type
+/nodes/features/links/hreflang	http://purl.org/dc/terms/language
+/nodes/features/links/title	http://www.w3.org/2000/01/rdf-schema#label
+/nodes/features/links/length	http://purl.org/dc/terms/extent
+/nodes/featureType	https://purl.org/geojson/vocab#collectionFeatureType
+/nodes/geometryDimension	
+/nodes/coordRefSys	
+/nodes/features/featureType	@type
+/nodes/features/time	http://purl.org/dc/terms/time
+/nodes/features/time/date	http://www.w3.org/2006/time#hasTime
+/nodes/features/time/timestamp	http://www.w3.org/2006/time#hasTime
+/nodes/features/time/interval	http://www.w3.org/2006/time#hasTime
+/nodes/features/coordRefSys	http://www.opengis.net/def/glossary/term/CoordinateReferenceSystemCRS
+/nodes/features/coordRefSys/type	
+/nodes/features/coordRefSys/href	
+/nodes/features/coordRefSys/epoch	
+/nodes/features/place	http://purl.org/dc/terms/spatial
+/nodes/features/place/type	
+/nodes/features/place/coordRefSys	
+/nodes/features/place/measures	
+/nodes/features/place/coordinates	
+/nodes/features/place/bbox	
+/nodes/features/place/geometries	
+/nodes/features/place/base	
+/nodes/features/place/lower	
+/nodes/features/place/upper	
+/nodes/features/place/prisms	
+/nodes/features/place/geometries/type	
+/nodes/features/geometry/coordRefSys	
+/nodes/features/geometry/measures	
+/edges	
+/edges/type	@type
+/edges/id	@id
+/edges/properties	@nest
+/edges/geometry	https://purl.org/geojson/vocab#geometry
+/edges/geometry/type	@type
+/edges/geometry/coordinates	https://purl.org/geojson/vocab#coordinates
+/edges/geometry/bbox	https://purl.org/geojson/vocab#bbox
+/edges/geometry/geometries	
+/edges/geometry/geometries/type	@type
+/edges/geometry/geometries/coordinates	https://purl.org/geojson/vocab#coordinates
+/edges/geometry/geometries/bbox	https://purl.org/geojson/vocab#bbox
+/edges/bbox	https://purl.org/geojson/vocab#bbox
+/edges/links	http://www.w3.org/2000/01/rdf-schema#seeAlso
+/edges/links/href	http://www.w3.org/ns/oa#hasTarget
+/edges/links/rel	http://www.iana.org/assignments/relation
+/edges/links/anchor	
+/edges/links/type	http://purl.org/dc/terms/type
+/edges/links/hreflang	http://purl.org/dc/terms/language
+/edges/links/title	http://www.w3.org/2000/01/rdf-schema#label
+/edges/links/length	http://purl.org/dc/terms/extent
+/edges/featureType	@type
+/edges/time	http://purl.org/dc/terms/time
+/edges/time/date	http://www.w3.org/2006/time#hasTime
+/edges/time/timestamp	http://www.w3.org/2006/time#hasTime
+/edges/time/interval	http://www.w3.org/2006/time#hasTime
+/edges/coordRefSys	http://www.opengis.net/def/glossary/term/CoordinateReferenceSystemCRS
+/edges/place	http://purl.org/dc/terms/spatial
+/edges/place/type	
+/edges/place/coordRefSys	
+/edges/place/measures	
+/edges/place/coordinates	
+/edges/place/bbox	
+/edges/place/geometries	
+/edges/place/base	
+/edges/place/lower	
+/edges/place/upper	
+/edges/place/prisms	
+/edges/geometry/coordRefSys	
+/edges/geometry/measures	
+/edges/topology	https://purl.org/geojson/vocab#topology
+/edges/topology/type	@type
+/edges/topology/references	https://purl.org/geojson/vocab#relatedFeatures
+/edges/features	

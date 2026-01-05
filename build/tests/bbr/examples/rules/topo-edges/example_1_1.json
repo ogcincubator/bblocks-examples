@@ -1,0 +1,51 @@
+{
+  "@context": {
+    "eg": "http://test-data/"
+  },
+  "id": "eg:eg1",
+  "nodes": [
+    {
+      "id": "P1",
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.32,
+          -33.825
+        ]
+      },
+      "properties": {
+        "name": "waypoint 1"
+      }
+    },
+    {
+      "id": "P2",
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.34,
+          -32.825
+        ]
+      },
+      "properties": {
+        "name": "waypoint 2"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "type": "Feature",
+      "id": "LineP1P2",
+      "geometry": null,
+      "topology": {
+        "type": "LineString",
+        "references": [
+          "P1",
+          "P2"
+        ]
+      },
+      "properties": {}
+    }
+  ]
+}
