@@ -38,19 +38,22 @@ path	@id
 /nodes/featureType	https://purl.org/geojson/vocab#collectionFeatureType
 /nodes/geometryDimension	
 /nodes/coordRefSys	
+/nodes/coordRefSys/type	
+/nodes/coordRefSys/href	
+/nodes/coordRefSys/epoch	
 /nodes/features/featureType	@type
 /nodes/features/time	http://purl.org/dc/terms/time
 /nodes/features/time/date	http://www.w3.org/2006/time#hasTime
 /nodes/features/time/timestamp	http://www.w3.org/2006/time#hasTime
 /nodes/features/time/interval	http://www.w3.org/2006/time#hasTime
 /nodes/features/coordRefSys	http://www.opengis.net/def/glossary/term/CoordinateReferenceSystemCRS
-/nodes/features/coordRefSys/type	
-/nodes/features/coordRefSys/href	
-/nodes/features/coordRefSys/epoch	
 /nodes/features/place	http://purl.org/dc/terms/spatial
 /nodes/features/place/type	
 /nodes/features/place/coordRefSys	
 /nodes/features/place/measures	
+/nodes/features/place/measures/enabled	
+/nodes/features/place/measures/unit	
+/nodes/features/place/measures/description	
 /nodes/features/place/coordinates	
 /nodes/features/place/bbox	
 /nodes/features/place/geometries	
@@ -61,6 +64,9 @@ path	@id
 /nodes/features/place/geometries/type	
 /nodes/features/geometry/coordRefSys	
 /nodes/features/geometry/measures	
+/nodes/features/geometry/measures/enabled	
+/nodes/features/geometry/measures/unit	
+/nodes/features/geometry/measures/description	
 /edges	
 /edges/type	@type
 /edges/id	@id
@@ -92,6 +98,9 @@ path	@id
 /edges/place/type	
 /edges/place/coordRefSys	
 /edges/place/measures	
+/edges/place/measures/enabled	
+/edges/place/measures/unit	
+/edges/place/measures/description	
 /edges/place/coordinates	
 /edges/place/bbox	
 /edges/place/geometries	
@@ -101,6 +110,9 @@ path	@id
 /edges/place/prisms	
 /edges/geometry/coordRefSys	
 /edges/geometry/measures	
+/edges/geometry/measures/enabled	
+/edges/geometry/measures/unit	
+/edges/geometry/measures/description	
 /edges/topology	https://purl.org/geojson/vocab#topology
 /edges/topology/type	@type
 /edges/topology/references	https://purl.org/geojson/vocab#relatedFeatures

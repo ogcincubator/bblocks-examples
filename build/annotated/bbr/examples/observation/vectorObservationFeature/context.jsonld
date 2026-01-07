@@ -10,46 +10,34 @@
     "Point": "geojson:Point",
     "Polygon": "geojson:Polygon",
     "features": {
+      "@container": "@set",
+      "@id": "sosa:hasMember",
+      "@type": "@id",
       "@context": {
-        "features": {
-          "@id": "sosa:hasMember",
-          "@type": "@id"
-        },
-        "hasResult": {
+        "Prism": {
+          "@id": "geojson:Prism",
           "@context": {
-            "pose": {
-              "@context": {
-                "position": {
-                  "@context": {
-                    "lat": "geo:lat",
-                    "lon": "geo:long",
-                    "h": "geopose:h"
-                  },
-                  "@id": "geopose:position"
-                },
-                "angles": {
-                  "@context": {
-                    "yaw": "geopose:yaw",
-                    "pitch": "geopose:pitch",
-                    "roll": "geopose:roll"
-                  },
-                  "@id": "geopose:angles"
-                }
-              },
-              "@id": "resultschema:pose"
-            },
-            "distance": "resultschema:distance"
-          },
-          "@id": "sosa:hasResult"
+            "base": "geojson:prismBase",
+            "lower": "geojson:prismLower",
+            "upper": "geojson:prismUpper"
+          }
+        },
+        "MultiPrism": {
+          "@id": "geojson:MultiPrism",
+          "@context": {
+            "prisms": "geojson:prisms"
+          }
         }
-      },
-      "@id": "sosa:hasMember"
+      }
     },
     "type": "@type",
     "id": "@id",
     "properties": "@nest",
     "geometry": "geojson:geometry",
-    "bbox": "geojson:bbox",
+    "bbox": {
+      "@container": "@list",
+      "@id": "geojson:bbox"
+    },
     "links": {
       "@context": {
         "href": {
@@ -223,12 +211,6 @@
       "@type": "@id"
     },
     "hasMember": {
-      "@context": {
-        "features": {
-          "@id": "sosa:hasMember",
-          "@type": "@id"
-        }
-      },
       "@id": "sosa:hasMember",
       "@type": "@id"
     },
@@ -246,7 +228,31 @@
     },
     "hasResult": {
       "@id": "sosa:hasResult",
-      "@type": "@id"
+      "@type": "@id",
+      "@context": {
+        "pose": {
+          "@context": {
+            "position": {
+              "@context": {
+                "lat": "geo:lat",
+                "lon": "geo:long",
+                "h": "geopose:h"
+              },
+              "@id": "geopose:position"
+            },
+            "angles": {
+              "@context": {
+                "yaw": "geopose:yaw",
+                "pitch": "geopose:pitch",
+                "roll": "geopose:roll"
+              },
+              "@id": "geopose:angles"
+            }
+          },
+          "@id": "resultschema:pose"
+        },
+        "distance": "resultschema:distance"
+      }
     },
     "hasResultQuality": {
       "@id": "sosa:hasResultQuality",

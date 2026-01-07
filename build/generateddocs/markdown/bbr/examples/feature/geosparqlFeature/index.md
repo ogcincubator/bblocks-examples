@@ -116,11 +116,21 @@ Links to the schema:
     },
     "type": "@type",
     "id": "@id",
+    "properties": "@nest",
     "geometry": {
+      "@context": {
+        "coordinates": {
+          "@container": "@list",
+          "@id": "geojson:coordinates"
+        }
+      },
       "@id": "geojson:geometry",
       "@type": "@json"
     },
-    "bbox": "geojson:bbox",
+    "bbox": {
+      "@container": "@list",
+      "@id": "geojson:bbox"
+    },
     "links": {
       "@context": {
         "href": {

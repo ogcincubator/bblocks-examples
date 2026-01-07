@@ -251,6 +251,8 @@ Links to the schema:
       "@type": "@id"
     },
     "hasResult": {
+      "@id": "sosa:hasResult",
+      "@type": "@id",
       "@context": {
         "pose": {
           "@context": {
@@ -274,8 +276,7 @@ Links to the schema:
           "@id": "resultschema:pose"
         },
         "distance": "resultschema:distance"
-      },
-      "@id": "sosa:hasResult"
+      }
     },
     "hasResultQuality": {
       "@id": "sosa:hasResultQuality",

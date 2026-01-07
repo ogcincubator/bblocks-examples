@@ -40,7 +40,7 @@
   "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/rules/topo-edges/context.jsonld",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/rules/topo-edges/",
   "rdfData": [],
-  "validationPassed": false,
+  "validationPassed": true,
   "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/rules/topo-edges/",
   "transforms": [
     {
@@ -99,7 +99,7 @@
         },
         {
           "language": "ttl",
-          "code": "@prefix : <https://example.com/edges/> .\n@prefix eg: <http://test-data/> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\neg:eg1 :edges <http://example.com/nodes/LineP1P2> ;\n    :nodes <http://example.com/nodes/P1>,\n        <http://example.com/nodes/P2> .\n\n<http://example.com/nodes/LineP1P2> :topology [ :type \"LineString\" ;\n            geojson:relatedFeatures ( <http://example.com/nodes/P1> <http://example.com/nodes/P2> ) ] ;\n    :type \"Feature\" .\n\n<http://example.com/nodes/P1> :geometry [ :type \"Point\" ;\n            geojson:coordinates ( 1.5132e+02 -3.3825e+01 ) ] ;\n    :name \"waypoint 1\" ;\n    :type \"Feature\" .\n\n<http://example.com/nodes/P2> :geometry [ :type \"Point\" ;\n            geojson:coordinates ( 1.5134e+02 -3.2825e+01 ) ] ;\n    :name \"waypoint 2\" ;\n    :type \"Feature\" .\n\n",
+          "code": "@prefix : <https://example.com/edges/> .\n@prefix eg: <http://test-data/> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\neg:eg1 :edges <http://example.com/nodes/LineP1P2> ;\n    :nodes <http://example.com/nodes/P1>,\n        <http://example.com/nodes/P2> .\n\n<http://example.com/nodes/LineP1P2> a geojson:Feature ;\n    geojson:topology [ a geojson:LineString ;\n            geojson:relatedFeatures ( <http://example.com/nodes/P1> <http://example.com/nodes/P2> ) ] .\n\n<http://example.com/nodes/P1> a geojson:Feature ;\n    :name \"waypoint 1\" ;\n    geojson:geometry [ a geojson:Point ;\n            geojson:coordinates ( 1.5132e+02 -3.3825e+01 ) ] .\n\n<http://example.com/nodes/P2> a geojson:Feature ;\n    :name \"waypoint 2\" ;\n    geojson:geometry [ a geojson:Point ;\n            geojson:coordinates ( 1.5134e+02 -3.2825e+01 ) ] .\n\n",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/rules/topo-edges/example_1_1.ttl"
         }
       ]

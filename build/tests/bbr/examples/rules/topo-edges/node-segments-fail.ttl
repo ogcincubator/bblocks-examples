@@ -6,12 +6,12 @@
 <file:///github/workspace/node-segment-mismatch> :edges <file:///github/workspace/LineP1P2> ;
     :nodes <file:///github/workspace/e1> .
 
-<file:///github/workspace/LineP1P2> :topology [ :type "LineString" ;
-            geojson:relatedFeatures ( <file:///github/workspace/e1> <file:///github/workspace/e2> ) ] ;
-    :type "Feature" .
+<file:///github/workspace/LineP1P2> a geojson:Feature ;
+    geojson:topology [ a geojson:LineString ;
+            geojson:relatedFeatures ( <file:///github/workspace/e1> <file:///github/workspace/e2> ) ] .
 
-<file:///github/workspace/e1> :geometry [ :type "Point" ;
-            geojson:coordinates ( 1.5132e+02 -3.3825e+01 ) ] ;
+<file:///github/workspace/e1> a geojson:Feature ;
     :name "waypoint 1" ;
-    :type "Feature" .
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.5132e+02 -3.3825e+01 ) ] .
 

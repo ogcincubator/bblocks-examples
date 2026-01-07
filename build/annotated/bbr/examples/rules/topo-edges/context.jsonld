@@ -4,6 +4,7 @@
     "id": "@id",
     "nodes": {
       "@context": {
+        "type": "@type",
         "links": {
           "@context": {
             "href": {
@@ -26,6 +27,7 @@
         },
         "featureType": "@type",
         "coordRefSys": "http://www.opengis.net/def/glossary/term/CoordinateReferenceSystemCRS",
+        "geometry": "geojson:geometry",
         "time": {
           "@context": {
             "date": {
@@ -48,12 +50,8 @@
     },
     "edges": {
       "@context": {
-        "geometry": {
-          "@context": {
-            "type": "@type"
-          },
-          "@id": "geojson:geometry"
-        },
+        "type": "@type",
+        "geometry": "geojson:geometry",
         "links": {
           "@context": {
             "href": {
@@ -101,7 +99,9 @@
               "@type": "@id",
               "@container": "@list"
             }
-          }
+          },
+          "@type": "@id",
+          "@id": "geojson:topology"
         }
       }
     },

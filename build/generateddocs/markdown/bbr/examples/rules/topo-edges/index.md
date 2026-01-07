@@ -142,19 +142,19 @@ eg:eg1 :edges <http://example.com/nodes/LineP1P2> ;
     :nodes <http://example.com/nodes/P1>,
         <http://example.com/nodes/P2> .
 
-<http://example.com/nodes/LineP1P2> :topology [ :type "LineString" ;
-            geojson:relatedFeatures ( <http://example.com/nodes/P1> <http://example.com/nodes/P2> ) ] ;
-    :type "Feature" .
+<http://example.com/nodes/LineP1P2> a geojson:Feature ;
+    geojson:topology [ a geojson:LineString ;
+            geojson:relatedFeatures ( <http://example.com/nodes/P1> <http://example.com/nodes/P2> ) ] .
 
-<http://example.com/nodes/P1> :geometry [ :type "Point" ;
-            geojson:coordinates ( 1.5132e+02 -3.3825e+01 ) ] ;
+<http://example.com/nodes/P1> a geojson:Feature ;
     :name "waypoint 1" ;
-    :type "Feature" .
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.5132e+02 -3.3825e+01 ) ] .
 
-<http://example.com/nodes/P2> :geometry [ :type "Point" ;
-            geojson:coordinates ( 1.5134e+02 -3.2825e+01 ) ] ;
+<http://example.com/nodes/P2> a geojson:Feature ;
     :name "waypoint 2" ;
-    :type "Feature" .
+    geojson:geometry [ a geojson:Point ;
+            geojson:coordinates ( 1.5134e+02 -3.2825e+01 ) ] .
 
 
 ```
@@ -233,6 +233,7 @@ Links to the schema:
     "id": "@id",
     "nodes": {
       "@context": {
+        "type": "@type",
         "links": {
           "@context": {
             "href": {
@@ -255,6 +256,7 @@ Links to the schema:
         },
         "featureType": "@type",
         "coordRefSys": "http://www.opengis.net/def/glossary/term/CoordinateReferenceSystemCRS",
+        "geometry": "geojson:geometry",
         "time": {
           "@context": {
             "date": {
@@ -277,12 +279,8 @@ Links to the schema:
     },
     "edges": {
       "@context": {
-        "geometry": {
-          "@context": {
-            "type": "@type"
-          },
-          "@id": "geojson:geometry"
-        },
+        "type": "@type",
+        "geometry": "geojson:geometry",
         "links": {
           "@context": {
             "href": {
@@ -330,7 +328,9 @@ Links to the schema:
               "@type": "@id",
               "@container": "@list"
             }
-          }
+          },
+          "@type": "@id",
+          "@id": "geojson:topology"
         }
       }
     },
