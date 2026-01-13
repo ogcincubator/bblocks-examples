@@ -5,12 +5,10 @@ on:
     branches:
       - master
       - main
-
 permissions:
   contents: write
   pages: write
   id-token: write
-
 jobs:
   validate-and-process:
     uses: opengeospatial/bblocks-postprocess/.github/workflows/validate-and-process.yml@master
