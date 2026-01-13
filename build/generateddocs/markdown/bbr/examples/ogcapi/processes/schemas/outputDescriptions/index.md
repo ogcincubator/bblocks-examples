@@ -28,6 +28,9 @@ Links to the schema:
   "@context": {
     "@vocab": "https://w3id.org/ogc/api/processes/",
     "schema": "proc:schema",
+    "title": "dct:title",
+    "description": "dct:description",
+    "keywords": "proc:keywords",
     "nullable": "proc:nullable",
     "type": "proc:type",
     "$ref": {
