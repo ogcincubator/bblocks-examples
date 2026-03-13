@@ -22,6 +22,7 @@
     "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputSchema/schema.json"
   },
   "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/ogcapi/processes/schemas/buffer-geometry/outputSchema/schema.yaml",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputSchema/resolvedProperties.json",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/ogcapi/processes/schemas/buffer-geometry/outputSchema/",
   "rdfData": [],
   "validationPassed": true,

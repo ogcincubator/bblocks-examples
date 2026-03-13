@@ -40,6 +40,7 @@
   },
   "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservation/schema.yaml",
   "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservation/context.jsonld",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/resolvedProperties.json",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservation/",
   "rdfData": [],
   "validationPassed": true,

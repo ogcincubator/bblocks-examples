@@ -20,8 +20,8 @@
   "group": "Examples",
   "shaclShapes": {},
   "dependsOn": [
-    "ogc.geo.features.feature",
-    "ogc.bbr.examples.feature.propertySet"
+    "ogc.bbr.examples.feature.propertySet",
+    "ogc.geo.features.feature"
   ],
   "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/context.jsonld",
   "schema": {
@@ -30,6 +30,7 @@
   },
   "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geosparqlFeature/schema.yaml",
   "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geosparqlFeature/context.jsonld",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/resolvedProperties.json",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geosparqlFeature/",
   "rdfData": [],
   "validationPassed": true,

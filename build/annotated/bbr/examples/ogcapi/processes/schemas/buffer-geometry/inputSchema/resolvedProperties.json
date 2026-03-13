@@ -1,0 +1,155 @@
+[
+  {
+    "path": "/geometry",
+    "required": true,
+    "sources": [
+      "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputSchema"
+    ]
+  },
+  {
+    "path": "/geometry/type",
+    "id": "@type",
+    "required": true,
+    "schema_type": "string",
+    "sources": [
+      "bblocks://ogc.geo.common.data_types.geojson",
+      "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputSchema"
+    ],
+    "effectiveId": "@type"
+  },
+  {
+    "path": "/geometry/id",
+    "id": "@id",
+    "sources": [
+      "bblocks://ogc.geo.common.data_types.geojson"
+    ],
+    "effectiveId": "@id"
+  },
+  {
+    "path": "/geometry/properties",
+    "id": "@nest",
+    "required": true,
+    "sources": [
+      "bblocks://ogc.geo.common.data_types.geojson"
+    ],
+    "effectiveId": "@nest"
+  },
+  {
+    "path": "/geometry/geometry",
+    "id": "https://purl.org/geojson/vocab#geometry",
+    "required": true,
+    "sources": [
+      "bblocks://ogc.geo.common.data_types.geojson"
+    ],
+    "effectiveId": "https://purl.org/geojson/vocab#geometry"
+  },
+  {
+    "path": "/geometry/geometry/type",
+    "id": "@type",
+    "required": true,
+    "schema_type": "string",
+    "sources": [
+      "bblocks://ogc.geo.common.data_types.geojson"
+    ],
+    "effectiveId": "@type"
+  },
+  {
+    "path": "/geometry/geometry/coordinates",
+    "id": "https://purl.org/geojson/vocab#coordinates",
+    "required": true,
+    "schema_type": "array",
+    "sources": [
+      "bblocks://ogc.geo.common.data_types.geojson"
+    ],
+    "effectiveId": "https://purl.org/geojson/vocab#coordinates"
+  },
+  {
+    "path": "/geometry/geometry/bbox",
+    "id": "https://purl.org/geojson/vocab#bbox",
+    "schema_type": "array",
+    "sources": [
+      "bblocks://ogc.geo.common.data_types.geojson"
+    ],
+    "effectiveId": "https://purl.org/geojson/vocab#bbox"
+  },
+  {
+    "path": "/geometry/geometry/geometries",
+    "required": true,
+    "schema_type": "array",
+    "sources": [
+      "bblocks://ogc.geo.common.data_types.geojson"
+    ]
+  },
+  {
+    "path": "/geometry/geometry/geometries/type",
+    "id": "@type",
+    "required": true,
+    "schema_type": "string",
+    "sources": [
+      "bblocks://ogc.geo.common.data_types.geojson"
+    ],
+    "effectiveId": "@type"
+  },
+  {
+    "path": "/geometry/geometry/geometries/coordinates",
+    "id": "https://purl.org/geojson/vocab#coordinates",
+    "required": true,
+    "schema_type": "array",
+    "sources": [
+      "bblocks://ogc.geo.common.data_types.geojson"
+    ],
+    "effectiveId": "https://purl.org/geojson/vocab#coordinates"
+  },
+  {
+    "path": "/geometry/geometry/geometries/bbox",
+    "id": "https://purl.org/geojson/vocab#bbox",
+    "schema_type": "array",
+    "sources": [
+      "bblocks://ogc.geo.common.data_types.geojson"
+    ],
+    "effectiveId": "https://purl.org/geojson/vocab#bbox"
+  },
+  {
+    "path": "/geometry/bbox",
+    "id": "https://purl.org/geojson/vocab#bbox",
+    "schema_type": "array",
+    "sources": [
+      "bblocks://ogc.geo.common.data_types.geojson"
+    ],
+    "effectiveId": "https://purl.org/geojson/vocab#bbox"
+  },
+  {
+    "path": "/distance",
+    "required": true,
+    "schema_type": "object",
+    "sources": [
+      "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputSchema"
+    ]
+  },
+  {
+    "path": "/distance/type",
+    "schema_type": "string",
+    "sources": [
+      "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputSchema"
+    ]
+  },
+  {
+    "path": "/distance/minimum",
+    "schema_type": "number",
+    "sources": [
+      "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputSchema"
+    ]
+  },
+  {
+    "path": "/units",
+    "enum": [
+      "meters",
+      "kilometers",
+      "feet",
+      "miles"
+    ],
+    "sources": [
+      "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputSchema"
+    ]
+  }
+]

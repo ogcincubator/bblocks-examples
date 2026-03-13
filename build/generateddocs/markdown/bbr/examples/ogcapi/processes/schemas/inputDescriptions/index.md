@@ -52,30 +52,6 @@ Links to the schema:
       "@id": "proc:enum",
       "@container": "@set"
     },
-    "geometry": {
-      "@context": {
-        "schema": {
-          "@context": {
-            "type": "@type",
-            "id": "@id",
-            "properties": "@nest",
-            "geometry": {
-              "@context": {
-                "coordinates": {
-                  "@container": "@list",
-                  "@id": "geojson:coordinates"
-                }
-              },
-              "@id": "geojson:geometry"
-            },
-            "bbox": {
-              "@container": "@list",
-              "@id": "geojson:bbox"
-            }
-          }
-        }
-      }
-    },
     "Feature": "geojson:Feature",
     "FeatureCollection": "geojson:FeatureCollection",
     "GeometryCollection": "geojson:GeometryCollection",

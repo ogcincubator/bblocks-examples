@@ -18,9 +18,9 @@
   ],
   "shaclShapes": {},
   "dependsOn": [
+    "ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputDescription",
     "ogc.api.processes.v1.schemas.process",
-    "ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputDescription",
-    "ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputDescription"
+    "ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputDescription"
   ],
   "schema": {
     "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/processDescription/schema.yaml",
@@ -28,6 +28,7 @@
   },
   "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/ogcapi/processes/schemas/buffer-geometry/processDescription/schema.yaml",
   "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/processDescription/context.jsonld",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/processDescription/resolvedProperties.json",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/ogcapi/processes/schemas/buffer-geometry/processDescription/",
   "rdfData": [],
   "validationPassed": true,

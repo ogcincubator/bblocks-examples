@@ -1,0 +1,869 @@
+[
+  {
+    "path": "/additionalParameters",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.descriptionType"
+    ]
+  },
+  {
+    "path": "/additionalParameters/href",
+    "schema_type": "string",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.metadata"
+    ]
+  },
+  {
+    "path": "/additionalParameters/role",
+    "schema_type": "string",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.metadata"
+    ]
+  },
+  {
+    "path": "/additionalParameters/title",
+    "schema_type": "string",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.metadata"
+    ]
+  },
+  {
+    "path": "/additionalParameters/parameters",
+    "schema_type": "array",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.descriptionType"
+    ]
+  },
+  {
+    "path": "/additionalParameters/parameters/name",
+    "required": true,
+    "schema_type": "string",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.additionalParameter"
+    ]
+  },
+  {
+    "path": "/additionalParameters/parameters/value",
+    "required": true,
+    "schema_type": "array",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.additionalParameter"
+    ]
+  },
+  {
+    "path": "/description",
+    "schema_type": "string",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.descriptionType"
+    ]
+  },
+  {
+    "path": "/keywords",
+    "schema_type": "array",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.descriptionType"
+    ]
+  },
+  {
+    "path": "/metadata",
+    "schema_type": "array",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.descriptionType"
+    ]
+  },
+  {
+    "path": "/metadata/href",
+    "schema_type": "string",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.metadata"
+    ]
+  },
+  {
+    "path": "/metadata/role",
+    "schema_type": "string",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.metadata"
+    ]
+  },
+  {
+    "path": "/metadata/title",
+    "schema_type": "string",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.metadata"
+    ]
+  },
+  {
+    "path": "/title",
+    "schema_type": "string",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.descriptionType"
+    ]
+  },
+  {
+    "path": "/id",
+    "required": true,
+    "schema_type": "string",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.processSummary"
+    ]
+  },
+  {
+    "path": "/jobControlOptions",
+    "schema_type": "array",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.processSummary"
+    ]
+  },
+  {
+    "path": "/links",
+    "schema_type": "array",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.processSummary"
+    ]
+  },
+  {
+    "path": "/links/href",
+    "required": true,
+    "schema_type": "string",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.link"
+    ]
+  },
+  {
+    "path": "/links/hreflang",
+    "schema_type": "string",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.link"
+    ]
+  },
+  {
+    "path": "/links/rel",
+    "schema_type": "string",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.link"
+    ]
+  },
+  {
+    "path": "/links/title",
+    "schema_type": "string",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.link"
+    ]
+  },
+  {
+    "path": "/links/type",
+    "schema_type": "string",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.link"
+    ]
+  },
+  {
+    "path": "/outputTransmission",
+    "schema_type": "array",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.processSummary"
+    ]
+  },
+  {
+    "path": "/version",
+    "required": true,
+    "schema_type": "string",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.processSummary"
+    ]
+  },
+  {
+    "path": "/inputs",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.process",
+      "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.processDescription"
+    ]
+  },
+  {
+    "path": "/inputs/maxOccurs",
+    "id": "https://w3id.org/ogc/api/processes/maxOccurs",
+    "vocab": "https://w3id.org/ogc/api/processes/",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.inputDescription"
+    ],
+    "effectiveId": "https://w3id.org/ogc/api/processes/maxOccurs"
+  },
+  {
+    "path": "/inputs/minOccurs",
+    "id": "https://w3id.org/ogc/api/processes/minOccurs",
+    "vocab": "https://w3id.org/ogc/api/processes/",
+    "schema_type": "integer",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.inputDescription"
+    ],
+    "effectiveId": "https://w3id.org/ogc/api/processes/minOccurs"
+  },
+  {
+    "path": "/inputs/schema",
+    "id": "https://w3id.org/ogc/api/processes/schema",
+    "vocab": "https://w3id.org/ogc/api/processes/",
+    "required": true,
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.inputDescription"
+    ],
+    "effectiveId": "https://w3id.org/ogc/api/processes/schema"
+  },
+  {
+    "path": "/inputs/schema/$ref",
+    "vocab": "https://w3id.org/ogc/api/schema/",
+    "required": true,
+    "schema_type": "string",
+    "format": "uri-reference",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.reference"
+    ],
+    "effectiveId": "https://w3id.org/ogc/api/schema/$ref"
+  },
+  {
+    "path": "/inputs/schema/additionalProperties",
+    "vocab": "https://w3id.org/ogc/api/schema/",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.schema"
+    ],
+    "effectiveId": "https://w3id.org/ogc/api/schema/additionalProperties"
+  },
+  {
+    "path": "/inputs/schema/allOf",
+    "vocab": "https://w3id.org/ogc/api/schema/",
+    "schema_type": "array",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.schema"
+    ],
+    "effectiveId": "https://w3id.org/ogc/api/schema/allOf"
+  },
+  {
+    "path": "/inputs/schema/anyOf",
+    "vocab": "https://w3id.org/ogc/api/schema/",
+    "schema_type": "array",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.schema"
+    ],
+    "effectiveId": "https://w3id.org/ogc/api/schema/anyOf"
+  },
+  {
+    "path": "/inputs/schema/contentEncoding",
+    "vocab": "https://w3id.org/ogc/api/schema/",
+    "schema_type": "string",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.schema"
+    ],
+    "effectiveId": "https://w3id.org/ogc/api/schema/contentEncoding"
+  },
+  {
+    "path": "/inputs/schema/contentMediaType",
+    "vocab": "https://w3id.org/ogc/api/schema/",
+    "schema_type": "string",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.schema"
+    ],
+    "effectiveId": "https://w3id.org/ogc/api/schema/contentMediaType"
+  },
+  {
+    "path": "/inputs/schema/contentSchema",
+    "vocab": "https://w3id.org/ogc/api/schema/",
+    "schema_type": "string",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.schema"
+    ],
+    "effectiveId": "https://w3id.org/ogc/api/schema/contentSchema"
+  },
+  {
+    "path": "/inputs/schema/default",
+    "vocab": "https://w3id.org/ogc/api/schema/",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.schema"
+    ],
+    "effectiveId": "https://w3id.org/ogc/api/schema/default"
+  },
+  {
+    "path": "/inputs/schema/deprecated",
+    "vocab": "https://w3id.org/ogc/api/schema/",
+    "schema_type": "boolean",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.schema"
+    ],
+    "effectiveId": "https://w3id.org/ogc/api/schema/deprecated"
+  },
+  {
+    "path": "/inputs/schema/description",
+    "vocab": "https://w3id.org/ogc/api/schema/",
+    "schema_type": "string",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.schema"
+    ],
+    "effectiveId": "https://w3id.org/ogc/api/schema/description"
+  },
+  {
+    "path": "/inputs/schema/enum",
+    "vocab": "https://w3id.org/ogc/api/schema/",
+    "schema_type": "array",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.schema"
+    ],
+    "effectiveId": "https://w3id.org/ogc/api/schema/enum"
+  },
+  {
+    "path": "/inputs/schema/example",
+    "vocab": "https://w3id.org/ogc/api/schema/",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.schema"
+    ],
+    "effectiveId": "https://w3id.org/ogc/api/schema/example"
+  },
+  {
+    "path": "/inputs/schema/exclusiveMaximum",
+    "vocab": "https://w3id.org/ogc/api/schema/",
+    "schema_type": "boolean",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.schema"
+    ],
+    "effectiveId": "https://w3id.org/ogc/api/schema/exclusiveMaximum"
+  },
+  {
+    "path": "/inputs/schema/exclusiveMinimum",
+    "vocab": "https://w3id.org/ogc/api/schema/",
+    "schema_type": "boolean",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.schema"
+    ],
+    "effectiveId": "https://w3id.org/ogc/api/schema/exclusiveMinimum"
+  },
+  {
+    "path": "/inputs/schema/format",
+    "vocab": "https://w3id.org/ogc/api/schema/",
+    "schema_type": "string",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.schema"
+    ],
+    "effectiveId": "https://w3id.org/ogc/api/schema/format"
+  },
+  {
+    "path": "/inputs/schema/items",
+    "vocab": "https://w3id.org/ogc/api/schema/",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.schema"
+    ],
+    "effectiveId": "https://w3id.org/ogc/api/schema/items"
+  },
+  {
+    "path": "/inputs/schema/maxItems",
+    "vocab": "https://w3id.org/ogc/api/schema/",
+    "schema_type": "integer",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.schema"
+    ],
+    "effectiveId": "https://w3id.org/ogc/api/schema/maxItems"
+  },
+  {
+    "path": "/inputs/schema/maxLength",
+    "vocab": "https://w3id.org/ogc/api/schema/",
+    "schema_type": "integer",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.schema"
+    ],
+    "effectiveId": "https://w3id.org/ogc/api/schema/maxLength"
+  },
+  {
+    "path": "/inputs/schema/maxProperties",
+    "vocab": "https://w3id.org/ogc/api/schema/",
+    "schema_type": "integer",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.schema"
+    ],
+    "effectiveId": "https://w3id.org/ogc/api/schema/maxProperties"
+  },
+  {
+    "path": "/inputs/schema/maximum",
+    "vocab": "https://w3id.org/ogc/api/schema/",
+    "schema_type": "number",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.schema"
+    ],
+    "effectiveId": "https://w3id.org/ogc/api/schema/maximum"
+  },
+  {
+    "path": "/inputs/schema/minItems",
+    "vocab": "https://w3id.org/ogc/api/schema/",
+    "schema_type": "integer",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.schema"
+    ],
+    "effectiveId": "https://w3id.org/ogc/api/schema/minItems"
+  },
+  {
+    "path": "/inputs/schema/minLength",
+    "vocab": "https://w3id.org/ogc/api/schema/",
+    "schema_type": "integer",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.schema"
+    ],
+    "effectiveId": "https://w3id.org/ogc/api/schema/minLength"
+  },
+  {
+    "path": "/inputs/schema/minProperties",
+    "vocab": "https://w3id.org/ogc/api/schema/",
+    "schema_type": "integer",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.schema"
+    ],
+    "effectiveId": "https://w3id.org/ogc/api/schema/minProperties"
+  },
+  {
+    "path": "/inputs/schema/minimum",
+    "vocab": "https://w3id.org/ogc/api/schema/",
+    "schema_type": "number",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.schema"
+    ],
+    "effectiveId": "https://w3id.org/ogc/api/schema/minimum"
+  },
+  {
+    "path": "/inputs/schema/multipleOf",
+    "vocab": "https://w3id.org/ogc/api/schema/",
+    "schema_type": "number",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.schema"
+    ],
+    "effectiveId": "https://w3id.org/ogc/api/schema/multipleOf"
+  },
+  {
+    "path": "/inputs/schema/not",
+    "vocab": "https://w3id.org/ogc/api/schema/",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.schema"
+    ],
+    "effectiveId": "https://w3id.org/ogc/api/schema/not"
+  },
+  {
+    "path": "/inputs/schema/nullable",
+    "vocab": "https://w3id.org/ogc/api/schema/",
+    "schema_type": "boolean",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.schema"
+    ],
+    "effectiveId": "https://w3id.org/ogc/api/schema/nullable"
+  },
+  {
+    "path": "/inputs/schema/oneOf",
+    "vocab": "https://w3id.org/ogc/api/schema/",
+    "schema_type": "array",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.schema"
+    ],
+    "effectiveId": "https://w3id.org/ogc/api/schema/oneOf"
+  },
+  {
+    "path": "/inputs/schema/pattern",
+    "vocab": "https://w3id.org/ogc/api/schema/",
+    "schema_type": "string",
+    "format": "regex",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.schema"
+    ],
+    "effectiveId": "https://w3id.org/ogc/api/schema/pattern"
+  },
+  {
+    "path": "/inputs/schema/properties",
+    "vocab": "https://w3id.org/ogc/api/schema/",
+    "schema_type": "object",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.schema"
+    ],
+    "effectiveId": "https://w3id.org/ogc/api/schema/properties"
+  },
+  {
+    "path": "/inputs/schema/readOnly",
+    "vocab": "https://w3id.org/ogc/api/schema/",
+    "schema_type": "boolean",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.schema"
+    ],
+    "effectiveId": "https://w3id.org/ogc/api/schema/readOnly"
+  },
+  {
+    "path": "/inputs/schema/required",
+    "vocab": "https://w3id.org/ogc/api/schema/",
+    "schema_type": "array",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.schema"
+    ],
+    "effectiveId": "https://w3id.org/ogc/api/schema/required"
+  },
+  {
+    "path": "/inputs/schema/title",
+    "vocab": "https://w3id.org/ogc/api/schema/",
+    "schema_type": "string",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.schema"
+    ],
+    "effectiveId": "https://w3id.org/ogc/api/schema/title"
+  },
+  {
+    "path": "/inputs/schema/type",
+    "vocab": "https://w3id.org/ogc/api/schema/",
+    "schema_type": "string",
+    "enum": [
+      "array",
+      "boolean",
+      "integer",
+      "number",
+      "object",
+      "string"
+    ],
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.schema"
+    ],
+    "effectiveId": "https://w3id.org/ogc/api/schema/type"
+  },
+  {
+    "path": "/inputs/schema/uniqueItems",
+    "vocab": "https://w3id.org/ogc/api/schema/",
+    "schema_type": "boolean",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.schema"
+    ],
+    "effectiveId": "https://w3id.org/ogc/api/schema/uniqueItems"
+  },
+  {
+    "path": "/inputs/schema/writeOnly",
+    "vocab": "https://w3id.org/ogc/api/schema/",
+    "schema_type": "boolean",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.schema"
+    ],
+    "effectiveId": "https://w3id.org/ogc/api/schema/writeOnly"
+  },
+  {
+    "path": "/outputs",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.process",
+      "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.processDescription"
+    ]
+  },
+  {
+    "path": "/outputs/schema",
+    "id": "https://w3id.org/ogc/api/processes/schema",
+    "vocab": "https://w3id.org/ogc/api/processes/",
+    "required": true,
+    "schema_type": "object",
+    "sources": [
+      "bblocks://ogc.api.processes.v1.schemas.outputDescription",
+      "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputDescription/schema.yaml"
+    ],
+    "effectiveId": "https://w3id.org/ogc/api/processes/schema"
+  },
+  {
+    "path": "/inputs/geometry",
+    "schema_type": "object",
+    "sources": [
+      "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputDescription/schema.yaml"
+    ]
+  },
+  {
+    "path": "/inputs/geometry/title",
+    "schema_type": "string",
+    "sources": [
+      "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputDescription/schema.yaml"
+    ]
+  },
+  {
+    "path": "/inputs/geometry/minOccurs",
+    "schema_type": "integer",
+    "sources": [
+      "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputDescription/schema.yaml"
+    ]
+  },
+  {
+    "path": "/inputs/geometry/maxOccurs",
+    "schema_type": "integer",
+    "sources": [
+      "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputDescription/schema.yaml"
+    ]
+  },
+  {
+    "path": "/inputs/geometry/schema",
+    "sources": [
+      "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputDescription/schema.yaml"
+    ]
+  },
+  {
+    "path": "/inputs/geometry/schema/type",
+    "id": "@type",
+    "required": true,
+    "schema_type": "string",
+    "sources": [
+      "bblocks://ogc.geo.common.data_types.geojson",
+      "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputSchema/schema.yaml"
+    ],
+    "effectiveId": "@type"
+  },
+  {
+    "path": "/inputs/geometry/schema/id",
+    "id": "@id",
+    "sources": [
+      "bblocks://ogc.geo.common.data_types.geojson"
+    ],
+    "effectiveId": "@id"
+  },
+  {
+    "path": "/inputs/geometry/schema/properties",
+    "id": "@nest",
+    "required": true,
+    "sources": [
+      "bblocks://ogc.geo.common.data_types.geojson"
+    ],
+    "effectiveId": "@nest"
+  },
+  {
+    "path": "/inputs/geometry/schema/geometry",
+    "id": "https://purl.org/geojson/vocab#geometry",
+    "required": true,
+    "sources": [
+      "bblocks://ogc.geo.common.data_types.geojson"
+    ],
+    "effectiveId": "https://purl.org/geojson/vocab#geometry"
+  },
+  {
+    "path": "/inputs/geometry/schema/geometry/type",
+    "id": "@type",
+    "required": true,
+    "schema_type": "string",
+    "sources": [
+      "bblocks://ogc.geo.common.data_types.geojson"
+    ],
+    "effectiveId": "@type"
+  },
+  {
+    "path": "/inputs/geometry/schema/geometry/coordinates",
+    "id": "https://purl.org/geojson/vocab#coordinates",
+    "required": true,
+    "schema_type": "array",
+    "sources": [
+      "bblocks://ogc.geo.common.data_types.geojson"
+    ],
+    "effectiveId": "https://purl.org/geojson/vocab#coordinates"
+  },
+  {
+    "path": "/inputs/geometry/schema/geometry/bbox",
+    "id": "https://purl.org/geojson/vocab#bbox",
+    "schema_type": "array",
+    "sources": [
+      "bblocks://ogc.geo.common.data_types.geojson"
+    ],
+    "effectiveId": "https://purl.org/geojson/vocab#bbox"
+  },
+  {
+    "path": "/inputs/geometry/schema/geometry/geometries",
+    "required": true,
+    "schema_type": "array",
+    "sources": [
+      "bblocks://ogc.geo.common.data_types.geojson"
+    ]
+  },
+  {
+    "path": "/inputs/geometry/schema/geometry/geometries/type",
+    "id": "@type",
+    "required": true,
+    "schema_type": "string",
+    "sources": [
+      "bblocks://ogc.geo.common.data_types.geojson"
+    ],
+    "effectiveId": "@type"
+  },
+  {
+    "path": "/inputs/geometry/schema/geometry/geometries/coordinates",
+    "id": "https://purl.org/geojson/vocab#coordinates",
+    "required": true,
+    "schema_type": "array",
+    "sources": [
+      "bblocks://ogc.geo.common.data_types.geojson"
+    ],
+    "effectiveId": "https://purl.org/geojson/vocab#coordinates"
+  },
+  {
+    "path": "/inputs/geometry/schema/geometry/geometries/bbox",
+    "id": "https://purl.org/geojson/vocab#bbox",
+    "schema_type": "array",
+    "sources": [
+      "bblocks://ogc.geo.common.data_types.geojson"
+    ],
+    "effectiveId": "https://purl.org/geojson/vocab#bbox"
+  },
+  {
+    "path": "/inputs/geometry/schema/bbox",
+    "id": "https://purl.org/geojson/vocab#bbox",
+    "schema_type": "array",
+    "sources": [
+      "bblocks://ogc.geo.common.data_types.geojson"
+    ],
+    "effectiveId": "https://purl.org/geojson/vocab#bbox"
+  },
+  {
+    "path": "/inputs/distance",
+    "schema_type": "object",
+    "sources": [
+      "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputDescription/schema.yaml"
+    ]
+  },
+  {
+    "path": "/inputs/distance/title",
+    "schema_type": "string",
+    "sources": [
+      "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputDescription/schema.yaml"
+    ]
+  },
+  {
+    "path": "/inputs/distance/description",
+    "schema_type": "string",
+    "sources": [
+      "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputDescription/schema.yaml"
+    ]
+  },
+  {
+    "path": "/inputs/distance/minOccurs",
+    "schema_type": "integer",
+    "sources": [
+      "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputDescription/schema.yaml"
+    ]
+  },
+  {
+    "path": "/inputs/distance/maxOccurs",
+    "schema_type": "integer",
+    "sources": [
+      "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputDescription/schema.yaml"
+    ]
+  },
+  {
+    "path": "/inputs/distance/schema",
+    "sources": [
+      "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputDescription/schema.yaml"
+    ]
+  },
+  {
+    "path": "/inputs/distance/schema/type",
+    "schema_type": "string",
+    "sources": [
+      "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputSchema/schema.yaml"
+    ]
+  },
+  {
+    "path": "/inputs/distance/schema/minimum",
+    "schema_type": "number",
+    "sources": [
+      "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputSchema/schema.yaml"
+    ]
+  },
+  {
+    "path": "/inputs/units",
+    "schema_type": "object",
+    "sources": [
+      "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputDescription/schema.yaml"
+    ]
+  },
+  {
+    "path": "/inputs/units/title",
+    "schema_type": "string",
+    "sources": [
+      "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputDescription/schema.yaml"
+    ]
+  },
+  {
+    "path": "/inputs/units/description",
+    "schema_type": "string",
+    "sources": [
+      "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputDescription/schema.yaml"
+    ]
+  },
+  {
+    "path": "/inputs/units/minOccurs",
+    "schema_type": "integer",
+    "sources": [
+      "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputDescription/schema.yaml"
+    ]
+  },
+  {
+    "path": "/inputs/units/maxOccurs",
+    "schema_type": "integer",
+    "sources": [
+      "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputDescription/schema.yaml"
+    ]
+  },
+  {
+    "path": "/inputs/units/schema",
+    "sources": [
+      "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputDescription/schema.yaml"
+    ]
+  },
+  {
+    "path": "/outputs/schema/bufferedGeometry",
+    "schema_type": "object",
+    "sources": [
+      "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputDescription/schema.yaml"
+    ]
+  },
+  {
+    "path": "/outputs/schema/bufferedGeometry/title",
+    "schema_type": "string",
+    "sources": [
+      "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputDescription/schema.yaml"
+    ]
+  },
+  {
+    "path": "/outputs/schema/bufferedGeometry/description",
+    "schema_type": "string",
+    "sources": [
+      "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputDescription/schema.yaml"
+    ]
+  },
+  {
+    "path": "/outputs/schema/bufferedGeometry/schema",
+    "sources": [
+      "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputDescription/schema.yaml"
+    ]
+  },
+  {
+    "path": "/outputs/schema/bufferedGeometry/schema/type",
+    "schema_type": "string",
+    "sources": [
+      "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputSchema/schema.yaml"
+    ]
+  },
+  {
+    "path": "/outputs/schema/bufferedGeometry/schema/coordinates",
+    "schema_type": "array",
+    "sources": [
+      "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputSchema/schema.yaml"
+    ]
+  },
+  {
+    "path": "/outputs/schema/area",
+    "schema_type": "object",
+    "sources": [
+      "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputDescription/schema.yaml"
+    ]
+  },
+  {
+    "path": "/outputs/schema/area/title",
+    "schema_type": "string",
+    "sources": [
+      "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputDescription/schema.yaml"
+    ]
+  },
+  {
+    "path": "/outputs/schema/area/description",
+    "schema_type": "string",
+    "sources": [
+      "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputDescription/schema.yaml"
+    ]
+  },
+  {
+    "path": "/outputs/schema/area/schema",
+    "sources": [
+      "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputDescription/schema.yaml"
+    ]
+  }
+]

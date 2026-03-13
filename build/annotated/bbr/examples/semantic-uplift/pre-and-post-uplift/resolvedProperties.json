@@ -1,0 +1,30 @@
+[
+  {
+    "path": "/one",
+    "id": "http://example.com/hasOne",
+    "required": true,
+    "schema_type": "number",
+    "sources": [
+      "bblocks://ogc.bbr.examples.semantic-uplift.pre-and-post-uplift"
+    ],
+    "effectiveId": "http://example.com/hasOne"
+  },
+  {
+    "path": "/two",
+    "id": "http://example.com/hasTwo",
+    "schema_type": "number",
+    "sources": [
+      "bblocks://ogc.bbr.examples.semantic-uplift.pre-and-post-uplift"
+    ],
+    "effectiveId": "http://example.com/hasTwo"
+  },
+  {
+    "path": "/string",
+    "id": "http://example.com/hasString",
+    "schema_type": "string",
+    "sources": [
+      "bblocks://ogc.bbr.examples.semantic-uplift.pre-and-post-uplift"
+    ],
+    "effectiveId": "http://example.com/hasString"
+  }
+]

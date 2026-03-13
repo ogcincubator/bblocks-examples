@@ -1,2 +1,2 @@
-path	@id
-/myProp	http://example.org/myModel/myProp
+path	@id	schema
+/myProp	http://example.org/myModel/myProp	/github/workspace/build/annotated/bbr/examples/feature/propertySet/schema.yaml

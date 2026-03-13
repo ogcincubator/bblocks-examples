@@ -225,6 +225,7 @@ Links to the schema:
     "dct": "http://purl.org/dc/terms/",
     "owlTime": "http://www.w3.org/2006/time#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "myNamespace": "http://example.org/myModel/",
     "@version": 1.1
   }
 }

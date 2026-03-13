@@ -46,12 +46,25 @@
                     border-width: var(--bs-accordion-border-width);
                 }
             }
+            .anchor {
+                color: black;
+                opacity: 0;
+                text-decoration: none;
+                margin-left: 0.5em;
+                margin-right: 0.5em;
+            }
+            .anchor-container:hover .anchor {
+                opacity: 60%;
+            }
+            .anchor-container:hover .anchor:hover {
+                opacity: 100%;
+            }
         </style>
     </head>
     <body>
         <div class="container">
             <h1 class="title">Building blocks validation report</h1>
-            <small class="datetime">Generated at 2026-01-13T22:31:22.685289+00:00</small>
+            <small class="datetime">Generated at 2026-03-13T14:02:15.173936+00:00</small>
                 <p class="summary fw-semibold text-success">
                     Number of passing building blocks: 19 / 19 (100%)
                 </p>
@@ -61,13 +74,14 @@
             </div>
                 <div class="accordion mt-2" id="bblock-reports">
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.examples.feature.propertySet" id="bblock-ogc.bbr.examples.feature.propertySet">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.examples\.feature\.propertySet">
                                     <div class="flex-fill">
                                         Example property set for Features
                                         <small class="ms-2 bblock-id">ogc.bbr.examples.feature.propertySet</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.examples.feature.propertySet">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -81,9 +95,9 @@
                                         <p class="summary fw-semibold text-success">
                                             Test passed: 1 / 1
                                         </p>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.bbr.examples.feature.propertySet-1">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-1"
                                                             aria-expanded="false" aria-controls="uid-1"
@@ -93,6 +107,7 @@
                                                     </button>
                                                     <a href="bbr/examples/feature/propertySet/example_1_1.json" target="_blank">example_1_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.bbr.examples.feature.propertySet-1">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
@@ -114,13 +129,14 @@
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputSchema" id="bblock-ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputSchema">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.examples\.ogcapi\.processes\.schemas\.buffer-geometry\.outputSchema">
                                     <div class="flex-fill">
                                         Buffer geometry process output schema
                                         <small class="ms-2 bblock-id">ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputSchema</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputSchema">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -136,13 +152,14 @@
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.examples.semantic-uplift.pre-and-post-uplift" id="bblock-ogc.bbr.examples.semantic-uplift.pre-and-post-uplift">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.examples\.semantic-uplift\.pre-and-post-uplift">
                                     <div class="flex-fill">
                                         Pre and Post Semantic Uplift example
                                         <small class="ms-2 bblock-id">ogc.bbr.examples.semantic-uplift.pre-and-post-uplift</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.examples.semantic-uplift.pre-and-post-uplift">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -156,9 +173,9 @@
                                         <p class="summary fw-semibold text-success">
                                             Test passed: 1 / 1
                                         </p>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.bbr.examples.semantic-uplift.pre-and-post-uplift-1">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-2"
                                                             aria-expanded="false" aria-controls="uid-2"
@@ -168,6 +185,7 @@
                                                     </button>
                                                     <a href="bbr/examples/semantic-uplift/pre-and-post-uplift/example_1_1.json" target="_blank">example_1_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.bbr.examples.semantic-uplift.pre-and-post-uplift-1">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
@@ -187,7 +205,7 @@
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/semantic-uplift/pre-and-post-uplift/rules.shacl:
- - Shape &lt;http://example.com/rules#testHasOneIs1&gt;: _:Nf6c17245adf7423da7ace7dc504e60ac
+ - Shape &lt;http://example.com/rules#testHasOneIs1&gt;: _:Na070f954f3a14ba6b104ac04e70a0d90
 </div>
                                                                     <div class="font-monospace subsection-title mt-2">Semantic Uplift</div>
                                                                     <div class="font-monospace entry-message section-semantic_uplift ">Running pre-uplift jq transform step from inline code</div>
@@ -200,13 +218,14 @@
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.examples.transforms.transforms-example" id="bblock-ogc.bbr.examples.transforms.transforms-example">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.examples\.transforms\.transforms-example">
                                     <div class="flex-fill">
                                         Transforms example
                                         <small class="ms-2 bblock-id">ogc.bbr.examples.transforms.transforms-example</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.examples.transforms.transforms-example">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -220,9 +239,9 @@
                                         <p class="summary fw-semibold text-success">
                                             Test passed: 1 / 1
                                         </p>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.bbr.examples.transforms.transforms-example-1">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-3"
                                                             aria-expanded="false" aria-controls="uid-3"
@@ -232,6 +251,7 @@
                                                     </button>
                                                     <a href="bbr/examples/transforms/transforms-example/example_1_1.json" target="_blank">example_1_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.bbr.examples.transforms.transforms-example-1">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
@@ -253,13 +273,14 @@
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputSchema" id="bblock-ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputSchema">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.examples\.ogcapi\.processes\.schemas\.buffer-geometry\.inputSchema">
                                     <div class="flex-fill">
                                         Buffer geometry process input schema
                                         <small class="ms-2 bblock-id">ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputSchema</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputSchema">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -275,13 +296,14 @@
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.examples.feature.externalSchema" id="bblock-ogc.bbr.examples.feature.externalSchema">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.examples\.feature\.externalSchema">
                                     <div class="flex-fill">
                                         External Schema (Smart Data Models)
                                         <small class="ms-2 bblock-id">ogc.bbr.examples.feature.externalSchema</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.examples.feature.externalSchema">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -295,9 +317,9 @@
                                         <p class="summary fw-semibold text-success">
                                             Test passed: 1 / 1
                                         </p>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.bbr.examples.feature.externalSchema-1">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-4"
                                                             aria-expanded="false" aria-controls="uid-4"
@@ -307,6 +329,7 @@
                                                     </button>
                                                     <a href="bbr/examples/feature/externalSchema/example_1_1.json" target="_blank">example_1_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.bbr.examples.feature.externalSchema-1">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
@@ -314,7 +337,7 @@
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-4">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using example_1_1.json from examples</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using examples/feature.json from examples</div>
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
                                                                     <div class="font-monospace entry-message section-files ">Output JSON-LD example_1_1.jsonld created</div>
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
@@ -328,13 +351,14 @@
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.examples.feature.geojsonFeature" id="bblock-ogc.bbr.examples.feature.geojsonFeature">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.examples\.feature\.geojsonFeature">
                                     <div class="flex-fill">
                                         Custom GeoJSON Feature
                                         <small class="ms-2 bblock-id">ogc.bbr.examples.feature.geojsonFeature</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.examples.feature.geojsonFeature">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -348,9 +372,9 @@
                                         <p class="summary fw-semibold text-success">
                                             Test passed: 2 / 2
                                         </p>
-                                        <div class="card mb-2 validation-item require-fail">
+                                        <div class="card mb-2 validation-item require-fail" id="item-ogc.bbr.examples.feature.geojsonFeature-1">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-5"
                                                             aria-expanded="false" aria-controls="uid-5"
@@ -361,6 +385,7 @@
                                                     <a href="../../_sources/feature/geojsonFeature/tests/feature-fail.json" target="_blank">feature-fail.json</a>
                                                     <span class="badge bg-secondary test_resource">Test resource</span>
                                                         <span class="badge text-bg-info">Requires fail</span>
+                                                    <a class="anchor" href="#item-ogc.bbr.examples.feature.geojsonFeature-1">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
@@ -389,9 +414,9 @@ On instance[&#x27;properties&#x27;]:
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.bbr.examples.feature.geojsonFeature-2">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-6"
                                                             aria-expanded="false" aria-controls="uid-6"
@@ -401,6 +426,7 @@ On instance[&#x27;properties&#x27;]:
                                                     </button>
                                                     <a href="bbr/examples/feature/geojsonFeature/example_1_1.json" target="_blank">example_1_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.bbr.examples.feature.geojsonFeature-2">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
@@ -408,7 +434,7 @@ On instance[&#x27;properties&#x27;]:
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-6">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using example_1_1.json from examples</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using examples/feature.json from examples</div>
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
                                                                     <div class="font-monospace entry-message section-files ">Output JSON-LD example_1_1.jsonld created</div>
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
@@ -422,13 +448,14 @@ On instance[&#x27;properties&#x27;]:
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.examples.feature.geosparqlFeature" id="bblock-ogc.bbr.examples.feature.geosparqlFeature">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.examples\.feature\.geosparqlFeature">
                                     <div class="flex-fill">
                                         GeoJSON transformed to GeoSPARQL geometry
                                         <small class="ms-2 bblock-id">ogc.bbr.examples.feature.geosparqlFeature</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.examples.feature.geosparqlFeature">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -442,9 +469,9 @@ On instance[&#x27;properties&#x27;]:
                                         <p class="summary fw-semibold text-success">
                                             Test passed: 1 / 1
                                         </p>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.bbr.examples.feature.geosparqlFeature-1">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-7"
                                                             aria-expanded="false" aria-controls="uid-7"
@@ -454,6 +481,7 @@ On instance[&#x27;properties&#x27;]:
                                                     </button>
                                                     <a href="bbr/examples/feature/geosparqlFeature/example_1_1.json" target="_blank">example_1_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.bbr.examples.feature.geosparqlFeature-1">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
@@ -461,7 +489,7 @@ On instance[&#x27;properties&#x27;]:
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-7">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using example_1_1.json from examples</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using examples/feature.json from examples</div>
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
                                                                     <div class="font-monospace entry-message section-files ">Output JSON-LD example_1_1.jsonld created</div>
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
@@ -477,13 +505,14 @@ On instance[&#x27;properties&#x27;]:
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.examples.observation.vectorObservation" id="bblock-ogc.bbr.examples.observation.vectorObservation">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.examples\.observation\.vectorObservation">
                                     <div class="flex-fill">
                                         Observation Result (Vector based on GeoPose)
                                         <small class="ms-2 bblock-id">ogc.bbr.examples.observation.vectorObservation</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.examples.observation.vectorObservation">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -497,9 +526,9 @@ On instance[&#x27;properties&#x27;]:
                                         <p class="summary fw-semibold text-success">
                                             Test passed: 1 / 1
                                         </p>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.bbr.examples.observation.vectorObservation-1">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-8"
                                                             aria-expanded="false" aria-controls="uid-8"
@@ -509,6 +538,7 @@ On instance[&#x27;properties&#x27;]:
                                                     </button>
                                                     <a href="bbr/examples/observation/vectorObservation/example_1_1.json" target="_blank">example_1_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.bbr.examples.observation.vectorObservation-1">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
@@ -528,15 +558,15 @@ On instance[&#x27;properties&#x27;]:
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:
- - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValues&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testResultNotEmptyNode&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testRequiredTime&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testFeatureOfInterest&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedPropertyPresent&gt;: _:Nde0e4ea7e473433ea1d42e07555d68ad
- - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval&gt;: *none*
  - Shape &lt;https://www.ogc.org/rules/sosa/#testSimpleResultLiteral&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testResult&gt;: *none*
  - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValues&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testFeatureOfInterest&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testResult&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testResultNotEmptyNode&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedPropertyPresent&gt;: _:N48b1e0a38efb46959af8833f72da04ce
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testRequiredTime&gt;: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -546,13 +576,14 @@ On instance[&#x27;properties&#x27;]:
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.examples.feature.geojsonFeatureFGLenient" id="bblock-ogc.bbr.examples.feature.geojsonFeatureFGLenient">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.examples\.feature\.geojsonFeatureFGLenient">
                                     <div class="flex-fill">
                                         Custom JSON-FG (lenient) Feature
                                         <small class="ms-2 bblock-id">ogc.bbr.examples.feature.geojsonFeatureFGLenient</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.examples.feature.geojsonFeatureFGLenient">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -566,9 +597,9 @@ On instance[&#x27;properties&#x27;]:
                                         <p class="summary fw-semibold text-success">
                                             Test passed: 1 / 1
                                         </p>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.bbr.examples.feature.geojsonFeatureFGLenient-1">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-9"
                                                             aria-expanded="false" aria-controls="uid-9"
@@ -578,6 +609,7 @@ On instance[&#x27;properties&#x27;]:
                                                     </button>
                                                     <a href="bbr/examples/feature/geojsonFeatureFGLenient/example_1_1.json" target="_blank">example_1_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.bbr.examples.feature.geojsonFeatureFGLenient-1">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
@@ -585,7 +617,7 @@ On instance[&#x27;properties&#x27;]:
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-9">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using example_1_1.json from examples</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using examples/feature.json from examples</div>
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
                                                                     <div class="font-monospace entry-message section-files ">Output JSON-LD example_1_1.jsonld created</div>
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
@@ -599,13 +631,14 @@ On instance[&#x27;properties&#x27;]:
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.examples.feature.overrideContext" id="bblock-ogc.bbr.examples.feature.overrideContext">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.examples\.feature\.overrideContext">
                                     <div class="flex-fill">
                                         Test Context Override
                                         <small class="ms-2 bblock-id">ogc.bbr.examples.feature.overrideContext</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.examples.feature.overrideContext">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -619,9 +652,9 @@ On instance[&#x27;properties&#x27;]:
                                         <p class="summary fw-semibold text-success">
                                             Test passed: 1 / 1
                                         </p>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.bbr.examples.feature.overrideContext-1">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-10"
                                                             aria-expanded="false" aria-controls="uid-10"
@@ -631,6 +664,7 @@ On instance[&#x27;properties&#x27;]:
                                                     </button>
                                                     <a href="bbr/examples/feature/overrideContext/example_1_1.json" target="_blank">example_1_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.bbr.examples.feature.overrideContext-1">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
@@ -638,7 +672,7 @@ On instance[&#x27;properties&#x27;]:
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-10">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using example_1_1.json from examples</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using examples/feature.json from examples</div>
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
                                                                     <div class="font-monospace entry-message section-files ">Output JSON-LD example_1_1.jsonld created</div>
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
@@ -652,13 +686,14 @@ On instance[&#x27;properties&#x27;]:
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputDescription" id="bblock-ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputDescription">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.examples\.ogcapi\.processes\.schemas\.buffer-geometry\.inputDescription">
                                     <div class="flex-fill">
                                         Buffer geometry process input description
                                         <small class="ms-2 bblock-id">ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputDescription</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputDescription">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -674,13 +709,14 @@ On instance[&#x27;properties&#x27;]:
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputDescription" id="bblock-ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputDescription">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.examples\.ogcapi\.processes\.schemas\.buffer-geometry\.outputDescription">
                                     <div class="flex-fill">
                                         Buffer geometry process output description
                                         <small class="ms-2 bblock-id">ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputDescription</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputDescription">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -696,13 +732,14 @@ On instance[&#x27;properties&#x27;]:
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.examples.ogcapi.processes.schemas.inputDescriptions" id="bblock-ogc.bbr.examples.ogcapi.processes.schemas.inputDescriptions">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.examples\.ogcapi\.processes\.schemas\.inputDescriptions">
                                     <div class="flex-fill">
                                         Example OGC API Processes instance input descriptions
                                         <small class="ms-2 bblock-id">ogc.bbr.examples.ogcapi.processes.schemas.inputDescriptions</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.examples.ogcapi.processes.schemas.inputDescriptions">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -718,13 +755,14 @@ On instance[&#x27;properties&#x27;]:
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.processDescription" id="bblock-ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.processDescription">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.examples\.ogcapi\.processes\.schemas\.buffer-geometry\.processDescription">
                                     <div class="flex-fill">
                                         Buffer geometry process description
                                         <small class="ms-2 bblock-id">ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.processDescription</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.processDescription">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -740,13 +778,14 @@ On instance[&#x27;properties&#x27;]:
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.examples.ogcapi.processes.schemas.outputDescriptions" id="bblock-ogc.bbr.examples.ogcapi.processes.schemas.outputDescriptions">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.examples\.ogcapi\.processes\.schemas\.outputDescriptions">
                                     <div class="flex-fill">
                                         Example OGC API Processes instance output descriptions
                                         <small class="ms-2 bblock-id">ogc.bbr.examples.ogcapi.processes.schemas.outputDescriptions</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.examples.ogcapi.processes.schemas.outputDescriptions">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -761,146 +800,15 @@ On instance[&#x27;properties&#x27;]:
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.examples.observation.vectorObservationFeature" id="bblock-ogc.bbr.examples.observation.vectorObservationFeature">
-                            <h2 class="accordion-header bblock-title">
-                                <button class="accordion-button collapsed" type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#bblock-collapse-ogc\.bbr\.examples\.observation\.vectorObservationFeature">
-                                    <div class="flex-fill">
-                                        Custom Result for Observation Feature
-                                        <small class="ms-2 bblock-id">ogc.bbr.examples.observation.vectorObservationFeature</small>
-                                    </div>
-
-                                    <span class="badge text-bg-success me-2">
-                                            Passed
-                                            (100% passed)
-                                    </span>
-                                </button>
-                            </h2>
-                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.bbr.examples.observation.vectorObservationFeature">
-                                <div class="accordion-body">
-                                        <p class="summary fw-semibold text-success">
-                                            Test passed: 2 / 2
-                                        </p>
-                                        <div class="card mb-2 validation-item ">
-                                            <div class="card-body">
-                                                <div class="card-title mb-0">
-                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-11"
-                                                            aria-expanded="false" aria-controls="uid-11"
-                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                                                        <i class="bi bi-caret-right-fill caret"></i>
-                                                        Details
-                                                    </button>
-                                                    <a href="bbr/examples/observation/vectorObservationFeature/example_1_1.json" target="_blank">example_1_1.json</a>
-                                                    <span class="badge bg-secondary example">Example</span>
-                                                    <div class="float-end">
-                                                            <span class="badge text-bg-success me-2">Passed</span>
-                                                    </div>
-                                                </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-11">
-                                                    <div class="validation-text-inner">
-                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using example_1_1.json from examples</div>
-                                                                    <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
-                                                                    <div class="font-monospace entry-message section-files ">Output JSON-LD example_1_1.jsonld created</div>
-                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
-                                                                    <div class="font-monospace subsection-title mt-2">JSON Schema</div>
-                                                                    <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
-                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/observation/vectorObservationFeature/rules.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/observation/vectorObservationFeature/rules.shacl:
- - Shape &lt;http://example.com/rules#testGeometryCoordinatesIsList&gt;: &lt;http://example.com/features/vector-obs-1&gt;/geojson:geometry
- - Shape &lt;http://example.com/rules#testVectorObservationFeatureHasOneGeometry&gt;: &lt;http://example.com/features/vector-obs-1&gt;
- - Shape &lt;http://example.com/rules#testGeometryHasCoordinates&gt;: &lt;http://example.com/features/vector-obs-1&gt;/geojson:geometry
-</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:
- - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValues&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testResultNotEmptyNode&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testRequiredTime&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testFeatureOfInterest&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedPropertyPresent&gt;: &lt;http://example.com/features/vector-obs-1&gt;
- - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testSimpleResultLiteral&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testResult&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent&gt;: *none*
-</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card mb-2 validation-item ">
-                                            <div class="card-body">
-                                                <div class="card-title mb-0">
-                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-12"
-                                                            aria-expanded="false" aria-controls="uid-12"
-                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                                                        <i class="bi bi-caret-right-fill caret"></i>
-                                                        Details
-                                                    </button>
-                                                    <a href="bbr/examples/observation/vectorObservationFeature/example_2_1.json" target="_blank">example_2_1.json</a>
-                                                    <span class="badge bg-secondary example">Example</span>
-                                                    <div class="float-end">
-                                                            <span class="badge text-bg-success me-2">Passed</span>
-                                                    </div>
-                                                </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-12">
-                                                    <div class="validation-text-inner">
-                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using example_2_1.json from examples</div>
-                                                                    <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
-                                                                    <div class="font-monospace entry-message section-files ">Output JSON-LD example_2_1.jsonld created</div>
-                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_2_1.ttl created</div>
-                                                                    <div class="font-monospace subsection-title mt-2">JSON Schema</div>
-                                                                    <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
-                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/observation/vectorObservationFeature/rules.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/observation/vectorObservationFeature/rules.shacl:
- - Shape &lt;http://example.com/rules#testGeometryCoordinatesIsList&gt;: &lt;http://example.com/features/vector-obs-1&gt;/geojson:geometry
- - Shape &lt;http://example.com/rules#testVectorObservationFeatureHasOneGeometry&gt;: &lt;http://example.com/features/vector-obs-1&gt;
- - Shape &lt;http://example.com/rules#testGeometryHasCoordinates&gt;: &lt;http://example.com/features/vector-obs-1&gt;/geojson:geometry
-</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:
- - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValues&gt;: &lt;http://example.com/features/c1&gt;
- - Shape &lt;https://www.ogc.org/rules/sosa/#testResultNotEmptyNode&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testRequiredTime&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testFeatureOfInterest&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedPropertyPresent&gt;: &lt;http://example.com/features/vector-obs-1&gt;
- - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval&gt;: &lt;http://example.com/features/c1&gt;
- - Shape &lt;https://www.ogc.org/rules/sosa/#testSimpleResultLiteral&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testResult&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent&gt;: &lt;http://example.com/features/c1&gt;
-</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                </div>
-                            </div>
-                        </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.examples.rules.topo-edges" id="bblock-ogc.bbr.examples.rules.topo-edges">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.examples\.rules\.topo-edges">
                                     <div class="flex-fill">
                                         Topo rules examples
                                         <small class="ms-2 bblock-id">ogc.bbr.examples.rules.topo-edges</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.examples.rules.topo-edges">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -914,12 +822,12 @@ On instance[&#x27;properties&#x27;]:
                                         <p class="summary fw-semibold text-success">
                                             Test passed: 2 / 2
                                         </p>
-                                        <div class="card mb-2 validation-item require-fail">
+                                        <div class="card mb-2 validation-item require-fail" id="item-ogc.bbr.examples.rules.topo-edges-1">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-13"
-                                                            aria-expanded="false" aria-controls="uid-13"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-11"
+                                                            aria-expanded="false" aria-controls="uid-11"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
@@ -927,11 +835,12 @@ On instance[&#x27;properties&#x27;]:
                                                     <a href="../../_sources/rules/topo-edges/tests/node-segments-fail.json" target="_blank">node-segments-fail.json</a>
                                                     <span class="badge bg-secondary test_resource">Test resource</span>
                                                         <span class="badge text-bg-info">Requires fail</span>
+                                                    <a class="anchor" href="#item-ogc.bbr.examples.rules.topo-edges-1">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-13">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-11">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">General</div>
                                                                     <div class="font-monospace entry-message section-general ">Test was expected to fail and it did.</div>
@@ -948,8 +857,8 @@ On instance[&#x27;properties&#x27;]:
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:n020c14c3eeb24d85b735ab033fff1c32b1: &lt;file:///github/workspace/e1&gt;/geojson:geometry
- - Shape _:n020c14c3eeb24d85b735ab033fff1c32b3: &lt;file:///github/workspace/e1&gt;/geojson:geometry
+ - Shape _:nb69242b0544342b49c903b28d6a3b065b3: &lt;file:///github/workspace/e1&gt;/geojson:geometry
+ - Shape _:nb69242b0544342b49c903b28d6a3b065b1: &lt;file:///github/workspace/e1&gt;/geojson:geometry
 </div>
                                                                     <div class="font-monospace entry-message section-shacl text-danger">Validation result for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
   Validation Report
@@ -1005,26 +914,27 @@ On instance[&#x27;properties&#x27;]:
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.bbr.examples.rules.topo-edges-2">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-14"
-                                                            aria-expanded="false" aria-controls="uid-14"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-12"
+                                                            aria-expanded="false" aria-controls="uid-12"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
                                                     </button>
                                                     <a href="bbr/examples/rules/topo-edges/example_1_1.json" target="_blank">example_1_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.bbr.examples.rules.topo-edges-2">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-14">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-12">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using example_1_1.json from examples</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using examples/nodes.json from examples</div>
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
                                                                     <div class="font-monospace entry-message section-files ">Output JSON-LD example_1_1.jsonld created</div>
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
@@ -1036,8 +946,8 @@ On instance[&#x27;properties&#x27;]:
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:n020c14c3eeb24d85b735ab033fff1c32b1: &lt;http://example.com/nodes/P2&gt;/geojson:geometry,&lt;http://example.com/nodes/P1&gt;/geojson:geometry
- - Shape _:n020c14c3eeb24d85b735ab033fff1c32b3: &lt;http://example.com/nodes/P2&gt;/geojson:geometry,&lt;http://example.com/nodes/P1&gt;/geojson:geometry
+ - Shape _:nb69242b0544342b49c903b28d6a3b065b3: &lt;http://example.com/nodes/P2&gt;/geojson:geometry,&lt;http://example.com/nodes/P1&gt;/geojson:geometry
+ - Shape _:nb69242b0544342b49c903b28d6a3b065b1: &lt;http://example.com/nodes/P2&gt;/geojson:geometry,&lt;http://example.com/nodes/P1&gt;/geojson:geometry
 </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
   Validation Report
@@ -1054,14 +964,150 @@ On instance[&#x27;properties&#x27;]:
                                 </div>
                             </div>
                         </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.examples.observation.vectorObservationFeature" id="bblock-ogc.bbr.examples.observation.vectorObservationFeature">
+                            <h2 class="accordion-header bblock-title anchor-container">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-ogc\.bbr\.examples\.observation\.vectorObservationFeature">
+                                    <div class="flex-fill">
+                                        Custom Result for Observation Feature
+                                        <small class="ms-2 bblock-id">ogc.bbr.examples.observation.vectorObservationFeature</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.examples.observation.vectorObservationFeature">¶</a>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (100% passed)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.bbr.examples.observation.vectorObservationFeature">
+                                <div class="accordion-body">
+                                        <p class="summary fw-semibold text-success">
+                                            Test passed: 2 / 2
+                                        </p>
+                                        <div class="card mb-2 validation-item " id="item-ogc.bbr.examples.observation.vectorObservationFeature-1">
+                                            <div class="card-body">
+                                                <div class="card-title mb-0 anchor-container">
+                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-13"
+                                                            aria-expanded="false" aria-controls="uid-13"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                                        <i class="bi bi-caret-right-fill caret"></i>
+                                                        Details
+                                                    </button>
+                                                    <a href="bbr/examples/observation/vectorObservationFeature/example_1_1.json" target="_blank">example_1_1.json</a>
+                                                    <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.bbr.examples.observation.vectorObservationFeature-1">¶</a>
+                                                    <div class="float-end">
+                                                            <span class="badge text-bg-success me-2">Passed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-13">
+                                                    <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using examples/observation.json from examples</div>
+                                                                    <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output JSON-LD example_1_1.jsonld created</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
+                                                                    <div class="font-monospace subsection-title mt-2">JSON Schema</div>
+                                                                    <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
+                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/observation/vectorObservationFeature/rules.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/observation/vectorObservationFeature/rules.shacl:
+ - Shape &lt;http://example.com/rules#testGeometryHasCoordinates&gt;: &lt;http://example.com/features/vector-obs-1&gt;/geojson:geometry
+ - Shape &lt;http://example.com/rules#testVectorObservationFeatureHasOneGeometry&gt;: &lt;http://example.com/features/vector-obs-1&gt;
+ - Shape &lt;http://example.com/rules#testGeometryCoordinatesIsList&gt;: &lt;http://example.com/features/vector-obs-1&gt;/geojson:geometry
+</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testSimpleResultLiteral&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValues&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testFeatureOfInterest&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testResult&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testResultNotEmptyNode&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedPropertyPresent&gt;: &lt;http://example.com/features/vector-obs-1&gt;
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testRequiredTime&gt;: *none*
+</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-2 validation-item " id="item-ogc.bbr.examples.observation.vectorObservationFeature-2">
+                                            <div class="card-body">
+                                                <div class="card-title mb-0 anchor-container">
+                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-14"
+                                                            aria-expanded="false" aria-controls="uid-14"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                                        <i class="bi bi-caret-right-fill caret"></i>
+                                                        Details
+                                                    </button>
+                                                    <a href="bbr/examples/observation/vectorObservationFeature/example_2_1.json" target="_blank">example_2_1.json</a>
+                                                    <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.bbr.examples.observation.vectorObservationFeature-2">¶</a>
+                                                    <div class="float-end">
+                                                            <span class="badge text-bg-success me-2">Passed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-14">
+                                                    <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using examples/observationCollection.json from examples</div>
+                                                                    <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output JSON-LD example_2_1.jsonld created</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_2_1.ttl created</div>
+                                                                    <div class="font-monospace subsection-title mt-2">JSON Schema</div>
+                                                                    <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
+                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/observation/vectorObservationFeature/rules.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/observation/vectorObservationFeature/rules.shacl:
+ - Shape &lt;http://example.com/rules#testGeometryHasCoordinates&gt;: &lt;http://example.com/features/vector-obs-1&gt;/geojson:geometry
+ - Shape &lt;http://example.com/rules#testVectorObservationFeatureHasOneGeometry&gt;: &lt;http://example.com/features/vector-obs-1&gt;
+ - Shape &lt;http://example.com/rules#testGeometryCoordinatesIsList&gt;: &lt;http://example.com/features/vector-obs-1&gt;/geojson:geometry
+</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testSimpleResultLiteral&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent&gt;: &lt;http://example.com/features/c1&gt;
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval&gt;: &lt;http://example.com/features/c1&gt;
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValues&gt;: &lt;http://example.com/features/c1&gt;
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testFeatureOfInterest&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testResult&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testResultNotEmptyNode&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedPropertyPresent&gt;: &lt;http://example.com/features/vector-obs-1&gt;
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testRequiredTime&gt;: *none*
+</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.examples.ogcapi.processes.custom-api" id="bblock-ogc.bbr.examples.ogcapi.processes.custom-api">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.examples\.ogcapi\.processes\.custom-api">
                                     <div class="flex-fill">
                                         Custom OGC API processes instance
                                         <small class="ms-2 bblock-id">ogc.bbr.examples.ogcapi.processes.custom-api</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.examples.ogcapi.processes.custom-api">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -1090,13 +1136,20 @@ On instance[&#x27;properties&#x27;]:
                         accordionEntries.forEach(e => e.classList.remove('show'));
                     }
                 });
-                if (location.hash.startsWith('#bblock-')) {
+                if (/^#(bblock|item)-/.test(location.hash)) {
                     const highlight = document.querySelector(location.hash.replaceAll('.', '\\.'));
                     if (highlight) {
-                        highlight.querySelector('.accordion-collapse').classList.add('show');
+                        highlight.closest('.accordion-collapse').classList.add('show');
                         highlight.classList.add('highlighted');
                     }
                 }
+                document.addEventListener('click', ev => {
+                    if (!ev.target.classList.contains('anchor') || !ev.target.href) {
+                      return;
+                    }
+                    ev.stopPropagation();
+                    navigator?.clipboard?.writeText(ev.target.href);
+                });
             });
         </script>
     </body>

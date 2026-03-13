@@ -1,18 +1,18 @@
-path	@id
-/geometry	
-/geometry/type	@type
-/geometry/id	@id
-/geometry/properties	@nest
-/geometry/geometry	https://purl.org/geojson/vocab#geometry
-/geometry/geometry/type	@type
-/geometry/geometry/coordinates	https://purl.org/geojson/vocab#coordinates
-/geometry/geometry/bbox	https://purl.org/geojson/vocab#bbox
-/geometry/geometry/geometries	
-/geometry/geometry/geometries/type	@type
-/geometry/geometry/geometries/coordinates	https://purl.org/geojson/vocab#coordinates
-/geometry/geometry/geometries/bbox	https://purl.org/geojson/vocab#bbox
-/geometry/bbox	https://purl.org/geojson/vocab#bbox
-/distance	
-/distance/type	
-/distance/minimum	
-/units	
+path	@id	schema
+/geometry		/github/workspace/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputSchema/schema.yaml
+/geometry/type	@type	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/geometry/id	@id	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/geometry/properties	@nest	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/geometry/geometry	https://purl.org/geojson/vocab#geometry	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/geometry/geometry/type	@type	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/geometry/geometry/coordinates	https://purl.org/geojson/vocab#coordinates	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/geometry/geometry/bbox	https://purl.org/geojson/vocab#bbox	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/geometry/geometry/geometries		https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/geometry/geometry/geometries/type	@type	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/geometry/geometry/geometries/coordinates	https://purl.org/geojson/vocab#coordinates	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/geometry/geometry/geometries/bbox	https://purl.org/geojson/vocab#bbox	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/geometry/bbox	https://purl.org/geojson/vocab#bbox	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/distance		/github/workspace/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputSchema/schema.yaml
+/distance/type		/github/workspace/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputSchema/schema.yaml
+/distance/minimum		/github/workspace/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputSchema/schema.yaml
+/units		/github/workspace/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputSchema/schema.yaml

@@ -38,6 +38,7 @@
   },
   "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/rules/topo-edges/schema.json",
   "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/rules/topo-edges/context.jsonld",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/rules/topo-edges/resolvedProperties.json",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/rules/topo-edges/",
   "rdfData": [],
   "validationPassed": true,

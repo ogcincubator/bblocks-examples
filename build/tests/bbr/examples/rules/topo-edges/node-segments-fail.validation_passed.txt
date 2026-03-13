@@ -1,5 +1,5 @@
 Validation report for ogc.bbr.examples.rules.topo-edges - Topo rules examples
-Generated 2026-01-13T22:31:22.570426+00:00
+Generated 2026-03-13T14:02:11.795521+00:00
 === General ===
 Test was expected to fail and it did.
 === End General ===
@@ -21,8 +21,8 @@ Validation result for https://ogcincubator.github.io/topo-feature/_sources/featu
   Conforms: True
   
 Focus nodes for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:n020c14c3eeb24d85b735ab033fff1c32b1: <file:///github/workspace/e1>/geojson:geometry
- - Shape _:n020c14c3eeb24d85b735ab033fff1c32b3: <file:///github/workspace/e1>/geojson:geometry
+ - Shape _:nb69242b0544342b49c903b28d6a3b065b3: <file:///github/workspace/e1>/geojson:geometry
+ - Shape _:nb69242b0544342b49c903b28d6a3b065b1: <file:///github/workspace/e1>/geojson:geometry
 
 
 ** Validation error **

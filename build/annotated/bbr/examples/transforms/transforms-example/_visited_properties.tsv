@@ -1,4 +1,4 @@
-path	@id
-/one	http://example.com/hasOne
-/two	http://example.com/hasTwo
-/string	http://example.com/hasString
+path	@id	schema
+/one	http://example.com/hasOne	/github/workspace/build/annotated/bbr/examples/transforms/transforms-example/schema.yaml
+/two	http://example.com/hasTwo	/github/workspace/build/annotated/bbr/examples/transforms/transforms-example/schema.yaml
+/string	http://example.com/hasString	/github/workspace/build/annotated/bbr/examples/transforms/transforms-example/schema.yaml

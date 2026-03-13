@@ -43,6 +43,7 @@
   },
   "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/overrideContext/schema.yaml",
   "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/overrideContext/context.jsonld",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/overrideContext/resolvedProperties.json",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/overrideContext/",
   "rdfData": [],
   "validationPassed": true,

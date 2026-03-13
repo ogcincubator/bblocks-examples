@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.bbr.examples.feature.geosparqlFeature - GeoJSON transformed to GeoSPARQL geometry",
   "bblockName": "GeoJSON transformed to GeoSPARQL geometry",
   "bblockId": "ogc.bbr.examples.feature.geosparqlFeature",
-  "generated": "2026-01-13T22:31:10.584272+00:00",
+  "generated": "2026-03-13T14:02:05.726084+00:00",
   "result": true,
   "items": [
     {
@@ -23,7 +23,7 @@
           "entries": [
             {
               "isError": false,
-              "message": "Using example_1_1.json from examples"
+              "message": "Using examples/feature.json from examples"
             },
             {
               "op": "jsonld-uplift",
