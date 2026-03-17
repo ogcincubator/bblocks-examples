@@ -1,5 +1,5 @@
 Validation report for ogc.bbr.examples.rules.topo-edges - Topo rules examples
-Generated 2026-03-17T08:34:06.273262+00:00
+Generated 2026-03-17T12:05:45.844318+00:00
 === Files ===
 Using examples/nodes.json from examples
 JSON-LD context is present - uplifting
@@ -12,14 +12,6 @@ Validation passed
 === End JSON Schema ===
 
 === SHACL ===
-Validation result for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
-  Validation Report
-  Conforms: True
-  
-Focus nodes for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:nf9af4260e09444ac9078c7f4ac7acf2eb3: <http://example.com/nodes/P2>/geojson:geometry,<http://example.com/nodes/P1>/geojson:geometry
- - Shape _:nf9af4260e09444ac9078c7f4ac7acf2eb1: <http://example.com/nodes/P2>/geojson:geometry,<http://example.com/nodes/P1>/geojson:geometry
-
 Validation result for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
   Validation Report
   Conforms: True
@@ -27,6 +19,14 @@ Validation result for https://ogcincubator.github.io/topo-feature/_sources/featu
 Focus nodes for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
  - Shape topo:testTopoReferencesExist: <http://example.com/nodes/LineP1P2>/geojson:topology
  - Shape topo:testTopoLinesReferencePoints: <http://example.com/nodes/LineP1P2>/geojson:topology
+
+Validation result for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
+ - Shape _:n0004978063c94db8af62871407b09bb7b3: <http://example.com/nodes/P1>/geojson:geometry,<http://example.com/nodes/P2>/geojson:geometry
+ - Shape _:n0004978063c94db8af62871407b09bb7b1: <http://example.com/nodes/P1>/geojson:geometry,<http://example.com/nodes/P2>/geojson:geometry
 
 === End SHACL ===
 

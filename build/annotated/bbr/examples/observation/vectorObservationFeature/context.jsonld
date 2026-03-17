@@ -228,7 +228,31 @@
     },
     "hasResult": {
       "@id": "sosa:hasResult",
-      "@type": "@id"
+      "@type": "@id",
+      "@context": {
+        "pose": {
+          "@context": {
+            "position": {
+              "@context": {
+                "lat": "geo:lat",
+                "lon": "geo:long",
+                "h": "geopose:h"
+              },
+              "@id": "geopose:position"
+            },
+            "angles": {
+              "@context": {
+                "yaw": "geopose:yaw",
+                "pitch": "geopose:pitch",
+                "roll": "geopose:roll"
+              },
+              "@id": "geopose:angles"
+            }
+          },
+          "@id": "resultschema:pose"
+        },
+        "distance": "resultschema:distance"
+      }
     },
     "hasResultQuality": {
       "@id": "sosa:hasResultQuality",

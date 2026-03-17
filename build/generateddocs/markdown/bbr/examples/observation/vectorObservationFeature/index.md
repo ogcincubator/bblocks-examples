@@ -102,14 +102,23 @@ View [live example](https://defs-dev.opengis.net/bblocks-pygeoapi/collections/og
 
 #### ttl
 ```ttl
+@prefix geo1: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
+@prefix geopose: <https://w3id.org/ogc/geopose/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix resultschema: <https://w3id.org/ogc/hosted/examples/resultschema/> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://example.com/features/vector-obs-1> a geojson:Feature ;
     sosa:hasFeatureOfInterest <eg:Traverse-P1-P2> ;
-    sosa:hasResult [ ] ;
+    sosa:hasResult [ resultschema:distance 6.889234e+06 ;
+            resultschema:pose [ geopose:angles [ geopose:pitch -1e-02 ;
+                            geopose:roll 0 ;
+                            geopose:yaw 1.535e+01 ] ;
+                    geopose:position [ geo1:lat -1.116718e+02 ;
+                            geo1:long 4.005671e+01 ;
+                            geopose:h 5e-01 ] ] ] ;
     sosa:observedProperty <https://w3id.org/ad4gd/air-quality/properties/CO2> ;
     sosa:resultTime "2023-05-22T16:41:00+2" ;
     geojson:geometry [ a geojson:LineString ;
@@ -224,8 +233,11 @@ Example of Specialised ObservationCollection being a vector, using GeoPose as pa
 
 #### ttl
 ```ttl
+@prefix geo1: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
+@prefix geopose: <https://w3id.org/ogc/geopose/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix resultschema: <https://w3id.org/ogc/hosted/examples/resultschema/> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -236,7 +248,13 @@ Example of Specialised ObservationCollection being a vector, using GeoPose as pa
 
 <http://example.com/features/vector-obs-1> a geojson:Feature ;
     sosa:hasFeatureOfInterest <eg:Traverse-P1-P2> ;
-    sosa:hasResult [ ] ;
+    sosa:hasResult [ resultschema:distance 6.889234e+06 ;
+            resultschema:pose [ geopose:angles [ geopose:pitch -1e-02 ;
+                            geopose:roll 0 ;
+                            geopose:yaw 1.535e+01 ] ;
+                    geopose:position [ geo1:lat -1.116718e+02 ;
+                            geo1:long 4.005671e+01 ;
+                            geopose:h 5e-01 ] ] ] ;
     sosa:resultTime "2023-05-22T16:41:00+2" ;
     geojson:geometry [ a geojson:LineString ;
             geojson:coordinates ( ( -1.116718e+02 4.005671e+01 ) ( -1.1171e+02 4.015671e+01 ) ) ] .
@@ -511,7 +529,31 @@ Links to the schema:
     },
     "hasResult": {
       "@id": "sosa:hasResult",
-      "@type": "@id"
+      "@type": "@id",
+      "@context": {
+        "pose": {
+          "@context": {
+            "position": {
+              "@context": {
+                "lat": "geo:lat",
+                "lon": "geo:long",
+                "h": "geopose:h"
+              },
+              "@id": "geopose:position"
+            },
+            "angles": {
+              "@context": {
+                "yaw": "geopose:yaw",
+                "pitch": "geopose:pitch",
+                "roll": "geopose:roll"
+              },
+              "@id": "geopose:angles"
+            }
+          },
+          "@id": "resultschema:pose"
+        },
+        "distance": "resultschema:distance"
+      }
     },
     "hasResultQuality": {
       "@id": "sosa:hasResultQuality",
