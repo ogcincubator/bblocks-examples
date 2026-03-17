@@ -1,12 +1,1 @@
-[
-  {
-    "path": "/myProp",
-    "id": "http://example.org/myModel/myProp",
-    "required": true,
-    "schema_type": "string",
-    "sources": [
-      "bblocks://ogc.bbr.examples.feature.propertySet"
-    ],
-    "effectiveId": "http://example.org/myModel/myProp"
-  }
-]
+{"defs":{},"properties":[{"path":["myProp"],"id":"http://example.org/myModel/myProp","required":true,"schema_type":"string","sources":["bblocks://ogc.bbr.examples.feature.propertySet"],"effectiveId":"http://example.org/myModel/myProp"}]}

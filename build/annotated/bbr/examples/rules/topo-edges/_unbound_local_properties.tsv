@@ -1,4 +1,5 @@
 path
 /nodes
+/nodes/_anyOf/0/features
 /edges
-/edges/features
+/edges/_anyOf/1/features

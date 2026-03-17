@@ -24,12 +24,12 @@
     dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/geojsonFeature/index.json> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/geojsonFeature/index.md> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.geojsonFeature> ] ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.geojsonFeature> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/geojsonFeature/index.md> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2026-01-13"^^xsd:date ;
+    dct:modified "2026-03-13"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-examples/> ;
     skos:prefLabel "Custom GeoJSON Feature" ;
@@ -41,12 +41,12 @@
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/context.jsonld> ;
             prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/schema.json> ;
             prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://ogc.bbr.examples.feature.propertySet>,
         <bblocks://ogc.geo.features.feature> ;
@@ -68,7 +68,7 @@
         [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/geojsonFeatureFGLenient/index.json> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2026-01-13"^^xsd:date ;
+    dct:modified "2026-03-13"^^xsd:date ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-examples/> ;
     skos:prefLabel "Custom JSON-FG (lenient) Feature" ;
     skos:topConceptOf <https://ogcincubator.github.io/bblocks-examples/> ;
@@ -78,14 +78,14 @@
             dct:format "application/yaml" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/schema.yaml> ;
             prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/context.jsonld> ;
-            prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/schema.json> ;
-            prof:hasRole role:schema ] ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
     bblocks:dependsOn <bblocks://ogc.bbr.examples.feature.propertySet>,
         <bblocks://ogc.geo.json-fg.feature-lenient> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
@@ -99,31 +99,31 @@
     rdfs:label "GeoJSON transformed to GeoSPARQL geometry" ;
     dct:abstract "This example includes an uplift step to use a GeoSPARQL geometry in a GeoJSON object"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2024-07-30T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/geosparqlFeature/index.md> ],
-        [ dct:format "text/html" ;
+    dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.geosparqlFeature> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/geosparqlFeature/index.json> ] ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/geosparqlFeature/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/geosparqlFeature/index.md> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2026-01-13"^^xsd:date ;
+    dct:modified "2026-03-13"^^xsd:date ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-examples/> ;
     skos:prefLabel "GeoJSON transformed to GeoSPARQL geometry" ;
     skos:topConceptOf <https://ogcincubator.github.io/bblocks-examples/> ;
     dcat:keyword "examples",
         "feature" ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/context.jsonld> ;
-            prof:hasRole role:mapping ],
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/schema.yaml> ;
+            prof:hasRole role:schema ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/schema.json> ;
             prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/schema.yaml> ;
-            prof:hasRole role:schema ] ;
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
     bblocks:dependsOn <bblocks://ogc.bbr.examples.feature.propertySet>,
         <bblocks://ogc.geo.features.feature> ;
     bblocks:hasSourceJsonLdContext <https://ogcincubator.github.io/bblocks-examples/_sources/feature/geosparqlFeature/context.jsonld> ;
@@ -138,14 +138,14 @@
     rdfs:label "Test Context Override" ;
     dct:abstract "This example shows a simple customisation for OGC API Feature using an externally defined domain schema."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/overrideContext/index.json> ],
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.overrideContext> ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/overrideContext/index.md> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.overrideContext> ] ;
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/overrideContext/index.json> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2026-01-13"^^xsd:date ;
+    dct:modified "2026-03-13"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7>,
         <https://github.com/smart-data-models/dataModel.ACRIS/tree/master/AirportFacility>,
         <https://smartdatamodels.org/> ;
@@ -154,18 +154,18 @@
     skos:topConceptOf <https://ogcincubator.github.io/bblocks-examples/> ;
     dcat:keyword "examples",
         "feature" ;
-    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/overrideContext/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/overrideContext/schema.yaml> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/overrideContext/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/overrideContext/context.jsonld> ;
-            prof:hasRole role:mapping ] ;
+            prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://ogc.bbr.examples.feature.externalSchema> ;
     bblocks:hasSourceJsonLdContext <https://ogcincubator.github.io/bblocks-examples/_sources/feature/overrideContext/context.jsonld> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
@@ -186,7 +186,7 @@
         [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.ogcapi.processes.custom-api> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2026-01-13"^^xsd:date ;
+    dct:modified "2026-03-13"^^xsd:date ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-examples/> ;
     skos:prefLabel "Custom OGC API processes instance" ;
     skos:topConceptOf <https://ogcincubator.github.io/bblocks-examples/> ;
@@ -221,14 +221,14 @@
     rdfs:label "Topo rules examples" ;
     dct:abstract "Demonstrates inheritance of rules (in this case for topology using feature references - that cannot be expressed in schemas."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.rules.topo-edges> ],
-        [ dct:format "text/markdown" ;
+    dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/rules/topo-edges/index.md> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/rules/topo-edges/index.json> ] ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/rules/topo-edges/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.rules.topo-edges> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2026-01-13"^^xsd:date ;
+    dct:modified "2026-03-13"^^xsd:date ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-examples/> ;
     skos:prefLabel "Topo rules examples" ;
     skos:topConceptOf <https://ogcincubator.github.io/bblocks-examples/> ;
@@ -236,26 +236,26 @@
             dct:format "application/yaml" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/rules/topo-edges/schema.yaml> ;
             prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/rules/topo-edges/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.geo.topo.features.topo-feature-collection> ;
-            prof:hasArtifact <https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl>,
-                <https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl> ;
-            prof:hasRole role:validation ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/rules/topo-edges/schema.json> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.geo.topo.features.topo-feature-collection> ;
+            prof:hasArtifact <https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl>,
+                <https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.geo.topo.features.topo-feature> ;
             prof:hasArtifact <https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl>,
                 <https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl> ;
-            prof:hasRole role:validation ] ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/rules/topo-edges/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
     bblocks:dependsOn <bblocks://ogc.geo.topo.features.topo-feature-collection>,
         <bblocks://ogc.geo.topo.features.topo-line>,
         <bblocks://ogc.ogc-utils.iri-or-curie> ;
@@ -278,40 +278,40 @@
         [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/transforms/transforms-example/index.json> ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2026-01-13"^^xsd:date ;
+    dct:modified "2026-03-13"^^xsd:date ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-examples/> ;
     skos:prefLabel "Transforms example" ;
     skos:topConceptOf <https://ogcincubator.github.io/bblocks-examples/> ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/context.jsonld> ;
-            prof:hasRole role:mapping ],
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/schema.json> ;
+            prof:hasRole role:schema ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/schema.yaml> ;
             prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/schema.json> ;
-            prof:hasRole role:schema ] ;
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
     bblocks:hasSourceJsonLdContext <https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-example/context.jsonld> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
 
 <https://ogcincubator.github.io/bblocks-examples/build/bblocks.ttl> a prov:Entity ;
     dct:format "text/turtle" ;
-    prov:wasAttributedTo _:Nf1e04c5e65da4a84bfd9cc59d258bd81 ;
+    prov:wasAttributedTo _:N821964e1926a41a7b026c89dd3dccc61 ;
     prov:wasGeneratedBy [ a prov:Activity ;
-            prov:endedAtTime "2026-03-13T14:02:15.426322"^^xsd:dateTime ;
-            prov:startedAtTime "2026-03-13T14:02:15.177996"^^xsd:dateTime ;
+            prov:endedAtTime "2026-03-17T08:34:10.303074"^^xsd:dateTime ;
+            prov:startedAtTime "2026-03-17T08:34:10.076216"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
                     dct:format "application/json" ;
-                    dct:hasVersion "git:89562dccf28fe5eafc7be25151e96133687f968d" ;
+                    dct:hasVersion "git:94132f0b2ab40f1ee704b9d94bcc3d86975e9deb" ;
                     rdfs:seeAlso <https://ogcincubator.github.io/bblocks-examples/build/register.json> ],
                 [ a prov:Entity ;
                     dct:format "application/yaml" ;
                     rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
-            prov:wasAssociatedWith _:Nf1e04c5e65da4a84bfd9cc59d258bd81 ] .
+            prov:wasAssociatedWith _:N821964e1926a41a7b026c89dd3dccc61 ] .
 
 <bblocks://ogc.bbr.examples.feature.externalSchema> a skos:Concept,
         dcat:Dataset,
@@ -320,14 +320,14 @@
     rdfs:label "External Schema (Smart Data Models)" ;
     dct:abstract "This example shows a simple customisation for OGC API Feature using an externally defined domain schema."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/externalSchema/index.json> ],
-        [ dct:format "text/html" ;
+    dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.externalSchema> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/externalSchema/index.md> ] ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/externalSchema/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/externalSchema/index.json> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2026-01-13"^^xsd:date ;
+    dct:modified "2026-03-13"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7>,
         <https://github.com/smart-data-models/dataModel.ACRIS/tree/master/AirportFacility>,
         <https://smartdatamodels.org/> ;
@@ -363,12 +363,12 @@
     dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.observation.vectorObservation> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/observation/vectorObservation/index.md> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/observation/vectorObservation/index.json> ] ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/observation/vectorObservation/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/observation/vectorObservation/index.md> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2026-01-13"^^xsd:date ;
+    dct:modified "2026-03-13"^^xsd:date ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-examples/> ;
     skos:prefLabel "Observation Result (Vector based on GeoPose)" ;
     skos:topConceptOf <https://ogcincubator.github.io/bblocks-examples/> ;
@@ -382,23 +382,23 @@
             dct:format "application/json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.json> ;
             prof:hasRole role:schema ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.sosa.properties.observation> ;
-            prof:hasArtifact <https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl> ;
-            prof:hasRole role:validation ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/context.jsonld> ;
             prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.yaml> ;
+            prof:hasRole role:schema ],
         [ dct:conformsTo owl:Ontology ;
             dct:format "text/turtle" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/ontology.ttl> ;
             prof:hasRole role:specification ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.yaml> ;
-            prof:hasRole role:schema ] ;
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.sosa.properties.observation> ;
+            prof:hasArtifact <https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl> ;
+            prof:hasRole role:validation ] ;
     bblocks:dependsOn <bblocks://ogc.geo.geopose.basic.ypr>,
         <bblocks://ogc.sosa.properties.observation> ;
     bblocks:hasSourceJsonLdContext <https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservation/context.jsonld> ;
@@ -415,12 +415,12 @@
     dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.observation.vectorObservationFeature> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/observation/vectorObservationFeature/index.json> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/observation/vectorObservationFeature/index.md> ] ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/observation/vectorObservationFeature/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/observation/vectorObservationFeature/index.json> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2026-01-13"^^xsd:date ;
+    dct:modified "2026-03-13"^^xsd:date ;
     dct:source <https://www.w3.org/TR/vocab-ssn/> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-examples/> ;
     skos:prefLabel "Custom Result for Observation Feature" ;
@@ -430,28 +430,28 @@
         "o&m&s",
         "observations",
         "sosa" ;
-    prof:hasResource [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.bbr.examples.observation.vectorObservationFeature> ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservationFeature/rules.shacl> ;
-            prof:hasRole role:validation ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.sosa.properties.observation> ;
-            prof:hasArtifact <https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl> ;
-            prof:hasRole role:validation ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/schema.yaml> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld> ;
-            prof:hasRole role:mapping ] ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.bbr.examples.observation.vectorObservationFeature> ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservationFeature/rules.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.sosa.properties.observation> ;
+            prof:hasArtifact <https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/schema.json> ;
+            prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://ogc.bbr.examples.observation.vectorObservation>,
         <bblocks://ogc.sosa.features.observation>,
         <bblocks://ogc.sosa.features.observationCollection>,
@@ -467,14 +467,14 @@
     rdfs:label "Buffer geometry process description" ;
     dct:abstract "Description of the buffer geometry process"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-12-17T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/ogcapi/processes/schemas/buffer-geometry/processDescription/index.json> ],
-        [ dct:format "text/markdown" ;
+    dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/ogcapi/processes/schemas/buffer-geometry/processDescription/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/ogcapi/processes/schemas/buffer-geometry/processDescription/index.json> ],
         [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.processDescription> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2026-01-13"^^xsd:date ;
+    dct:modified "2026-03-13"^^xsd:date ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-examples/> ;
     skos:prefLabel "Buffer geometry process description" ;
     skos:topConceptOf <https://ogcincubator.github.io/bblocks-examples/> ;
@@ -506,32 +506,32 @@
     rdfs:label "Example OGC API Processes instance input descriptions" ;
     dct:abstract "Collection of input descriptions"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-12-17T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/ogcapi/processes/schemas/inputDescriptions/index.json> ],
+        [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/ogcapi/processes/schemas/inputDescriptions/index.md> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.ogcapi.processes.schemas.inputDescriptions> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/ogcapi/processes/schemas/inputDescriptions/index.json> ] ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.ogcapi.processes.schemas.inputDescriptions> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2026-01-13"^^xsd:date ;
+    dct:modified "2026-03-13"^^xsd:date ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-examples/> ;
     skos:prefLabel "Example OGC API Processes instance input descriptions" ;
     skos:topConceptOf <https://ogcincubator.github.io/bblocks-examples/> ;
     dcat:keyword "examples",
         "ogc api",
         "ogc api processes" ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/inputDescriptions/context.jsonld> ;
-            prof:hasRole role:mapping ],
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/inputDescriptions/schema.yaml> ;
+            prof:hasRole role:schema ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/inputDescriptions/schema.json> ;
             prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/inputDescriptions/schema.yaml> ;
-            prof:hasRole role:schema ] ;
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/inputDescriptions/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
     bblocks:dependsOn <bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputDescription> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
@@ -550,24 +550,24 @@
         [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.ogcapi.processes.schemas.outputDescriptions> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2026-01-13"^^xsd:date ;
+    dct:modified "2026-03-13"^^xsd:date ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-examples/> ;
     skos:prefLabel "Example OGC API Processes instance output descriptions" ;
     skos:topConceptOf <https://ogcincubator.github.io/bblocks-examples/> ;
     dcat:keyword "examples",
         "ogc api",
         "ogc api processes" ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/outputDescriptions/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/outputDescriptions/context.jsonld> ;
             prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/outputDescriptions/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/outputDescriptions/schema.json> ;
             prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputDescription> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
@@ -580,34 +580,34 @@
     rdfs:label "Pre and Post Semantic Uplift example" ;
     dct:abstract "A sample building block to show how semantic uplift can be customized"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2024-10-03T11:31:00+02:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/semantic-uplift/pre-and-post-uplift/index.md> ],
+        [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/semantic-uplift/pre-and-post-uplift/index.json> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.semantic-uplift.pre-and-post-uplift> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/semantic-uplift/pre-and-post-uplift/index.md> ] ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.semantic-uplift.pre-and-post-uplift> ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2026-01-13"^^xsd:date ;
+    dct:modified "2026-03-13"^^xsd:date ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-examples/> ;
     skos:prefLabel "Pre and Post Semantic Uplift example" ;
     skos:topConceptOf <https://ogcincubator.github.io/bblocks-examples/> ;
-    prof:hasResource [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.bbr.examples.semantic-uplift.pre-and-post-uplift> ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/pre-and-post-uplift/rules.shacl> ;
-            prof:hasRole role:validation ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/pre-and-post-uplift/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/pre-and-post-uplift/schema.yaml> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/pre-and-post-uplift/context.jsonld> ;
-            prof:hasRole role:mapping ] ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/pre-and-post-uplift/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.bbr.examples.semantic-uplift.pre-and-post-uplift> ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/pre-and-post-uplift/rules.shacl> ;
+            prof:hasRole role:validation ] ;
     bblocks:hasSourceJsonLdContext <https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/pre-and-post-uplift/context.jsonld> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
@@ -632,7 +632,7 @@
         [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputDescription> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2026-01-13"^^xsd:date ;
+    dct:modified "2026-03-13"^^xsd:date ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-examples/> ;
     skos:prefLabel "Buffer geometry process input description" ;
     skos:topConceptOf <https://ogcincubator.github.io/bblocks-examples/> ;
@@ -663,32 +663,32 @@
     rdfs:label "Buffer geometry process input schema" ;
     dct:abstract "Input schema for the buffer geometry process"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-12-17T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputSchema> ],
-        [ dct:format "application/json" ;
+    dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputSchema/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputSchema> ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputSchema/index.md> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2026-01-13"^^xsd:date ;
+    dct:modified "2026-03-13"^^xsd:date ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-examples/> ;
     skos:prefLabel "Buffer geometry process input schema" ;
     skos:topConceptOf <https://ogcincubator.github.io/bblocks-examples/> ;
     dcat:keyword "examples",
         "ogc api",
         "ogc api processes" ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputSchema/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputSchema/schema.yaml> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputSchema/schema.json> ;
-            prof:hasRole role:schema ] ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputSchema/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
     bblocks:dependsOn <bblocks://ogc.geo.common.data_types.geojson>,
         <bblocks://ogc.ogc-utils.iri-or-curie> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
@@ -701,14 +701,14 @@
     rdfs:label "Buffer geometry process output description" ;
     dct:abstract "Description for the output of the buffer geometry process"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-12-17T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputDescription/index.json> ],
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputDescription/index.md> ],
         [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputDescription> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputDescription/index.md> ] ;
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputDescription/index.json> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2026-01-13"^^xsd:date ;
+    dct:modified "2026-03-13"^^xsd:date ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-examples/> ;
     skos:prefLabel "Buffer geometry process output description" ;
     skos:topConceptOf <https://ogcincubator.github.io/bblocks-examples/> ;
@@ -716,17 +716,17 @@
         "ogc api",
         "ogc api processes" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputDescription/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputDescription/schema.json> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputDescription/context.jsonld> ;
-            prof:hasRole role:mapping ] ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputDescription/schema.yaml> ;
+            prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://ogc.api.processes.v1.schemas.outputDescription>,
         <bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputSchema> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
@@ -746,7 +746,7 @@
         [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputSchema> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2026-01-13"^^xsd:date ;
+    dct:modified "2026-03-13"^^xsd:date ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-examples/> ;
     skos:prefLabel "Buffer geometry process output schema" ;
     skos:topConceptOf <https://ogcincubator.github.io/bblocks-examples/> ;
@@ -780,7 +780,7 @@
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/propertySet/index.md> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2026-01-13"^^xsd:date ;
+    dct:modified "2026-03-13"^^xsd:date ;
     dct:source <https://www.w3.org/TR/vocab-ssn/> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-examples/> ;
     skos:prefLabel "Example property set for Features" ;
@@ -788,17 +788,17 @@
     dcat:keyword "examples",
         "features",
         "properties" ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/context.jsonld> ;
             prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/schema.json> ;
             prof:hasRole role:schema ] ;
     bblocks:hasSourceJsonLdContext <https://ogcincubator.github.io/bblocks-examples/_sources/feature/propertySet/context.jsonld> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
@@ -819,7 +819,7 @@ Other examples will illustrate different possible ways to use the Building Block
 
 More complex examples will include transformation testing - testing a format can be transformed into a related structure and/or data model.
 """^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
-    dct:modified "2026-03-13T14:01:53.993256"^^xsd:dateTime ;
+    dct:modified "2026-03-17T08:33:45.644718"^^xsd:dateTime ;
     void:sparqlEndpoint <https://defs-dev.opengis.net/fuseki/query> ;
     owl:imports <https://ogcincubator.github.io/bblocks-ogcapi-processes/build/register.json>,
         <https://ogcincubator.github.io/topo-feature/build/register.json>,
@@ -849,20 +849,20 @@ More complex examples will include transformation testing - testing a format can
             dct:type "text/turtle" ;
             ns2:relation <http://www.iana.org/assignments/relation/self> ;
             ns1:hasTarget <https://ogcincubator.github.io/bblocks-examples/build/bblocks.ttl> ],
-        [ rdfs:label "This Building Blocks Register in JSON-LD format" ;
-            dct:type "application/ld+json" ;
-            ns2:relation <http://www.iana.org/assignments/relation/self> ;
-            ns1:hasTarget <https://ogcincubator.github.io/bblocks-examples/build/bblocks.jsonld> ],
         [ rdfs:label "This Building Blocks Register in JSON format" ;
             dct:type "application/json" ;
             ns2:relation <http://www.iana.org/assignments/relation/self> ;
-            ns1:hasTarget <https://ogcincubator.github.io/bblocks-examples/build/register.json> ] ;
+            ns1:hasTarget <https://ogcincubator.github.io/bblocks-examples/build/register.json> ],
+        [ rdfs:label "This Building Blocks Register in JSON-LD format" ;
+            dct:type "application/ld+json" ;
+            ns2:relation <http://www.iana.org/assignments/relation/self> ;
+            ns1:hasTarget <https://ogcincubator.github.io/bblocks-examples/build/bblocks.jsonld> ] ;
     foaf:homepage <https://ogcincubator.github.io/bblocks-examples/> ;
     bblocks:hasValidationReport <https://ogcincubator.github.io/bblocks-examples/build/tests/report.html> .
 
-_:Nf1e04c5e65da4a84bfd9cc59d258bd81 a prov:Agent,
+_:N821964e1926a41a7b026c89dd3dccc61 a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
-    dct:hasVersion "0.5.20" ;
+    dct:hasVersion "0.5.21" ;
     rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> .
 

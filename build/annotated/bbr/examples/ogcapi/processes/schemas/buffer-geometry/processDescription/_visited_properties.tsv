@@ -27,42 +27,42 @@ path	@id	schema
 /inputs/maxOccurs	https://w3id.org/ogc/api/processes/maxOccurs	https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/inputDescription/schema.yaml
 /inputs/minOccurs	https://w3id.org/ogc/api/processes/minOccurs	https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/inputDescription/schema.yaml
 /inputs/schema	https://w3id.org/ogc/api/processes/schema	https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/inputDescription/schema.yaml
-/inputs/schema/$ref		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/reference/schema.yaml
-/inputs/schema/additionalProperties		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
-/inputs/schema/allOf		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
-/inputs/schema/anyOf		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
-/inputs/schema/contentEncoding		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
-/inputs/schema/contentMediaType		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
-/inputs/schema/contentSchema		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
-/inputs/schema/default		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
-/inputs/schema/deprecated		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
-/inputs/schema/description		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
-/inputs/schema/enum		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
-/inputs/schema/example		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
-/inputs/schema/exclusiveMaximum		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
-/inputs/schema/exclusiveMinimum		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
-/inputs/schema/format		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
-/inputs/schema/items		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
-/inputs/schema/maxItems		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
-/inputs/schema/maxLength		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
-/inputs/schema/maxProperties		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
-/inputs/schema/maximum		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
-/inputs/schema/minItems		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
-/inputs/schema/minLength		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
-/inputs/schema/minProperties		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
-/inputs/schema/minimum		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
-/inputs/schema/multipleOf		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
-/inputs/schema/not		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
-/inputs/schema/nullable		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
-/inputs/schema/oneOf		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
-/inputs/schema/pattern		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
-/inputs/schema/properties		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
-/inputs/schema/readOnly		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
-/inputs/schema/required		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
-/inputs/schema/title		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
-/inputs/schema/type		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
-/inputs/schema/uniqueItems		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
-/inputs/schema/writeOnly		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
+/inputs/schema/_oneOf/0/$ref		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/reference/schema.yaml
+/inputs/schema/_oneOf/1/additionalProperties		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
+/inputs/schema/_oneOf/1/allOf		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
+/inputs/schema/_oneOf/1/anyOf		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
+/inputs/schema/_oneOf/1/contentEncoding		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
+/inputs/schema/_oneOf/1/contentMediaType		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
+/inputs/schema/_oneOf/1/contentSchema		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
+/inputs/schema/_oneOf/1/default		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
+/inputs/schema/_oneOf/1/deprecated		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
+/inputs/schema/_oneOf/1/description		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
+/inputs/schema/_oneOf/1/enum		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
+/inputs/schema/_oneOf/1/example		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
+/inputs/schema/_oneOf/1/exclusiveMaximum		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
+/inputs/schema/_oneOf/1/exclusiveMinimum		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
+/inputs/schema/_oneOf/1/format		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
+/inputs/schema/_oneOf/1/items		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
+/inputs/schema/_oneOf/1/maxItems		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
+/inputs/schema/_oneOf/1/maxLength		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
+/inputs/schema/_oneOf/1/maxProperties		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
+/inputs/schema/_oneOf/1/maximum		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
+/inputs/schema/_oneOf/1/minItems		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
+/inputs/schema/_oneOf/1/minLength		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
+/inputs/schema/_oneOf/1/minProperties		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
+/inputs/schema/_oneOf/1/minimum		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
+/inputs/schema/_oneOf/1/multipleOf		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
+/inputs/schema/_oneOf/1/not		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
+/inputs/schema/_oneOf/1/nullable		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
+/inputs/schema/_oneOf/1/oneOf		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
+/inputs/schema/_oneOf/1/pattern		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
+/inputs/schema/_oneOf/1/properties		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
+/inputs/schema/_oneOf/1/readOnly		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
+/inputs/schema/_oneOf/1/required		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
+/inputs/schema/_oneOf/1/title		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
+/inputs/schema/_oneOf/1/type		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
+/inputs/schema/_oneOf/1/uniqueItems		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
+/inputs/schema/_oneOf/1/writeOnly		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/schema/schema.yaml
 /outputs		https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/process/schema.yaml
 /outputs/schema	https://w3id.org/ogc/api/processes/schema	https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/outputDescription/schema.yaml
 /inputs/geometry		https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputDescription/schema.yaml
@@ -74,13 +74,45 @@ path	@id	schema
 /inputs/geometry/schema/id	@id	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
 /inputs/geometry/schema/properties	@nest	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
 /inputs/geometry/schema/geometry	https://purl.org/geojson/vocab#geometry	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
-/inputs/geometry/schema/geometry/type	@type	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
-/inputs/geometry/schema/geometry/coordinates	https://purl.org/geojson/vocab#coordinates	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
-/inputs/geometry/schema/geometry/bbox	https://purl.org/geojson/vocab#bbox	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
-/inputs/geometry/schema/geometry/geometries		https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
-/inputs/geometry/schema/geometry/geometries/type	@type	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
-/inputs/geometry/schema/geometry/geometries/coordinates	https://purl.org/geojson/vocab#coordinates	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
-/inputs/geometry/schema/geometry/geometries/bbox	https://purl.org/geojson/vocab#bbox	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/inputs/geometry/schema/geometry/_oneOf/1/type	@type	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/inputs/geometry/schema/geometry/_oneOf/1/coordinates	https://purl.org/geojson/vocab#coordinates	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/inputs/geometry/schema/geometry/_oneOf/1/bbox	https://purl.org/geojson/vocab#bbox	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/inputs/geometry/schema/geometry/_oneOf/2/type	@type	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/inputs/geometry/schema/geometry/_oneOf/2/coordinates	https://purl.org/geojson/vocab#coordinates	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/inputs/geometry/schema/geometry/_oneOf/2/bbox	https://purl.org/geojson/vocab#bbox	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/inputs/geometry/schema/geometry/_oneOf/3/type	@type	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/inputs/geometry/schema/geometry/_oneOf/3/coordinates	https://purl.org/geojson/vocab#coordinates	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/inputs/geometry/schema/geometry/_oneOf/3/bbox	https://purl.org/geojson/vocab#bbox	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/inputs/geometry/schema/geometry/_oneOf/4/type	@type	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/inputs/geometry/schema/geometry/_oneOf/4/coordinates	https://purl.org/geojson/vocab#coordinates	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/inputs/geometry/schema/geometry/_oneOf/4/bbox	https://purl.org/geojson/vocab#bbox	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/inputs/geometry/schema/geometry/_oneOf/5/type	@type	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/inputs/geometry/schema/geometry/_oneOf/5/coordinates	https://purl.org/geojson/vocab#coordinates	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/inputs/geometry/schema/geometry/_oneOf/5/bbox	https://purl.org/geojson/vocab#bbox	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/inputs/geometry/schema/geometry/_oneOf/6/type	@type	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/inputs/geometry/schema/geometry/_oneOf/6/coordinates	https://purl.org/geojson/vocab#coordinates	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/inputs/geometry/schema/geometry/_oneOf/6/bbox	https://purl.org/geojson/vocab#bbox	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/inputs/geometry/schema/geometry/_oneOf/7/type	@type	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/inputs/geometry/schema/geometry/_oneOf/7/geometries		https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/inputs/geometry/schema/geometry/_oneOf/7/geometries/_oneOf/0/type	@type	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/inputs/geometry/schema/geometry/_oneOf/7/geometries/_oneOf/0/coordinates	https://purl.org/geojson/vocab#coordinates	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/inputs/geometry/schema/geometry/_oneOf/7/geometries/_oneOf/0/bbox	https://purl.org/geojson/vocab#bbox	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/inputs/geometry/schema/geometry/_oneOf/7/geometries/_oneOf/1/type	@type	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/inputs/geometry/schema/geometry/_oneOf/7/geometries/_oneOf/1/coordinates	https://purl.org/geojson/vocab#coordinates	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/inputs/geometry/schema/geometry/_oneOf/7/geometries/_oneOf/1/bbox	https://purl.org/geojson/vocab#bbox	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/inputs/geometry/schema/geometry/_oneOf/7/geometries/_oneOf/2/type	@type	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/inputs/geometry/schema/geometry/_oneOf/7/geometries/_oneOf/2/coordinates	https://purl.org/geojson/vocab#coordinates	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/inputs/geometry/schema/geometry/_oneOf/7/geometries/_oneOf/2/bbox	https://purl.org/geojson/vocab#bbox	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/inputs/geometry/schema/geometry/_oneOf/7/geometries/_oneOf/3/type	@type	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/inputs/geometry/schema/geometry/_oneOf/7/geometries/_oneOf/3/coordinates	https://purl.org/geojson/vocab#coordinates	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/inputs/geometry/schema/geometry/_oneOf/7/geometries/_oneOf/3/bbox	https://purl.org/geojson/vocab#bbox	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/inputs/geometry/schema/geometry/_oneOf/7/geometries/_oneOf/4/type	@type	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/inputs/geometry/schema/geometry/_oneOf/7/geometries/_oneOf/4/coordinates	https://purl.org/geojson/vocab#coordinates	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/inputs/geometry/schema/geometry/_oneOf/7/geometries/_oneOf/4/bbox	https://purl.org/geojson/vocab#bbox	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/inputs/geometry/schema/geometry/_oneOf/7/geometries/_oneOf/5/type	@type	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/inputs/geometry/schema/geometry/_oneOf/7/geometries/_oneOf/5/coordinates	https://purl.org/geojson/vocab#coordinates	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/inputs/geometry/schema/geometry/_oneOf/7/geometries/_oneOf/5/bbox	https://purl.org/geojson/vocab#bbox	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+/inputs/geometry/schema/geometry/_oneOf/7/bbox	https://purl.org/geojson/vocab#bbox	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
 /inputs/geometry/schema/bbox	https://purl.org/geojson/vocab#bbox	https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
 /inputs/distance		https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputDescription/schema.yaml
 /inputs/distance/title		https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputDescription/schema.yaml
