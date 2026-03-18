@@ -1,5 +1,5 @@
 Validation report for ogc.bbr.examples.feature.geojsonFeature - Custom GeoJSON Feature
-Generated 2026-03-17T12:05:40.970385+00:00
+Generated 2026-03-18T09:21:36.640626+00:00
 === Files ===
 Using examples/feature.json from examples
 JSON-LD context is present - uplifting
