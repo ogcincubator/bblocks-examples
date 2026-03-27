@@ -20,3 +20,110 @@ transforms:
     description: This transform applies some changes to input XML to demonstrate XSLT transforms
     type: xslt
     ref: transforms/sample.xslt
+
+  - id: python-uppercase-keys
+    description: Python snippet (no dependencies) that uppercases all keys in a JSON object.
+    type: python
+    inputs:
+      mediaTypes:
+        - application/json
+    outputs:
+      mediaTypes:
+        - application/json
+    code: |
+      import json
+      data = json.loads(input_data)
+      output_data = json.dumps({k.upper(): v for k, v in data.items()}, indent=2)
+
+  - id: node-add-metadata
+    description: Node snippet (no dependencies) that adds a "generatedBy" field to a JSON object.
+    type: node
+    inputs:
+      mediaTypes:
+        - application/json
+    outputs:
+      mediaTypes:
+        - application/json
+    code: |
+      const data = JSON.parse(inputData);
+      data.generatedBy = 'bblocks-node-transform';
+      outputData = JSON.stringify(data, null, 2);
+
+  - id: python-to-csv
+    description: Python snippet using pandas to convert a flat JSON object to CSV.
+    type: python
+    inputs:
+      mediaTypes:
+        - application/json
+    outputs:
+      mediaTypes:
+        - mimeType: text/csv
+          defaultExtension: csv
+    metadata:
+      dependencies:
+        pip: pandas
+        python: '>=3.10'
+    code: |
+      import json
+      import pandas as pd
+      data = json.loads(input_data)
+      rows = data if isinstance(data, list) else [data]
+      output_data = pd.DataFrame(rows).to_csv(index=False)
+
+  - id: node-to-csv
+    description: Node snippet using json2csv to convert a flat JSON object to CSV.
+    type: node
+    inputs:
+      mediaTypes:
+        - application/json
+    outputs:
+      mediaTypes:
+        - mimeType: text/csv
+          defaultExtension: csv
+    metadata:
+      dependencies:
+        npm: json2csv
+    code: |
+      const { Parser } = require('json2csv');
+      const data = JSON.parse(inputData);
+      const rows = Array.isArray(data) ? data : [data];
+      outputData = new Parser().parse(rows);
+
+  - id: jq-error
+    description: A jq transform that raises an error (for testing error reporting).
+    type: jq
+    inputs:
+      mediaTypes:
+        - application/json
+    outputs:
+      mediaTypes:
+        - application/json
+    code: |
+      .nonexistent.deeply.nested.path | error("intentional test error")
+
+  - id: python-error
+    description: A Python transform that raises an error (for testing error reporting).
+    type: python
+    inputs:
+      mediaTypes:
+        - application/json
+    outputs:
+      mediaTypes:
+        - application/json
+    code: |
+      raise ValueError("intentional test error from Python transform")
+
+  - id: python-skipped
+    description: A skipped python transform due to version requirements
+    type: python
+    inputs:
+      mediaTypes:
+        - application/json
+    outputs:
+      mediaTypes:
+        - application/json
+    metadata:
+      dependencies:
+        python: ">=5.0"
+    code: |
+      raise ValueError("intentional test error from Python transform")
