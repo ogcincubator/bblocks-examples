@@ -3,12 +3,12 @@
   "abstract": "This register provides a collection of **examples** designed to illustrate capabilities and implementation patterns for [Building Blocks (see more)](https://ogcincubator.github.io/bblocks-docs). \n\n*These buildings blocks may be copied and edited into a new repository based on the [template](https://github.com/opengeospatial/bblock-template) - but should not be referenced and extended for reuse*\n",
   "description": "The aim of the highlighted examples is to illustrate implementation patterns for reusing OGC building blocks. The emphasis is on typical requirements to extend or constrain generic or abstract models such as OGC API Features, Observations etc. \n\nOther examples will illustrate different possible ways to use the Building Block machinery to semantically annotate externally defines schemas, develop and test logical constraints, or simply test examples using a published specification.\n\nMore complex examples will include transformation testing - testing a format can be transformed into a related structure and/or data model.\n",
   "sparqlEndpoint": "https://defs-dev.opengis.net/fuseki/query",
-  "modified": "2026-03-18T09:21:20.658483",
+  "modified": "2026-03-27T14:18:44.398112",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"15b2aea346e16c9ef05b3a9f9ce3d78c6d0707a8",
-      "shortCommitId": "\"15b2ae",
-      "date": "2026-03-18T09:19:22+00:00\""
+      "commitId": "\"526c3a47ca93635fb1572ac841a65271d1667aaa",
+      "shortCommitId": "\"526c3a",
+      "date": "2026-03-27T14:14:05+00:00\""
     }
   },
   "gitRepository": "https://github.com/ogcincubator/bblocks-examples",
@@ -33,7 +33,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-03-17",
+      "dateOfLastChange": "2026-03-27",
       "sources": [
         {
           "title": "Semantic Sensor Network Ontology",
@@ -86,7 +86,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-03-17",
+      "dateOfLastChange": "2026-03-27",
       "maturity": "development",
       "tags": [
         "examples",
@@ -126,7 +126,7 @@
       "dateTimeAddition": "2024-10-03T11:31:00+02:00",
       "itemClass": "schema",
       "version": "0.1",
-      "dateOfLastChange": "2026-03-17",
+      "dateOfLastChange": "2026-03-27",
       "shaclShapes": {
         "ogc.bbr.examples.semantic-uplift.pre-and-post-uplift": [
           "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/pre-and-post-uplift/rules.shacl"
@@ -168,7 +168,7 @@
       "dateTimeAddition": "2024-10-03T11:31:00+02:00",
       "itemClass": "schema",
       "version": "0.1",
-      "dateOfLastChange": "2026-03-17",
+      "dateOfLastChange": "2026-03-27",
       "shaclShapes": {},
       "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/context.jsonld",
       "schema": {
@@ -353,6 +353,205 @@
               }
             ]
           }
+        },
+        {
+          "id": "python-uppercase-keys",
+          "description": "Python snippet (no dependencies) that uppercases all keys in a JSON object.",
+          "type": "python",
+          "inputs": {
+            "mediaTypes": [
+              {
+                "mimeType": "application/json",
+                "label": "JSON",
+                "defaultExtension": "json"
+              }
+            ]
+          },
+          "outputs": {
+            "mediaTypes": [
+              {
+                "mimeType": "application/json",
+                "label": "JSON",
+                "defaultExtension": "json"
+              }
+            ]
+          },
+          "code": "import json\ndata = json.loads(input_data)\noutput_data = json.dumps({k.upper(): v for k, v in data.items()}, indent=2)\n"
+        },
+        {
+          "id": "node-add-metadata",
+          "description": "Node snippet (no dependencies) that adds a \"generatedBy\" field to a JSON object.",
+          "type": "node",
+          "inputs": {
+            "mediaTypes": [
+              {
+                "mimeType": "application/json",
+                "label": "JSON",
+                "defaultExtension": "json"
+              }
+            ]
+          },
+          "outputs": {
+            "mediaTypes": [
+              {
+                "mimeType": "application/json",
+                "label": "JSON",
+                "defaultExtension": "json"
+              }
+            ]
+          },
+          "code": "const data = JSON.parse(inputData);\ndata.generatedBy = 'bblocks-node-transform';\noutputData = JSON.stringify(data, null, 2);\n"
+        },
+        {
+          "id": "python-to-csv",
+          "description": "Python snippet using pandas to convert a flat JSON object to CSV.",
+          "type": "python",
+          "inputs": {
+            "mediaTypes": [
+              {
+                "mimeType": "application/json",
+                "label": "JSON",
+                "defaultExtension": "json"
+              }
+            ]
+          },
+          "outputs": {
+            "mediaTypes": [
+              {
+                "mimeType": "text/csv",
+                "defaultExtension": "csv",
+                "label": "CSV"
+              }
+            ]
+          },
+          "metadata": {
+            "dependencies": {
+              "pip": "pandas",
+              "python": ">=3.10"
+            }
+          },
+          "code": "import json\nimport pandas as pd\ndata = json.loads(input_data)\nrows = data if isinstance(data, list) else [data]\noutput_data = pd.DataFrame(rows).to_csv(index=False)\n"
+        },
+        {
+          "id": "node-to-csv",
+          "description": "Node snippet using json2csv to convert a flat JSON object to CSV.",
+          "type": "node",
+          "inputs": {
+            "mediaTypes": [
+              {
+                "mimeType": "application/json",
+                "label": "JSON",
+                "defaultExtension": "json"
+              }
+            ]
+          },
+          "outputs": {
+            "mediaTypes": [
+              {
+                "mimeType": "text/csv",
+                "defaultExtension": "csv",
+                "label": "CSV"
+              }
+            ]
+          },
+          "metadata": {
+            "dependencies": {
+              "npm": "json2csv"
+            }
+          },
+          "code": "const { Parser } = require('json2csv');\nconst data = JSON.parse(inputData);\nconst rows = Array.isArray(data) ? data : [data];\noutputData = new Parser().parse(rows);\n"
+        },
+        {
+          "id": "jq-error",
+          "description": "A jq transform that raises an error (for testing error reporting).",
+          "type": "jq",
+          "inputs": {
+            "mediaTypes": [
+              {
+                "mimeType": "application/json",
+                "label": "JSON",
+                "defaultExtension": "json"
+              }
+            ]
+          },
+          "outputs": {
+            "mediaTypes": [
+              {
+                "mimeType": "application/json",
+                "label": "JSON",
+                "defaultExtension": "json"
+              }
+            ]
+          },
+          "code": ".nonexistent.deeply.nested.path | error(\"intentional test error\")\n"
+        },
+        {
+          "id": "python-error",
+          "description": "A Python transform that raises an error (for testing error reporting).",
+          "type": "python",
+          "inputs": {
+            "mediaTypes": [
+              {
+                "mimeType": "application/json",
+                "label": "JSON",
+                "defaultExtension": "json"
+              }
+            ]
+          },
+          "outputs": {
+            "mediaTypes": [
+              {
+                "mimeType": "application/json",
+                "label": "JSON",
+                "defaultExtension": "json"
+              }
+            ]
+          },
+          "code": "raise ValueError(\"intentional test error from Python transform\")\n"
+        },
+        {
+          "id": "jinja2-html",
+          "description": "Renders a Jinja2 template (plugin transform type) against JSON input, producing an HTML fragment. Requires the bbplugin-jinja2 plugin.\n",
+          "type": "jinja2",
+          "inputs": {
+            "mediaTypes": [
+              {
+                "mimeType": "application/json",
+                "label": "JSON",
+                "defaultExtension": "json"
+              }
+            ]
+          },
+          "outputs": {
+            "mediaTypes": [
+              {
+                "mimeType": "text/html",
+                "defaultExtension": "html"
+              }
+            ]
+          },
+          "code": "<dl>\n{% for key, value in data.items() %}\n  <dt>{{ key }}</dt><dd>{{ value }}</dd>\n{% endfor %}\n</dl>\n"
+        },
+        {
+          "id": "python-skipped",
+          "description": "A skipped python transform due to version requirements",
+          "type": "python",
+          "inputs": {
+            "mediaTypes": [
+              "application/json"
+            ]
+          },
+          "outputs": {
+            "mediaTypes": [
+              "application/json"
+            ]
+          },
+          "metadata": {
+            "dependencies": {
+              "python": ">=5.0"
+            }
+          },
+          "code": "raise ValueError(\"intentional test error from Python transform\")\n"
         }
       ],
       "documentation": {
@@ -379,7 +578,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-03-17",
+      "dateOfLastChange": "2026-03-27",
       "maturity": "development",
       "tags": [
         "examples",
@@ -388,8 +587,8 @@
       ],
       "shaclShapes": {},
       "dependsOn": [
-        "ogc.geo.common.data_types.geojson",
-        "ogc.ogc-utils.iri-or-curie"
+        "ogc.ogc-utils.iri-or-curie",
+        "ogc.geo.common.data_types.geojson"
       ],
       "schema": {
         "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputSchema/schema.yaml",
@@ -426,7 +625,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-03-17",
+      "dateOfLastChange": "2026-03-27",
       "sources": [
         {
           "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -488,7 +687,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-03-17",
+      "dateOfLastChange": "2026-03-27",
       "sources": [
         {
           "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -498,8 +697,8 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.geo.features.feature",
-        "ogc.bbr.examples.feature.propertySet"
+        "ogc.bbr.examples.feature.propertySet",
+        "ogc.geo.features.feature"
       ],
       "tags": [
         "feature",
@@ -544,7 +743,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-03-17",
+      "dateOfLastChange": "2026-03-27",
       "maturity": "development",
       "scope": "unstable",
       "tags": [
@@ -554,8 +753,8 @@
       "group": "Examples",
       "shaclShapes": {},
       "dependsOn": [
-        "ogc.geo.features.feature",
-        "ogc.bbr.examples.feature.propertySet"
+        "ogc.bbr.examples.feature.propertySet",
+        "ogc.geo.features.feature"
       ],
       "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/context.jsonld",
       "schema": {
@@ -594,13 +793,13 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-03-17",
+      "dateOfLastChange": "2026-03-27",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.geo.geopose.basic.ypr",
-        "ogc.sosa.properties.observation"
+        "ogc.sosa.properties.observation",
+        "ogc.geo.geopose.basic.ypr"
       ],
       "tags": [
         "examples",
@@ -653,7 +852,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-03-17",
+      "dateOfLastChange": "2026-03-27",
       "maturity": "development",
       "scope": "unstable",
       "tags": [
@@ -663,8 +862,8 @@
       "group": "Examples",
       "shaclShapes": {},
       "dependsOn": [
-        "ogc.geo.json-fg.feature-lenient",
-        "ogc.bbr.examples.feature.propertySet"
+        "ogc.bbr.examples.feature.propertySet",
+        "ogc.geo.json-fg.feature-lenient"
       ],
       "schema": {
         "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/schema.yaml",
@@ -702,7 +901,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-03-17",
+      "dateOfLastChange": "2026-03-27",
       "sources": [
         {
           "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -764,7 +963,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-03-17",
+      "dateOfLastChange": "2026-03-27",
       "maturity": "development",
       "tags": [
         "examples",
@@ -810,7 +1009,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-03-17",
+      "dateOfLastChange": "2026-03-27",
       "maturity": "development",
       "tags": [
         "examples",
@@ -856,7 +1055,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-03-17",
+      "dateOfLastChange": "2026-03-27",
       "maturity": "development",
       "tags": [
         "examples",
@@ -901,7 +1100,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-03-17",
+      "dateOfLastChange": "2026-03-27",
       "maturity": "development",
       "tags": [
         "examples",
@@ -911,8 +1110,8 @@
       "shaclShapes": {},
       "dependsOn": [
         "ogc.api.processes.v1.schemas.process",
-        "ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputDescription",
-        "ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputDescription"
+        "ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputDescription",
+        "ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputDescription"
       ],
       "schema": {
         "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/processDescription/schema.yaml",
@@ -948,7 +1147,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-03-17",
+      "dateOfLastChange": "2026-03-27",
       "maturity": "development",
       "tags": [
         "examples",
@@ -993,26 +1192,26 @@
       "itemClass": "schema",
       "register": "isc",
       "version": "1.0",
-      "dateOfLastChange": "2026-03-17",
+      "dateOfLastChange": "2026-03-27",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
         "ogc.geo.topo.features.topo-feature-collection",
-        "ogc.geo.topo.features.topo-line",
-        "ogc.ogc-utils.iri-or-curie"
+        "ogc.ogc-utils.iri-or-curie",
+        "ogc.geo.topo.features.topo-line"
       ],
       "tags": [],
       "group": "Entities",
       "highlighted": true,
       "shaclShapes": {
         "ogc.geo.topo.features.topo-feature-collection": [
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
         ],
         "ogc.geo.topo.features.topo-feature": [
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
         ]
       },
       "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/rules/topo-edges/context.jsonld",
@@ -1085,7 +1284,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-03-17",
+      "dateOfLastChange": "2026-03-27",
       "sources": [
         {
           "title": "Semantic Sensor Network Ontology",
@@ -1095,10 +1294,10 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.bbr.examples.observation.vectorObservation",
+        "ogc.sosa.features.observationCollection",
         "ogc.sosa.properties.observation",
         "ogc.sosa.features.observation",
-        "ogc.sosa.features.observationCollection"
+        "ogc.bbr.examples.observation.vectorObservation"
       ],
       "tags": [
         "sosa",
@@ -1152,7 +1351,7 @@
       "itemClass": "api",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-03-17",
+      "dateOfLastChange": "2026-03-27",
       "maturity": "development",
       "tags": [
         "examples",
@@ -1172,22 +1371,22 @@
       "shaclShapes": {},
       "dependsOn": [
         "ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.processDescription",
-        "ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputSchema",
-        "ogc.api.processes.v1.schemas.inputDescription",
-        "ogc.bbr.examples.ogcapi.processes.schemas.outputDescriptions",
-        "ogc.api.processes.v1.paths.ProcessList",
-        "ogc.api.processes.v1.paths.LandingPage",
-        "ogc.api.processes.v1.responses.NotFound",
-        "ogc.api.processes.v1.paths.Conformance",
         "ogc.api.processes.v1.schemas.execute",
         "ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputSchema",
+        "ogc.bbr.examples.ogcapi.processes.schemas.outputDescriptions",
+        "ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputSchema",
+        "ogc.api.processes.v1.paths.ProcessList",
+        "ogc.api.processes.v1.paths.LandingPage",
         "ogc.api.processes.v1.parameters.jobId",
-        "ogc.bbr.examples.ogcapi.processes.schemas.inputDescriptions",
-        "ogc.api.processes.v1.responses.ServerError",
         "ogc.api.processes.v1.paths.JobList",
+        "ogc.api.processes.v1.schemas.inputDescription",
+        "ogc.api.processes.v1.paths.Conformance",
+        "ogc.api.processes.v1.responses.NotFound",
         "ogc.api.processes.v1.responses.ExecuteAsync",
+        "ogc.api.processes.v1.schemas.outputDescription",
         "ogc.api.processes.v1.api",
-        "ogc.api.processes.v1.schemas.outputDescription"
+        "ogc.api.processes.v1.responses.ServerError",
+        "ogc.bbr.examples.ogcapi.processes.schemas.inputDescriptions"
       ],
       "sourceOpenAPIDocument": "https://ogcincubator.github.io/bblocks-examples/_sources/ogcapi/processes/custom-api/openapi.yaml",
       "openAPIDocument": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/custom-api/openapi.yaml",
@@ -1208,6 +1407,33 @@
           "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.ogcapi.processes.custom-api"
         }
       }
+    }
+  ],
+  "transformPlugins": [
+    {
+      "modules": [
+        {
+          "module": "bbplugin_jinja2",
+          "transformers": [
+            {
+              "class": "Jinja2Transformer",
+              "types": [
+                "jinja2"
+              ],
+              "defaultInputs": [
+                "application/json"
+              ],
+              "defaultOutputs": [
+                "text/plain"
+              ]
+            }
+          ]
+        }
+      ],
+      "pip": "git+https://github.com/ogcincubator/bblocks-jinja2-transform-plugin.git",
+      "urls": [
+        "https://github.com/ogcincubator/bblocks-jinja2-transform-plugin"
+      ]
     }
   ],
   "remoteCacheDir": "https://ogcincubator.github.io/bblocks-examples/build/annotated/_cache",

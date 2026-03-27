@@ -9,7 +9,7 @@
   "dateTimeAddition": "2024-10-03T11:31:00+02:00",
   "itemClass": "schema",
   "version": "0.1",
-  "dateOfLastChange": "2026-03-17",
+  "dateOfLastChange": "2026-03-27",
   "shaclShapes": {},
   "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/context.jsonld",
   "schema": {
@@ -194,6 +194,205 @@
           }
         ]
       }
+    },
+    {
+      "id": "python-uppercase-keys",
+      "description": "Python snippet (no dependencies) that uppercases all keys in a JSON object.",
+      "type": "python",
+      "inputs": {
+        "mediaTypes": [
+          {
+            "mimeType": "application/json",
+            "label": "JSON",
+            "defaultExtension": "json"
+          }
+        ]
+      },
+      "outputs": {
+        "mediaTypes": [
+          {
+            "mimeType": "application/json",
+            "label": "JSON",
+            "defaultExtension": "json"
+          }
+        ]
+      },
+      "code": "import json\ndata = json.loads(input_data)\noutput_data = json.dumps({k.upper(): v for k, v in data.items()}, indent=2)\n"
+    },
+    {
+      "id": "node-add-metadata",
+      "description": "Node snippet (no dependencies) that adds a \"generatedBy\" field to a JSON object.",
+      "type": "node",
+      "inputs": {
+        "mediaTypes": [
+          {
+            "mimeType": "application/json",
+            "label": "JSON",
+            "defaultExtension": "json"
+          }
+        ]
+      },
+      "outputs": {
+        "mediaTypes": [
+          {
+            "mimeType": "application/json",
+            "label": "JSON",
+            "defaultExtension": "json"
+          }
+        ]
+      },
+      "code": "const data = JSON.parse(inputData);\ndata.generatedBy = 'bblocks-node-transform';\noutputData = JSON.stringify(data, null, 2);\n"
+    },
+    {
+      "id": "python-to-csv",
+      "description": "Python snippet using pandas to convert a flat JSON object to CSV.",
+      "type": "python",
+      "inputs": {
+        "mediaTypes": [
+          {
+            "mimeType": "application/json",
+            "label": "JSON",
+            "defaultExtension": "json"
+          }
+        ]
+      },
+      "outputs": {
+        "mediaTypes": [
+          {
+            "mimeType": "text/csv",
+            "defaultExtension": "csv",
+            "label": "CSV"
+          }
+        ]
+      },
+      "metadata": {
+        "dependencies": {
+          "pip": "pandas",
+          "python": ">=3.10"
+        }
+      },
+      "code": "import json\nimport pandas as pd\ndata = json.loads(input_data)\nrows = data if isinstance(data, list) else [data]\noutput_data = pd.DataFrame(rows).to_csv(index=False)\n"
+    },
+    {
+      "id": "node-to-csv",
+      "description": "Node snippet using json2csv to convert a flat JSON object to CSV.",
+      "type": "node",
+      "inputs": {
+        "mediaTypes": [
+          {
+            "mimeType": "application/json",
+            "label": "JSON",
+            "defaultExtension": "json"
+          }
+        ]
+      },
+      "outputs": {
+        "mediaTypes": [
+          {
+            "mimeType": "text/csv",
+            "defaultExtension": "csv",
+            "label": "CSV"
+          }
+        ]
+      },
+      "metadata": {
+        "dependencies": {
+          "npm": "json2csv"
+        }
+      },
+      "code": "const { Parser } = require('json2csv');\nconst data = JSON.parse(inputData);\nconst rows = Array.isArray(data) ? data : [data];\noutputData = new Parser().parse(rows);\n"
+    },
+    {
+      "id": "jq-error",
+      "description": "A jq transform that raises an error (for testing error reporting).",
+      "type": "jq",
+      "inputs": {
+        "mediaTypes": [
+          {
+            "mimeType": "application/json",
+            "label": "JSON",
+            "defaultExtension": "json"
+          }
+        ]
+      },
+      "outputs": {
+        "mediaTypes": [
+          {
+            "mimeType": "application/json",
+            "label": "JSON",
+            "defaultExtension": "json"
+          }
+        ]
+      },
+      "code": ".nonexistent.deeply.nested.path | error(\"intentional test error\")\n"
+    },
+    {
+      "id": "python-error",
+      "description": "A Python transform that raises an error (for testing error reporting).",
+      "type": "python",
+      "inputs": {
+        "mediaTypes": [
+          {
+            "mimeType": "application/json",
+            "label": "JSON",
+            "defaultExtension": "json"
+          }
+        ]
+      },
+      "outputs": {
+        "mediaTypes": [
+          {
+            "mimeType": "application/json",
+            "label": "JSON",
+            "defaultExtension": "json"
+          }
+        ]
+      },
+      "code": "raise ValueError(\"intentional test error from Python transform\")\n"
+    },
+    {
+      "id": "jinja2-html",
+      "description": "Renders a Jinja2 template (plugin transform type) against JSON input, producing an HTML fragment. Requires the bbplugin-jinja2 plugin.\n",
+      "type": "jinja2",
+      "inputs": {
+        "mediaTypes": [
+          {
+            "mimeType": "application/json",
+            "label": "JSON",
+            "defaultExtension": "json"
+          }
+        ]
+      },
+      "outputs": {
+        "mediaTypes": [
+          {
+            "mimeType": "text/html",
+            "defaultExtension": "html"
+          }
+        ]
+      },
+      "code": "<dl>\n{% for key, value in data.items() %}\n  <dt>{{ key }}</dt><dd>{{ value }}</dd>\n{% endfor %}\n</dl>\n"
+    },
+    {
+      "id": "python-skipped",
+      "description": "A skipped python transform due to version requirements",
+      "type": "python",
+      "inputs": {
+        "mediaTypes": [
+          "application/json"
+        ]
+      },
+      "outputs": {
+        "mediaTypes": [
+          "application/json"
+        ]
+      },
+      "metadata": {
+        "dependencies": {
+          "python": ">=5.0"
+        }
+      },
+      "code": "raise ValueError(\"intentional test error from Python transform\")\n"
     }
   ],
   "description": "This showcases the potential to define and execute **transforms**\n\nThis capability is still in early development.\n\nTransforms are defined in the file [transforms.yaml](transforms.yaml) in the form:\n\n```yaml\n  - id: inline-transform\n    description: A transform's code can also be defined inside the transform's object\n    type: jq\n    code: |\n      .explanation = \"for example - adding an element to define an implicit type\"\n      .type = \"ex:Foo\"\n```\n\nCurrent transform types supported are:\n\n- **jq** \n- **sparql-update**\n- **sparql-construct**\n- **xslt**\n\nDepending on the language of the example all available transforms will be executed and visible via the **transform results** button in the **examples tab**.\n\n## Future planned functionality\n\n### Pluggable transformation engines\n\nAbility to define a custom transformer in a specific repository\n\n### Post transform validation \n\nAbility to define target profiles to validate post-transform results\n\n### FAIR transforms\n\nstandardisation of publication of transformation specifications\n\n### Improved user experience\n\nTBD\n\n### Inheritance of sub-schema transformations\n\nAbility to create a transformation for a composite using multiple transformable building block dependencies.\n\n",
@@ -205,8 +404,42 @@
           "language": "json",
           "code": "{\n  \"one\": 1,\n  \"two\": 2,\n  \"string\": \"value\"\n}\n",
           "transformResults": {
-            "prefix-keys": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.prefix-keys.json",
-            "inline-transform": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.inline-transform.json"
+            "prefix-keys": {
+              "success": true,
+              "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.prefix-keys.json"
+            },
+            "inline-transform": {
+              "success": true,
+              "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.inline-transform.json"
+            },
+            "python-uppercase-keys": {
+              "success": true,
+              "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.python-uppercase-keys.json"
+            },
+            "node-add-metadata": {
+              "success": true,
+              "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.node-add-metadata.json"
+            },
+            "python-to-csv": {
+              "success": true,
+              "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.python-to-csv.csv"
+            },
+            "node-to-csv": {
+              "success": true,
+              "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.node-to-csv.csv"
+            },
+            "jq-error": {
+              "success": false,
+              "stderr": "ValueError: intentional test error"
+            },
+            "python-error": {
+              "success": false,
+              "stderr": "Traceback (most recent call last):\n  File \"<transform>\", line 1, in <module>\nValueError: intentional test error from Python transform\n"
+            },
+            "jinja2-html": {
+              "success": true,
+              "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.jinja2-html.html"
+            }
           },
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/example_1_1.json"
         },
@@ -219,7 +452,10 @@
           "language": "ttl",
           "code": "@prefix ex: <http://example.com/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] ex:hasOne 1 ;\n    ex:hasString \"value\" ;\n    ex:hasTwo 2 .\n\n",
           "transformResults": {
-            "prefix-predicates": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_3.prefix-predicates.ttl"
+            "prefix-predicates": {
+              "success": true,
+              "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_3.prefix-predicates.ttl"
+            }
           },
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/example_1_1.ttl"
         }
@@ -232,7 +468,10 @@
           "language": "xml",
           "code": "<?xml version=\"1.0\"?>\n<Article>\n  <Title>My Article</Title>\n  <Authors>\n    <Author>Mr. Foo</Author>\n    <Author>Mr. Bar</Author>\n  </Authors>\n  <Body>This is my article text.</Body>\n</Article>",
           "transformResults": {
-            "sample-xslt": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_2_1.sample-xslt.xml"
+            "sample-xslt": {
+              "success": true,
+              "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_2_1.sample-xslt.xml"
+            }
           },
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/example_2_1.xml"
         }
