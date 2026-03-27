@@ -113,6 +113,25 @@ transforms:
     code: |
       raise ValueError("intentional test error from Python transform")
 
+  - id: jinja2-html
+    description: >
+      Renders a Jinja2 template (plugin transform type) against JSON input,
+      producing an HTML fragment. Requires the bbplugin-jinja2 plugin.
+    type: jinja2
+    inputs:
+      mediaTypes:
+        - application/json
+    outputs:
+      mediaTypes:
+        - mimeType: text/html
+          defaultExtension: html
+    code: |
+      <dl>
+      {% for key, value in data.items() %}
+        <dt>{{ key }}</dt><dd>{{ value }}</dd>
+      {% endfor %}
+      </dl>
+
   - id: python-skipped
     description: A skipped python transform due to version requirements
     type: python
