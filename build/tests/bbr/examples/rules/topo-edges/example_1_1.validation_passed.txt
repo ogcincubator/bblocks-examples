@@ -1,5 +1,5 @@
 Validation report for ogc.bbr.examples.rules.topo-edges - Topo rules examples
-Generated 2026-04-06T23:21:34.073507+00:00
+Generated 2026-04-06T23:31:53.835830+00:00
 === Files ===
 Using examples/nodes.json from examples
 JSON-LD context is present - uplifting
@@ -17,16 +17,16 @@ Validation result for https://ogcincubator.github.io/topo-feature/_sources/featu
   Conforms: True
   
 Focus nodes for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:nfba0eba3fd7f4c4f80bd5e4e937b9db8b3: <http://example.com/nodes/P1>/geojson:geometry,<http://example.com/nodes/P2>/geojson:geometry
- - Shape _:nfba0eba3fd7f4c4f80bd5e4e937b9db8b1: <http://example.com/nodes/P1>/geojson:geometry,<http://example.com/nodes/P2>/geojson:geometry
+ - Shape _:na218c94e3b7c48a3b53057de2cfb80dcb1: <http://example.com/nodes/P2>/geojson:geometry,<http://example.com/nodes/P1>/geojson:geometry
+ - Shape _:na218c94e3b7c48a3b53057de2cfb80dcb3: <http://example.com/nodes/P2>/geojson:geometry,<http://example.com/nodes/P1>/geojson:geometry
 
 Validation result for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
- - Shape topo:testTopoReferencesExist: <http://example.com/nodes/LineP1P2>/geojson:topology
  - Shape topo:testTopoLinesReferencePoints: <http://example.com/nodes/LineP1P2>/geojson:topology
+ - Shape topo:testTopoReferencesExist: <http://example.com/nodes/LineP1P2>/geojson:topology
 
 === End SHACL ===
 
