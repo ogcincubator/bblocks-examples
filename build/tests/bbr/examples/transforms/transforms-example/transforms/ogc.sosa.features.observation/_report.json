@@ -1,21 +1,31 @@
 {
-  "title": "Validation report for ogc.bbr.examples.observation.vectorObservation - Observation Result (Vector based on GeoPose)",
-  "bblockName": "Observation Result (Vector based on GeoPose)",
-  "bblockId": "ogc.bbr.examples.observation.vectorObservation",
-  "generated": "2026-04-06T23:21:28.988397+00:00",
-  "result": true,
+  "title": "Validation report for ogc.sosa.features.observation - SOSA Observation Feature",
+  "bblockName": "SOSA Observation Feature",
+  "bblockId": "ogc.sosa.features.observation",
+  "generated": "2026-04-06T23:21:28.344295+00:00",
+  "result": false,
   "items": [
     {
       "source": {
-        "type": "EXAMPLE",
+        "type": "TRANSFORM_OUTPUT",
         "requireFail": false,
-        "filename": "build/tests/bbr/examples/observation/vectorObservation/example_1_1.json",
-        "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/observation/vectorObservation/example_1_1.json",
-        "exampleIndex": 1,
-        "snippetIndex": 1,
-        "language": "application/json"
+        "filename": "build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.python-geojson.geojson",
+        "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.python-geojson.geojson",
+        "language": {
+          "id": "geojson",
+          "defaultExtension": "geojson",
+          "label": "GeoJSON",
+          "mimeType": "application/geo+json",
+          "aliases": [
+            "geojson"
+          ],
+          "extensions": [
+            "geojson"
+          ]
+        },
+        "transformId": "python-geojson"
       },
-      "result": true,
+      "result": false,
       "sections": [
         {
           "name": "FILES",
@@ -23,7 +33,7 @@
           "entries": [
             {
               "isError": false,
-              "message": "Using example_1_1.json from examples"
+              "message": "Using example_1_1.python-geojson.geojson from transform outputs"
             },
             {
               "op": "jsonld-uplift",
@@ -32,17 +42,17 @@
             },
             {
               "op": "jsonld-create",
-              "filename": "example_1_1.jsonld",
+              "filename": "example_1_1.python-geojson.jsonld",
               "isError": false,
-              "message": "Output JSON-LD example_1_1.jsonld created"
+              "message": "Output JSON-LD example_1_1.python-geojson.jsonld created"
             },
             {
               "op": "ttl-create",
               "empty": false,
-              "filename": "example_1_1.ttl",
-              "size": 13,
+              "filename": "example_1_1.python-geojson.ttl",
+              "size": 36,
               "isError": false,
-              "message": "Output Turtle example_1_1.ttl created"
+              "message": "Output Turtle example_1_1.python-geojson.ttl created"
             }
           ]
         },
@@ -52,9 +62,11 @@
           "entries": [
             {
               "op": "validation",
-              "result": true,
-              "isError": false,
-              "message": "Validation passed"
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "{'one': 1, 'two': 2, 'string': 'value'} is not valid under any of the given schemas",
+              "isError": true,
+              "message": "ValidationError: {'one': 1, 'two': 2, 'string': 'value'} is not valid under any of the given schemas\n\nFailed validating 'anyOf' in schema['allOf'][1]['properties']['properties']['allOf'][1]:\n    {'anyOf': [{'required': ['hasResult']},\n               {'required': ['hasSimpleResult']}]}\n\nOn instance['properties']:\n    {'one': 1, 'string': 'value', 'two': 2}"
             }
           ]
         },
@@ -85,9 +97,7 @@
                   "nodes": []
                 },
                 "<https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>": {
-                  "nodes": [
-                    "_:N545e12f917a543b1bd29dc491ef842fe"
-                  ]
+                  "nodes": []
                 },
                 "<https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>": {
                   "nodes": []
@@ -103,7 +113,7 @@
                 }
               },
               "isError": false,
-              "message": "Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: _:N545e12f917a543b1bd29dc491ef842fe\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*\n"
+              "message": "Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:\n - Shape <https://www.ogc.org/rules/sosa/#testResultNotEmptyNode>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValues>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testRequiredTime>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testResult>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyPresent>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testFeatureOfInterest>: *none*\n - Shape <https://www.ogc.org/rules/sosa/#testSimpleResultLiteral>: *none*\n"
             }
           ]
         }
@@ -113,7 +123,7 @@
   "globalErrors": {},
   "counts": {
     "total": 1,
-    "passed": 1,
-    "failed": 0
+    "passed": 0,
+    "failed": 1
   }
 }

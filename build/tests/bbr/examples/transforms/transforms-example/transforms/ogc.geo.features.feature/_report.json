@@ -1,0 +1,80 @@
+{
+  "title": "Validation report for ogc.geo.features.feature - Feature",
+  "bblockName": "Feature",
+  "bblockId": "ogc.geo.features.feature",
+  "generated": "2026-04-06T23:21:28.344012+00:00",
+  "result": true,
+  "items": [
+    {
+      "source": {
+        "type": "TRANSFORM_OUTPUT",
+        "requireFail": false,
+        "filename": "build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.python-geojson.geojson",
+        "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.python-geojson.geojson",
+        "language": {
+          "id": "geojson",
+          "defaultExtension": "geojson",
+          "label": "GeoJSON",
+          "mimeType": "application/geo+json",
+          "aliases": [
+            "geojson"
+          ],
+          "extensions": [
+            "geojson"
+          ]
+        },
+        "transformId": "python-geojson"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using example_1_1.python-geojson.geojson from transform outputs"
+            },
+            {
+              "op": "jsonld-uplift",
+              "isError": false,
+              "message": "JSON-LD context is present - uplifting"
+            },
+            {
+              "op": "jsonld-create",
+              "filename": "example_1_1.python-geojson.jsonld",
+              "isError": false,
+              "message": "Output JSON-LD example_1_1.python-geojson.jsonld created"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_1_1.python-geojson.ttl",
+              "size": 36,
+              "isError": false,
+              "message": "Output Turtle example_1_1.python-geojson.ttl created"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": true,
+              "isError": false,
+              "message": "Validation passed"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "globalErrors": {},
+  "counts": {
+    "total": 1,
+    "passed": 1,
+    "failed": 0
+  }
+}

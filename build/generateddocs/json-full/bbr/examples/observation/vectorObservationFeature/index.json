@@ -19,9 +19,9 @@
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "ogc.sosa.features.observation",
     "ogc.bbr.examples.observation.vectorObservation",
     "ogc.sosa.properties.observation",
+    "ogc.sosa.features.observation",
     "ogc.sosa.features.observationCollection"
   ],
   "tags": [

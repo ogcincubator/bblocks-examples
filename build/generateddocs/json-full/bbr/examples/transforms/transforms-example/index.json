@@ -410,8 +410,14 @@
       "outputs": {
         "mediaTypes": [
           {
-            "mimeType": "application/geo+json"
+            "mimeType": "application/geo+json",
+            "label": "GeoJSON",
+            "defaultExtension": "geojson"
           }
+        ],
+        "profiles": [
+          "bblocks://ogc.geo.features.feature",
+          "bblocks://ogc.sosa.features.observation"
         ]
       },
       "ref": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-example/transforms/python-geojson.py",
@@ -465,7 +471,25 @@
             },
             "python-geojson": {
               "success": true,
-              "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.python-geojson"
+              "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.python-geojson.geojson",
+              "profilesValidation": {
+                "ogc.geo.features.feature": {
+                  "result": true,
+                  "report": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/ogc.geo.features.feature/_report.json",
+                  "upliftedFiles": {
+                    "jsonld": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/ogc.geo.features.feature/example_1_1.python-geojson.jsonld",
+                    "ttl": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/ogc.geo.features.feature/example_1_1.python-geojson.ttl"
+                  }
+                },
+                "ogc.sosa.features.observation": {
+                  "result": false,
+                  "report": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/ogc.sosa.features.observation/_report.json",
+                  "upliftedFiles": {
+                    "jsonld": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/ogc.sosa.features.observation/example_1_1.python-geojson.jsonld",
+                    "ttl": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/ogc.sosa.features.observation/example_1_1.python-geojson.ttl"
+                  }
+                }
+              }
             }
           },
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/example_1_1.json"

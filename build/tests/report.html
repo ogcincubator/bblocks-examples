@@ -64,7 +64,7 @@
     <body>
         <div class="container">
             <h1 class="title">Building blocks validation report</h1>
-            <small class="datetime">Generated at 2026-04-06T13:44:38.601134+00:00</small>
+            <small class="datetime">Generated at 2026-04-06T23:21:36.950598+00:00</small>
                 <p class="summary fw-semibold text-success">
                     Number of passing building blocks: 19 / 19 (100%)
                 </p>
@@ -205,7 +205,7 @@
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/semantic-uplift/pre-and-post-uplift/rules.shacl:
- - Shape &lt;http://example.com/rules#testHasOneIs1&gt;: _:N3e93a5d2554d47ed8c403303823c5c6a
+ - Shape &lt;http://example.com/rules#testHasOneIs1&gt;: _:Nbad74281f734461da8ce449d5abff2c6
 </div>
                                                                     <div class="font-monospace subsection-title mt-2">Semantic Uplift</div>
                                                                     <div class="font-monospace entry-message section-semantic_uplift ">Running pre-uplift jq transform step from inline code</div>
@@ -558,15 +558,15 @@ On instance[&#x27;properties&#x27;]:
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:
- - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testRequiredTime&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValues&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testSimpleResultLiteral&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedPropertyPresent&gt;: _:N76ac5896fbf3436eaa4d826ad38e59ca
- - Shape &lt;https://www.ogc.org/rules/sosa/#testFeatureOfInterest&gt;: *none*
  - Shape &lt;https://www.ogc.org/rules/sosa/#testResultNotEmptyNode&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValues&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testRequiredTime&gt;: *none*
  - Shape &lt;https://www.ogc.org/rules/sosa/#testResult&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedPropertyPresent&gt;: _:N545e12f917a543b1bd29dc491ef842fe
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testFeatureOfInterest&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testSimpleResultLiteral&gt;: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -852,6 +852,14 @@ On instance[&#x27;properties&#x27;]:
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
                                                                     <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
+ - Shape _:nfba0eba3fd7f4c4f80bd5e4e937b9db8b3: &lt;file:///github/workspace/e1&gt;/geojson:geometry
+ - Shape _:nfba0eba3fd7f4c4f80bd5e4e937b9db8b1: &lt;file:///github/workspace/e1&gt;/geojson:geometry
+</div>
                                                                     <div class="font-monospace entry-message section-shacl text-danger">Validation result for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
   Validation Report
   Conforms: False
@@ -902,14 +910,6 @@ On instance[&#x27;properties&#x27;]:
  - Shape topo:testTopoReferencesExist: &lt;file:///github/workspace/LineP1P2&gt;/geojson:topology
  - Shape topo:testTopoLinesReferencePoints: &lt;file:///github/workspace/LineP1P2&gt;/geojson:topology
 </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:n359cda0eea9d4406b4b48e13e5d96e59b3: &lt;file:///github/workspace/e1&gt;/geojson:geometry
- - Shape _:n359cda0eea9d4406b4b48e13e5d96e59b1: &lt;file:///github/workspace/e1&gt;/geojson:geometry
-</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -941,6 +941,14 @@ On instance[&#x27;properties&#x27;]:
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
                                                                     <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
+ - Shape _:nfba0eba3fd7f4c4f80bd5e4e937b9db8b3: &lt;http://example.com/nodes/P1&gt;/geojson:geometry,&lt;http://example.com/nodes/P2&gt;/geojson:geometry
+ - Shape _:nfba0eba3fd7f4c4f80bd5e4e937b9db8b1: &lt;http://example.com/nodes/P1&gt;/geojson:geometry,&lt;http://example.com/nodes/P2&gt;/geojson:geometry
+</div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
   Validation Report
   Conforms: True
@@ -948,14 +956,6 @@ On instance[&#x27;properties&#x27;]:
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
  - Shape topo:testTopoReferencesExist: &lt;http://example.com/nodes/LineP1P2&gt;/geojson:topology
  - Shape topo:testTopoLinesReferencePoints: &lt;http://example.com/nodes/LineP1P2&gt;/geojson:topology
-</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:n359cda0eea9d4406b4b48e13e5d96e59b3: &lt;http://example.com/nodes/P2&gt;/geojson:geometry,&lt;http://example.com/nodes/P1&gt;/geojson:geometry
- - Shape _:n359cda0eea9d4406b4b48e13e5d96e59b1: &lt;http://example.com/nodes/P2&gt;/geojson:geometry,&lt;http://example.com/nodes/P1&gt;/geojson:geometry
 </div>
                                                     </div>
                                                 </div>
@@ -1018,24 +1018,24 @@ On instance[&#x27;properties&#x27;]:
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/observation/vectorObservationFeature/rules.shacl:
- - Shape &lt;http://example.com/rules#testGeometryCoordinatesIsList&gt;: &lt;http://example.com/features/vector-obs-1&gt;/geojson:geometry
  - Shape &lt;http://example.com/rules#testGeometryHasCoordinates&gt;: &lt;http://example.com/features/vector-obs-1&gt;/geojson:geometry
  - Shape &lt;http://example.com/rules#testVectorObservationFeatureHasOneGeometry&gt;: &lt;http://example.com/features/vector-obs-1&gt;
+ - Shape &lt;http://example.com/rules#testGeometryCoordinatesIsList&gt;: &lt;http://example.com/features/vector-obs-1&gt;/geojson:geometry
 </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:
- - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testRequiredTime&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValues&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testSimpleResultLiteral&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedPropertyPresent&gt;: &lt;http://example.com/features/vector-obs-1&gt;
- - Shape &lt;https://www.ogc.org/rules/sosa/#testFeatureOfInterest&gt;: *none*
  - Shape &lt;https://www.ogc.org/rules/sosa/#testResultNotEmptyNode&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValues&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testRequiredTime&gt;: *none*
  - Shape &lt;https://www.ogc.org/rules/sosa/#testResult&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedPropertyPresent&gt;: &lt;http://example.com/features/vector-obs-1&gt;
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testFeatureOfInterest&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testSimpleResultLiteral&gt;: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -1073,24 +1073,24 @@ On instance[&#x27;properties&#x27;]:
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/observation/vectorObservationFeature/rules.shacl:
- - Shape &lt;http://example.com/rules#testGeometryCoordinatesIsList&gt;: &lt;http://example.com/features/vector-obs-1&gt;/geojson:geometry
  - Shape &lt;http://example.com/rules#testGeometryHasCoordinates&gt;: &lt;http://example.com/features/vector-obs-1&gt;/geojson:geometry
  - Shape &lt;http://example.com/rules#testVectorObservationFeatureHasOneGeometry&gt;: &lt;http://example.com/features/vector-obs-1&gt;
+ - Shape &lt;http://example.com/rules#testGeometryCoordinatesIsList&gt;: &lt;http://example.com/features/vector-obs-1&gt;/geojson:geometry
 </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:
- - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval&gt;: &lt;http://example.com/features/c1&gt;
- - Shape &lt;https://www.ogc.org/rules/sosa/#testRequiredTime&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValues&gt;: &lt;http://example.com/features/c1&gt;
- - Shape &lt;https://www.ogc.org/rules/sosa/#testSimpleResultLiteral&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent&gt;: &lt;http://example.com/features/c1&gt;
- - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedPropertyPresent&gt;: &lt;http://example.com/features/vector-obs-1&gt;
- - Shape &lt;https://www.ogc.org/rules/sosa/#testFeatureOfInterest&gt;: *none*
  - Shape &lt;https://www.ogc.org/rules/sosa/#testResultNotEmptyNode&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValues&gt;: &lt;http://example.com/features/c1&gt;
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testRequiredTime&gt;: *none*
  - Shape &lt;https://www.ogc.org/rules/sosa/#testResult&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedPropertyPresent&gt;: &lt;http://example.com/features/vector-obs-1&gt;
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval&gt;: &lt;http://example.com/features/c1&gt;
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent&gt;: &lt;http://example.com/features/c1&gt;
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testFeatureOfInterest&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testSimpleResultLiteral&gt;: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -1139,7 +1139,7 @@ On instance[&#x27;properties&#x27;]:
                 if (/^#(bblock|item)-/.test(location.hash)) {
                     const highlight = document.querySelector(location.hash.replaceAll('.', '\\.'));
                     if (highlight) {
-                        highlight.closest('.accordion-collapse').classList.add('show');
+                        highlight.querySelector('.accordion-collapse').classList.add('show');
                         highlight.classList.add('highlighted');
                     }
                 }
