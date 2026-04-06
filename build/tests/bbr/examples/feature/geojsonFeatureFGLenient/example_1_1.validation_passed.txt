@@ -1,5 +1,5 @@
 Validation report for ogc.bbr.examples.feature.geojsonFeatureFGLenient - Custom JSON-FG (lenient) Feature
-Generated 2026-03-27T14:19:18.095545+00:00
+Generated 2026-04-06T13:44:32.721515+00:00
 === Files ===
 Using examples/feature.json from examples
 JSON-LD context is present - uplifting

@@ -9,7 +9,7 @@
   "dateTimeAddition": "2024-10-03T11:31:00+02:00",
   "itemClass": "schema",
   "version": "0.1",
-  "dateOfLastChange": "2026-03-27",
+  "dateOfLastChange": "2026-04-06",
   "shaclShapes": {},
   "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/context.jsonld",
   "schema": {
@@ -393,6 +393,29 @@
         }
       },
       "code": "raise ValueError(\"intentional test error from Python transform\")\n"
+    },
+    {
+      "id": "python-geojson",
+      "description": "Generates a random GeoJSON object from the input",
+      "type": "python",
+      "inputs": {
+        "mediaTypes": [
+          {
+            "mimeType": "application/json",
+            "label": "JSON",
+            "defaultExtension": "json"
+          }
+        ]
+      },
+      "outputs": {
+        "mediaTypes": [
+          {
+            "mimeType": "application/geo+json"
+          }
+        ]
+      },
+      "ref": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-example/transforms/python-geojson.py",
+      "code": "import json\nimport random\nimport math\n\ndata = json.loads(input_data)\n\nif 'features' in data or 'geometry' in data:\n    output_data = input_data\nelse:\n    # Iberian Peninsula bounding box (approx): lon -9.5 to 3.3, lat 36.0 to 43.8\n    LON_MIN, LON_MAX = -9.5, 3.3\n    LAT_MIN, LAT_MAX = 36.0, 43.8\n\n    num_points = random.randint(3, 5)\n\n    cx = random.uniform(LON_MIN + 1, LON_MAX - 1)\n    cy = random.uniform(LAT_MIN + 1, LAT_MAX - 1)\n    radius_lon = random.uniform(0.3, 1.0)\n    radius_lat = random.uniform(0.3, 1.0)\n\n    angles = sorted(random.uniform(0, 2 * math.pi) for _ in range(num_points))\n    ring = [\n        [\n            round(cx + radius_lon * math.cos(a), 6),\n            round(cy + radius_lat * math.sin(a), 6),\n        ]\n        for a in angles\n    ]\n    ring.append(ring[0])  # close the ring\n\n    output_data = json.dumps({\n        'type': 'Feature',\n        'geometry': {\n            'type': 'Polygon',\n            'coordinates': [ring],\n        },\n        'properties': data,\n    })\n"
     }
   ],
   "description": "This showcases the potential to define and execute **transforms**\n\nThis capability is still in early development.\n\nTransforms are defined in the file [transforms.yaml](transforms.yaml) in the form:\n\n```yaml\n  - id: inline-transform\n    description: A transform's code can also be defined inside the transform's object\n    type: jq\n    code: |\n      .explanation = \"for example - adding an element to define an implicit type\"\n      .type = \"ex:Foo\"\n```\n\nCurrent transform types supported are:\n\n- **jq** \n- **sparql-update**\n- **sparql-construct**\n- **xslt**\n\nDepending on the language of the example all available transforms will be executed and visible via the **transform results** button in the **examples tab**.\n\n## Future planned functionality\n\n### Pluggable transformation engines\n\nAbility to define a custom transformer in a specific repository\n\n### Post transform validation \n\nAbility to define target profiles to validate post-transform results\n\n### FAIR transforms\n\nstandardisation of publication of transformation specifications\n\n### Improved user experience\n\nTBD\n\n### Inheritance of sub-schema transformations\n\nAbility to create a transformation for a composite using multiple transformable building block dependencies.\n\n",
@@ -439,6 +462,10 @@
             "jinja2-html": {
               "success": true,
               "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.jinja2-html.html"
+            },
+            "python-geojson": {
+              "success": true,
+              "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.python-geojson"
             }
           },
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/example_1_1.json"
