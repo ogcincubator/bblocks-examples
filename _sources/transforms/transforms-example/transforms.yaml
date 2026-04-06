@@ -156,4 +156,7 @@ transforms:
     outputs:
       mediaTypes:
         - application/geo+json
+      profiles:
+        - bblocks://ogc.geo.features.feature
+        - bblocks://ogc.sosa.features.observation
     ref: transforms/python-geojson.py
