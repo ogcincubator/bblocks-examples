@@ -146,3 +146,14 @@ transforms:
         python: ">=5.0"
     code: |
       raise ValueError("intentional test error from Python transform")
+
+  - id: python-geojson
+    description: Generates a random GeoJSON object from the input
+    type: python
+    inputs:
+      mediaTypes:
+        - application/json
+    outputs:
+      mediaTypes:
+        - application/geo+json
+    ref: transforms/python-geojson.py
