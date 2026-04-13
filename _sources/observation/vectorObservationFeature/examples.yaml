@@ -17,3 +17,9 @@
   snippets:
     - language: json
       ref: examples/observationCollection.json
+
+- title: VectorObservation Feature using json-path
+  snippets:
+    - language: json
+      ref: examples/observationCollection.json
+      json-path: '$.features[0]'
