@@ -253,7 +253,6 @@ Links to the schema:
           },
           "@id": "rdfs:seeAlso"
         },
-        "type": "@type",
         "featureType": "@type",
         "geometry": "geojson:geometry",
         "time": {
@@ -279,7 +278,6 @@ Links to the schema:
     },
     "edges": {
       "@context": {
-        "type": "@type",
         "geometry": "geojson:geometry",
         "links": {
           "@context": {
@@ -335,6 +333,7 @@ Links to the schema:
       }
     },
     "properties": "@nest",
+    "type": "@type",
     "Feature": "geojson:Feature",
     "FeatureCollection": "geojson:FeatureCollection",
     "GeometryCollection": "geojson:GeometryCollection",
@@ -386,9 +385,9 @@ Links to the schema:
     "startTangentVector": "geojson:startTangentVector",
     "endTangentVector": "geojson:endTangentVector",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "geojson": "https://purl.org/geojson/vocab#",
     "oa": "http://www.w3.org/ns/oa#",
     "dct": "http://purl.org/dc/terms/",
-    "geojson": "https://purl.org/geojson/vocab#",
     "owlTime": "http://www.w3.org/2006/time#",
     "time": "http://www.w3.org/2006/time#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",

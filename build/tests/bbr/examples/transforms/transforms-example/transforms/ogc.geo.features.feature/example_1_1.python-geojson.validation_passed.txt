@@ -1,5 +1,5 @@
 Validation report for ogc.geo.features.feature - Feature
-Generated 2026-04-06T23:31:47.108585+00:00
+Generated 2026-04-13T09:14:43.748523+00:00
 === Files ===
 Using example_1_1.python-geojson.geojson from transform outputs
 JSON-LD context is present - uplifting
@@ -10,4 +10,18 @@ Output Turtle example_1_1.python-geojson.ttl created
 === JSON Schema ===
 Validation passed
 === End JSON Schema ===
+
+=== SHACL ===
+Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+ - Shape geojson:GeometryShape: *none*
+ - Shape geojson:FeatureShape: _:Nbffc703107fe41e0b087642ffdc94fb9
+ - Shape geojson:LinkShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+
+=== End SHACL ===
 

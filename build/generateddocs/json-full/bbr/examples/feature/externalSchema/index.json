@@ -10,7 +10,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2026-04-06",
+  "dateOfLastChange": "2026-04-13",
   "sources": [
     {
       "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -36,7 +36,11 @@
     "examples"
   ],
   "group": "Examples",
-  "shaclShapes": {},
+  "shaclShapes": {
+    "ogc.geo.features.feature": [
+      "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
+    ]
+  },
   "schema": {
     "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema.yaml",
     "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema.json"

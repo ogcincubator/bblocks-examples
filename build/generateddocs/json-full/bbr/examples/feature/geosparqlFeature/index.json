@@ -10,7 +10,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2026-04-06",
+  "dateOfLastChange": "2026-04-13",
   "maturity": "development",
   "scope": "unstable",
   "tags": [
@@ -18,10 +18,14 @@
     "examples"
   ],
   "group": "Examples",
-  "shaclShapes": {},
+  "shaclShapes": {
+    "ogc.geo.features.feature": [
+      "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
+    ]
+  },
   "dependsOn": [
-    "ogc.geo.features.feature",
-    "ogc.bbr.examples.feature.propertySet"
+    "ogc.bbr.examples.feature.propertySet",
+    "ogc.geo.features.feature"
   ],
   "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/context.jsonld",
   "schema": {
@@ -33,7 +37,7 @@
   "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/resolvedProperties.json",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geosparqlFeature/",
   "rdfData": [],
-  "validationPassed": true,
+  "validationPassed": false,
   "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/geosparqlFeature/",
   "examples": [
     {

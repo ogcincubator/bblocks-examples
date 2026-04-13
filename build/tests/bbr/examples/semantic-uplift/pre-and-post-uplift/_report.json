@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.bbr.examples.semantic-uplift.pre-and-post-uplift - Pre and Post Semantic Uplift example",
   "bblockName": "Pre and Post Semantic Uplift example",
   "bblockId": "ogc.bbr.examples.semantic-uplift.pre-and-post-uplift",
-  "generated": "2026-04-06T23:31:29.390715+00:00",
+  "generated": "2026-04-13T09:14:32.636265+00:00",
   "result": true,
   "items": [
     {
@@ -74,12 +74,12 @@
               "focusNodes": {
                 "<http://example.com/rules#testHasOneIs1>": {
                   "nodes": [
-                    "_:N4839ff7ea9904864ac571848e67b1730"
+                    "_:Nb53c607c994b42a99d3a3136f8310aeb"
                   ]
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/semantic-uplift/pre-and-post-uplift/rules.shacl:\n - Shape <http://example.com/rules#testHasOneIs1>: _:N4839ff7ea9904864ac571848e67b1730\n"
+              "message": "Focus nodes for _sources/semantic-uplift/pre-and-post-uplift/rules.shacl:\n - Shape <http://example.com/rules#testHasOneIs1>: _:Nb53c607c994b42a99d3a3136f8310aeb\n"
             }
           ]
         },

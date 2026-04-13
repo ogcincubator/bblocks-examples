@@ -3,12 +3,12 @@
   "abstract": "This register provides a collection of **examples** designed to illustrate capabilities and implementation patterns for [Building Blocks (see more)](https://ogcincubator.github.io/bblocks-docs). \n\n*These buildings blocks may be copied and edited into a new repository based on the [template](https://github.com/opengeospatial/bblock-template) - but should not be referenced and extended for reuse*\n",
   "description": "The aim of the highlighted examples is to illustrate implementation patterns for reusing OGC building blocks. The emphasis is on typical requirements to extend or constrain generic or abstract models such as OGC API Features, Observations etc. \n\nOther examples will illustrate different possible ways to use the Building Block machinery to semantically annotate externally defines schemas, develop and test logical constraints, or simply test examples using a published specification.\n\nMore complex examples will include transformation testing - testing a format can be transformed into a related structure and/or data model.\n",
   "sparqlEndpoint": "https://defs-dev.opengis.net/fuseki/query",
-  "modified": "2026-04-06T23:31:14.951487",
+  "modified": "2026-04-13T09:14:18.366921",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"9fc500acce4d7736560910c8c516e660152d2d04",
-      "shortCommitId": "\"9fc500",
-      "date": "2026-04-06T23:16:23+00:00\""
+      "commitId": "\"267c820f596a0dc60f2a48140288ad2fd76f66fa",
+      "shortCommitId": "\"267c82",
+      "date": "2026-04-13T09:07:50+00:00\""
     }
   },
   "gitRepository": "https://github.com/ogcincubator/bblocks-examples",
@@ -33,7 +33,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-04-06",
+      "dateOfLastChange": "2026-04-13",
       "sources": [
         {
           "title": "Semantic Sensor Network Ontology",
@@ -63,13 +63,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/propertySet/",
       "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/propertySet/index.md"
-        },
         "json-full": {
           "mediatype": "application/json",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/propertySet/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/propertySet/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -86,7 +86,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-04-06",
+      "dateOfLastChange": "2026-04-13",
       "maturity": "development",
       "tags": [
         "examples",
@@ -104,13 +104,13 @@
       "rdfData": [],
       "validationPassed": true,
       "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputSchema/index.md"
-        },
         "json-full": {
           "mediatype": "application/json",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputSchema/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputSchema/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -126,7 +126,7 @@
       "dateTimeAddition": "2024-10-03T11:31:00+02:00",
       "itemClass": "schema",
       "version": "0.1",
-      "dateOfLastChange": "2026-04-06",
+      "dateOfLastChange": "2026-04-13",
       "shaclShapes": {
         "ogc.bbr.examples.semantic-uplift.pre-and-post-uplift": [
           "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/pre-and-post-uplift/rules.shacl"
@@ -145,13 +145,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/semantic-uplift/pre-and-post-uplift/",
       "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/semantic-uplift/pre-and-post-uplift/index.md"
-        },
         "json-full": {
           "mediatype": "application/json",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/semantic-uplift/pre-and-post-uplift/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/semantic-uplift/pre-and-post-uplift/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -168,7 +168,7 @@
       "dateTimeAddition": "2024-10-03T11:31:00+02:00",
       "itemClass": "schema",
       "version": "0.1",
-      "dateOfLastChange": "2026-04-06",
+      "dateOfLastChange": "2026-04-13",
       "shaclShapes": {},
       "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/context.jsonld",
       "schema": {
@@ -584,13 +584,13 @@
         }
       ],
       "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/transforms/transforms-example/index.md"
-        },
         "json-full": {
           "mediatype": "application/json",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/transforms/transforms-example/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/transforms/transforms-example/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -607,7 +607,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-04-06",
+      "dateOfLastChange": "2026-04-13",
       "maturity": "development",
       "tags": [
         "examples",
@@ -630,13 +630,13 @@
       "rdfData": [],
       "validationPassed": true,
       "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputSchema/index.md"
-        },
         "json-full": {
           "mediatype": "application/json",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputSchema/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputSchema/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -654,7 +654,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-04-06",
+      "dateOfLastChange": "2026-04-13",
       "sources": [
         {
           "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -680,7 +680,11 @@
         "examples"
       ],
       "group": "Examples",
-      "shaclShapes": {},
+      "shaclShapes": {
+        "ogc.geo.features.feature": [
+          "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
+        ]
+      },
       "schema": {
         "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema.yaml",
         "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema.json"
@@ -693,13 +697,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/externalSchema/",
       "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/externalSchema/index.md"
-        },
         "json-full": {
           "mediatype": "application/json",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/externalSchema/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/externalSchema/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -716,7 +720,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-04-06",
+      "dateOfLastChange": "2026-04-13",
       "sources": [
         {
           "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -726,8 +730,8 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.geo.features.feature",
-        "ogc.bbr.examples.feature.propertySet"
+        "ogc.bbr.examples.feature.propertySet",
+        "ogc.geo.features.feature"
       ],
       "tags": [
         "feature",
@@ -735,7 +739,11 @@
       ],
       "group": "Examples",
       "highlighted": true,
-      "shaclShapes": {},
+      "shaclShapes": {
+        "ogc.geo.features.feature": [
+          "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
+        ]
+      },
       "schema": {
         "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/schema.yaml",
         "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/schema.json"
@@ -748,13 +756,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/geojsonFeature/",
       "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/geojsonFeature/index.md"
-        },
         "json-full": {
           "mediatype": "application/json",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/geojsonFeature/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/geojsonFeature/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -772,7 +780,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-04-06",
+      "dateOfLastChange": "2026-04-13",
       "maturity": "development",
       "scope": "unstable",
       "tags": [
@@ -780,10 +788,14 @@
         "examples"
       ],
       "group": "Examples",
-      "shaclShapes": {},
+      "shaclShapes": {
+        "ogc.geo.features.feature": [
+          "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
+        ]
+      },
       "dependsOn": [
-        "ogc.geo.features.feature",
-        "ogc.bbr.examples.feature.propertySet"
+        "ogc.bbr.examples.feature.propertySet",
+        "ogc.geo.features.feature"
       ],
       "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/context.jsonld",
       "schema": {
@@ -795,16 +807,16 @@
       "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/resolvedProperties.json",
       "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geosparqlFeature/",
       "rdfData": [],
-      "validationPassed": true,
+      "validationPassed": false,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/geosparqlFeature/",
       "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/geosparqlFeature/index.md"
-        },
         "json-full": {
           "mediatype": "application/json",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/geosparqlFeature/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/geosparqlFeature/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -822,7 +834,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-04-06",
+      "dateOfLastChange": "2026-04-13",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
@@ -858,13 +870,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/observation/vectorObservation/",
       "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/observation/vectorObservation/index.md"
-        },
         "json-full": {
           "mediatype": "application/json",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/observation/vectorObservation/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/observation/vectorObservation/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -881,7 +893,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-04-06",
+      "dateOfLastChange": "2026-04-13",
       "maturity": "development",
       "scope": "unstable",
       "tags": [
@@ -889,10 +901,14 @@
         "examples"
       ],
       "group": "Examples",
-      "shaclShapes": {},
+      "shaclShapes": {
+        "ogc.geo.features.feature": [
+          "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
+        ]
+      },
       "dependsOn": [
-        "ogc.geo.json-fg.feature-lenient",
-        "ogc.bbr.examples.feature.propertySet"
+        "ogc.bbr.examples.feature.propertySet",
+        "ogc.geo.json-fg.feature-lenient"
       ],
       "schema": {
         "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/schema.yaml",
@@ -906,13 +922,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/geojsonFeatureFGLenient/",
       "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/geojsonFeatureFGLenient/index.md"
-        },
         "json-full": {
           "mediatype": "application/json",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/geojsonFeatureFGLenient/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/geojsonFeatureFGLenient/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -930,7 +946,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-04-06",
+      "dateOfLastChange": "2026-04-13",
       "sources": [
         {
           "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -955,7 +971,11 @@
         "examples"
       ],
       "group": "Examples",
-      "shaclShapes": {},
+      "shaclShapes": {
+        "ogc.geo.features.feature": [
+          "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
+        ]
+      },
       "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/overrideContext/context.jsonld",
       "schema": {
         "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/overrideContext/schema.yaml",
@@ -969,13 +989,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/overrideContext/",
       "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/overrideContext/index.md"
-        },
         "json-full": {
           "mediatype": "application/json",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/overrideContext/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/overrideContext/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -992,7 +1012,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-04-06",
+      "dateOfLastChange": "2026-04-13",
       "maturity": "development",
       "tags": [
         "examples",
@@ -1015,13 +1035,13 @@
       "rdfData": [],
       "validationPassed": true,
       "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputDescription/index.md"
-        },
         "json-full": {
           "mediatype": "application/json",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputDescription/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputDescription/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -1038,7 +1058,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-04-06",
+      "dateOfLastChange": "2026-04-13",
       "maturity": "development",
       "tags": [
         "examples",
@@ -1047,8 +1067,8 @@
       ],
       "shaclShapes": {},
       "dependsOn": [
-        "ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputSchema",
-        "ogc.api.processes.v1.schemas.outputDescription"
+        "ogc.api.processes.v1.schemas.outputDescription",
+        "ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputSchema"
       ],
       "schema": {
         "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputDescription/schema.yaml",
@@ -1061,13 +1081,13 @@
       "rdfData": [],
       "validationPassed": true,
       "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputDescription/index.md"
-        },
         "json-full": {
           "mediatype": "application/json",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputDescription/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputDescription/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -1084,7 +1104,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-04-06",
+      "dateOfLastChange": "2026-04-13",
       "maturity": "development",
       "tags": [
         "examples",
@@ -1106,13 +1126,13 @@
       "rdfData": [],
       "validationPassed": true,
       "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/ogcapi/processes/schemas/inputDescriptions/index.md"
-        },
         "json-full": {
           "mediatype": "application/json",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/ogcapi/processes/schemas/inputDescriptions/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/ogcapi/processes/schemas/inputDescriptions/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -1129,7 +1149,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-04-06",
+      "dateOfLastChange": "2026-04-13",
       "maturity": "development",
       "tags": [
         "examples",
@@ -1139,8 +1159,8 @@
       "shaclShapes": {},
       "dependsOn": [
         "ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputDescription",
-        "ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputDescription",
-        "ogc.api.processes.v1.schemas.process"
+        "ogc.api.processes.v1.schemas.process",
+        "ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputDescription"
       ],
       "schema": {
         "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/processDescription/schema.yaml",
@@ -1153,13 +1173,13 @@
       "rdfData": [],
       "validationPassed": true,
       "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/ogcapi/processes/schemas/buffer-geometry/processDescription/index.md"
-        },
         "json-full": {
           "mediatype": "application/json",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/ogcapi/processes/schemas/buffer-geometry/processDescription/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/ogcapi/processes/schemas/buffer-geometry/processDescription/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -1176,7 +1196,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-04-06",
+      "dateOfLastChange": "2026-04-13",
       "maturity": "development",
       "tags": [
         "examples",
@@ -1198,13 +1218,13 @@
       "rdfData": [],
       "validationPassed": true,
       "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/ogcapi/processes/schemas/outputDescriptions/index.md"
-        },
         "json-full": {
           "mediatype": "application/json",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/ogcapi/processes/schemas/outputDescriptions/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/ogcapi/processes/schemas/outputDescriptions/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -1221,13 +1241,13 @@
       "itemClass": "schema",
       "register": "isc",
       "version": "1.0",
-      "dateOfLastChange": "2026-04-06",
+      "dateOfLastChange": "2026-04-13",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.geo.topo.features.topo-feature-collection",
         "ogc.ogc-utils.iri-or-curie",
+        "ogc.geo.topo.features.topo-feature-collection",
         "ogc.geo.topo.features.topo-line"
       ],
       "tags": [],
@@ -1235,12 +1255,18 @@
       "highlighted": true,
       "shaclShapes": {
         "ogc.geo.topo.features.topo-feature-collection": [
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+        ],
+        "ogc.geo.features.feature": [
+          "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
+        ],
+        "ogc.geo.features.featureCollection": [
+          "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl"
         ],
         "ogc.geo.topo.features.topo-feature": [
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
         ]
       },
       "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/rules/topo-edges/context.jsonld",
@@ -1290,13 +1316,13 @@
         }
       ],
       "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/rules/topo-edges/index.md"
-        },
         "json-full": {
           "mediatype": "application/json",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/rules/topo-edges/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/rules/topo-edges/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -1313,7 +1339,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-04-06",
+      "dateOfLastChange": "2026-04-13",
       "sources": [
         {
           "title": "Semantic Sensor Network Ontology",
@@ -1343,6 +1369,12 @@
         ],
         "ogc.sosa.properties.observation": [
           "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl"
+        ],
+        "ogc.geo.features.feature": [
+          "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
+        ],
+        "ogc.geo.features.featureCollection": [
+          "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl"
         ]
       },
       "schema": {
@@ -1354,16 +1386,16 @@
       "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/resolvedProperties.json",
       "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservationFeature/",
       "rdfData": [],
-      "validationPassed": true,
+      "validationPassed": false,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/observation/vectorObservationFeature/",
       "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/observation/vectorObservationFeature/index.md"
-        },
         "json-full": {
           "mediatype": "application/json",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/observation/vectorObservationFeature/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/observation/vectorObservationFeature/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -1380,7 +1412,7 @@
       "itemClass": "api",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-04-06",
+      "dateOfLastChange": "2026-04-13",
       "maturity": "development",
       "tags": [
         "examples",
@@ -1399,22 +1431,22 @@
       },
       "shaclShapes": {},
       "dependsOn": [
-        "ogc.api.processes.v1.responses.NotFound",
-        "ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputSchema",
-        "ogc.api.processes.v1.responses.ExecuteAsync",
-        "ogc.api.processes.v1.paths.JobList",
-        "ogc.api.processes.v1.parameters.jobId",
-        "ogc.api.processes.v1.schemas.outputDescription",
-        "ogc.api.processes.v1.schemas.inputDescription",
-        "ogc.api.processes.v1.paths.ProcessList",
-        "ogc.bbr.examples.ogcapi.processes.schemas.outputDescriptions",
-        "ogc.api.processes.v1.paths.LandingPage",
-        "ogc.api.processes.v1.api",
-        "ogc.bbr.examples.ogcapi.processes.schemas.inputDescriptions",
-        "ogc.api.processes.v1.schemas.execute",
-        "ogc.api.processes.v1.paths.Conformance",
-        "ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.processDescription",
         "ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputSchema",
+        "ogc.api.processes.v1.responses.NotFound",
+        "ogc.bbr.examples.ogcapi.processes.schemas.inputDescriptions",
+        "ogc.api.processes.v1.schemas.outputDescription",
+        "ogc.bbr.examples.ogcapi.processes.schemas.outputDescriptions",
+        "ogc.api.processes.v1.responses.ExecuteAsync",
+        "ogc.api.processes.v1.schemas.execute",
+        "ogc.api.processes.v1.paths.LandingPage",
+        "ogc.api.processes.v1.paths.JobList",
+        "ogc.api.processes.v1.schemas.inputDescription",
+        "ogc.api.processes.v1.api",
+        "ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputSchema",
+        "ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.processDescription",
+        "ogc.api.processes.v1.parameters.jobId",
+        "ogc.api.processes.v1.paths.ProcessList",
+        "ogc.api.processes.v1.paths.Conformance",
         "ogc.api.processes.v1.responses.ServerError"
       ],
       "sourceOpenAPIDocument": "https://ogcincubator.github.io/bblocks-examples/_sources/ogcapi/processes/custom-api/openapi.yaml",
@@ -1423,13 +1455,13 @@
       "rdfData": [],
       "validationPassed": true,
       "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/ogcapi/processes/custom-api/index.md"
-        },
         "json-full": {
           "mediatype": "application/json",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/ogcapi/processes/custom-api/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/ogcapi/processes/custom-api/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
