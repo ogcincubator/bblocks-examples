@@ -10,7 +10,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2026-04-13",
+  "dateOfLastChange": "2023-05-19",
   "maturity": "development",
   "scope": "unstable",
   "tags": [
@@ -24,8 +24,8 @@
     ]
   },
   "dependsOn": [
-    "ogc.bbr.examples.feature.propertySet",
-    "ogc.geo.features.feature"
+    "ogc.geo.features.feature",
+    "ogc.bbr.examples.feature.propertySet"
   ],
   "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/context.jsonld",
   "schema": {
@@ -46,19 +46,19 @@
       "snippets": [
         {
           "language": "json",
-          "ref": "examples/feature.json",
+          "ref": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geosparqlFeature/examples/feature.json",
           "code": "{\n  \"id\": \"f1\",\n  \"type\": \"Feature\",\n  \"geometry\": {\n    \"type\": \"LineString\",\n    \"coordinates\": [\n      [\n        -111.67183507997295,\n        40.056709946862874\n      ],\n      [\n        -111.71,\n        40.156709946862874\n      ]\n    ]\n  },\n  \"properties\": {\n    \"myProp\": \"Mandatory property example\"\n  }\n}\n",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/feature/geosparqlFeature/example_1_1.json"
+          "url": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geosparqlFeature/build/tests/bbr/examples/feature/geosparqlFeature/example_1_1.json"
         },
         {
           "language": "jsonld",
           "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/context.jsonld\",\n  \"id\": \"f1\",\n  \"type\": \"Feature\",\n  \"geometry\": {\n    \"type\": \"LineString\",\n    \"coordinates\": [\n      [\n        -111.67183507997295,\n        40.056709946862874\n      ],\n      [\n        -111.71,\n        40.156709946862875\n      ]\n    ]\n  },\n  \"properties\": {\n    \"myProp\": \"Mandatory property example\"\n  }\n}",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/feature/geosparqlFeature/example_1_1.jsonld"
+          "url": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geosparqlFeature/build/tests/bbr/examples/feature/geosparqlFeature/example_1_1.jsonld"
         },
         {
           "language": "ttl",
           "code": "@prefix geo: <http://www.opengis.net/ont/geosparql#> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n\n<http://example.com/features/f1> a geojson:Feature ;\n    geo:hasGeometry [ geo:asGeoJson \"{\\\"coordinates\\\":[[-111.67183507997295,40.056709946862874],[-111.71,40.156709946862875]],\\\"type\\\":\\\"LineString\\\"}\"^^geo:geoJSONLiteral ] ;\n    geojson:geometry \"{\\\"coordinates\\\":[[-111.67183507997295,40.056709946862874],[-111.71,40.156709946862875]],\\\"type\\\":\\\"LineString\\\"}\"^^rdf:JSON .\n\n",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/feature/geosparqlFeature/example_1_1.ttl"
+          "url": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geosparqlFeature/build/tests/bbr/examples/feature/geosparqlFeature/example_1_1.ttl"
         }
       ]
     }

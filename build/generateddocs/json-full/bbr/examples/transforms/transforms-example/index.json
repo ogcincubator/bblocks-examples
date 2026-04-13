@@ -9,7 +9,7 @@
   "dateTimeAddition": "2024-10-03T11:31:00+02:00",
   "itemClass": "schema",
   "version": "0.1",
-  "dateOfLastChange": "2026-04-13",
+  "dateOfLastChange": "2024-10-03",
   "shaclShapes": {},
   "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/context.jsonld",
   "schema": {
@@ -492,12 +492,12 @@
               }
             }
           },
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/example_1_1.json"
+          "url": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-example/build/tests/bbr/examples/transforms/transforms-example/example_1_1.json"
         },
         {
           "language": "jsonld",
           "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/context.jsonld\",\n  \"one\": 1,\n  \"two\": 2,\n  \"string\": \"value\"\n}",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/example_1_1.jsonld"
+          "url": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-example/build/tests/bbr/examples/transforms/transforms-example/example_1_1.jsonld"
         },
         {
           "language": "ttl",
@@ -508,7 +508,7 @@
               "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_3.prefix-predicates.ttl"
             }
           },
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/example_1_1.ttl"
+          "url": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-example/build/tests/bbr/examples/transforms/transforms-example/example_1_1.ttl"
         }
       ]
     },
@@ -524,7 +524,7 @@
               "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_2_1.sample-xslt.xml"
             }
           },
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/example_2_1.xml"
+          "url": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-example/build/tests/bbr/examples/transforms/transforms-example/example_2_1.xml"
         }
       ]
     }

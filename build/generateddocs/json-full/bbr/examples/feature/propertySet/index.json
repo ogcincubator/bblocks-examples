@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2026-04-13",
+  "dateOfLastChange": "2023-05-19",
   "sources": [
     {
       "title": "Semantic Sensor Network Ontology",
@@ -44,17 +44,17 @@
         {
           "language": "json",
           "code": "{\n  \"myProp\": \"Very smooth\"\n}\n",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/feature/propertySet/example_1_1.json"
+          "url": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/propertySet/build/tests/bbr/examples/feature/propertySet/example_1_1.json"
         },
         {
           "language": "jsonld",
           "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/context.jsonld\",\n  \"myProp\": \"Very smooth\"\n}",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/feature/propertySet/example_1_1.jsonld"
+          "url": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/propertySet/build/tests/bbr/examples/feature/propertySet/example_1_1.jsonld"
         },
         {
           "language": "ttl",
           "code": "@prefix myNamespace: <http://example.org/myModel/> .\n\n[] myNamespace:myProp \"Very smooth\" .\n\n",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/feature/propertySet/example_1_1.ttl"
+          "url": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/propertySet/build/tests/bbr/examples/feature/propertySet/example_1_1.ttl"
         }
       ]
     }
