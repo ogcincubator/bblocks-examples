@@ -95,6 +95,7 @@ simplifying implementation.
 ```ttl
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
+@prefix myNamespace: <http://example.org/myModel/> .
 @prefix ns1: <http://www.opengis.net/def/glossary/term/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix time: <http://www.w3.org/2006/time#> .
@@ -102,6 +103,7 @@ simplifying implementation.
 
 <http://example.com/features/f1> a <app:building>,
         geojson:Feature ;
+    myNamespace:myProp "Mandatory property example" ;
     dcterms:time [ time:hasTime ( "2014-04-24T10:50:18Z" ".." ) ] ;
     ns1:CoordinateReferenceSystemCRS "http://www.opengis.net/def/crs/EPSG/0/5555" ;
     geojson:geometry [ a geojson:LineString ;
@@ -219,6 +221,7 @@ Links to the schema:
       "@id": "geojson:geometry",
       "@container": "@list"
     },
+    "myProp": "myNamespace:myProp",
     "geojson": "https://purl.org/geojson/vocab#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "oa": "http://www.w3.org/ns/oa#",

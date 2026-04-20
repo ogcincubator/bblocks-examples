@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2023-05-19",
+  "dateOfLastChange": "2026-04-20",
   "sources": [
     {
       "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -55,17 +55,17 @@
           "language": "json",
           "ref": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geojsonFeature/examples/feature.json",
           "code": "{\n  \"id\": \"f1\",\n  \"type\": \"Feature\",\n  \"geometry\": {\n    \"type\": \"LineString\",\n    \"coordinates\": [\n      [\n        -111.67183507997295,\n        40.056709946862874\n      ],\n      [\n        -111.71,\n        40.156709946862874\n      ]\n    ]\n  },\n  \"properties\": {\n    \"myProp\": \"Mandatory property example\"\n  }\n}\n",
-          "url": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geojsonFeature/build/tests/bbr/examples/feature/geojsonFeature/example_1_1.json"
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/feature/geojsonFeature/example_1_1.json"
         },
         {
           "language": "jsonld",
           "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/context.jsonld\",\n  \"id\": \"f1\",\n  \"type\": \"Feature\",\n  \"geometry\": {\n    \"type\": \"LineString\",\n    \"coordinates\": [\n      [\n        -111.67183507997295,\n        40.056709946862874\n      ],\n      [\n        -111.71,\n        40.156709946862875\n      ]\n    ]\n  },\n  \"properties\": {\n    \"myProp\": \"Mandatory property example\"\n  }\n}",
-          "url": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geojsonFeature/build/tests/bbr/examples/feature/geojsonFeature/example_1_1.jsonld"
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/feature/geojsonFeature/example_1_1.jsonld"
         },
         {
           "language": "ttl",
           "code": "@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix myNamespace: <http://example.org/myModel/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<http://example.com/features/f1> a geojson:Feature ;\n    myNamespace:myProp \"Mandatory property example\" ;\n    geojson:geometry [ a geojson:LineString ;\n            geojson:coordinates ( ( -1.116718e+02 4.005671e+01 ) ( -1.1171e+02 4.015671e+01 ) ) ] .\n\n",
-          "url": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geojsonFeature/build/tests/bbr/examples/feature/geojsonFeature/example_1_1.ttl"
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/feature/geojsonFeature/example_1_1.ttl"
         }
       ]
     }

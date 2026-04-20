@@ -9,7 +9,7 @@
   "dateTimeAddition": "2024-10-03T11:31:00+02:00",
   "itemClass": "schema",
   "version": "0.1",
-  "dateOfLastChange": "2024-10-03",
+  "dateOfLastChange": "2026-04-20",
   "shaclShapes": {},
   "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/context.jsonld",
   "schema": {
@@ -395,6 +395,30 @@
       "code": "raise ValueError(\"intentional test error from Python transform\")\n"
     },
     {
+      "id": "dump-context",
+      "description": "Dumps the transform context as JSON.",
+      "type": "python",
+      "inputs": {
+        "mediaTypes": [
+          {
+            "mimeType": "application/json",
+            "label": "JSON",
+            "defaultExtension": "json"
+          }
+        ]
+      },
+      "outputs": {
+        "mediaTypes": [
+          {
+            "mimeType": "application/json",
+            "label": "JSON",
+            "defaultExtension": "json"
+          }
+        ]
+      },
+      "code": "import json\noutput_data = json.dumps(vars(transform_metadata.context), indent=2)\n"
+    },
+    {
       "id": "python-geojson",
       "description": "Generates a random GeoJSON object from the input",
       "type": "python",
@@ -469,6 +493,10 @@
               "success": true,
               "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.jinja2-html.html"
             },
+            "dump-context": {
+              "success": true,
+              "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.dump-context.json"
+            },
             "python-geojson": {
               "success": true,
               "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.python-geojson.geojson",
@@ -492,12 +520,12 @@
               }
             }
           },
-          "url": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-example/build/tests/bbr/examples/transforms/transforms-example/example_1_1.json"
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/example_1_1.json"
         },
         {
           "language": "jsonld",
           "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/context.jsonld\",\n  \"one\": 1,\n  \"two\": 2,\n  \"string\": \"value\"\n}",
-          "url": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-example/build/tests/bbr/examples/transforms/transforms-example/example_1_1.jsonld"
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/example_1_1.jsonld"
         },
         {
           "language": "ttl",
@@ -508,7 +536,7 @@
               "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_3.prefix-predicates.ttl"
             }
           },
-          "url": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-example/build/tests/bbr/examples/transforms/transforms-example/example_1_1.ttl"
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/example_1_1.ttl"
         }
       ]
     },
@@ -524,7 +552,17 @@
               "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_2_1.sample-xslt.xml"
             }
           },
-          "url": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-example/build/tests/bbr/examples/transforms/transforms-example/example_2_1.xml"
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/example_2_1.xml"
+        }
+      ]
+    },
+    {
+      "title": "HTML example",
+      "snippets": [
+        {
+          "language": "html",
+          "code": "<!doctype html>\n<html>\n  <body>\n    <p>This is a <strong>paragraph</strong>!</p>\n  </body>\n</html>",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/example_3_1.html"
         }
       ]
     }

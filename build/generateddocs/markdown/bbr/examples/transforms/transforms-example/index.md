@@ -106,6 +106,18 @@ Ability to create a transformation for a composite using multiple transformable 
 </Article>
 ```
 
+
+### HTML example
+#### html
+```html
+<!doctype html>
+<html>
+  <body>
+    <p>This is a <strong>paragraph</strong>!</p>
+  </body>
+</html>
+```
+
 ## Schema
 
 ```yaml

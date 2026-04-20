@@ -85,6 +85,7 @@
       "@id": "geojson:geometry",
       "@container": "@list"
     },
+    "myProp": "myNamespace:myProp",
     "geojson": "https://purl.org/geojson/vocab#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "oa": "http://www.w3.org/ns/oa#",

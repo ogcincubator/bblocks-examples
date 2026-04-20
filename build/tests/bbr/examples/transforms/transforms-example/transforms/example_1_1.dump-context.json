@@ -1,0 +1,123 @@
+{
+  "bblock_id": "ogc.bbr.examples.transforms.transforms-example",
+  "bblock_name": "Transforms example",
+  "bblock_version": "0.1",
+  "bblock_tags": [],
+  "bblock_files_path": "_sources/transforms/transforms-example",
+  "bblock_annotated_path": "build/annotated/bbr/examples/transforms/transforms-example",
+  "bblock_metadata": {
+    "itemIdentifier": "ogc.bbr.examples.transforms.transforms-example",
+    "name": "Transforms example",
+    "highlighted": true,
+    "abstract": "A sample building block to showcase transforms",
+    "status": "under-development",
+    "dateTimeAddition": "2024-10-03T11:31:00+02:00",
+    "itemClass": "schema",
+    "version": "0.1",
+    "dateOfLastChange": "2026-04-20",
+    "shaclShapes": {},
+    "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/context.jsonld",
+    "schema": {
+      "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/schema.yaml",
+      "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/schema.json"
+    },
+    "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-example/schema.yaml",
+    "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-example/context.jsonld",
+    "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/resolvedProperties.json",
+    "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-example/",
+    "rdfData": [],
+    "validationPassed": true,
+    "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/transforms/transforms-example/"
+  },
+  "example_index": 0,
+  "example": {
+    "title": "Example for transforms"
+  },
+  "snippet_index": 0,
+  "snippet": {
+    "language": "json",
+    "path": "build/tests/bbr/examples/transforms/transforms-example/example_1_1.json",
+    "transformResults": {
+      "prefix-keys": {
+        "success": true,
+        "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.prefix-keys.json"
+      },
+      "inline-transform": {
+        "success": true,
+        "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.inline-transform.json"
+      },
+      "python-uppercase-keys": {
+        "success": true,
+        "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.python-uppercase-keys.json"
+      },
+      "node-add-metadata": {
+        "success": true,
+        "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.node-add-metadata.json"
+      },
+      "python-to-csv": {
+        "success": true,
+        "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.python-to-csv.csv"
+      },
+      "node-to-csv": {
+        "success": true,
+        "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.node-to-csv.csv"
+      },
+      "jq-error": {
+        "success": false,
+        "stderr": "ValueError: intentional test error"
+      },
+      "python-error": {
+        "success": false,
+        "stderr": "Traceback (most recent call last):\n  File \"<transform>\", line 1, in <module>\nValueError: intentional test error from Python transform\n"
+      },
+      "jinja2-html": {
+        "success": true,
+        "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.jinja2-html.html"
+      }
+    }
+  },
+  "output_file": "build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.dump-context.json",
+  "output_dir": "build/tests/bbr/examples/transforms/transforms-example/transforms",
+  "working_dir": "/github/workspace",
+  "source_schema_path": "_sources/transforms/transforms-example/schema.yaml",
+  "annotated_schema_path": "build/annotated/bbr/examples/transforms/transforms-example/schema.yaml",
+  "jsonld_context_path": "build/annotated/bbr/examples/transforms/transforms-example/context.jsonld",
+  "shacl_shapes_paths": [],
+  "base_url": "https://ogcincubator.github.io/bblocks-examples/",
+  "github_base_url": "https://github.com/ogcincubator/bblocks-examples/blob/master/",
+  "git_repository": "https://github.com/ogcincubator/bblocks-examples",
+  "id_prefix": "ogc.bbr.examples.",
+  "imported_register_urls": [
+    "https://opengeospatial.github.io/bblocks/register.json",
+    "https://opengeospatial.github.io/ogcapi-sosa",
+    "https://ogcincubator.github.io/bblocks-ogcapi-processes",
+    "https://ogcincubator.github.io/topo-feature"
+  ],
+  "transform_plugins": [
+    {
+      "modules": [
+        {
+          "module": "bbplugin_jinja2",
+          "transformers": [
+            {
+              "class": "Jinja2Transformer",
+              "types": [
+                "jinja2"
+              ],
+              "defaultInputs": [
+                "application/json"
+              ],
+              "defaultOutputs": [
+                "text/plain"
+              ]
+            }
+          ]
+        }
+      ],
+      "pip": "git+https://github.com/ogcincubator/bblocks-jinja2-transform-plugin.git",
+      "urls": [
+        "https://github.com/ogcincubator/bblocks-jinja2-transform-plugin"
+      ]
+    }
+  ]
+}
