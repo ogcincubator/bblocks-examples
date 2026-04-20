@@ -147,6 +147,19 @@ transforms:
     code: |
       raise ValueError("intentional test error from Python transform")
 
+  - id: dump-context
+    description: Dumps the transform context as JSON.
+    type: python
+    inputs:
+      mediaTypes:
+        - application/json
+    outputs:
+      mediaTypes:
+        - application/json
+    code: |
+      import json
+      output_data = json.dumps(vars(transform_metadata.context), indent=2)
+
   - id: python-geojson
     description: Generates a random GeoJSON object from the input
     type: python
