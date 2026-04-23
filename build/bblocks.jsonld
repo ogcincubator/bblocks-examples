@@ -195,7 +195,7 @@
   "abstract": "This register provides a collection of **examples** designed to illustrate capabilities and implementation patterns for [Building Blocks (see more)](https://ogcincubator.github.io/bblocks-docs). \n\n*These buildings blocks may be copied and edited into a new repository based on the [template](https://github.com/opengeospatial/bblock-template) - but should not be referenced and extended for reuse*\n",
   "description": "The aim of the highlighted examples is to illustrate implementation patterns for reusing OGC building blocks. The emphasis is on typical requirements to extend or constrain generic or abstract models such as OGC API Features, Observations etc. \n\nOther examples will illustrate different possible ways to use the Building Block machinery to semantically annotate externally defines schemas, develop and test logical constraints, or simply test examples using a published specification.\n\nMore complex examples will include transformation testing - testing a format can be transformed into a related structure and/or data model.\n",
   "sparqlEndpoint": "https://defs-dev.opengis.net/fuseki/query",
-  "modified": "2026-04-23T10:53:28.490829",
+  "modified": "2026-04-23T10:56:37.756069",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"a45f3f710418bc91a1b2148677a2104cfc43e7d8",
@@ -1007,8 +1007,8 @@
       ],
       "shaclShapes": null,
       "dependsOn": [
-        "bblocks://ogc.ogc-utils.iri-or-curie",
-        "bblocks://ogc.geo.common.data_types.geojson"
+        "bblocks://ogc.geo.common.data_types.geojson",
+        "bblocks://ogc.ogc-utils.iri-or-curie"
       ],
       "schema": [
         {
@@ -1185,8 +1185,8 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "bblocks://ogc.bbr.examples.feature.propertySet",
-        "bblocks://ogc.geo.features.feature"
+        "bblocks://ogc.geo.features.feature",
+        "bblocks://ogc.bbr.examples.feature.propertySet"
       ],
       "tags": [
         "feature",
@@ -1290,8 +1290,8 @@
         }
       ],
       "dependsOn": [
-        "bblocks://ogc.bbr.examples.feature.propertySet",
-        "bblocks://ogc.geo.features.feature"
+        "bblocks://ogc.geo.features.feature",
+        "bblocks://ogc.bbr.examples.feature.propertySet"
       ],
       "ldContext": {
         "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/context.jsonld",
@@ -1364,8 +1364,8 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "bblocks://ogc.sosa.properties.observation",
-        "bblocks://ogc.geo.geopose.basic.ypr"
+        "bblocks://ogc.geo.geopose.basic.ypr",
+        "bblocks://ogc.sosa.properties.observation"
       ],
       "tags": [
         "examples",
@@ -1477,8 +1477,8 @@
         }
       ],
       "dependsOn": [
-        "bblocks://ogc.geo.json-fg.feature-lenient",
-        "bblocks://ogc.bbr.examples.feature.propertySet"
+        "bblocks://ogc.bbr.examples.feature.propertySet",
+        "bblocks://ogc.geo.json-fg.feature-lenient"
       ],
       "schema": [
         {
@@ -1730,8 +1730,8 @@
       ],
       "shaclShapes": null,
       "dependsOn": [
-        "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputSchema",
-        "bblocks://ogc.api.processes.v1.schemas.outputDescription"
+        "bblocks://ogc.api.processes.v1.schemas.outputDescription",
+        "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputSchema"
       ],
       "schema": [
         {
@@ -1879,8 +1879,8 @@
       ],
       "shaclShapes": null,
       "dependsOn": [
-        "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputDescription",
         "bblocks://ogc.api.processes.v1.schemas.process",
+        "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputDescription",
         "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputDescription"
       ],
       "schema": [
@@ -2030,10 +2030,10 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "bblocks://ogc.sosa.features.observationCollection",
         "bblocks://ogc.sosa.properties.observation",
-        "bblocks://ogc.bbr.examples.observation.vectorObservation",
-        "bblocks://ogc.sosa.features.observation"
+        "bblocks://ogc.sosa.features.observation",
+        "bblocks://ogc.sosa.features.observationCollection",
+        "bblocks://ogc.bbr.examples.observation.vectorObservation"
       ],
       "tags": [
         "sosa",
@@ -2056,6 +2056,15 @@
         },
         {
           "prof:hasArtifact": [
+            "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl"
+          ],
+          "rdfs:seeAlso": "bblocks://ogc.sosa.properties.observation",
+          "prof:hasRole": "role:validation",
+          "dct:format": "text/turtle",
+          "dct:conformsTo": "shacl:"
+        },
+        {
+          "prof:hasArtifact": [
             "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.geo.features.feature",
@@ -2068,15 +2077,6 @@
             "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.geo.features.featureCollection",
-          "prof:hasRole": "role:validation",
-          "dct:format": "text/turtle",
-          "dct:conformsTo": "shacl:"
-        },
-        {
-          "prof:hasArtifact": [
-            "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl"
-          ],
-          "rdfs:seeAlso": "bblocks://ogc.sosa.properties.observation",
           "prof:hasRole": "role:validation",
           "dct:format": "text/turtle",
           "dct:conformsTo": "shacl:"
@@ -2316,23 +2316,23 @@
       },
       "shaclShapes": null,
       "dependsOn": [
-        "bblocks://ogc.api.processes.v1.paths.Conformance",
-        "bblocks://ogc.api.processes.v1.paths.LandingPage",
-        "bblocks://ogc.api.processes.v1.responses.ExecuteAsync",
-        "bblocks://ogc.api.processes.v1.schemas.execute",
-        "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputSchema",
         "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputSchema",
+        "bblocks://ogc.api.processes.v1.schemas.inputDescription",
+        "bblocks://ogc.api.processes.v1.schemas.outputDescription",
+        "bblocks://ogc.api.processes.v1.paths.Conformance",
+        "bblocks://ogc.api.processes.v1.paths.JobList",
+        "bblocks://ogc.api.processes.v1.parameters.jobId",
+        "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputSchema",
+        "bblocks://ogc.api.processes.v1.paths.ProcessList",
+        "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.processDescription",
+        "bblocks://ogc.api.processes.v1.schemas.execute",
         "bblocks://ogc.api.processes.v1.responses.NotFound",
         "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.outputDescriptions",
-        "bblocks://ogc.api.processes.v1.paths.ProcessList",
-        "bblocks://ogc.api.processes.v1.parameters.jobId",
-        "bblocks://ogc.api.processes.v1.schemas.inputDescription",
-        "bblocks://ogc.api.processes.v1.api",
-        "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.inputDescriptions",
         "bblocks://ogc.api.processes.v1.responses.ServerError",
-        "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.processDescription",
-        "bblocks://ogc.api.processes.v1.paths.JobList",
-        "bblocks://ogc.api.processes.v1.schemas.outputDescription"
+        "bblocks://ogc.api.processes.v1.paths.LandingPage",
+        "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.inputDescriptions",
+        "bblocks://ogc.api.processes.v1.api",
+        "bblocks://ogc.api.processes.v1.responses.ExecuteAsync"
       ],
       "sourceOpenAPIDocument": "https://ogcincubator.github.io/bblocks-examples/_sources/ogcapi/processes/custom-api/openapi.yaml",
       "openAPIDocument": {

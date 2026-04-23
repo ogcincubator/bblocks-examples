@@ -18,8 +18,8 @@
   ],
   "shaclShapes": {},
   "dependsOn": [
-    "ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputDescription",
     "ogc.api.processes.v1.schemas.process",
+    "ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputDescription",
     "ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputDescription"
   ],
   "schema": {

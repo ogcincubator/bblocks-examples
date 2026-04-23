@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.geo.features.feature - Feature",
   "bblockName": "Feature",
   "bblockId": "ogc.geo.features.feature",
-  "generated": "2026-04-23T10:53:57.259276+00:00",
+  "generated": "2026-04-23T10:56:54.790317+00:00",
   "result": true,
   "items": [
     {
@@ -82,26 +82,26 @@
             {
               "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
               "focusNodes": {
-                "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
-                  "nodes": []
+                "geojson:FeatureShape": {
+                  "nodes": [
+                    "_:Ne7d9b96bb1144b649f4773799fc3fb3d"
+                  ]
                 },
-                "geojson:GeometryShape/sh:or/rdf:first": {
+                "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
                   "nodes": []
                 },
                 "geojson:GeometryShape": {
                   "nodes": []
                 },
-                "geojson:FeatureShape": {
-                  "nodes": [
-                    "_:Ne3d04ac7c0a64333a81ce0c3d647a9c7"
-                  ]
+                "geojson:GeometryShape/sh:or/rdf:first": {
+                  "nodes": []
                 },
                 "geojson:LinkShape": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:FeatureShape: _:Ne3d04ac7c0a64333a81ce0c3d647a9c7\n - Shape geojson:LinkShape: *none*\n"
+              "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:FeatureShape: _:Ne7d9b96bb1144b649f4773799fc3fb3d\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:LinkShape: *none*\n"
             }
           ]
         }
