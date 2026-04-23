@@ -14,7 +14,7 @@
     "dateTimeAddition": "2024-10-03T11:31:00+02:00",
     "itemClass": "schema",
     "version": "0.1",
-    "dateOfLastChange": "2026-04-20",
+    "dateOfLastChange": "2024-10-03",
     "shaclShapes": {},
     "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/context.jsonld",
     "schema": {
@@ -25,7 +25,6 @@
     "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-example/context.jsonld",
     "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/resolvedProperties.json",
     "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-example/",
-    "rdfData": [],
     "validationPassed": true,
     "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/transforms/transforms-example/"
   },

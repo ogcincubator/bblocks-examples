@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2026-04-20",
+  "dateOfLastChange": "2023-05-19",
   "maturity": "development",
   "scope": "unstable",
   "tags": [
@@ -34,7 +34,6 @@
   "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/context.jsonld",
   "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/resolvedProperties.json",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geojsonFeatureFGLenient/",
-  "rdfData": [],
   "validationPassed": true,
   "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/geojsonFeatureFGLenient/",
   "description": "## Custom Feature Type\n\nThis building block illustrates a typical \"Feature Type\" - where an object is modelled as a \"Feature with geometry\",\nbut has its own \"native schema\" - or \"domain model\". It uses JSON-FG (lenient) as its base.\n\nThis is an **interoperable** approach to defining a Feature, allowing re-use of a well-defined domain model.\n\ni.e. the attributes (properties) are managed independently of the packaging container (Feature)\n\nthe **propertySet** building block referenced by this container may be used independently of the FeatureModel structure,\nand is where semantic annotations are provided.\n\nThis building block **inherits** reusable semantic annotations for the Feature structure from a common library,\nsimplifying implementation. \n\n\n\n",

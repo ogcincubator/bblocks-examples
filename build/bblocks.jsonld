@@ -161,6 +161,33 @@
       "rdfType": {
         "@id": "rdfs:subClassOf",
         "@type": "@id"
+      },
+      "resources": {
+        "@id": "prof:hasResource",
+        "@context": {
+          "role": {
+            "@id": "prof:hasRole",
+            "@type": "@id"
+          },
+          "constraints": "role:constraints",
+          "example": "role:example",
+          "guidance": "role:guidance",
+          "mapping": "role:mapping",
+          "schema": "role:schema",
+          "specification": "role:specification",
+          "validation": "role:validation",
+          "vocabulary": "role:vocabulary",
+          "data": "role:data",
+          "ref": {
+            "@id": "prof:hasArtifact",
+            "@type": "@id"
+          },
+          "format": "dct:format",
+          "conformsTo": {
+            "@id": "dct:conformsTo",
+            "@type": "@id"
+          }
+        }
       }
     }
   ],
@@ -168,12 +195,12 @@
   "abstract": "This register provides a collection of **examples** designed to illustrate capabilities and implementation patterns for [Building Blocks (see more)](https://ogcincubator.github.io/bblocks-docs). \n\n*These buildings blocks may be copied and edited into a new repository based on the [template](https://github.com/opengeospatial/bblock-template) - but should not be referenced and extended for reuse*\n",
   "description": "The aim of the highlighted examples is to illustrate implementation patterns for reusing OGC building blocks. The emphasis is on typical requirements to extend or constrain generic or abstract models such as OGC API Features, Observations etc. \n\nOther examples will illustrate different possible ways to use the Building Block machinery to semantically annotate externally defines schemas, develop and test logical constraints, or simply test examples using a published specification.\n\nMore complex examples will include transformation testing - testing a format can be transformed into a related structure and/or data model.\n",
   "sparqlEndpoint": "https://defs-dev.opengis.net/fuseki/query",
-  "modified": "2026-04-20T17:45:15.131888",
+  "modified": "2026-04-23T10:53:28.490829",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"d9ddc99e7b570299b5d416f5a878a0842df97cca",
-      "shortCommitId": "\"d9ddc9",
-      "date": "2026-04-20T17:40:16+00:00\""
+      "commitId": "\"a45f3f710418bc91a1b2148677a2104cfc43e7d8",
+      "shortCommitId": "\"a45f3f",
+      "date": "2026-04-23T10:40:45+00:00\""
     }
   },
   "gitRepository": "https://github.com/ogcincubator/bblocks-examples",
@@ -252,7 +279,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-04-20",
+      "dateOfLastChange": "2023-05-19",
       "sources": [
         {
           "title": "Semantic Sensor Network Ontology",
@@ -293,7 +320,6 @@
       "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/propertySet/context.jsonld",
       "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/resolvedProperties.json",
       "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/propertySet/",
-      "rdfData": [],
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/propertySet/",
       "documentation": {
@@ -320,6 +346,7 @@
       "skos:prefLabel": "Example property set for Features",
       "openAPIDocument": null,
       "ontology": null,
+      "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
         "@id": "https://ogcincubator.github.io/bblocks-examples/"
@@ -334,7 +361,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-04-20",
+      "dateOfLastChange": "2025-12-17",
       "maturity": "development",
       "tags": [
         "examples",
@@ -359,7 +386,6 @@
       "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/ogcapi/processes/schemas/buffer-geometry/outputSchema/schema.yaml",
       "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputSchema/resolvedProperties.json",
       "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/ogcapi/processes/schemas/buffer-geometry/outputSchema/",
-      "rdfData": [],
       "validationPassed": true,
       "documentation": {
         "json-full": {
@@ -386,6 +412,7 @@
       "ldContext": null,
       "openAPIDocument": null,
       "ontology": null,
+      "rdfData": [],
       "dependsOn": null,
       "isProfileOf": null,
       "skos:topConceptOf": {
@@ -400,7 +427,7 @@
       "dateTimeAddition": "2024-10-03T11:31:00+02:00",
       "itemClass": "schema",
       "version": "0.1",
-      "dateOfLastChange": "2026-04-20",
+      "dateOfLastChange": "2024-10-03",
       "shaclShapes": [
         {
           "prof:hasArtifact": [
@@ -436,7 +463,6 @@
       "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/pre-and-post-uplift/context.jsonld",
       "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/pre-and-post-uplift/resolvedProperties.json",
       "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/pre-and-post-uplift/",
-      "rdfData": [],
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/semantic-uplift/pre-and-post-uplift/",
       "documentation": {
@@ -463,6 +489,7 @@
       "skos:prefLabel": "Pre and Post Semantic Uplift example",
       "openAPIDocument": null,
       "ontology": null,
+      "rdfData": [],
       "dependsOn": null,
       "isProfileOf": null,
       "skos:topConceptOf": {
@@ -478,7 +505,7 @@
       "dateTimeAddition": "2024-10-03T11:31:00+02:00",
       "itemClass": "schema",
       "version": "0.1",
-      "dateOfLastChange": "2026-04-20",
+      "dateOfLastChange": "2024-10-03",
       "shaclShapes": null,
       "ldContext": {
         "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/context.jsonld",
@@ -504,7 +531,6 @@
       "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-example/context.jsonld",
       "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/resolvedProperties.json",
       "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-example/",
-      "rdfData": [],
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/transforms/transforms-example/",
       "transforms": [
@@ -956,6 +982,7 @@
       "skos:prefLabel": "Transforms example",
       "openAPIDocument": null,
       "ontology": null,
+      "rdfData": [],
       "dependsOn": null,
       "isProfileOf": null,
       "skos:topConceptOf": {
@@ -971,7 +998,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-04-20",
+      "dateOfLastChange": "2025-12-17",
       "maturity": "development",
       "tags": [
         "examples",
@@ -980,8 +1007,8 @@
       ],
       "shaclShapes": null,
       "dependsOn": [
-        "bblocks://ogc.geo.common.data_types.geojson",
-        "bblocks://ogc.ogc-utils.iri-or-curie"
+        "bblocks://ogc.ogc-utils.iri-or-curie",
+        "bblocks://ogc.geo.common.data_types.geojson"
       ],
       "schema": [
         {
@@ -1006,7 +1033,6 @@
       },
       "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputSchema/resolvedProperties.json",
       "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/ogcapi/processes/schemas/buffer-geometry/inputSchema/",
-      "rdfData": [],
       "validationPassed": true,
       "documentation": {
         "json-full": {
@@ -1032,6 +1058,7 @@
       "skos:prefLabel": "Buffer geometry process input schema",
       "openAPIDocument": null,
       "ontology": null,
+      "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
         "@id": "https://ogcincubator.github.io/bblocks-examples/"
@@ -1047,7 +1074,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-04-20",
+      "dateOfLastChange": "2023-05-19",
       "sources": [
         {
           "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -1107,7 +1134,6 @@
       "sourceLdContext": "https://raw.githubusercontent.com/smart-data-models/dataModel.ACRIS/master/context.jsonld",
       "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/resolvedProperties.json",
       "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/externalSchema/",
-      "rdfData": [],
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/externalSchema/",
       "documentation": {
@@ -1134,6 +1160,7 @@
       "skos:prefLabel": "External Schema (Smart Data Models)",
       "openAPIDocument": null,
       "ontology": null,
+      "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
         "@id": "https://ogcincubator.github.io/bblocks-examples/"
@@ -1148,7 +1175,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-04-20",
+      "dateOfLastChange": "2023-05-19",
       "sources": [
         {
           "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -1158,8 +1185,8 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "bblocks://ogc.geo.features.feature",
-        "bblocks://ogc.bbr.examples.feature.propertySet"
+        "bblocks://ogc.bbr.examples.feature.propertySet",
+        "bblocks://ogc.geo.features.feature"
       ],
       "tags": [
         "feature",
@@ -1201,7 +1228,6 @@
       },
       "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/resolvedProperties.json",
       "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geojsonFeature/",
-      "rdfData": [],
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/geojsonFeature/",
       "documentation": {
@@ -1228,6 +1254,7 @@
       "skos:prefLabel": "Custom GeoJSON Feature",
       "openAPIDocument": null,
       "ontology": null,
+      "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
         "@id": "https://ogcincubator.github.io/bblocks-examples/"
@@ -1243,7 +1270,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-04-20",
+      "dateOfLastChange": "2023-05-19",
       "maturity": "development",
       "scope": "unstable",
       "tags": [
@@ -1263,8 +1290,8 @@
         }
       ],
       "dependsOn": [
-        "bblocks://ogc.geo.features.feature",
-        "bblocks://ogc.bbr.examples.feature.propertySet"
+        "bblocks://ogc.bbr.examples.feature.propertySet",
+        "bblocks://ogc.geo.features.feature"
       ],
       "ldContext": {
         "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/context.jsonld",
@@ -1290,7 +1317,6 @@
       "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geosparqlFeature/context.jsonld",
       "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/resolvedProperties.json",
       "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geosparqlFeature/",
-      "rdfData": [],
       "validationPassed": false,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/geosparqlFeature/",
       "documentation": {
@@ -1317,6 +1343,7 @@
       "skos:prefLabel": "GeoJSON transformed to GeoSPARQL geometry",
       "openAPIDocument": null,
       "ontology": null,
+      "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
         "@id": "https://ogcincubator.github.io/bblocks-examples/"
@@ -1332,13 +1359,13 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-04-20",
+      "dateOfLastChange": "2023-05-19",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "bblocks://ogc.geo.geopose.basic.ypr",
-        "bblocks://ogc.sosa.properties.observation"
+        "bblocks://ogc.sosa.properties.observation",
+        "bblocks://ogc.geo.geopose.basic.ypr"
       ],
       "tags": [
         "examples",
@@ -1390,7 +1417,6 @@
       "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservation/context.jsonld",
       "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/resolvedProperties.json",
       "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservation/",
-      "rdfData": [],
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/observation/vectorObservation/",
       "documentation": {
@@ -1416,6 +1442,7 @@
       ],
       "skos:prefLabel": "Observation Result (Vector based on GeoPose)",
       "openAPIDocument": null,
+      "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
         "@id": "https://ogcincubator.github.io/bblocks-examples/"
@@ -1430,7 +1457,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-04-20",
+      "dateOfLastChange": "2023-05-19",
       "maturity": "development",
       "scope": "unstable",
       "tags": [
@@ -1476,7 +1503,6 @@
       },
       "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/resolvedProperties.json",
       "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geojsonFeatureFGLenient/",
-      "rdfData": [],
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/geojsonFeatureFGLenient/",
       "documentation": {
@@ -1503,6 +1529,7 @@
       "skos:prefLabel": "Custom JSON-FG (lenient) Feature",
       "openAPIDocument": null,
       "ontology": null,
+      "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
         "@id": "https://ogcincubator.github.io/bblocks-examples/"
@@ -1518,7 +1545,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-04-20",
+      "dateOfLastChange": "2023-05-19",
       "sources": [
         {
           "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -1578,7 +1605,6 @@
       "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/overrideContext/context.jsonld",
       "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/overrideContext/resolvedProperties.json",
       "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/overrideContext/",
-      "rdfData": [],
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/overrideContext/",
       "documentation": {
@@ -1605,6 +1631,7 @@
       "skos:prefLabel": "Test Context Override",
       "openAPIDocument": null,
       "ontology": null,
+      "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
         "@id": "https://ogcincubator.github.io/bblocks-examples/"
@@ -1619,7 +1646,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-04-20",
+      "dateOfLastChange": "2025-12-17",
       "maturity": "development",
       "tags": [
         "examples",
@@ -1654,7 +1681,6 @@
       },
       "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputDescription/resolvedProperties.json",
       "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/ogcapi/processes/schemas/buffer-geometry/inputDescription/",
-      "rdfData": [],
       "validationPassed": true,
       "documentation": {
         "json-full": {
@@ -1680,6 +1706,7 @@
       "skos:prefLabel": "Buffer geometry process input description",
       "openAPIDocument": null,
       "ontology": null,
+      "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
         "@id": "https://ogcincubator.github.io/bblocks-examples/"
@@ -1694,7 +1721,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-04-20",
+      "dateOfLastChange": "2025-12-17",
       "maturity": "development",
       "tags": [
         "examples",
@@ -1703,8 +1730,8 @@
       ],
       "shaclShapes": null,
       "dependsOn": [
-        "bblocks://ogc.api.processes.v1.schemas.outputDescription",
-        "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputSchema"
+        "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputSchema",
+        "bblocks://ogc.api.processes.v1.schemas.outputDescription"
       ],
       "schema": [
         {
@@ -1729,7 +1756,6 @@
       },
       "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputDescription/resolvedProperties.json",
       "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/ogcapi/processes/schemas/buffer-geometry/outputDescription/",
-      "rdfData": [],
       "validationPassed": true,
       "documentation": {
         "json-full": {
@@ -1755,6 +1781,7 @@
       "skos:prefLabel": "Buffer geometry process output description",
       "openAPIDocument": null,
       "ontology": null,
+      "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
         "@id": "https://ogcincubator.github.io/bblocks-examples/"
@@ -1769,7 +1796,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-04-20",
+      "dateOfLastChange": "2025-12-17",
       "maturity": "development",
       "tags": [
         "examples",
@@ -1803,7 +1830,6 @@
       },
       "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/inputDescriptions/resolvedProperties.json",
       "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/ogcapi/processes/schemas/inputDescriptions/",
-      "rdfData": [],
       "validationPassed": true,
       "documentation": {
         "json-full": {
@@ -1829,6 +1855,7 @@
       "skos:prefLabel": "Example OGC API Processes instance input descriptions",
       "openAPIDocument": null,
       "ontology": null,
+      "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
         "@id": "https://ogcincubator.github.io/bblocks-examples/"
@@ -1843,7 +1870,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-04-20",
+      "dateOfLastChange": "2025-12-17",
       "maturity": "development",
       "tags": [
         "examples",
@@ -1852,9 +1879,9 @@
       ],
       "shaclShapes": null,
       "dependsOn": [
-        "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputDescription",
+        "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputDescription",
         "bblocks://ogc.api.processes.v1.schemas.process",
-        "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputDescription"
+        "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputDescription"
       ],
       "schema": [
         {
@@ -1879,7 +1906,6 @@
       },
       "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/processDescription/resolvedProperties.json",
       "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/ogcapi/processes/schemas/buffer-geometry/processDescription/",
-      "rdfData": [],
       "validationPassed": true,
       "documentation": {
         "json-full": {
@@ -1905,6 +1931,7 @@
       "skos:prefLabel": "Buffer geometry process description",
       "openAPIDocument": null,
       "ontology": null,
+      "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
         "@id": "https://ogcincubator.github.io/bblocks-examples/"
@@ -1919,7 +1946,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-04-20",
+      "dateOfLastChange": "2025-12-17",
       "maturity": "development",
       "tags": [
         "examples",
@@ -1953,7 +1980,6 @@
       },
       "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/outputDescriptions/resolvedProperties.json",
       "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/ogcapi/processes/schemas/outputDescriptions/",
-      "rdfData": [],
       "validationPassed": true,
       "documentation": {
         "json-full": {
@@ -1979,6 +2005,7 @@
       "skos:prefLabel": "Example OGC API Processes instance output descriptions",
       "openAPIDocument": null,
       "ontology": null,
+      "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
         "@id": "https://ogcincubator.github.io/bblocks-examples/"
@@ -1993,7 +2020,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-04-20",
+      "dateOfLastChange": "2023-05-19",
       "sources": [
         {
           "title": "Semantic Sensor Network Ontology",
@@ -2003,10 +2030,10 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "bblocks://ogc.bbr.examples.observation.vectorObservation",
-        "bblocks://ogc.sosa.features.observation",
         "bblocks://ogc.sosa.features.observationCollection",
-        "bblocks://ogc.sosa.properties.observation"
+        "bblocks://ogc.sosa.properties.observation",
+        "bblocks://ogc.bbr.examples.observation.vectorObservation",
+        "bblocks://ogc.sosa.features.observation"
       ],
       "tags": [
         "sosa",
@@ -2029,15 +2056,6 @@
         },
         {
           "prof:hasArtifact": [
-            "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl"
-          ],
-          "rdfs:seeAlso": "bblocks://ogc.sosa.properties.observation",
-          "prof:hasRole": "role:validation",
-          "dct:format": "text/turtle",
-          "dct:conformsTo": "shacl:"
-        },
-        {
-          "prof:hasArtifact": [
             "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.geo.features.feature",
@@ -2050,6 +2068,15 @@
             "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.geo.features.featureCollection",
+          "prof:hasRole": "role:validation",
+          "dct:format": "text/turtle",
+          "dct:conformsTo": "shacl:"
+        },
+        {
+          "prof:hasArtifact": [
+            "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl"
+          ],
+          "rdfs:seeAlso": "bblocks://ogc.sosa.properties.observation",
           "prof:hasRole": "role:validation",
           "dct:format": "text/turtle",
           "dct:conformsTo": "shacl:"
@@ -2078,7 +2105,6 @@
       },
       "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/resolvedProperties.json",
       "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservationFeature/",
-      "rdfData": [],
       "validationPassed": false,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/observation/vectorObservationFeature/",
       "documentation": {
@@ -2105,6 +2131,7 @@
       "skos:prefLabel": "Custom Result for Observation Feature",
       "openAPIDocument": null,
       "ontology": null,
+      "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
         "@id": "https://ogcincubator.github.io/bblocks-examples/"
@@ -2119,14 +2146,14 @@
       "itemClass": "schema",
       "register": "isc",
       "version": "1.0",
-      "dateOfLastChange": "2026-04-20",
+      "dateOfLastChange": "2023-05-19",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
+        "bblocks://ogc.ogc-utils.iri-or-curie",
         "bblocks://ogc.geo.topo.features.topo-line",
-        "bblocks://ogc.geo.topo.features.topo-feature-collection",
-        "bblocks://ogc.ogc-utils.iri-or-curie"
+        "bblocks://ogc.geo.topo.features.topo-feature-collection"
       ],
       "tags": [],
       "group": "Entities",
@@ -2195,7 +2222,6 @@
       "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/rules/topo-edges/context.jsonld",
       "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/rules/topo-edges/resolvedProperties.json",
       "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/rules/topo-edges/",
-      "rdfData": [],
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/rules/topo-edges/",
       "transforms": [
@@ -2256,6 +2282,7 @@
       "skos:prefLabel": "Topo rules examples",
       "openAPIDocument": null,
       "ontology": null,
+      "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
         "@id": "https://ogcincubator.github.io/bblocks-examples/"
@@ -2270,7 +2297,7 @@
       "itemClass": "api",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-04-20",
+      "dateOfLastChange": "2025-12-17",
       "maturity": "development",
       "tags": [
         "examples",
@@ -2289,23 +2316,23 @@
       },
       "shaclShapes": null,
       "dependsOn": [
-        "bblocks://ogc.api.processes.v1.responses.ServerError",
-        "bblocks://ogc.api.processes.v1.schemas.inputDescription",
-        "bblocks://ogc.api.processes.v1.parameters.jobId",
+        "bblocks://ogc.api.processes.v1.paths.Conformance",
+        "bblocks://ogc.api.processes.v1.paths.LandingPage",
+        "bblocks://ogc.api.processes.v1.responses.ExecuteAsync",
+        "bblocks://ogc.api.processes.v1.schemas.execute",
+        "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputSchema",
         "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputSchema",
         "bblocks://ogc.api.processes.v1.responses.NotFound",
-        "bblocks://ogc.api.processes.v1.paths.LandingPage",
-        "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.processDescription",
-        "bblocks://ogc.api.processes.v1.paths.Conformance",
-        "bblocks://ogc.api.processes.v1.paths.ProcessList",
         "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.outputDescriptions",
-        "bblocks://ogc.api.processes.v1.schemas.outputDescription",
-        "bblocks://ogc.api.processes.v1.paths.JobList",
+        "bblocks://ogc.api.processes.v1.paths.ProcessList",
+        "bblocks://ogc.api.processes.v1.parameters.jobId",
+        "bblocks://ogc.api.processes.v1.schemas.inputDescription",
+        "bblocks://ogc.api.processes.v1.api",
         "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.inputDescriptions",
-        "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputSchema",
-        "bblocks://ogc.api.processes.v1.schemas.execute",
-        "bblocks://ogc.api.processes.v1.responses.ExecuteAsync",
-        "bblocks://ogc.api.processes.v1.api"
+        "bblocks://ogc.api.processes.v1.responses.ServerError",
+        "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.processDescription",
+        "bblocks://ogc.api.processes.v1.paths.JobList",
+        "bblocks://ogc.api.processes.v1.schemas.outputDescription"
       ],
       "sourceOpenAPIDocument": "https://ogcincubator.github.io/bblocks-examples/_sources/ogcapi/processes/custom-api/openapi.yaml",
       "openAPIDocument": {
@@ -2315,7 +2342,6 @@
         "dct:conformsTo": "https://spec.openapis.org/oas/v3.1.0.html"
       },
       "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/ogcapi/processes/custom-api/",
-      "rdfData": [],
       "validationPassed": true,
       "documentation": {
         "json-full": {
@@ -2342,6 +2368,7 @@
       "ldContext": null,
       "schema": null,
       "ontology": null,
+      "rdfData": [],
       "skos:topConceptOf": {
         "@id": "https://ogcincubator.github.io/bblocks-examples/"
       }

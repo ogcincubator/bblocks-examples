@@ -1,5 +1,5 @@
 Validation report for ogc.geo.features.feature - Feature
-Generated 2026-04-20T17:45:40.755592+00:00
+Generated 2026-04-23T10:53:55.622265+00:00
 === Files ===
 Using example_1_1.python-geojson.geojson from transform outputs
 JSON-LD context is present - uplifting
@@ -17,10 +17,10 @@ Validation result for https://opengeospatial.github.io/bblocks/registereditems/g
   Conforms: True
   
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:GeometryShape: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:FeatureShape: _:N7d3ae954b8b04b4aa202499cb0828eb6
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:GeometryShape: *none*
+ - Shape geojson:FeatureShape: _:Ne3d04ac7c0a64333a81ce0c3d647a9c7
  - Shape geojson:LinkShape: *none*
 
 === End SHACL ===
