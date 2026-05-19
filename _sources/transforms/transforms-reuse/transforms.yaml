@@ -1,0 +1,137 @@
+transforms:
+  - id: reuse-uppercase-keys
+    description: >
+      Calls the python-uppercase-keys transform from the transforms-example bblock,
+      then adds a _transformed_by field to the result.
+    type: python
+    inputs:
+      mediaTypes:
+        - application/json
+    outputs:
+      mediaTypes:
+        - application/json
+    code: |
+      import json
+
+      fn = get_transformer('ogc.bbr.examples.transforms.transforms-example', 'python-uppercase-keys')
+      uppercased = fn(input_data)
+
+      data = json.loads(uppercased)
+      data['_TRANSFORMED_BY'] = 'transforms-reuse'
+      output_data = json.dumps(data, indent=2)
+
+  - id: reuse-jq-inline
+    description: >
+      Calls the inline-transform jq transform from the transforms-example bblock
+      (which adds an explanation and a type field), then uses Python to wrap the
+      result with a _source field recording which transform produced it.
+    type: python
+    inputs:
+      mediaTypes:
+        - application/json
+    outputs:
+      mediaTypes:
+        - application/json
+    code: |
+      import json
+
+      fn = get_transformer('ogc.bbr.examples.transforms.transforms-example', 'inline-transform')
+      jq_result = fn(input_data)
+
+      data = json.loads(jq_result)
+      data['_source'] = 'transforms-example/inline-transform (jq)'
+      output_data = json.dumps(data, indent=2)
+
+  - id: reuse-node-metadata
+    description: >
+      Calls the node-add-metadata node transform from the transforms-example bblock
+      (which adds a generatedBy field), then uses Python to append a _reused_from
+      annotation so the provenance is visible in the output.
+    type: python
+    inputs:
+      mediaTypes:
+        - application/json
+    outputs:
+      mediaTypes:
+        - application/json
+    code: |
+      import json
+
+      fn = get_transformer('ogc.bbr.examples.transforms.transforms-example', 'node-add-metadata')
+      node_result = fn(input_data)
+
+      data = json.loads(node_result)
+      data['_reused_from'] = 'transforms-example/node-add-metadata (node)'
+      output_data = json.dumps(data, indent=2)
+
+  - id: node-calls-jq
+    description: >
+      A Node transform that uses getTransformer() to call the inline-transform jq filter
+      from the transforms-example bblock (which adds explanation and type fields), then
+      appends a _processedBy annotation in JS before producing the final output.
+    type: node
+    inputs:
+      mediaTypes:
+        - application/json
+    outputs:
+      mediaTypes:
+        - application/json
+    code: |
+      const fn = getTransformer('ogc.bbr.examples.transforms.transforms-example', 'inline-transform');
+      const jqResult = fn(inputData);
+      const data = JSON.parse(jqResult);
+      data._processedBy = 'transforms-reuse/node-calls-jq (node → jq)';
+      outputData = JSON.stringify(data, null, 2);
+
+  - id: node-calls-python
+    description: >
+      A Node transform that uses getTransformer() to call the python-uppercase-keys Python
+      transform from the transforms-example bblock, then adds a PROCESSED_BY field in JS
+      to record the cross-type composition chain.
+    type: node
+    inputs:
+      mediaTypes:
+        - application/json
+    outputs:
+      mediaTypes:
+        - application/json
+    code: |
+      const fn = getTransformer('ogc.bbr.examples.transforms.transforms-example', 'python-uppercase-keys');
+      const uppercased = fn(inputData);
+      const data = JSON.parse(uppercased);
+      data.PROCESSED_BY = 'transforms-reuse/node-calls-python (node → python)';
+      outputData = JSON.stringify(data, null, 2);
+
+  - id: node-calls-python-calls-jq
+    description: >
+      A Node transform that uses getTransformer() to call reuse-jq-inline from this same
+      bblock — which is itself a Python transform that calls an inline jq filter — producing
+      a three-level node → python → jq composition chain.
+    type: node
+    inputs:
+      mediaTypes:
+        - application/json
+    outputs:
+      mediaTypes:
+        - application/json
+    code: |
+      const fn = getTransformer('ogc.bbr.examples.transforms.transforms-reuse', 'reuse-jq-inline');
+      const result = fn(inputData);
+      const data = JSON.parse(result);
+      data._chain = 'node → python → jq';
+      outputData = JSON.stringify(data, null, 2);
+
+  - id: reuse-error-propagation
+    description: >
+      Calls the python-error transform from the transforms-example bblock.
+      The component transform raises an error, which propagates to this transform.
+    type: python
+    inputs:
+      mediaTypes:
+        - application/json
+    outputs:
+      mediaTypes:
+        - application/json
+    code: |
+      fn = get_transformer('ogc.bbr.examples.transforms.transforms-example', 'python-error')
+      output_data = fn(input_data)

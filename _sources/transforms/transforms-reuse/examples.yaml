@@ -1,0 +1,10 @@
+examples:
+  - title: Sample object for transform reuse
+    snippets:
+      - language: json
+        code: |
+          {
+            "name": "example item",
+            "value": 42,
+            "active": true
+          }

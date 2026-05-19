@@ -1,0 +1,9 @@
+{
+  "name": "Transforms reuse example",
+  "abstract": "Demonstrates calling a component bblock's Python transform from a composite bblock using get_transformer.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-05-19T00:00:00+00:00",
+  "itemClass": "schema",
+  "version": "0.1",
+  "dateOfLastChange": "2026-05-19"
+}
