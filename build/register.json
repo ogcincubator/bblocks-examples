@@ -3,12 +3,12 @@
   "abstract": "This register provides a collection of **examples** designed to illustrate capabilities and implementation patterns for [Building Blocks (see more)](https://ogcincubator.github.io/bblocks-docs). \n\n*These buildings blocks may be copied and edited into a new repository based on the [template](https://github.com/opengeospatial/bblock-template) - but should not be referenced and extended for reuse*\n",
   "description": "The aim of the highlighted examples is to illustrate implementation patterns for reusing OGC building blocks. The emphasis is on typical requirements to extend or constrain generic or abstract models such as OGC API Features, Observations etc. \n\nOther examples will illustrate different possible ways to use the Building Block machinery to semantically annotate externally defines schemas, develop and test logical constraints, or simply test examples using a published specification.\n\nMore complex examples will include transformation testing - testing a format can be transformed into a related structure and/or data model.\n",
   "sparqlEndpoint": "https://defs-dev.opengis.net/fuseki/query",
-  "modified": "2026-04-23T10:56:37.756069",
+  "modified": "2026-05-19T21:06:10.621976",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"a45f3f710418bc91a1b2148677a2104cfc43e7d8",
-      "shortCommitId": "\"a45f3f",
-      "date": "2026-04-23T10:40:45+00:00\""
+      "commitId": "\"e60dc0e8e5fe745aaf564ebe05c1579dea71d2d6",
+      "shortCommitId": "\"e60dc0",
+      "date": "2026-05-19T20:59:27+00:00\""
     }
   },
   "gitRepository": "https://github.com/ogcincubator/bblocks-examples",
@@ -33,7 +33,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2023-05-19",
+      "dateOfLastChange": "2026-05-19",
       "sources": [
         {
           "title": "Semantic Sensor Network Ontology",
@@ -85,7 +85,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2025-12-17",
+      "dateOfLastChange": "2026-05-19",
       "maturity": "development",
       "tags": [
         "examples",
@@ -124,7 +124,7 @@
       "dateTimeAddition": "2024-10-03T11:31:00+02:00",
       "itemClass": "schema",
       "version": "0.1",
-      "dateOfLastChange": "2024-10-03",
+      "dateOfLastChange": "2026-05-19",
       "shaclShapes": {
         "ogc.bbr.examples.semantic-uplift.pre-and-post-uplift": [
           "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/pre-and-post-uplift/rules.shacl"
@@ -165,7 +165,7 @@
       "dateTimeAddition": "2024-10-03T11:31:00+02:00",
       "itemClass": "schema",
       "version": "0.1",
-      "dateOfLastChange": "2024-10-03",
+      "dateOfLastChange": "2026-05-19",
       "shaclShapes": {},
       "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/context.jsonld",
       "schema": {
@@ -619,6 +619,209 @@
       }
     },
     {
+      "itemIdentifier": "ogc.bbr.examples.transforms.transforms-reuse",
+      "name": "Transforms reuse example",
+      "abstract": "Demonstrates calling a component bblock's Python transform from a composite bblock using get_transformer.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-05-19T00:00:00+00:00",
+      "itemClass": "schema",
+      "version": "0.1",
+      "dateOfLastChange": "2026-05-19",
+      "shaclShapes": {},
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-reuse/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-reuse/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-reuse/schema.yaml",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-reuse/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/transforms/transforms-reuse/",
+      "transforms": [
+        {
+          "id": "reuse-uppercase-keys",
+          "description": "Calls the python-uppercase-keys transform from the transforms-example bblock, then adds a _transformed_by field to the result.\n",
+          "type": "python",
+          "inputs": {
+            "mediaTypes": [
+              {
+                "mimeType": "application/json",
+                "label": "JSON",
+                "defaultExtension": "json"
+              }
+            ]
+          },
+          "outputs": {
+            "mediaTypes": [
+              {
+                "mimeType": "application/json",
+                "label": "JSON",
+                "defaultExtension": "json"
+              }
+            ]
+          },
+          "code": "import json\n\nfn = get_transformer('ogc.bbr.examples.transforms.transforms-example', 'python-uppercase-keys')\nuppercased = fn(input_data)\n\ndata = json.loads(uppercased)\ndata['_TRANSFORMED_BY'] = 'transforms-reuse'\noutput_data = json.dumps(data, indent=2)\n"
+        },
+        {
+          "id": "reuse-jq-inline",
+          "description": "Calls the inline-transform jq transform from the transforms-example bblock (which adds an explanation and a type field), then uses Python to wrap the result with a _source field recording which transform produced it.\n",
+          "type": "python",
+          "inputs": {
+            "mediaTypes": [
+              {
+                "mimeType": "application/json",
+                "label": "JSON",
+                "defaultExtension": "json"
+              }
+            ]
+          },
+          "outputs": {
+            "mediaTypes": [
+              {
+                "mimeType": "application/json",
+                "label": "JSON",
+                "defaultExtension": "json"
+              }
+            ]
+          },
+          "code": "import json\n\nfn = get_transformer('ogc.bbr.examples.transforms.transforms-example', 'inline-transform')\njq_result = fn(input_data)\n\ndata = json.loads(jq_result)\ndata['_source'] = 'transforms-example/inline-transform (jq)'\noutput_data = json.dumps(data, indent=2)\n"
+        },
+        {
+          "id": "reuse-node-metadata",
+          "description": "Calls the node-add-metadata node transform from the transforms-example bblock (which adds a generatedBy field), then uses Python to append a _reused_from annotation so the provenance is visible in the output.\n",
+          "type": "python",
+          "inputs": {
+            "mediaTypes": [
+              {
+                "mimeType": "application/json",
+                "label": "JSON",
+                "defaultExtension": "json"
+              }
+            ]
+          },
+          "outputs": {
+            "mediaTypes": [
+              {
+                "mimeType": "application/json",
+                "label": "JSON",
+                "defaultExtension": "json"
+              }
+            ]
+          },
+          "code": "import json\n\nfn = get_transformer('ogc.bbr.examples.transforms.transforms-example', 'node-add-metadata')\nnode_result = fn(input_data)\n\ndata = json.loads(node_result)\ndata['_reused_from'] = 'transforms-example/node-add-metadata (node)'\noutput_data = json.dumps(data, indent=2)\n"
+        },
+        {
+          "id": "node-calls-jq",
+          "description": "A Node transform that uses getTransformer() to call the inline-transform jq filter from the transforms-example bblock (which adds explanation and type fields), then appends a _processedBy annotation in JS before producing the final output.\n",
+          "type": "node",
+          "inputs": {
+            "mediaTypes": [
+              {
+                "mimeType": "application/json",
+                "label": "JSON",
+                "defaultExtension": "json"
+              }
+            ]
+          },
+          "outputs": {
+            "mediaTypes": [
+              {
+                "mimeType": "application/json",
+                "label": "JSON",
+                "defaultExtension": "json"
+              }
+            ]
+          },
+          "code": "const fn = getTransformer('ogc.bbr.examples.transforms.transforms-example', 'inline-transform');\nconst jqResult = fn(inputData);\nconst data = JSON.parse(jqResult);\ndata._processedBy = 'transforms-reuse/node-calls-jq (node \u2192 jq)';\noutputData = JSON.stringify(data, null, 2);\n"
+        },
+        {
+          "id": "node-calls-python",
+          "description": "A Node transform that uses getTransformer() to call the python-uppercase-keys Python transform from the transforms-example bblock, then adds a PROCESSED_BY field in JS to record the cross-type composition chain.\n",
+          "type": "node",
+          "inputs": {
+            "mediaTypes": [
+              {
+                "mimeType": "application/json",
+                "label": "JSON",
+                "defaultExtension": "json"
+              }
+            ]
+          },
+          "outputs": {
+            "mediaTypes": [
+              {
+                "mimeType": "application/json",
+                "label": "JSON",
+                "defaultExtension": "json"
+              }
+            ]
+          },
+          "code": "const fn = getTransformer('ogc.bbr.examples.transforms.transforms-example', 'python-uppercase-keys');\nconst uppercased = fn(inputData);\nconst data = JSON.parse(uppercased);\ndata.PROCESSED_BY = 'transforms-reuse/node-calls-python (node \u2192 python)';\noutputData = JSON.stringify(data, null, 2);\n"
+        },
+        {
+          "id": "node-calls-python-calls-jq",
+          "description": "A Node transform that uses getTransformer() to call reuse-jq-inline from this same bblock \u2014 which is itself a Python transform that calls an inline jq filter \u2014 producing a three-level node \u2192 python \u2192 jq composition chain.\n",
+          "type": "node",
+          "inputs": {
+            "mediaTypes": [
+              {
+                "mimeType": "application/json",
+                "label": "JSON",
+                "defaultExtension": "json"
+              }
+            ]
+          },
+          "outputs": {
+            "mediaTypes": [
+              {
+                "mimeType": "application/json",
+                "label": "JSON",
+                "defaultExtension": "json"
+              }
+            ]
+          },
+          "code": "const fn = getTransformer('ogc.bbr.examples.transforms.transforms-reuse', 'reuse-jq-inline');\nconst result = fn(inputData);\nconst data = JSON.parse(result);\ndata._chain = 'node \u2192 python \u2192 jq';\noutputData = JSON.stringify(data, null, 2);\n"
+        },
+        {
+          "id": "reuse-error-propagation",
+          "description": "Calls the python-error transform from the transforms-example bblock. The component transform raises an error, which propagates to this transform.\n",
+          "type": "python",
+          "inputs": {
+            "mediaTypes": [
+              {
+                "mimeType": "application/json",
+                "label": "JSON",
+                "defaultExtension": "json"
+              }
+            ]
+          },
+          "outputs": {
+            "mediaTypes": [
+              {
+                "mimeType": "application/json",
+                "label": "JSON",
+                "defaultExtension": "json"
+              }
+            ]
+          },
+          "code": "fn = get_transformer('ogc.bbr.examples.transforms.transforms-example', 'python-error')\noutput_data = fn(input_data)\n"
+        }
+      ],
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/transforms/transforms-reuse/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/transforms/transforms-reuse/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.transforms.transforms-reuse"
+        }
+      }
+    },
+    {
       "itemIdentifier": "ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputSchema",
       "name": "Buffer geometry process input schema",
       "abstract": "Input schema for the buffer geometry process",
@@ -627,7 +830,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2025-12-17",
+      "dateOfLastChange": "2026-05-19",
       "maturity": "development",
       "tags": [
         "examples",
@@ -636,8 +839,8 @@
       ],
       "shaclShapes": {},
       "dependsOn": [
-        "ogc.geo.common.data_types.geojson",
-        "ogc.ogc-utils.iri-or-curie"
+        "ogc.ogc-utils.iri-or-curie",
+        "ogc.geo.common.data_types.geojson"
       ],
       "schema": {
         "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputSchema/schema.yaml",
@@ -673,7 +876,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2023-05-19",
+      "dateOfLastChange": "2026-05-19",
       "sources": [
         {
           "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -738,7 +941,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2023-05-19",
+      "dateOfLastChange": "2026-05-19",
       "sources": [
         {
           "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -748,8 +951,8 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.geo.features.feature",
-        "ogc.bbr.examples.feature.propertySet"
+        "ogc.bbr.examples.feature.propertySet",
+        "ogc.geo.features.feature"
       ],
       "tags": [
         "feature",
@@ -797,7 +1000,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2023-05-19",
+      "dateOfLastChange": "2026-05-19",
       "maturity": "development",
       "scope": "unstable",
       "tags": [
@@ -811,8 +1014,8 @@
         ]
       },
       "dependsOn": [
-        "ogc.geo.features.feature",
-        "ogc.bbr.examples.feature.propertySet"
+        "ogc.bbr.examples.feature.propertySet",
+        "ogc.geo.features.feature"
       ],
       "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/context.jsonld",
       "schema": {
@@ -850,13 +1053,13 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2023-05-19",
+      "dateOfLastChange": "2026-05-19",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.geo.geopose.basic.ypr",
-        "ogc.sosa.properties.observation"
+        "ogc.sosa.properties.observation",
+        "ogc.geo.geopose.basic.ypr"
       ],
       "tags": [
         "examples",
@@ -908,7 +1111,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2023-05-19",
+      "dateOfLastChange": "2026-05-19",
       "maturity": "development",
       "scope": "unstable",
       "tags": [
@@ -922,8 +1125,8 @@
         ]
       },
       "dependsOn": [
-        "ogc.bbr.examples.feature.propertySet",
-        "ogc.geo.json-fg.feature-lenient"
+        "ogc.geo.json-fg.feature-lenient",
+        "ogc.bbr.examples.feature.propertySet"
       ],
       "schema": {
         "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/schema.yaml",
@@ -960,7 +1163,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2023-05-19",
+      "dateOfLastChange": "2026-05-19",
       "sources": [
         {
           "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -1025,7 +1228,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2025-12-17",
+      "dateOfLastChange": "2026-05-19",
       "maturity": "development",
       "tags": [
         "examples",
@@ -1070,7 +1273,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2025-12-17",
+      "dateOfLastChange": "2026-05-19",
       "maturity": "development",
       "tags": [
         "examples",
@@ -1115,7 +1318,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2025-12-17",
+      "dateOfLastChange": "2026-05-19",
       "maturity": "development",
       "tags": [
         "examples",
@@ -1159,7 +1362,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2025-12-17",
+      "dateOfLastChange": "2026-05-19",
       "maturity": "development",
       "tags": [
         "examples",
@@ -1168,9 +1371,9 @@
       ],
       "shaclShapes": {},
       "dependsOn": [
-        "ogc.api.processes.v1.schemas.process",
         "ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputDescription",
-        "ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputDescription"
+        "ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputDescription",
+        "ogc.api.processes.v1.schemas.process"
       ],
       "schema": {
         "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/processDescription/schema.yaml",
@@ -1205,7 +1408,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2025-12-17",
+      "dateOfLastChange": "2026-05-19",
       "maturity": "development",
       "tags": [
         "examples",
@@ -1249,7 +1452,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2023-05-19",
+      "dateOfLastChange": "2026-05-19",
       "sources": [
         {
           "title": "Semantic Sensor Network Ontology",
@@ -1259,10 +1462,10 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.sosa.properties.observation",
         "ogc.sosa.features.observation",
+        "ogc.bbr.examples.observation.vectorObservation",
         "ogc.sosa.features.observationCollection",
-        "ogc.bbr.examples.observation.vectorObservation"
+        "ogc.sosa.properties.observation"
       ],
       "tags": [
         "sosa",
@@ -1321,23 +1524,19 @@
       "itemClass": "schema",
       "register": "isc",
       "version": "1.0",
-      "dateOfLastChange": "2023-05-19",
+      "dateOfLastChange": "2026-05-19",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
         "ogc.ogc-utils.iri-or-curie",
-        "ogc.geo.topo.features.topo-line",
-        "ogc.geo.topo.features.topo-feature-collection"
+        "ogc.geo.topo.features.topo-feature-collection",
+        "ogc.geo.topo.features.topo-line"
       ],
       "tags": [],
       "group": "Entities",
       "highlighted": true,
       "shaclShapes": {
-        "ogc.geo.topo.features.topo-feature": [
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
-        ],
         "ogc.geo.topo.features.topo-feature-collection": [
           "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
           "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
@@ -1347,6 +1546,10 @@
         ],
         "ogc.geo.features.featureCollection": [
           "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl"
+        ],
+        "ogc.geo.topo.features.topo-feature": [
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
         ]
       },
       "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/rules/topo-edges/context.jsonld",
@@ -1418,7 +1621,7 @@
       "itemClass": "api",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2025-12-17",
+      "dateOfLastChange": "2026-05-19",
       "maturity": "development",
       "tags": [
         "examples",
@@ -1437,23 +1640,23 @@
       },
       "shaclShapes": {},
       "dependsOn": [
-        "ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputSchema",
-        "ogc.api.processes.v1.schemas.inputDescription",
-        "ogc.api.processes.v1.schemas.outputDescription",
-        "ogc.api.processes.v1.paths.Conformance",
-        "ogc.api.processes.v1.paths.JobList",
-        "ogc.api.processes.v1.parameters.jobId",
         "ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputSchema",
-        "ogc.api.processes.v1.paths.ProcessList",
-        "ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.processDescription",
-        "ogc.api.processes.v1.schemas.execute",
         "ogc.api.processes.v1.responses.NotFound",
+        "ogc.api.processes.v1.paths.ProcessList",
+        "ogc.api.processes.v1.responses.ExecuteAsync",
+        "ogc.api.processes.v1.parameters.jobId",
+        "ogc.api.processes.v1.schemas.execute",
+        "ogc.api.processes.v1.paths.Conformance",
         "ogc.bbr.examples.ogcapi.processes.schemas.outputDescriptions",
-        "ogc.api.processes.v1.responses.ServerError",
+        "ogc.api.processes.v1.schemas.inputDescription",
+        "ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.processDescription",
+        "ogc.api.processes.v1.paths.JobList",
+        "ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputSchema",
+        "ogc.api.processes.v1.schemas.outputDescription",
         "ogc.api.processes.v1.paths.LandingPage",
-        "ogc.bbr.examples.ogcapi.processes.schemas.inputDescriptions",
+        "ogc.api.processes.v1.responses.ServerError",
         "ogc.api.processes.v1.api",
-        "ogc.api.processes.v1.responses.ExecuteAsync"
+        "ogc.bbr.examples.ogcapi.processes.schemas.inputDescriptions"
       ],
       "sourceOpenAPIDocument": "https://ogcincubator.github.io/bblocks-examples/_sources/ogcapi/processes/custom-api/openapi.yaml",
       "openAPIDocument": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/custom-api/openapi.yaml",

@@ -1,0 +1,8 @@
+{
+  "name": "example item",
+  "value": 42,
+  "active": true,
+  "explanation": "for example - adding an element to define an implicit type",
+  "type": "ex:Foo",
+  "_source": "transforms-example/inline-transform (jq)"
+}

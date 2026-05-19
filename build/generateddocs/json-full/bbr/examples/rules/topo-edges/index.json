@@ -9,23 +9,19 @@
   "itemClass": "schema",
   "register": "isc",
   "version": "1.0",
-  "dateOfLastChange": "2023-05-19",
+  "dateOfLastChange": "2026-05-19",
   "sources": [],
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
     "ogc.ogc-utils.iri-or-curie",
-    "ogc.geo.topo.features.topo-line",
-    "ogc.geo.topo.features.topo-feature-collection"
+    "ogc.geo.topo.features.topo-feature-collection",
+    "ogc.geo.topo.features.topo-line"
   ],
   "tags": [],
   "group": "Entities",
   "highlighted": true,
   "shaclShapes": {
-    "ogc.geo.topo.features.topo-feature": [
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
-    ],
     "ogc.geo.topo.features.topo-feature-collection": [
       "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
       "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
@@ -35,6 +31,10 @@
     ],
     "ogc.geo.features.featureCollection": [
       "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl"
+    ],
+    "ogc.geo.topo.features.topo-feature": [
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
     ]
   },
   "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/rules/topo-edges/context.jsonld",
@@ -93,13 +93,13 @@
           "language": "json",
           "ref": "https://ogcincubator.github.io/bblocks-examples/_sources/rules/topo-edges/examples/nodes.json",
           "code": "{\n  \"@context\": {\n    \"eg\": \"http://test-data/\"\n  },\n  \"id\": \"eg:eg1\",\n  \"nodes\": [\n    {\n      \"id\": \"P1\",\n      \"type\": \"Feature\",\n      \"geometry\": {\n        \"type\": \"Point\",\n        \"coordinates\": [\n          151.32,\n          -33.825\n        ]\n      },\n      \"properties\": {\n        \"name\": \"waypoint 1\"\n      }\n    },\n    {\n      \"id\": \"P2\",\n      \"type\": \"Feature\",\n      \"geometry\": {\n        \"type\": \"Point\",\n        \"coordinates\": [\n          151.34,\n          -32.825\n        ]\n      },\n      \"properties\": {\n        \"name\": \"waypoint 2\"\n      }\n    }\n  ],\n  \"edges\": [\n    {\n      \"type\": \"Feature\",\n      \"id\": \"LineP1P2\",\n      \"geometry\": null,\n      \"topology\": {\n        \"type\": \"LineString\",\n        \"references\": [\n          \"P1\",\n          \"P2\"\n        ]\n      },\n      \"properties\": {}\n    }\n  ]\n}\n\n",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/rules/topo-edges/example_1_1.json",
           "transformResults": {
             "object-as-JSON": {
               "success": true,
               "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/rules/topo-edges/transforms/example_1_1.object-as-JSON.json"
             }
-          },
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/rules/topo-edges/example_1_1.json"
+          }
         },
         {
           "language": "jsonld",

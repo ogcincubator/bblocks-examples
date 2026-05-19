@@ -1,0 +1,6 @@
+{
+  "NAME": "example item",
+  "VALUE": 42,
+  "ACTIVE": true,
+  "_TRANSFORMED_BY": "transforms-reuse"
+}

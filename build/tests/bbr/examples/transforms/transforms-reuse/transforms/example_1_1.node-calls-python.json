@@ -1,0 +1,6 @@
+{
+  "NAME": "example item",
+  "VALUE": 42,
+  "ACTIVE": true,
+  "PROCESSED_BY": "transforms-reuse/node-calls-python (node → python)"
+}

@@ -10,7 +10,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2023-05-19",
+  "dateOfLastChange": "2026-05-19",
   "maturity": "development",
   "scope": "unstable",
   "tags": [
@@ -24,8 +24,8 @@
     ]
   },
   "dependsOn": [
-    "ogc.geo.features.feature",
-    "ogc.bbr.examples.feature.propertySet"
+    "ogc.bbr.examples.feature.propertySet",
+    "ogc.geo.features.feature"
   ],
   "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/context.jsonld",
   "schema": {

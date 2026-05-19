@@ -1,0 +1,7 @@
+{
+  "name": "example item",
+  "value": 42,
+  "active": true,
+  "generatedBy": "bblocks-node-transform",
+  "_reused_from": "transforms-example/node-add-metadata (node)"
+}
