@@ -9,7 +9,7 @@
   "dateTimeAddition": "2024-10-03T11:31:00+02:00",
   "itemClass": "schema",
   "version": "0.1",
-  "dateOfLastChange": "2026-05-19",
+  "dateOfLastChange": "2024-10-03",
   "shaclShapes": {},
   "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/context.jsonld",
   "schema": {
@@ -454,7 +454,6 @@
       "snippets": [
         {
           "language": "json",
-          "code": "{\n  \"one\": 1,\n  \"two\": 2,\n  \"string\": \"value\"\n}\n",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/example_1_1.json",
           "transformResults": {
             "prefix-keys": {
@@ -483,11 +482,11 @@
             },
             "jq-error": {
               "success": false,
-              "stderr": "ValueError: intentional test error"
+              "stderr": "ValueError: intentional test error\nTraceback (most recent call last):\n  File \"/src/ogc/bblocks/transform.py\", line 572, in apply_transforms\n    result = transformer.transform(transform_metadata)\n  File \"/src/ogc/bblocks/models.py\", line 870, in transform\n    output = self.do_transform(metadata)\n  File \"/src/ogc/bblocks/transformers/jq.py\", line 24, in do_transform\n    transformed = jq.compile(metadata.transform_content).input_text(metadata.input_data).text()\n  File \"jq.pyx\", line 323, in genexpr\n  File \"jq.pyx\", line 323, in genexpr\n  File \"jq.pyx\", line 373, in jq._ResultIterator.__next__\nValueError: intentional test error\n"
             },
             "python-error": {
               "success": false,
-              "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpg3fphdgd.py\", line 236, in <module>\n    exec(_TRANSFORM_CODE, _ns)\n  File \"<transform>\", line 1, in <module>\nValueError: intentional test error from Python transform\n"
+              "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpuqb7krqg.py\", line 253, in <module>\n    exec(_TRANSFORM_CODE, _ns)\n  File \"<transform>\", line 1, in <module>\nValueError: intentional test error from Python transform\n"
             },
             "jinja2-html": {
               "success": true,
@@ -519,23 +518,24 @@
                 }
               }
             }
-          }
+          },
+          "code": "{\n  \"one\": 1,\n  \"two\": 2,\n  \"string\": \"value\"\n}\n"
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/context.jsonld\",\n  \"one\": 1,\n  \"two\": 2,\n  \"string\": \"value\"\n}",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/example_1_1.jsonld"
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/example_1_1.jsonld",
+          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/context.jsonld\",\n  \"one\": 1,\n  \"two\": 2,\n  \"string\": \"value\"\n}"
         },
         {
           "language": "ttl",
-          "code": "@prefix ex: <http://example.com/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] ex:hasOne 1 ;\n    ex:hasString \"value\" ;\n    ex:hasTwo 2 .\n\n",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/example_1_1.ttl",
           "transformResults": {
             "prefix-predicates": {
               "success": true,
               "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_3.prefix-predicates.ttl"
             }
-          }
+          },
+          "code": "@prefix ex: <http://example.com/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] ex:hasOne 1 ;\n    ex:hasString \"value\" ;\n    ex:hasTwo 2 .\n\n"
         }
       ]
     },
@@ -544,14 +544,14 @@
       "snippets": [
         {
           "language": "xml",
-          "code": "<?xml version=\"1.0\"?>\n<Article>\n  <Title>My Article</Title>\n  <Authors>\n    <Author>Mr. Foo</Author>\n    <Author>Mr. Bar</Author>\n  </Authors>\n  <Body>This is my article text.</Body>\n</Article>",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/example_2_1.xml",
           "transformResults": {
             "sample-xslt": {
               "success": true,
               "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_2_1.sample-xslt.xml"
             }
-          }
+          },
+          "code": "<?xml version=\"1.0\"?>\n<Article>\n  <Title>My Article</Title>\n  <Authors>\n    <Author>Mr. Foo</Author>\n    <Author>Mr. Bar</Author>\n  </Authors>\n  <Body>This is my article text.</Body>\n</Article>"
         }
       ]
     },
@@ -560,8 +560,8 @@
       "snippets": [
         {
           "language": "html",
-          "code": "<!doctype html>\n<html>\n  <body>\n    <p>This is a <strong>paragraph</strong>!</p>\n  </body>\n</html>",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/example_3_1.html"
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/example_3_1.html",
+          "code": "<!doctype html>\n<html>\n  <body>\n    <p>This is a <strong>paragraph</strong>!</p>\n  </body>\n</html>"
         }
       ]
     }

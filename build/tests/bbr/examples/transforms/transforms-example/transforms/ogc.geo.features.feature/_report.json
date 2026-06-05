@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.geo.features.feature - Feature",
   "bblockName": "Feature",
   "bblockId": "ogc.geo.features.feature",
-  "generated": "2026-05-19T21:06:52.628835+00:00",
+  "generated": "2026-06-05T12:13:45.181351+00:00",
   "result": true,
   "items": [
     {
@@ -82,7 +82,7 @@
             {
               "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
               "focusNodes": {
-                "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
+                "geojson:GeometryShape/sh:or/rdf:first": {
                   "nodes": []
                 },
                 "geojson:GeometryShape": {
@@ -91,17 +91,17 @@
                 "geojson:LinkShape": {
                   "nodes": []
                 },
-                "geojson:GeometryShape/sh:or/rdf:first": {
+                "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
                   "nodes": []
                 },
                 "geojson:FeatureShape": {
                   "nodes": [
-                    "_:N6fba29a116ad41e3a8f3172582cffcd6"
+                    "_:N9f8c78e29ef549d2912f7097cf39bf63"
                   ]
                 }
               },
               "isError": false,
-              "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:FeatureShape: _:N6fba29a116ad41e3a8f3172582cffcd6\n"
+              "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:FeatureShape: _:N9f8c78e29ef549d2912f7097cf39bf63\n"
             }
           ]
         }

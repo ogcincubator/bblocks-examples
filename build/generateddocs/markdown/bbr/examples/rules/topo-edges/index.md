@@ -136,6 +136,7 @@ Simple line using two points, which must be present according to inherited rules
 @prefix eg: <http://test-data/> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix topo: <https://purl.org/geojson/topo#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 eg:eg1 :edges <http://example.com/nodes/LineP1P2> ;
@@ -144,7 +145,7 @@ eg:eg1 :edges <http://example.com/nodes/LineP1P2> ;
 
 <http://example.com/nodes/LineP1P2> a geojson:Feature ;
     geojson:topology [ a geojson:LineString ;
-            geojson:relatedFeatures ( <http://example.com/nodes/P1> <http://example.com/nodes/P2> ) ] .
+            topo:relatedFeatures ( <http://example.com/nodes/P1> <http://example.com/nodes/P2> ) ] .
 
 <http://example.com/nodes/P1> a geojson:Feature ;
     :name "waypoint 1" ;
@@ -322,7 +323,47 @@ Links to the schema:
         "topology": {
           "@context": {
             "references": {
-              "@id": "geojson:relatedFeatures",
+              "@id": "topo:relatedFeatures",
+              "@type": "@id",
+              "@container": "@list"
+            },
+            "directed_references": {
+              "@context": {
+                "ref": {
+                  "@type": "@id",
+                  "@id": "topo:ref"
+                }
+              },
+              "@id": "topo:directedReferences",
+              "@container": "@list"
+            },
+            "relationships": {
+              "@context": {
+                "href": {
+                  "@type": "@id",
+                  "@id": "oa:hasTarget"
+                },
+                "rel": {
+                  "@context": {
+                    "@base": "http://www.iana.org/assignments/relation/"
+                  },
+                  "@id": "http://www.iana.org/assignments/relation",
+                  "@type": "@id"
+                },
+                "type": "dct:type",
+                "hreflang": "dct:language",
+                "title": "rdfs:label",
+                "length": "dct:extent",
+                "role": {
+                  "@id": "prof:hasRole",
+                  "@type": "@id"
+                },
+                "conformsTo": {
+                  "@id": "dct:conformsTo",
+                  "@type": "@id"
+                }
+              },
+              "@id": "topo:relatedFeatures",
               "@type": "@id",
               "@container": "@list"
             }
@@ -384,6 +425,25 @@ Links to the schema:
     "arcLength": "geojson:arcLength",
     "startTangentVector": "geojson:startTangentVector",
     "endTangentVector": "geojson:endTangentVector",
+    "ref": "topo:ref",
+    "orientation": "topo:orientation",
+    "Edge": "topo:Edge",
+    "Face": "topo:Face",
+    "Ring": "topo:Ring",
+    "Shell": "topo:Shell",
+    "Solid": "topo:Solid",
+    "rings": {
+      "@id": "topo:rings",
+      "@container": "@list"
+    },
+    "shells": {
+      "@id": "topo:shells",
+      "@container": "@list"
+    },
+    "faces": {
+      "@id": "topo:faces",
+      "@container": "@list"
+    },
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "geojson": "https://purl.org/geojson/vocab#",
     "oa": "http://www.w3.org/ns/oa#",
@@ -391,7 +451,8 @@ Links to the schema:
     "owlTime": "http://www.w3.org/2006/time#",
     "time": "http://www.w3.org/2006/time#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "csdm": "https://linked.data.gov.au/def/csdm/",
+    "topo": "https://purl.org/geojson/topo#",
+    "prof": "http://www.w3.org/ns/dx/prof/",
     "@version": 1.1
   }
 }

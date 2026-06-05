@@ -194,7 +194,6 @@
       "snippets": [
         {
           "language": "json",
-          "code": "{\n  \"name\": \"example item\",\n  \"value\": 42,\n  \"active\": true\n}\n",
           "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-reuse/example_1_1.json",
           "transformResults": {
             "reuse-uppercase-keys": {
@@ -223,9 +222,10 @@
             },
             "reuse-error-propagation": {
               "success": false,
-              "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp81husju7.py\", line 236, in <module>\n    exec(_TRANSFORM_CODE, _ns)\n  File \"<transform>\", line 2, in <module>\n  File \"/tmp/tmp81husju7.py\", line 99, in _callable\n    exec(_compiled, _ns)\n  File \"<transform:ogc.bbr.examples.transforms.transforms-example/python-error>\", line 1, in <module>\nValueError: intentional test error from Python transform\n"
+              "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpym8nenmz.py\", line 253, in <module>\n    exec(_TRANSFORM_CODE, _ns)\n  File \"<transform>\", line 2, in <module>\n  File \"/tmp/tmpym8nenmz.py\", line 113, in _callable\n    exec(_compiled, _ns)\n  File \"<transform:ogc.bbr.examples.transforms.transforms-example/python-error>\", line 1, in <module>\nValueError: intentional test error from Python transform\n"
             }
-          }
+          },
+          "code": "{\n  \"name\": \"example item\",\n  \"value\": 42,\n  \"active\": true\n}\n"
         }
       ]
     }
