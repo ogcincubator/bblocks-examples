@@ -1,0 +1,29 @@
+- title: ZIP archive (integrity check)
+  content: >
+    The ZipValidator plugin checks that the ZIP file is not corrupt.
+    The snippet is passed by file reference.
+  snippets:
+    - language: application/zip
+      ref: assets/sample.zip
+
+- title: WKT geometry (syntax and topology validation)
+  content: >
+    The WktValidator plugin parses the WKT string and checks that the geometry
+    is syntactically correct and topologically valid using Shapely.
+  snippets:
+    - language: text/wkt
+      code: |
+        POLYGON ((0 0, 4 0, 4 4, 0 4, 0 0), (1 1, 1 2, 2 2, 2 1, 1 1))
+
+- title: XML document (XSD validation)
+  content: >
+    The XsdValidator plugin validates the XML document against the XSD schema
+    declared as a validation resource in bblock.json (assets/schema.xsd).
+  snippets:
+    - language: application/xml
+      code: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <Point>
+          <coordinates>51.5 -0.1</coordinates>
+          <srs>CRS:84</srs>
+        </Point>
