@@ -1,0 +1,14 @@
+Validation report for ogc.bbr.examples.validators.validator-plugins - Validator plugins example
+Generated 2026-06-07T13:28:06.456279+00:00
+=== General ===
+Test was expected to fail and it did.
+=== End General ===
+
+=== Plugin ===
+
+--- Plugin: bbplugin_sample_validators.ZipValidator ---
+
+** Validation error **
+Invalid ZIP file: File is not a zip file
+=== End Plugin ===
+

@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.bbr.examples.transforms.transforms-example - Transforms example",
   "bblockName": "Transforms example",
   "bblockId": "ogc.bbr.examples.transforms.transforms-example",
-  "generated": "2026-06-05T12:13:22.225154+00:00",
+  "generated": "2026-06-07T13:28:06.371050+00:00",
   "result": true,
   "items": [
     {
@@ -59,12 +59,25 @@
           ]
         }
       ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/bbr/examples/transforms/transforms-example/example_2_1.xml",
+        "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/example_2_1.xml",
+        "exampleIndex": 2,
+        "snippetIndex": 1,
+        "language": "application/xml"
+      },
+      "result": true,
+      "sections": []
     }
   ],
   "globalErrors": {},
   "counts": {
-    "total": 1,
-    "passed": 1,
+    "total": 2,
+    "passed": 2,
     "failed": 0
   }
 }

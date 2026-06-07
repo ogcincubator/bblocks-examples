@@ -1,8 +1,0 @@
-@prefix geojson: <https://purl.org/geojson/vocab#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-[] a geojson:Feature ;
-    geojson:geometry [ a geojson:Polygon ;
-            geojson:coordinates ( ( ( -6.605457e+00 4.271189e+01 ) ( -6.799598e+00 4.223822e+01 ) ( -6.016346e+00 4.217487e+01 ) ( -6.605457e+00 4.271189e+01 ) ) ) ] .
-

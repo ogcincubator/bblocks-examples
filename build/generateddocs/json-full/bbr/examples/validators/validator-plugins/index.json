@@ -1,0 +1,65 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.examples.validators.validator-plugins",
+  "name": "Validator plugins example",
+  "highlighted": true,
+  "abstract": "A sample building block to showcase validator plugins (ZIP integrity, WKT geometry, XSD/XML validation)",
+  "status": "under-development",
+  "dateTimeAddition": "2024-10-03T11:31:00+02:00",
+  "itemClass": "schema",
+  "version": "0.1",
+  "dateOfLastChange": "2026-06-07",
+  "resources": [
+    {
+      "role": "validation",
+      "ref": "https://ogcincubator.github.io/bblocks-examples/_sources/validators/validator-plugins/assets/schema.xsd",
+      "format": "application/xml",
+      "conformsTo": "https://www.w3.org/2001/XMLSchema"
+    }
+  ],
+  "shaclShapes": {},
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/validators/validator-plugins/",
+  "validationPassed": true,
+  "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/validators/validator-plugins/",
+  "description": "This building block demonstrates the three sample validator plugins:\n\n- **ZipValidator** \u2014 verifies ZIP archive integrity using Python's stdlib `zipfile`.\n- **WktValidator** \u2014 validates WKT geometry syntax and topology using [Shapely](https://shapely.readthedocs.io/).\n- **XsdValidator** \u2014 validates XML/GML documents against XSD schemas declared as bblock validation resources.\n\nThese plugins are loaded from the [`bbplugin-sample-validators`](https://github.com/ogcincubator/bblocks-sample-validator-plugins) package via the `plugins.validators` entry in `bblocks-config.yaml`.",
+  "examples": [
+    {
+      "title": "ZIP archive (integrity check)",
+      "content": "The ZipValidator plugin checks that the ZIP file is not corrupt. The snippet is passed by file reference.\n",
+      "snippets": [
+        {
+          "language": "application/zip",
+          "ref": "https://ogcincubator.github.io/bblocks-examples/_sources/validators/validator-plugins/assets/sample.zip",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/validators/validator-plugins/example_1_1.application.application.zip",
+          "binary": true
+        }
+      ]
+    },
+    {
+      "title": "WKT geometry (syntax and topology validation)",
+      "content": "The WktValidator plugin parses the WKT string and checks that the geometry is syntactically correct and topologically valid using Shapely.\n",
+      "snippets": [
+        {
+          "language": "text/wkt",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/validators/validator-plugins/example_2_1.text.text.wkt",
+          "code": "POLYGON ((0 0, 4 0, 4 4, 0 4, 0 0), (1 1, 1 2, 2 2, 2 1, 1 1))\n"
+        }
+      ]
+    },
+    {
+      "title": "XML document (XSD validation)",
+      "content": "The XsdValidator plugin validates the XML document against the XSD schema declared as a validation resource in bblock.json (assets/schema.xsd).\n",
+      "snippets": [
+        {
+          "language": "application/xml",
+          "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/validators/validator-plugins/example_3_1.application.application.xml",
+          "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Point>\n  <coordinates>51.5 -0.1</coordinates>\n  <srs>CRS:84</srs>\n</Point>"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": null,
+  "gitRepository": "https://github.com/ogcincubator/bblocks-examples",
+  "gitPath": "_sources/validators/validator-plugins"
+}

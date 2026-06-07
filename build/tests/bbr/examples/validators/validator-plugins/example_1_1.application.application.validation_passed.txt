@@ -1,0 +1,8 @@
+Validation report for ogc.bbr.examples.validators.validator-plugins - Validator plugins example
+Generated 2026-06-07T13:28:06.675232+00:00
+=== Plugin ===
+
+--- Plugin: bbplugin_sample_validators.ZipValidator ---
+ZIP archive is valid (example_1_1.application.zip)
+=== End Plugin ===
+

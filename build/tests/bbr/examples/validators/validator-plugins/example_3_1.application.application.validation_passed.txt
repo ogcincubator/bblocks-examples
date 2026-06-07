@@ -1,0 +1,8 @@
+Validation report for ogc.bbr.examples.validators.validator-plugins - Validator plugins example
+Generated 2026-06-07T13:28:06.851054+00:00
+=== Plugin ===
+
+--- Plugin: bbplugin_sample_validators.XsdValidator ---
+Document is valid against 'schema.xsd'
+=== End Plugin ===
+

@@ -1,0 +1,196 @@
+{
+  "title": "Validation report for ogc.bbr.examples.validators.validator-plugins - Validator plugins example",
+  "bblockName": "Validator plugins example",
+  "bblockId": "ogc.bbr.examples.validators.validator-plugins",
+  "generated": "2026-06-07T13:28:06.851126+00:00",
+  "result": true,
+  "items": [
+    {
+      "source": {
+        "type": "TEST_RESOURCE",
+        "requireFail": true,
+        "filename": "_sources/validators/validator-plugins/tests/corrupt-archive-fail.zip",
+        "url": "https://ogcincubator.github.io/bblocks-examples/_sources/validators/validator-plugins/tests/corrupt-archive-fail.zip",
+        "language": "zip"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "GENERAL",
+          "title": "General",
+          "entries": [
+            {
+              "op": "require-fail",
+              "isError": false,
+              "message": "Test was expected to fail and it did."
+            }
+          ]
+        },
+        {
+          "name": "PLUGIN",
+          "title": "Plugin",
+          "entries": [
+            {
+              "plugin": "bbplugin_sample_validators.ZipValidator",
+              "isError": true,
+              "message": "Invalid ZIP file: File is not a zip file"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "TEST_RESOURCE",
+        "requireFail": true,
+        "filename": "_sources/validators/validator-plugins/tests/invalid-geometry-fail.wkt",
+        "url": "https://ogcincubator.github.io/bblocks-examples/_sources/validators/validator-plugins/tests/invalid-geometry-fail.wkt",
+        "language": "wkt"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "GENERAL",
+          "title": "General",
+          "entries": [
+            {
+              "op": "require-fail",
+              "isError": false,
+              "message": "Test was expected to fail and it did."
+            }
+          ]
+        },
+        {
+          "name": "PLUGIN",
+          "title": "Plugin",
+          "entries": [
+            {
+              "plugin": "bbplugin_sample_validators.WktValidator",
+              "isError": true,
+              "message": "Geometry is topologically invalid: Self-intersection[5 5]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "TEST_RESOURCE",
+        "requireFail": true,
+        "filename": "_sources/validators/validator-plugins/tests/invalid-xml-fail.xml",
+        "url": "https://ogcincubator.github.io/bblocks-examples/_sources/validators/validator-plugins/tests/invalid-xml-fail.xml",
+        "language": "xml"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "GENERAL",
+          "title": "General",
+          "entries": [
+            {
+              "op": "require-fail",
+              "isError": false,
+              "message": "Test was expected to fail and it did."
+            }
+          ]
+        },
+        {
+          "name": "PLUGIN",
+          "title": "Plugin",
+          "entries": [
+            {
+              "subsection": "schema.xsd",
+              "line": 4,
+              "column": 0,
+              "plugin": "bbplugin_sample_validators.XsdValidator",
+              "isError": true,
+              "message": "Element 'unexpectedElement': This element is not expected. Expected is ( srs ). (line 4)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/bbr/examples/validators/validator-plugins/example_1_1.application.application.zip",
+        "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/validators/validator-plugins/example_1_1.application.application.zip",
+        "exampleIndex": 1,
+        "snippetIndex": 1,
+        "language": "application/zip"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "PLUGIN",
+          "title": "Plugin",
+          "entries": [
+            {
+              "plugin": "bbplugin_sample_validators.ZipValidator",
+              "isError": false,
+              "message": "ZIP archive is valid (example_1_1.application.zip)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/bbr/examples/validators/validator-plugins/example_2_1.text.text.wkt",
+        "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/validators/validator-plugins/example_2_1.text.text.wkt",
+        "exampleIndex": 2,
+        "snippetIndex": 1,
+        "language": "text/wkt"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "PLUGIN",
+          "title": "Plugin",
+          "entries": [
+            {
+              "plugin": "bbplugin_sample_validators.WktValidator",
+              "isError": false,
+              "message": "WKT geometry is valid (type: Polygon)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/bbr/examples/validators/validator-plugins/example_3_1.application.application.xml",
+        "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/validators/validator-plugins/example_3_1.application.application.xml",
+        "exampleIndex": 3,
+        "snippetIndex": 1,
+        "language": "application/xml"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "PLUGIN",
+          "title": "Plugin",
+          "entries": [
+            {
+              "subsection": "schema.xsd",
+              "plugin": "bbplugin_sample_validators.XsdValidator",
+              "isError": false,
+              "message": "Document is valid against 'schema.xsd'"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "globalErrors": {},
+  "counts": {
+    "total": 6,
+    "passed": 6,
+    "failed": 0
+  }
+}

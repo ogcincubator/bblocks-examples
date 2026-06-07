@@ -44,6 +44,12 @@ A sample building block to showcase transforms
 
 Demonstrates calling a component bblock's Python transform from a composite bblock using get_transformer.
 
+### `ogc.bbr.examples.validators.validator-plugins` — Validator plugins example
+
+**Type:** schema
+
+A sample building block to showcase validator plugins (ZIP integrity, WKT geometry, XSD/XML validation)
+
 ### `ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputSchema` — Buffer geometry process input schema
 
 **Type:** schema
