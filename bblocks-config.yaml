@@ -10,3 +10,15 @@ description: "The aim of the highlighted examples is to illustrate implementatio
 sparql:
   push: https://defs-dev.opengis.net/fuseki/data
   query: https://defs-dev.opengis.net/fuseki/query
+plugins:
+  transforms:
+    - pip: git+https://github.com/ogcincubator/bblocks-jinja2-transform-plugin.git
+      modules:
+        - bbplugin_jinja2
+    - pip: git+https://github.com/ogcincubator/bblocks-shapechange-transform-plugin.git
+      modules:
+        - bbplugin_shapechange
+  validators:
+    - pip: git+https://github.com/ogcincubator/bblocks-sample-validator-plugins.git
+      modules:
+        - bbplugin_sample_validators

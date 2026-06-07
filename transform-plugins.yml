@@ -1,4 +1,0 @@
-plugins:
-  - pip: git+https://github.com/ogcincubator/bblocks-jinja2-transform-plugin.git
-    modules:
-      - bbplugin_jinja2
