@@ -1,0 +1,18 @@
+@prefix focal-prop: <https://w3id.org/ogc/hosted/focal/properties/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] focal-prop:lesniCHS 25 ;
+    focal-prop:lesniDSOPRL 2025 ;
+    focal-prop:lesniID1 128301 ;
+    focal-prop:lesniOVERT "NE" ;
+    focal-prop:lesniOblast 8 ;
+    focal-prop:lesniOblastCast "a" ;
+    focal-prop:lesniPCHS "25a" ;
+    focal-prop:lesniPLOCHA 1.22425e+03 ;
+    focal-prop:lesniROKMAP 2015 ;
+    focal-prop:lesniSLT "2S" ;
+    focal-prop:lesniTyp <https://w3id.org/ogc/hosted/focal/lt/2S1> ;
+    focal-prop:lesniUDRZBA 2022 ;
+    focal-prop:lesniZADOST "-" ;
+    focal-prop:lesniZMENA "Uvedení do souladu s KN" .
+

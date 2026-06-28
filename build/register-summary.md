@@ -20,6 +20,12 @@ More complex examples will include transformation testing - testing a format can
 
 This shows how to define a propertyset for a feature - which can be re-used in different containers - such as a GeoJSON Feature schema
 
+### `ogc.bbr.examples.linkeddata.forest-ontology` — Forest Ontology
+
+**Type:** model
+
+Example ontology for forest sample datae
+
 ### `ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputSchema` — Buffer geometry process output schema
 
 **Type:** schema
@@ -56,6 +62,12 @@ A sample building block to showcase validator plugins (ZIP integrity, WKT geomet
 
 Input schema for the buffer geometry process
 
+### `ogc.bbr.examples.linkeddata.forestStandProperties` — Forest Stand Properties
+
+**Type:** schema
+
+Example schema defining the properties of a forest stand, including forest type classification, forest region, target management unit, field verification status, area, and data provenance.
+
 ### `ogc.bbr.examples.feature.externalSchema` — External Schema (Smart Data Models)
 
 **Type:** schema
@@ -80,6 +92,12 @@ This example includes an uplift step to use a GeoSPARQL geometry in a GeoJSON ob
 
 This building block defines the *property set* for an example specialisation of a SOSA Observation using the GeoPose standard as a result. These two patterns are defined by other Building Blocks.
 
+### `ogc.bbr.examples.linkeddata.forestStandFeature` — Semantic Feature
+
+**Type:** schema
+
+GeoJSON Feature where attributes are semantically described using multilingual definitions. The actual properties are based on Czech examples, representing a spatially delineated forest stand classified according to the forest typology system, with properties describing forest type, region, management unit, area, and data provenance.
+
 ### `ogc.bbr.examples.feature.geojsonFeatureFGLenient` — Custom JSON-FG (lenient) Feature
 
 **Type:** schema
@@ -103,6 +121,12 @@ Description for the inputs of the buffer geometry process
 **Type:** schema
 
 Description for the output of the buffer geometry process
+
+### `ogc.bbr.examples.linkeddata.forestStandCollection` — Forest Stand Feature Collection
+
+**Type:** schema
+
+GeoJSON FeatureCollection of forest stands, providing a spatial dataset of forest units classified by forest type, region, and management unit.
 
 ### `ogc.bbr.examples.ogcapi.processes.schemas.inputDescriptions` — Example OGC API Processes instance input descriptions
 

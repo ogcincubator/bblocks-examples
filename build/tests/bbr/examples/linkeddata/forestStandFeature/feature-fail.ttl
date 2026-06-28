@@ -1,0 +1,22 @@
+@prefix focal-prop: <https://w3id.org/ogc/hosted/focal/properties/> .
+@prefix geojson: <https://purl.org/geojson/vocab#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] a geojson:Feature ;
+    geojson:geometry [ a geojson:MultiPolygon ;
+            geojson:coordinates ( ( ( ( -7.853718e+05 -1.06251e+06 ) ( -7.85367e+05 -1.062497e+06 ) ( -7.853317e+05 -1.062485e+06 ) ( -7.85329e+05 -1.062484e+06 ) ( -7.853274e+05 -1.062483e+06 ) ( -7.853231e+05 -1.062482e+06 ) ( -7.853213e+05 -1.062483e+06 ) ( -7.853197e+05 -1.062484e+06 ) ( -7.853125e+05 -1.062482e+06 ) ( -7.853041e+05 -1.062479e+06 ) ( -7.852979e+05 -1.062471e+06 ) ( -7.852925e+05 -1.062477e+06 ) ( -7.852825e+05 -1.062489e+06 ) ( -7.852842e+05 -1.062489e+06 ) ( -7.853399e+05 -1.062503e+06 ) ( -7.853718e+05 -1.06251e+06 ) ) ) ) ] ;
+    focal-prop:lesniCHS 25 ;
+    focal-prop:lesniDSOPRL 2025 ;
+    focal-prop:lesniID1 128301 ;
+    focal-prop:lesniOVERT "NE" ;
+    focal-prop:lesniOblast 8 ;
+    focal-prop:lesniOblastCast "a" ;
+    focal-prop:lesniPCHS "25a" ;
+    focal-prop:lesniPLOCHA 1.22425e+03 ;
+    focal-prop:lesniROKMAP 2015 ;
+    focal-prop:lesniSLT "2S" ;
+    focal-prop:lesniUDRZBA 2022 ;
+    focal-prop:lesniZADOST "-" ;
+    focal-prop:lesniZMENA "Uvedení do souladu s KN" .
+
