@@ -1,0 +1,180 @@
+@prefix focal: <https://w3id.org/ogc/hosted/focal/> .
+@prefix focal-prop: <https://w3id.org/ogc/hosted/focal/properties/> .
+@prefix focal-lt: <https://w3id.org/ogc/hosted/focal/lt/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+
+<https://w3id.org/ogc/hosted/focal> a dcat:Catalog ;
+  skos:prefLabel "Katalog"@cs, "Catalog"@en, "Katalog"@de, "Catálogo FOCAL"@es ;
+  dct:hasPart focal:properties, focal-lt:LT ;
+.
+
+focal:properties a skos:ConceptScheme ;
+  skos:prefLabel "Vlastnosti lesních typů FOCAL"@cs, "Forest Type Properties"@en, "Waldtyp-Eigenschaften"@de, "Propiedades de tipos forestales FOCAL"@es ;
+  skos:hasTopConcept
+    focal-prop:lesniTyp, focal-prop:lesniOblast, focal-prop:lesniOblastCast,
+    focal-prop:lesniUDRZBA, focal-prop:lesniZMENA, focal-prop:lesniZADOST,
+    focal-prop:lesniCHS, focal-prop:lesniPCHS, focal-prop:lesniOVERT,
+    focal-prop:lesniROKMAP, focal-prop:lesniID1, focal-prop:lesniSLT,
+    focal-prop:lesniPLOCHA, focal-prop:lesniDSOPRL ;
+.
+
+focal-prop:lesniTyp a skos:Concept, owl:ObjectProperty ;
+  skos:prefLabel "lesní typ"@cs, "forest type"@en, "Waldtyp"@de, "tipo de bosque"@es ;
+  skos:topConceptOf focal:properties ;
+  skos:inScheme focal:properties ;
+  rdfs:range focal-lt:LT ;
+.
+
+focal-prop:lesniOblast a skos:Concept, owl:DatatypeProperty ;
+  skos:prefLabel "lesní oblast"@cs, "forest region"@en, "Waldgebiet"@de, "región forestal"@es ;
+  skos:topConceptOf focal:properties ;
+  skos:inScheme focal:properties ;
+.
+
+focal-prop:lesniOblastCast a skos:Concept, owl:DatatypeProperty ;
+  skos:prefLabel "část lesní oblasti"@cs, "forest region part"@en, "Waldgebietsteil"@de, "parte de la región forestal"@es ;
+  skos:topConceptOf focal:properties ;
+  skos:inScheme focal:properties ;
+.
+
+focal-prop:lesniUDRZBA a skos:Concept, owl:DatatypeProperty ;
+  skos:prefLabel "Rok poslední změny dat"@cs, "Year of last data update"@en, "Jahr der letzten Datenänderung"@de, "Año de la última actualización de datos"@es ;
+  skos:topConceptOf focal:properties ;
+  skos:inScheme focal:properties ;
+.
+
+focal-prop:lesniZMENA a skos:Concept, owl:DatatypeProperty ;
+  skos:prefLabel "Změna na žádost vlastníka"@cs, "Change: based on owner request"@en, "Änderung: auf Antrag des Eigentümers"@de, "Cambio a solicitud del propietario"@es ;
+  skos:topConceptOf focal:properties ;
+  skos:inScheme focal:properties ;
+.
+
+focal-prop:lesniZADOST a skos:Concept, owl:DatatypeProperty ;
+  skos:prefLabel "Číselné zařazení žádosti"@cs, "ID of the request"@en, "ID des Antrags"@de, "Identificador de la solicitud"@es ;
+  skos:topConceptOf focal:properties ;
+  skos:inScheme focal:properties ;
+.
+
+focal-prop:lesniCHS a skos:Concept, owl:DatatypeProperty ;
+  skos:prefLabel "Cílový hospodářský soubor"@cs, "Target management unit"@en, "Ziel-Wirtschaftseinheit"@de, "Unidad de gestión objetivo"@es ;
+  skos:topConceptOf focal:properties ;
+  skos:inScheme focal:properties ;
+.
+
+focal-prop:lesniPCHS a skos:Concept, owl:DatatypeProperty ;
+  skos:prefLabel "Podsoubor cílového hospodářského souboru"@cs, "Subunit of the target management unit"@en, "Teilbestand der Ziel-Wirtschaftseinheit"@de, "Subunidad de la unidad de gestión objetivo"@es ;
+  skos:topConceptOf focal:properties ;
+  skos:inScheme focal:properties ;
+.
+
+focal-prop:lesniOVERT a skos:Concept, owl:DatatypeProperty ;
+  skos:prefLabel "Ověřeno v terénu"@cs, "Field verified"@en, "Im Gelände überprüft"@de, "Verificado en campo"@es ;
+  skos:topConceptOf focal:properties ;
+  skos:inScheme focal:properties ;
+.
+
+focal-prop:lesniROKMAP a skos:Concept, owl:DatatypeProperty ;
+  skos:prefLabel "Rok sběru dat"@cs, "Year of data collection"@en, "Jahr der Datenerhebung"@de, "Año de recopilación de datos"@es ;
+  skos:topConceptOf focal:properties ;
+  skos:inScheme focal:properties ;
+.
+
+focal-prop:lesniID1 a skos:Concept, owl:DatatypeProperty ;
+  skos:prefLabel "Jednoznačný identifikátor"@cs, "Unique identifier"@en, "Eindeutige Kennung"@de, "Identificador único"@es ;
+  skos:topConceptOf focal:properties ;
+  skos:inScheme focal:properties ;
+.
+
+focal-prop:lesniSLT a skos:Concept, owl:DatatypeProperty ;
+  skos:prefLabel "Soubor lesních typů"@cs, "Forest type classification system"@en, "Waldtypklassifizierungssystem"@de, "Sistema de clasificación de tipos forestales"@es ;
+  skos:topConceptOf focal:properties ;
+  skos:inScheme focal:properties ;
+.
+
+focal-prop:lesniPLOCHA a skos:Concept, owl:DatatypeProperty ;
+  skos:prefLabel "V metrech čtverečních"@cs, "Area in square meters"@en, "Fläche in Quadratmetern"@de, "Área en metros cuadrados"@es ;
+  skos:topConceptOf focal:properties ;
+  skos:inScheme focal:properties ;
+.
+
+focal-prop:lesniDSOPRL a skos:Concept, owl:DatatypeProperty ;
+  skos:prefLabel "Datový soubor oblastní plán rozvoje lesů"@cs,
+                 "Dataset of the regional forest development plan"@en,
+                 "Datensatz des regionalen Waldentwicklungsplans"@de,
+                 "Conjunto de datos del plan regional de desarrollo forestal"@es ;
+  skos:topConceptOf focal:properties ;
+  skos:inScheme focal:properties ;
+.
+
+focal-lt:LT a skos:ConceptScheme, owl:Class ;
+  skos:prefLabel "lesní typ"@cs, "forest type"@en, "Waldtyp"@de, "tipo de bosque"@es ;
+  skos:hasTopConcept focal-lt:2I2, focal-lt:2S1, focal-lt:2L1, focal-lt:NE ;
+.
+
+focal-lt:2I2 a skos:Concept, focal-lt:LT ;
+  skos:prefLabel
+    "2I2 - Kyselá hlinitá buková doubrava chudší"@cs,
+    "2I2 - Acidic loamy beech-oak forest (poorer variant)"@en,
+    "2I2 - Saure lehmige Buchen-Eichenwälder (ärmere Ausprägung)"@de,
+    "2I2 - Bosque ácido franco de haya y roble (variante pobre)"@es ;
+  skos:definition
+    "2I2 – kyselá hlinitá buková doubrava chudší, lesní typ 2. lesního vegetačního stupně na kyselých, živinami chudších hlinitých půdách"@cs,
+    "2I2 – Acidic loamy beech-oak forest (poorer variant), a forest type of the 2nd forest vegetation zone on acidic, nutrient-poor loamy soils"@en,
+    "2I2 – Saure lehmige Buchen-Eichenwälder (ärmere Ausprägung), ein Waldtyp der 2. forstlichen Vegetationsstufe auf sauren, nährstoffärmeren Lehmböden"@de,
+    "2I2 – Bosque ácido franco de haya y roble (variante pobre), un tipo de bosque del 2º nivel de vegetación forestal en suelos francos ácidos y pobres en nutrientes"@es ;
+  skos:notation "2I2" ;
+  skos:topConceptOf focal-lt:LT ;
+  skos:inScheme focal-lt:LT ;
+.
+
+focal-lt:2S1 a skos:Concept, focal-lt:LT ;
+  skos:prefLabel
+    "2S1 - Svěží buková doubrava modální"@cs,
+    "2S1 - Fresh beech-oak forest (modal)"@en,
+    "2S1 - Frische Buchen-Eichenwälder (typisch)"@de,
+    "2S1 - Bosque fresco de haya y roble (modal)"@es ;
+  skos:definition
+    "2S1 – svěží buková doubrava modální, lesní typ 2. lesního vegetačního stupně na živinami středně bohatých, svěžích stanovištích"@cs,
+    "2S1 – Fresh beech-oak forest (modal), a forest type of the 2nd forest vegetation zone on moderately nutrient-rich, fresh sites"@en,
+    "2S1 – Frische Buchen-Eichenwälder (typisch), ein Waldtyp der 2. forstlichen Vegetationsstufe auf mäßig nährstoffreichen, frischen Standorten"@de,
+    "2S1 – Bosque fresco de haya y roble (modal), un tipo de bosque del 2º nivel de vegetación forestal en sitios frescos y moderadamente ricos en nutrientes"@es ;
+  skos:notation "2S1" ;
+  skos:topConceptOf focal-lt:LT ;
+  skos:inScheme focal-lt:LT ;
+.
+
+focal-lt:2L1 a skos:Concept, focal-lt:LT ;
+  skos:prefLabel
+    "2L1 - Pahorkatinný luh modální"@cs,
+    "2L1 - Hilly floodplain forest (modal)"@en,
+    "2L1 - Hügelländischer Auwald (typisch)"@de,
+    "2L1 - Bosque de llanura aluvial en colinas (modal)"@es ;
+  skos:definition
+    "2L1 – pahorkatinný luh modální, lesní typ 2. lesního vegetačního stupně v pahorkatinách na vlhkých až periodicky zaplavovaných stanovištích"@cs,
+    "2L1 – Hilly floodplain forest (modal), a forest type of the 2nd forest vegetation zone in hilly areas on moist to periodically flooded sites"@en,
+    "2L1 – Hügelländischer Auwald (typisch), ein Waldtyp der 2. forstlichen Vegetationsstufe im Hügelland auf feuchten bis periodisch überfluteten Standorten"@de,
+    "2L1 – Bosque de llanura aluvial en colinas (modal), un tipo de bosque del 2º nivel de vegetación forestal en zonas de colinas con suelos húmedos o periódicamente inundados"@es ;
+  skos:notation "2L1" ;
+  skos:topConceptOf focal-lt:LT ;
+  skos:inScheme focal-lt:LT ;
+.
+
+focal-lt:NE a skos:Concept, focal-lt:LT ;
+  skos:prefLabel
+    "NE - typologické bezlesí"@cs,
+    "NE - Non-forest unit"@en,
+    "NE - Nichtwaldgebiet"@de,
+    "NE - Unidad sin bosque"@es ;
+  skos:definition
+    "NE – typologické bezlesí, území bez lesního porostu zařazené v typologickém systému"@cs,
+    "NE – Non-forest unit, an area without forest cover classified within the typological system"@en,
+    "NE – Nichtwaldgebiet, eine Fläche ohne Waldbestand, die im typologischen System erfasst ist"@de,
+    "NE – Unidad sin bosque, un área sin cobertura forestal clasificada dentro del sistema tipológico"@es ;
+  skos:notation "NE" ;
+  skos:topConceptOf focal-lt:LT ;
+  skos:inScheme focal-lt:LT ;
+.

@@ -1,0 +1,22 @@
+{
+  "$schema": "metaschema.yaml",
+  "name": "Forest Stand Properties",
+  "abstract": "Example schema defining the properties of a forest stand, including forest type classification, forest region, target management unit, field verification status, area, and data provenance.",
+  "status": "under-development",
+  "dateTimeAddition": "2023-04-05T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block-register",
+  "version": "0.1",
+  "dateOfLastChange": "2023-04-05",
+  "link": "https://github.com/opengeospatial/bblock-template",
+  "sources": [
+    {
+      "title": "Sample source document",
+      "link": "https://example.com/sources/1"
+    }
+  ],
+  "dependsOn": [ "ogc.bbr.examples.linkeddata.forest-ontology"],
+  "maturity": "mature",
+  "scope": "unstable",
+  "tags": [ "forestry", "schema"]
+}

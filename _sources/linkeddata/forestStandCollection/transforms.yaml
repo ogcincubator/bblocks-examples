@@ -1,0 +1,24 @@
+transforms:
+  - id: to-crs5555-geopandas
+    type: python
+    inputs:
+      mediaTypes: [ application/json ]
+    outputs:
+      mediaTypes: [ application/json ]
+    metadata:
+      dependencies:
+        pip: geopandas>=1.1.3
+        python: ">=3.10"   # optional; skipped if not met
+    ref: transforms/to-crs-5555-geopandas.py
+
+  - id: to-crs5555-math
+    type: python
+    inputs:
+      mediaTypes: [ application/json ]
+    outputs:
+      mediaTypes: [ application/json ]
+    metadata:
+      dependencies:
+        pip: geopandas>=1.1.3
+        python: ">=3.10"   # optional; skipped if not met
+    ref: transforms/to-crs-5555-math.py

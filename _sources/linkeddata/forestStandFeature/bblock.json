@@ -1,0 +1,27 @@
+{
+  "name": "Semantic Feature",
+  "abstract": "GeoJSON Feature where attributes are semantically described using multilingual definitions. The actual properties are based on Czech examples, representing a spatially delineated forest stand classified according to the forest typology system, with properties describing forest type, region, management unit, area, and data provenance.",
+  "status": "under-development",
+  "dateTimeAddition": "2023-05-19T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block-examples",
+  "version": "1.0",
+  "dateOfLastChange": "2023-05-19",
+  "sources": [
+    {
+      "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
+      "link": "https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "dependsOn": [
+  ],
+  "tags": [
+    "focal",
+    "forestry",
+    "feature"
+  ],
+  "group": "FOCAL",
+  "highlighted": true
+}

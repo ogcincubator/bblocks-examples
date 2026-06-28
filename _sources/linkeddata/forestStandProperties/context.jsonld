@@ -1,0 +1,25 @@
+{
+  "@context": {
+    "focal-prop": "https://w3id.org/ogc/hosted/focal/properties/",
+    "LT": {
+      "@id": "focal-prop:lesniTyp",
+      "@type": "@id",
+      "@context": {
+        "@base": "https://w3id.org/ogc/hosted/focal/lt/"
+      }
+    },
+    "LES_OBL": "focal-prop:lesniOblast",
+    "LO_CAST": "focal-prop:lesniOblastCast",
+    "UDRZBA": "focal-prop:lesniUDRZBA",
+    "ZMENA": "focal-prop:lesniZMENA",
+    "ZADOST": "focal-prop:lesniZADOST",
+    "CHS": "focal-prop:lesniCHS",
+    "PCHS": "focal-prop:lesniPCHS",
+    "OVER_T": "focal-prop:lesniOVERT",
+    "ROK_MAP": "focal-prop:lesniROKMAP",
+    "ID1": "focal-prop:lesniID1",
+    "SLT": "focal-prop:lesniSLT",
+    "PLOCHA": "focal-prop:lesniPLOCHA",
+    "DS_OPRL": "focal-prop:lesniDSOPRL"
+  }
+}

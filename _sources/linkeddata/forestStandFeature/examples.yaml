@@ -1,0 +1,26 @@
+## Prefixes will be used for all RDF Turtle resources so that they can be omitted from the actual snippets
+prefixes:
+  mynamespace: http://example.com/mythings/
+
+## List of examples
+examples:
+  - title: GeoJSON - specialisation example.
+
+    ## Markdown content that will be shown for the example.
+    content:
+      This examples shows how to define a customised schema based on an existing building block 
+      - in this case the *OGC API Features* basic GeoJSON Feature response
+
+    ## Base URI for semantic uplift
+    base-uri: http://example.com/features/
+
+    ## The example can define its own prefixes, that will be merged with the global ones
+    # prefixes:
+    #   ex: http://example.com/
+
+    ## List of code snippets for this example
+    snippets:
+      - language: json
+        # Reference to file
+        ref: ../forestStandCollection/examples/feature.json
+        json-path: $.features[0]

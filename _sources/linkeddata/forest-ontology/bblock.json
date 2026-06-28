@@ -1,0 +1,11 @@
+{
+  "name": "Forest Ontology",
+  "abstract": "Example ontology for forest sample datae",
+  "status": "under-development",
+  "dateTimeAddition": "2026-04-09T00:00:00Z",
+  "itemClass": "model",
+  "register": "ogc-building-block-register",
+  "version": "0.1",
+  "dateOfLastChange": "2023-04-05",
+  "tags": [ "ontology", "forestry"]
+}
