@@ -159,7 +159,7 @@ path	@id	schema
 /_anyOf/0/properties/hasResult	http://www.w3.org/ns/sosa/hasResult	https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.yaml
 /_anyOf/0/properties/result		https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation-owa/schema.yaml
 /_anyOf/0/properties/result@links		https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation-owa/schema.yaml
-/_anyOf/0/properties/hasSimpleResult		https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation-owa/schema.yaml
+/_anyOf/0/properties/hasSimpleResult	http://www.w3.org/ns/sosa/hasSimpleResult	https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation-owa/schema.yaml
 /_anyOf/0/properties/hasResult/pose	https://w3id.org/ogc/hosted/examples/resultschema/pose	https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.yaml
 /_anyOf/0/properties/hasResult/pose/position	http://example.com/geopose/position	https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/schema.yaml
 /_anyOf/0/properties/hasResult/pose/position/lat	http://www.w3.org/2003/01/geo/wgs84_pos#lat	https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/schema.yaml
@@ -232,3 +232,4 @@ path	@id	schema
 /_anyOf/1/properties/usedProcedure	http://www.w3.org/ns/sosa/usedProcedure	https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observationCollection/schema.yaml
 /_anyOf/1/properties/madeBySensor	http://www.w3.org/ns/sosa/madeBySensor	https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observationCollection/schema.yaml
 /_anyOf/1/properties/hasMember	http://www.w3.org/ns/sosa/hasMember	https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observationCollection/schema.yaml
+/_anyOf/1/features/_oneOf/1/properties	@nest	https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observationCollection/schema.yaml

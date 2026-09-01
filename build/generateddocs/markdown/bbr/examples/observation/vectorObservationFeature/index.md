@@ -136,7 +136,7 @@ Example of Specialised ObservationCollection being a vector, using GeoPose as pa
   "id": "c1",
   "type": "FeatureCollection",
   "featureType": "sosa:ObservationCollection",
-  "observedProperty": "Geopose (or a URI for this concept)",
+  "observedProperty": "https://example.org/def/observableProperties/geopose",
   "features": [
     {
       "id": "vector-obs-1",
@@ -158,6 +158,7 @@ Example of Specialised ObservationCollection being a vector, using GeoPose as pa
       "place": null,
       "properties": {
         "hasFeatureOfInterest": "eg:Traverse-P1-P2",
+        "observedProperty": "https://example.org/def/observableProperties/geopose",
         "resultTime": "2023-05-22T16:41:00+2",
         "hasResult": {
           "pose": {
@@ -187,7 +188,7 @@ Example of Specialised ObservationCollection being a vector, using GeoPose as pa
   "id": "c1",
   "type": "FeatureCollection",
   "featureType": "sosa:ObservationCollection",
-  "observedProperty": "Geopose (or a URI for this concept)",
+  "observedProperty": "https://example.org/def/observableProperties/geopose",
   "features": [
     {
       "id": "vector-obs-1",
@@ -209,6 +210,7 @@ Example of Specialised ObservationCollection being a vector, using GeoPose as pa
       "place": null,
       "properties": {
         "hasFeatureOfInterest": "eg:Traverse-P1-P2",
+        "observedProperty": "https://example.org/def/observableProperties/geopose",
         "resultTime": "2023-05-22T16:41:00+2",
         "hasResult": {
           "pose": {
@@ -244,7 +246,7 @@ Example of Specialised ObservationCollection being a vector, using GeoPose as pa
 <http://example.com/features/c1> a sosa:ObservationCollection,
         geojson:FeatureCollection ;
     sosa:hasMember <http://example.com/features/vector-obs-1> ;
-    sosa:observedProperty <http://example.com/features/> .
+    sosa:observedProperty <https://example.org/def/observableProperties/geopose> .
 
 <http://example.com/features/vector-obs-1> a geojson:Feature ;
     sosa:hasFeatureOfInterest <eg:Traverse-P1-P2> ;
@@ -255,6 +257,7 @@ Example of Specialised ObservationCollection being a vector, using GeoPose as pa
                     geopose:position [ geopose:h 5e-01 ;
                             geo1:lat -1.116718e+02 ;
                             geo1:long 4.005671e+01 ] ] ] ;
+    sosa:observedProperty <https://example.org/def/observableProperties/geopose> ;
     sosa:resultTime "2023-05-22T16:41:00+2" ;
     geojson:geometry [ a geojson:LineString ;
             geojson:coordinates ( ( -1.116718e+02 4.005671e+01 ) ( -1.1171e+02 4.015671e+01 ) ) ] .
@@ -286,6 +289,7 @@ Example of Specialised ObservationCollection being a vector, using GeoPose as pa
   "place": null,
   "properties": {
     "hasFeatureOfInterest": "eg:Traverse-P1-P2",
+    "observedProperty": "https://example.org/def/observableProperties/geopose",
     "resultTime": "2023-05-22T16:41:00+2",
     "hasResult": {
       "pose": {
@@ -329,6 +333,7 @@ Example of Specialised ObservationCollection being a vector, using GeoPose as pa
   "place": null,
   "properties": {
     "hasFeatureOfInterest": "eg:Traverse-P1-P2",
+    "observedProperty": "https://example.org/def/observableProperties/geopose",
     "resultTime": "2023-05-22T16:41:00+2",
     "hasResult": {
       "pose": {
@@ -368,6 +373,7 @@ Example of Specialised ObservationCollection being a vector, using GeoPose as pa
                     geopose:position [ geopose:h 5e-01 ;
                             geo1:lat -1.116718e+02 ;
                             geo1:long 4.005671e+01 ] ] ] ;
+    sosa:observedProperty <https://example.org/def/observableProperties/geopose> ;
     sosa:resultTime "2023-05-22T16:41:00+2" ;
     geojson:geometry [ a geojson:LineString ;
             geojson:coordinates ( ( -1.116718e+02 4.005671e+01 ) ( -1.1171e+02 4.015671e+01 ) ) ] .
@@ -640,34 +646,6 @@ Links to the schema:
       "@id": "sosa:hasProperty",
       "@type": "@id"
     },
-    "hasResult": {
-      "@id": "sosa:hasResult",
-      "@type": "@id",
-      "@context": {
-        "pose": {
-          "@context": {
-            "position": {
-              "@context": {
-                "lat": "geo:lat",
-                "lon": "geo:long",
-                "h": "geopose:h"
-              },
-              "@id": "geopose:position"
-            },
-            "angles": {
-              "@context": {
-                "yaw": "geopose:yaw",
-                "pitch": "geopose:pitch",
-                "roll": "geopose:roll"
-              },
-              "@id": "geopose:angles"
-            }
-          },
-          "@id": "resultschema:pose"
-        },
-        "distance": "resultschema:distance"
-      }
-    },
     "hasResultQuality": {
       "@id": "sosa:hasResultQuality",
       "@type": "@id"
@@ -678,10 +656,6 @@ Links to the schema:
     },
     "hasSampledFeature": {
       "@id": "sosa:hasSampledFeature",
-      "@type": "@id"
-    },
-    "hasSimpleResult": {
-      "@id": "sosa:hasSimpleResult",
       "@type": "@id"
     },
     "hasSubSystem": {
@@ -917,6 +891,38 @@ Links to the schema:
     },
     "madeBySensor": {
       "@id": "sosa:madeBySensor",
+      "@type": "@id"
+    },
+    "hasResult": {
+      "@context": {
+        "pose": {
+          "@context": {
+            "position": {
+              "@context": {
+                "lat": "geo:lat",
+                "lon": "geo:long",
+                "h": "geopose:h"
+              },
+              "@id": "geopose:position"
+            },
+            "angles": {
+              "@context": {
+                "yaw": "geopose:yaw",
+                "pitch": "geopose:pitch",
+                "roll": "geopose:roll"
+              },
+              "@id": "geopose:angles"
+            }
+          },
+          "@id": "resultschema:pose"
+        },
+        "distance": "resultschema:distance"
+      },
+      "@id": "sosa:hasResult",
+      "@type": "@id"
+    },
+    "hasSimpleResult": {
+      "@id": "sosa:hasSimpleResult",
       "@type": "@id"
     },
     "geojson": "https://purl.org/geojson/vocab#",
