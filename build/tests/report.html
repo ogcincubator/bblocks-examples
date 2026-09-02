@@ -64,7 +64,7 @@
     <body>
         <div class="container">
             <h1 class="title">Building blocks validation report</h1>
-            <small class="datetime">Generated at 2026-09-01T11:17:46.159345+00:00</small>
+            <small class="datetime">Generated at 2026-09-02T14:16:55.467983+00:00</small>
                 <p class="summary fw-semibold text-success">
                     Number of passing building blocks: 27 / 27 (100%)
                 </p>
@@ -307,7 +307,7 @@
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/semantic-uplift/pre-and-post-uplift/rules.shacl:
- - Shape &lt;http://example.com/rules#testHasOneIs1&gt;: _:N0610e35913a344ecb56e3e25998bbb78
+ - Shape &lt;http://example.com/rules#testHasOneIs1&gt;: _:N53ea770f313549ef84c2762e1c604033
 </div>
                                                                     <div class="font-monospace subsection-title mt-2">Semantic Uplift</div>
                                                                 
@@ -884,11 +884,11 @@
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
- - Shape geojson:FeatureShape: &lt;http://example.com/features/f1&gt;
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:FeatureShape: &lt;http://example.com/features/f1&gt;
  - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -975,11 +975,11 @@ On instance[&#x27;properties&#x27;]:
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:FeatureShape: &lt;file:///github/workspace/f1&gt;
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:FeatureShape: &lt;file:///github/workspace/f1&gt;
  - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -1027,11 +1027,11 @@ On instance[&#x27;properties&#x27;]:
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:FeatureShape: &lt;http://example.com/features/f1&gt;
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:FeatureShape: &lt;http://example.com/features/f1&gt;
  - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -1104,11 +1104,11 @@ On instance[&#x27;properties&#x27;]:
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:FeatureShape: &lt;http://example.com/features/f1&gt;
  - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
 </div>
                                                                     <div class="font-monospace subsection-title mt-2">Semantic Uplift</div>
                                                                 
@@ -1179,21 +1179,24 @@ On instance[&#x27;properties&#x27;]:
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
                                                                 
                                                                     
+                                                                    <div class="font-monospace entry-message section-shacl ">Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
+ - /github/workspace/_sources/observation/vectorObservation/ontology.ttl</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:
- - Shape &lt;https://www.ogc.org/rules/sosa/#testResult&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedPropertyPresent&gt;: _:Nc384f165c43e43148d5c4ddb5ccc1c34
  - Shape &lt;https://www.ogc.org/rules/sosa/#testFeatureOfInterest&gt;: *none*
  - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValues&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testRequiredTime&gt;: _:Nc384f165c43e43148d5c4ddb5ccc1c34
- - Shape &lt;https://www.ogc.org/rules/sosa/#testResultNotEmptyNode&gt;: *none*
  - Shape &lt;https://www.ogc.org/rules/sosa/#testSimpleResultLiteral&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValues&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testResult&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testResultNotEmptyNode&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testRequiredTime&gt;: _:N0f8b01f2f1af41bc8b688b1727681eb3
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedPropertyPresent&gt;: _:N0f8b01f2f1af41bc8b688b1727681eb3
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval&gt;: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -1317,6 +1320,9 @@ On instance[&#x27;properties&#x27;]:
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
                                                                 
                                                                     
+                                                                    <div class="font-monospace entry-message section-shacl ">Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
+ - /github/workspace/_sources/linkeddata/forest-ontology/ontology.ttl</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl text-danger">Validation result for _sources/linkeddata/forestStandFeature/shapes.shacl:
   Validation Report
   Conforms: False
@@ -1330,7 +1336,7 @@ On instance[&#x27;properties&#x27;]:
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/linkeddata/forestStandFeature/shapes.shacl:
- - Shape &lt;https://example.com/focal/feature-lesniTyp&gt;: _:Nd782cd524c6c46a9a80737fa6f64da46
+ - Shape &lt;https://example.com/focal/feature-lesniTyp&gt;: _:Nc01eaec78f6c4097a1d1500c1f759d66
 </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
@@ -1339,9 +1345,9 @@ On instance[&#x27;properties&#x27;]:
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:FeatureShape: _:Nd782cd524c6c46a9a80737fa6f64da46
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:FeatureShape: _:Nc01eaec78f6c4097a1d1500c1f759d66
  - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape: *none*
 </div>
@@ -1385,13 +1391,16 @@ On instance[&#x27;properties&#x27;]:
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
                                                                 
                                                                     
+                                                                    <div class="font-monospace entry-message section-shacl ">Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
+ - /github/workspace/_sources/linkeddata/forest-ontology/ontology.ttl</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/linkeddata/forestStandFeature/shapes.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/linkeddata/forestStandFeature/shapes.shacl:
- - Shape &lt;https://example.com/focal/feature-lesniTyp&gt;: _:N14fdf0a0c8694c0e8cb8cd8f9d05608a
+ - Shape &lt;https://example.com/focal/feature-lesniTyp&gt;: _:N1b7a05c3bb9e4a23920cf9111c0510f9
 </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
@@ -1400,9 +1409,9 @@ On instance[&#x27;properties&#x27;]:
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:FeatureShape: _:N14fdf0a0c8694c0e8cb8cd8f9d05608a
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:FeatureShape: _:N1b7a05c3bb9e4a23920cf9111c0510f9
  - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape: *none*
 </div>
@@ -1477,9 +1486,9 @@ On instance[&#x27;properties&#x27;]:
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:FeatureShape: &lt;http://example.com/features/f1&gt;
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:FeatureShape: &lt;http://example.com/features/f1&gt;
  - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape: *none*
 </div>
@@ -1554,11 +1563,11 @@ On instance[&#x27;properties&#x27;]:
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:FeatureShape: &lt;http://example.com/features/f1&gt;
  - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -1728,16 +1737,19 @@ On instance[&#x27;properties&#x27;]:
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
                                                                 
                                                                     
+                                                                    <div class="font-monospace entry-message section-shacl ">Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
+ - /github/workspace/_sources/linkeddata/forest-ontology/ontology.ttl</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
- - Shape geojson:FeatureCollectionShape: _:N7aea12f5d12341ebbcfb8b8a4b8d0de7
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:FeatureCollectionShape: _:Nf9b290efd2a147ac8eb4a8f576ef48d9
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
  - Shape geojson:FeatureShape: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape: *none*
 </div>
@@ -1748,11 +1760,11 @@ On instance[&#x27;properties&#x27;]:
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:FeatureShape: _:Nbd4b7cb0ac6749d19b9a0d8e00f63d0f,_:N6c3e4f8f928544f3939a3ce0d7720fe7,_:N9bb167b97a65492aa3912fc96d9a10a4,_:N81920dcf132c4cffa0b8965411147fe9,_:N09a63d2e674343cb8a882d3ea70f696c,_:Na4bff5f8e570435aabfe9c3aa3c05622,_:N2f444d0749cb410e914c809c4a675ab0,_:Nace0d2c6f78f4882b6d8f83ccb16dde2,_:N9b95075a8d9343a9a5780394dac5ee9e,_:Nb176468696f543aaba51ab0f92bd787c,_:N80ff7a2586f54530a9dbcc4371c6f41a,_:N30cb2c64b66c4849b60498dcbef20ca6,_:N18d242c846394a3b8037c4ababe80055
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:FeatureShape: _:Nc9a16a90ca354b5790b1588057ac9fdf,_:N4b8a5bd864c641cdbfcb7bed081bbdd6,_:Na9ee9f6714aa4cc8bde06ec0188cf0e4,_:Nb99ab57f8e79492a84541606437892e5,_:N4fa2aa9a807f4f8f818ca89680987edf,_:N3127b996ee9045f9959c29e15e494269,_:N5cb80bc5b79941149c4005cd735c415b,_:N072f557b65ae46b7b78e2f72142578cb,_:N1fc343bbe6d7482e970fb3580a6b3f4b,_:N60bdac6ef5d44fa4ae37cfd508aa8a0a,_:Nde5c9d3bccd9415785e52f4324d35625,_:N37d6d14cecd24af9b3d8fdc556a0fb81,_:N65613ffbc97449b688ba62d15291e73a
  - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
 </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl text-danger">Validation result for _sources/linkeddata/forestStandFeature/shapes.shacl:
@@ -1768,7 +1780,7 @@ On instance[&#x27;properties&#x27;]:
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/linkeddata/forestStandFeature/shapes.shacl:
- - Shape &lt;https://example.com/focal/feature-lesniTyp&gt;: _:Nbd4b7cb0ac6749d19b9a0d8e00f63d0f,_:N6c3e4f8f928544f3939a3ce0d7720fe7,_:N9bb167b97a65492aa3912fc96d9a10a4,_:N81920dcf132c4cffa0b8965411147fe9,_:N09a63d2e674343cb8a882d3ea70f696c,_:Na4bff5f8e570435aabfe9c3aa3c05622,_:N2f444d0749cb410e914c809c4a675ab0,_:Nace0d2c6f78f4882b6d8f83ccb16dde2,_:N9b95075a8d9343a9a5780394dac5ee9e,_:Nb176468696f543aaba51ab0f92bd787c,_:N80ff7a2586f54530a9dbcc4371c6f41a,_:N30cb2c64b66c4849b60498dcbef20ca6,_:N18d242c846394a3b8037c4ababe80055
+ - Shape &lt;https://example.com/focal/feature-lesniTyp&gt;: _:Nc9a16a90ca354b5790b1588057ac9fdf,_:N4b8a5bd864c641cdbfcb7bed081bbdd6,_:Na9ee9f6714aa4cc8bde06ec0188cf0e4,_:Nb99ab57f8e79492a84541606437892e5,_:N4fa2aa9a807f4f8f818ca89680987edf,_:N3127b996ee9045f9959c29e15e494269,_:N5cb80bc5b79941149c4005cd735c415b,_:N072f557b65ae46b7b78e2f72142578cb,_:N1fc343bbe6d7482e970fb3580a6b3f4b,_:N60bdac6ef5d44fa4ae37cfd508aa8a0a,_:Nde5c9d3bccd9415785e52f4324d35625,_:N37d6d14cecd24af9b3d8fdc556a0fb81,_:N65613ffbc97449b688ba62d15291e73a
 </div>
                                                     </div>
                                                 </div>
@@ -1810,16 +1822,19 @@ On instance[&#x27;properties&#x27;]:
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
                                                                 
                                                                     
+                                                                    <div class="font-monospace entry-message section-shacl ">Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
+ - /github/workspace/_sources/linkeddata/forest-ontology/ontology.ttl</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
- - Shape geojson:FeatureCollectionShape: _:Nb26dd186535f414aab741ab84deea41c
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:FeatureCollectionShape: _:N730ea8056899433096c1144b1a9b2a20
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
  - Shape geojson:FeatureShape: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape: *none*
 </div>
@@ -1830,11 +1845,11 @@ On instance[&#x27;properties&#x27;]:
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:FeatureShape: _:N4c67847d40794d9fa081fbef420f9dd2,_:N8b89f054a4b4489d9a27f5e5b04c4f9f,_:Na72bb7b8d79a44a8a81f5bae37fdb703,_:N5cbcb6be47cb47cfa42dd400e3f1fbe6,_:N1a7ae5e07d09450a9c3b2feef11a67b1,_:N0bb04998e59d47b5b3cd60bd0fd7af0f,_:N5033fcaeedaa4e27808505450745bbb4,_:N9635c69286024ab393076760cb061e0d,_:Nd98677489ce24e03b58ad7a523de0704,_:N727e540d2d1d475d8669f3528248e971,_:Ne46f39020dbb440da559f13ff3a78336,_:Nbd0c561fd9cb4b77bd31ece69cdd51d3,_:N93e2333fccdf4f89976edb3943793979
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:FeatureShape: _:N4330eb23f34845cda9cd3ccd2ff58795,_:N4af9e145ac1e43fb85941432c2afe402,_:N2c775374c10a481c82c10c7cbeca03eb,_:N865898d6c83d46b6967d49aad44dc42b,_:N48a3c99b3fdb4302852dcf7b732e2b7b,_:Nf04c7c621f394589bb9223b4ced7ca72,_:Nec5efc0d5d414dc3a41f95d42bd8c726,_:Nbf8eaa5f7bfc4cdf8807a00d42288089,_:Nfc79c4e72b0349d7aac10a214ba59270,_:N0246b5aa83194c9a9b7d83e9d94c3c6a,_:Nd8c4c61afadb484982f301adb6cb67d9,_:N4533dcf8634e4489b703f0f493ac8750,_:Ne9e472a19ebe438db72eb0f401ae443c
  - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
 </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/linkeddata/forestStandFeature/shapes.shacl:
@@ -1843,7 +1858,7 @@ On instance[&#x27;properties&#x27;]:
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/linkeddata/forestStandFeature/shapes.shacl:
- - Shape &lt;https://example.com/focal/feature-lesniTyp&gt;: _:N4c67847d40794d9fa081fbef420f9dd2,_:N8b89f054a4b4489d9a27f5e5b04c4f9f,_:Na72bb7b8d79a44a8a81f5bae37fdb703,_:N5cbcb6be47cb47cfa42dd400e3f1fbe6,_:N1a7ae5e07d09450a9c3b2feef11a67b1,_:N0bb04998e59d47b5b3cd60bd0fd7af0f,_:N5033fcaeedaa4e27808505450745bbb4,_:N9635c69286024ab393076760cb061e0d,_:Nd98677489ce24e03b58ad7a523de0704,_:N727e540d2d1d475d8669f3528248e971,_:Ne46f39020dbb440da559f13ff3a78336,_:Nbd0c561fd9cb4b77bd31ece69cdd51d3,_:N93e2333fccdf4f89976edb3943793979
+ - Shape &lt;https://example.com/focal/feature-lesniTyp&gt;: _:N4330eb23f34845cda9cd3ccd2ff58795,_:N4af9e145ac1e43fb85941432c2afe402,_:N2c775374c10a481c82c10c7cbeca03eb,_:N865898d6c83d46b6967d49aad44dc42b,_:N48a3c99b3fdb4302852dcf7b732e2b7b,_:Nf04c7c621f394589bb9223b4ced7ca72,_:Nec5efc0d5d414dc3a41f95d42bd8c726,_:Nbf8eaa5f7bfc4cdf8807a00d42288089,_:Nfc79c4e72b0349d7aac10a214ba59270,_:N0246b5aa83194c9a9b7d83e9d94c3c6a,_:Nd8c4c61afadb484982f301adb6cb67d9,_:N4533dcf8634e4489b703f0f493ac8750,_:Ne9e472a19ebe438db72eb0f401ae443c
 </div>
                                                     </div>
                                                 </div>
@@ -1979,15 +1994,18 @@ On instance[&#x27;properties&#x27;]:
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
                                                                 
                                                                     
+                                                                    <div class="font-monospace entry-message section-shacl ">Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
+ - /github/workspace/_sources/observation/vectorObservation/ontology.ttl</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/observation/vectorObservationFeature/rules.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/observation/vectorObservationFeature/rules.shacl:
- - Shape &lt;http://example.com/rules#testGeometryCoordinatesIsList&gt;: &lt;http://example.com/features/vector-obs-1&gt;/geojson:geometry
  - Shape &lt;http://example.com/rules#testVectorObservationFeatureHasOneGeometry&gt;: &lt;http://example.com/features/vector-obs-1&gt;
  - Shape &lt;http://example.com/rules#testGeometryHasCoordinates&gt;: &lt;http://example.com/features/vector-obs-1&gt;/geojson:geometry
+ - Shape &lt;http://example.com/rules#testGeometryCoordinatesIsList&gt;: &lt;http://example.com/features/vector-obs-1&gt;/geojson:geometry
 </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:
@@ -1996,15 +2014,15 @@ On instance[&#x27;properties&#x27;]:
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:
- - Shape &lt;https://www.ogc.org/rules/sosa/#testResult&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedPropertyPresent&gt;: &lt;http://example.com/features/vector-obs-1&gt;
  - Shape &lt;https://www.ogc.org/rules/sosa/#testFeatureOfInterest&gt;: *none*
  - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValues&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testRequiredTime&gt;: &lt;http://example.com/features/vector-obs-1&gt;
- - Shape &lt;https://www.ogc.org/rules/sosa/#testResultNotEmptyNode&gt;: *none*
  - Shape &lt;https://www.ogc.org/rules/sosa/#testSimpleResultLiteral&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValues&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testResult&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testResultNotEmptyNode&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testRequiredTime&gt;: &lt;http://example.com/features/vector-obs-1&gt;
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedPropertyPresent&gt;: &lt;http://example.com/features/vector-obs-1&gt;
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval&gt;: *none*
 </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
@@ -2015,9 +2033,9 @@ On instance[&#x27;properties&#x27;]:
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:FeatureShape: &lt;http://example.com/features/vector-obs-1&gt;
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
  - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
 </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
@@ -2027,11 +2045,11 @@ On instance[&#x27;properties&#x27;]:
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
  - Shape geojson:FeatureCollectionShape: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:FeatureShape: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
  - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -2073,15 +2091,18 @@ On instance[&#x27;properties&#x27;]:
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
                                                                 
                                                                     
+                                                                    <div class="font-monospace entry-message section-shacl ">Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
+ - /github/workspace/_sources/observation/vectorObservation/ontology.ttl</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/observation/vectorObservationFeature/rules.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/observation/vectorObservationFeature/rules.shacl:
- - Shape &lt;http://example.com/rules#testGeometryCoordinatesIsList&gt;: &lt;http://example.com/features/vector-obs-1&gt;/geojson:geometry
  - Shape &lt;http://example.com/rules#testVectorObservationFeatureHasOneGeometry&gt;: &lt;http://example.com/features/vector-obs-1&gt;
  - Shape &lt;http://example.com/rules#testGeometryHasCoordinates&gt;: &lt;http://example.com/features/vector-obs-1&gt;/geojson:geometry
+ - Shape &lt;http://example.com/rules#testGeometryCoordinatesIsList&gt;: &lt;http://example.com/features/vector-obs-1&gt;/geojson:geometry
 </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:
@@ -2090,15 +2111,15 @@ On instance[&#x27;properties&#x27;]:
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:
- - Shape &lt;https://www.ogc.org/rules/sosa/#testResult&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval&gt;: &lt;http://example.com/features/c1&gt;
- - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedPropertyPresent&gt;: &lt;http://example.com/features/vector-obs-1&gt;
  - Shape &lt;https://www.ogc.org/rules/sosa/#testFeatureOfInterest&gt;: *none*
  - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent&gt;: &lt;http://example.com/features/c1&gt;
- - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValues&gt;: &lt;http://example.com/features/c1&gt;
- - Shape &lt;https://www.ogc.org/rules/sosa/#testRequiredTime&gt;: &lt;http://example.com/features/vector-obs-1&gt;
- - Shape &lt;https://www.ogc.org/rules/sosa/#testResultNotEmptyNode&gt;: *none*
  - Shape &lt;https://www.ogc.org/rules/sosa/#testSimpleResultLiteral&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValues&gt;: &lt;http://example.com/features/c1&gt;
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testResult&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testResultNotEmptyNode&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testRequiredTime&gt;: &lt;http://example.com/features/vector-obs-1&gt;
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedPropertyPresent&gt;: &lt;http://example.com/features/vector-obs-1&gt;
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval&gt;: &lt;http://example.com/features/c1&gt;
 </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
@@ -2109,9 +2130,9 @@ On instance[&#x27;properties&#x27;]:
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:FeatureShape: &lt;http://example.com/features/vector-obs-1&gt;
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
  - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
 </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
@@ -2121,11 +2142,11 @@ On instance[&#x27;properties&#x27;]:
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
  - Shape geojson:FeatureCollectionShape: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:FeatureShape: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
  - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -2167,15 +2188,18 @@ On instance[&#x27;properties&#x27;]:
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
                                                                 
                                                                     
+                                                                    <div class="font-monospace entry-message section-shacl ">Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
+ - /github/workspace/_sources/observation/vectorObservation/ontology.ttl</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/observation/vectorObservationFeature/rules.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/observation/vectorObservationFeature/rules.shacl:
- - Shape &lt;http://example.com/rules#testGeometryCoordinatesIsList&gt;: &lt;file:///github/workspace/vector-obs-1&gt;/geojson:geometry
  - Shape &lt;http://example.com/rules#testVectorObservationFeatureHasOneGeometry&gt;: &lt;file:///github/workspace/vector-obs-1&gt;
  - Shape &lt;http://example.com/rules#testGeometryHasCoordinates&gt;: &lt;file:///github/workspace/vector-obs-1&gt;/geojson:geometry
+ - Shape &lt;http://example.com/rules#testGeometryCoordinatesIsList&gt;: &lt;file:///github/workspace/vector-obs-1&gt;/geojson:geometry
 </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:
@@ -2184,15 +2208,15 @@ On instance[&#x27;properties&#x27;]:
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl:
- - Shape &lt;https://www.ogc.org/rules/sosa/#testResult&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedPropertyPresent&gt;: &lt;file:///github/workspace/vector-obs-1&gt;
  - Shape &lt;https://www.ogc.org/rules/sosa/#testFeatureOfInterest&gt;: *none*
  - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedPropertyConsistent&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValues&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testRequiredTime&gt;: &lt;file:///github/workspace/vector-obs-1&gt;
- - Shape &lt;https://www.ogc.org/rules/sosa/#testResultNotEmptyNode&gt;: *none*
  - Shape &lt;https://www.ogc.org/rules/sosa/#testSimpleResultLiteral&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValues&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testResult&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testResultNotEmptyNode&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testRequiredTime&gt;: &lt;file:///github/workspace/vector-obs-1&gt;
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedPropertyPresent&gt;: &lt;file:///github/workspace/vector-obs-1&gt;
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testCollectionPropertyValuesInterval&gt;: *none*
 </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
@@ -2203,9 +2227,9 @@ On instance[&#x27;properties&#x27;]:
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:FeatureShape: &lt;file:///github/workspace/vector-obs-1&gt;
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
  - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
 </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
@@ -2215,11 +2239,11 @@ On instance[&#x27;properties&#x27;]:
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
  - Shape geojson:FeatureCollectionShape: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:FeatureShape: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
  - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -2291,10 +2315,40 @@ On instance[&#x27;properties&#x27;]:
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
                                                                 
                                                                     
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
+ - Shape _:n300120324f0e47039cd0745205fdc2edb3: &lt;file:///github/workspace/e1&gt;/geojson:geometry
+ - Shape _:n300120324f0e47039cd0745205fdc2edb1: &lt;file:///github/workspace/e1&gt;/geojson:geometry
+</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl text-danger">Validation result for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
   Validation Report
   Conforms: False
   Results (2):
+  Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: toporules:testTopoReferencesExist
+  	Focus Node: [ rdf:type geojson:LineString ; topo:relatedFeatures ( &lt;file:///github/workspace/e1&gt; &lt;file:///github/workspace/e2&gt; ) ]
+  	Value Node: &lt;file:///github/workspace/e2&gt;
+  	Result Path: topo:relatedFeatures
+  	Source Constraint: [ sh:message Literal(&quot;Referenced features must be present within current graph closure for  topological feature.&quot;) ; sh:select Literal(&quot;
+          prefix rdf:     &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+          PREFIX rdfs:    &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+          prefix geojson: &lt;https://purl.org/geojson/vocab#&gt;
+          prefix topo: &lt;https://purl.org/geojson/topo#&gt;
+          SELECT $this (topo:relatedFeatures as ?path) (?ref as ?value)
+          WHERE {
+           $this topo:relatedFeatures/rdf:rest*/rdf:first ?ref .
+           $this a ?geomtype .
+           FILTER ( ?geomtype != geojson:Polygon)
+           FILTER NOT EXISTS { ?ref ?p ?o }
+          }
+  &quot;) ]
+  	Message: Referenced features must be present within current graph closure for  topological feature.
   Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
   	Severity: sh:Violation
   	Source Shape: toporules:testTopoLinesReferencePoints
@@ -2316,43 +2370,13 @@ On instance[&#x27;properties&#x27;]:
           }
   &quot;) ]
   	Message: Lines topologies must reference points within current graph closure.
-  Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: toporules:testTopoReferencesExist
-  	Focus Node: [ rdf:type geojson:LineString ; topo:relatedFeatures ( &lt;file:///github/workspace/e1&gt; &lt;file:///github/workspace/e2&gt; ) ]
-  	Value Node: &lt;file:///github/workspace/e2&gt;
-  	Result Path: topo:relatedFeatures
-  	Source Constraint: [ sh:message Literal(&quot;Referenced features must be present within current graph closure for  topological feature.&quot;) ; sh:select Literal(&quot;
-          prefix rdf:     &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
-          PREFIX rdfs:    &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
-          prefix geojson: &lt;https://purl.org/geojson/vocab#&gt;
-          prefix topo: &lt;https://purl.org/geojson/topo#&gt;
-          SELECT $this (topo:relatedFeatures as ?path) (?ref as ?value)
-          WHERE {
-           $this topo:relatedFeatures/rdf:rest*/rdf:first ?ref .
-           $this a ?geomtype .
-           FILTER ( ?geomtype != geojson:Polygon)
-           FILTER NOT EXISTS { ?ref ?p ?o }
-          }
-  &quot;) ]
-  	Message: Referenced features must be present within current graph closure for  topological feature.
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
- - Shape toporules:testTopoLinesReferencePoints: &lt;file:///github/workspace/LineP1P2&gt;/geojson:topology
- - Shape toporules:testTopoEdgesReferencePoints: &lt;file:///github/workspace/LineP1P2&gt;/geojson:topology
  - Shape toporules:testTopoDirectedReferencesExist: *none*
+ - Shape toporules:testTopoEdgesReferencePoints: &lt;file:///github/workspace/LineP1P2&gt;/geojson:topology
  - Shape toporules:testTopoReferencesExist: &lt;file:///github/workspace/LineP1P2&gt;/geojson:topology
-</div>
-                                                                    
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:n223e44dd9a994af0993c1af5282e8393b1: &lt;file:///github/workspace/e1&gt;/geojson:geometry
- - Shape _:n223e44dd9a994af0993c1af5282e8393b3: &lt;file:///github/workspace/e1&gt;/geojson:geometry
+ - Shape toporules:testTopoLinesReferencePoints: &lt;file:///github/workspace/LineP1P2&gt;/geojson:topology
 </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
@@ -2361,11 +2385,11 @@ On instance[&#x27;properties&#x27;]:
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:FeatureShape: &lt;file:///github/workspace/LineP1P2&gt;,&lt;file:///github/workspace/e1&gt;
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:FeatureShape: &lt;file:///github/workspace/e1&gt;,&lt;file:///github/workspace/LineP1P2&gt;
  - Shape geojson:LinkShape: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:GeometryShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
 </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
@@ -2375,9 +2399,9 @@ On instance[&#x27;properties&#x27;]:
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
  - Shape geojson:FeatureCollectionShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
  - Shape geojson:FeatureShape: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape: *none*
 </div>
@@ -2421,26 +2445,26 @@ On instance[&#x27;properties&#x27;]:
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
                                                                 
                                                                     
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
- - Shape toporules:testTopoLinesReferencePoints: &lt;http://example.com/nodes/LineP1P2&gt;/geojson:topology
- - Shape toporules:testTopoEdgesReferencePoints: &lt;http://example.com/nodes/LineP1P2&gt;/geojson:topology
- - Shape toporules:testTopoDirectedReferencesExist: *none*
- - Shape toporules:testTopoReferencesExist: &lt;http://example.com/nodes/LineP1P2&gt;/geojson:topology
-</div>
-                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:n223e44dd9a994af0993c1af5282e8393b1: &lt;http://example.com/nodes/P2&gt;/geojson:geometry,&lt;http://example.com/nodes/P1&gt;/geojson:geometry
- - Shape _:n223e44dd9a994af0993c1af5282e8393b3: &lt;http://example.com/nodes/P2&gt;/geojson:geometry,&lt;http://example.com/nodes/P1&gt;/geojson:geometry
+ - Shape _:n300120324f0e47039cd0745205fdc2edb3: &lt;http://example.com/nodes/P1&gt;/geojson:geometry,&lt;http://example.com/nodes/P2&gt;/geojson:geometry
+ - Shape _:n300120324f0e47039cd0745205fdc2edb1: &lt;http://example.com/nodes/P1&gt;/geojson:geometry,&lt;http://example.com/nodes/P2&gt;/geojson:geometry
+</div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
+ - Shape toporules:testTopoDirectedReferencesExist: *none*
+ - Shape toporules:testTopoEdgesReferencePoints: &lt;http://example.com/nodes/LineP1P2&gt;/geojson:topology
+ - Shape toporules:testTopoReferencesExist: &lt;http://example.com/nodes/LineP1P2&gt;/geojson:topology
+ - Shape toporules:testTopoLinesReferencePoints: &lt;http://example.com/nodes/LineP1P2&gt;/geojson:topology
 </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
@@ -2449,11 +2473,11 @@ On instance[&#x27;properties&#x27;]:
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:FeatureShape: &lt;http://example.com/nodes/LineP1P2&gt;,&lt;http://example.com/nodes/P2&gt;,&lt;http://example.com/nodes/P1&gt;
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:FeatureShape: &lt;http://example.com/nodes/P1&gt;,&lt;http://example.com/nodes/P2&gt;,&lt;http://example.com/nodes/LineP1P2&gt;
  - Shape geojson:LinkShape: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:GeometryShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
 </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
@@ -2463,9 +2487,9 @@ On instance[&#x27;properties&#x27;]:
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
  - Shape geojson:FeatureCollectionShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
  - Shape geojson:FeatureShape: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape: *none*
 </div>

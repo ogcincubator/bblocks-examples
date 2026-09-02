@@ -11,6 +11,8 @@ Other examples will illustrate different possible ways to use the Building Block
 
 More complex examples will include transformation testing - testing a format can be transformed into a related structure and/or data model.
 
+The `imports` list also shows both ways to reference another register: a plain `register.json` URL, and the `@org/register` alias form resolved against the [OGC Blocks meta-registry](https://w3id.org/ogc/bblocks/meta-register.json).
+
 
 ## Building Blocks
 
