@@ -2,12 +2,14 @@ identifier-prefix: ogc.bbr.examples.
 name: Building Blocks Examples
 imports:
   - default
-  - https://opengeospatial.github.io/ogcapi-sosa
+  # Some imports are given as "@org/register" aliases, resolved against the meta-registry,
+  # instead of a raw register.json URL - this survives the target register moving host or repo.
+  - "@ogc/ogcapi-sosa"
   - https://ogcincubator.github.io/bblocks-ogcapi-processes
-  - https://ogcincubator.github.io/topo-feature
+  - "@ogc/topo-feature"
   - https://opengeospatial.github.io/geopose-bblocks/
 abstract: "This register provides a collection of **examples** designed to illustrate capabilities and implementation patterns for [Building Blocks (see more)](https://ogcincubator.github.io/bblocks-docs). \n\n*These buildings blocks may be copied and edited into a new repository based on the [template](https://github.com/opengeospatial/bblock-template) - but should not be referenced and extended for reuse*\n"
-description: "The aim of the highlighted examples is to illustrate implementation patterns for reusing OGC building blocks. The emphasis is on typical requirements to extend or constrain generic or abstract models such as OGC API Features, Observations etc. \n\nOther examples will illustrate different possible ways to use the Building Block machinery to semantically annotate externally defines schemas, develop and test logical constraints, or simply test examples using a published specification.\n\nMore complex examples will include transformation testing - testing a format can be transformed into a related structure and/or data model.\n"
+description: "The aim of the highlighted examples is to illustrate implementation patterns for reusing OGC building blocks. The emphasis is on typical requirements to extend or constrain generic or abstract models such as OGC API Features, Observations etc. \n\nOther examples will illustrate different possible ways to use the Building Block machinery to semantically annotate externally defines schemas, develop and test logical constraints, or simply test examples using a published specification.\n\nMore complex examples will include transformation testing - testing a format can be transformed into a related structure and/or data model.\n\nThe `imports` list also shows both ways to reference another register: a plain `register.json` URL, and the `@org/register` alias form resolved against the [OGC Blocks meta-registry](https://w3id.org/ogc/bblocks/meta-register.json).\n"
 sparql:
   push: https://defs-dev.opengis.net/fuseki/data
   query: https://defs-dev.opengis.net/fuseki/query
