@@ -1,0 +1,32 @@
+{
+  "@context": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observation/context.jsonld",
+  "type": "Feature",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -3.43503,
+          41.574798
+        ],
+        [
+          -3.846169,
+          41.619001
+        ],
+        [
+          -4.073503,
+          40.849861
+        ],
+        [
+          -3.43503,
+          41.574798
+        ]
+      ]
+    ]
+  },
+  "properties": {
+    "one": 1,
+    "two": 2,
+    "string": "value"
+  }
+}

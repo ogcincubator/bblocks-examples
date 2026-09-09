@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.bbr.examples.feature.geojsonFeatureFGLenient - Custom JSON-FG (lenient) Feature",
   "bblockName": "Custom JSON-FG (lenient) Feature",
   "bblockId": "ogc.bbr.examples.feature.geojsonFeatureFGLenient",
-  "generated": "2026-09-02T14:16:39.740602+00:00",
+  "generated": "2026-09-09T13:24:01.779648+00:00",
   "result": true,
   "items": [
     {
@@ -72,26 +72,26 @@
             {
               "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
               "focusNodes": {
+                "geojson:GeometryShape": {
+                  "nodes": []
+                },
                 "geojson:GeometryShape/sh:or/rdf:first": {
                   "nodes": []
                 },
                 "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
                   "nodes": []
                 },
+                "geojson:LinkShape": {
+                  "nodes": []
+                },
                 "geojson:FeatureShape": {
                   "nodes": [
                     "<http://example.com/features/f1>"
                   ]
-                },
-                "geojson:LinkShape": {
-                  "nodes": []
-                },
-                "geojson:GeometryShape": {
-                  "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:FeatureShape: <http://example.com/features/f1>\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape: *none*\n"
+              "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:FeatureShape: <http://example.com/features/f1>\n"
             }
           ]
         }

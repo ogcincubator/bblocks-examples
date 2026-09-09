@@ -2,8 +2,8 @@
   "title": "Validation report for ogc.geo.features.feature - Feature",
   "bblockName": "Feature",
   "bblockId": "ogc.geo.features.feature",
-  "generated": "2026-09-02T14:16:51.224001+00:00",
-  "result": false,
+  "generated": "2026-09-09T13:24:16.851004+00:00",
+  "result": true,
   "items": [
     {
       "source": {
@@ -11,30 +11,86 @@
         "requireFail": false,
         "filename": "build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.python-geojson.geojson",
         "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.python-geojson.geojson",
-        "language": {
-          "id": "geojson",
-          "defaultExtension": "geojson",
-          "label": "GeoJSON",
-          "mimeType": "application/geo+json",
-          "aliases": [
-            "geojson"
-          ],
-          "extensions": [
-            "geojson"
-          ]
-        },
+        "language": "application/geo+json",
         "transformId": "python-geojson"
       },
-      "result": false,
+      "result": true,
       "sections": [
         {
-          "name": "UNKNOWN",
-          "title": "Unknown errors",
+          "name": "FILES",
+          "title": "Files",
           "entries": [
             {
-              "exception": "AttributeError",
-              "isError": true,
-              "message": "Traceback (most recent call last):\n,  File \"/src/ogc/bblocks/validate.py\", line 388, in validate_transform_output\n    validation_resources=profile_bblock.validation_resources,\n,AttributeError: 'ImportedBBlockProxy' object has no attribute 'validation_resources'\n"
+              "isError": false,
+              "message": "Using example_1_1.python-geojson.geojson from transform outputs"
+            },
+            {
+              "op": "jsonld-uplift",
+              "isError": false,
+              "message": "JSON-LD context is present - uplifting"
+            },
+            {
+              "op": "jsonld-create",
+              "filename": "example_1_1.python-geojson.jsonld",
+              "isError": false,
+              "message": "Output JSON-LD example_1_1.python-geojson.jsonld created"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_1_1.python-geojson.ttl",
+              "size": 30,
+              "isError": false,
+              "message": "Output Turtle example_1_1.python-geojson.ttl created"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": true,
+              "isError": false,
+              "message": "Validation passed"
+            }
+          ]
+        },
+        {
+          "name": "SHACL",
+          "title": "SHACL",
+          "entries": [
+            {
+              "op": "shacl-report",
+              "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
+              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+              "isError": false,
+              "message": "Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
+            },
+            {
+              "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
+              "focusNodes": {
+                "geojson:GeometryShape": {
+                  "nodes": []
+                },
+                "geojson:GeometryShape/sh:or/rdf:first": {
+                  "nodes": []
+                },
+                "geojson:LinkShape": {
+                  "nodes": []
+                },
+                "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
+                  "nodes": []
+                },
+                "geojson:FeatureShape": {
+                  "nodes": [
+                    "_:N9ab754d13eb5483dbbba1d9c4a8aa7be"
+                  ]
+                }
+              },
+              "isError": false,
+              "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:FeatureShape: _:N9ab754d13eb5483dbbba1d9c4a8aa7be\n"
             }
           ]
         }
@@ -44,7 +100,7 @@
   "globalErrors": {},
   "counts": {
     "total": 1,
-    "passed": 0,
-    "failed": 1
+    "passed": 1,
+    "failed": 0
   }
 }

@@ -100,12 +100,6 @@ This example shows a simple customisation method for OGC API Feature schemas
 
 This example includes an uplift step to use a GeoSPARQL geometry in a GeoJSON object
 
-### `ogc.bbr.examples.observation.vectorObservation` — Observation Result (Vector based on GeoPose)
-
-**Type:** schema
-
-This building block defines the *property set* for an example specialisation of a SOSA Observation using the GeoPose standard as a result. These two patterns are defined by other Building Blocks.
-
 ### `ogc.bbr.examples.linkeddata.forestStandFeature` — Semantic Feature
 
 **Type:** schema
@@ -123,6 +117,12 @@ This example shows a simple customisation method for a JSON-FG (lenient) feature
 **Type:** schema
 
 This example shows a simple customisation for OGC API Feature using an externally defined domain schema.
+
+### `ogc.bbr.examples.observation.vectorObservation` — Observation Result (Vector based on GeoPose)
+
+**Type:** schema
+
+This building block defines the *property set* for an example specialisation of a SOSA Observation using the GeoPose standard as a result. These two patterns are defined by other Building Blocks.
 
 ### `ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputDescription` — Buffer geometry process input description
 
