@@ -15,8 +15,13 @@
       "link": "https://example.com/sources/1"
     }
   ],
-  "dependsOn": [ "ogc.bbr.examples.linkeddata.forest-ontology"],
+  "dependsOn": [
+    "ogc.bbr.examples.linkeddata.forest-ontology"
+  ],
   "maturity": "mature",
   "scope": "unstable",
-  "tags": [ "forestry", "schema"]
+  "tags": [
+    "forestry",
+    "schema"
+  ]
 }

@@ -7,14 +7,11 @@
   "register": "isc",
   "version": "1.0",
   "dateOfLastChange": "2023-05-19",
-  "sources": [
-  ],
+  "sources": [],
   "maturity": "development",
   "scope": "unstable",
-  "dependsOn": [
-  ],
-  "tags": [
-    ],
-  "group": "Entities",
+  "dependsOn": [],
+  "tags": [],
+  "group": "Validation & Transforms",
   "highlighted": true
 }
