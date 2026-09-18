@@ -10,6 +10,7 @@
   "itemClass": "schema",
   "version": "0.1",
   "dateOfLastChange": "2026-09-18",
+  "group": "Validation & Transforms",
   "shaclShapes": {},
   "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/context.jsonld",
   "schema": {
@@ -492,7 +493,7 @@
             },
             "python-error": {
               "success": false,
-              "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp98wjet_a.py\", line 253, in <module>\n    exec(_TRANSFORM_CODE, _ns)\n  File \"<transform>\", line 1, in <module>\nValueError: intentional test error from Python transform\n"
+              "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpcucs15u6.py\", line 253, in <module>\n    exec(_TRANSFORM_CODE, _ns)\n  File \"<transform>\", line 1, in <module>\nValueError: intentional test error from Python transform\n"
             },
             "jinja2-html": {
               "success": true,
@@ -501,12 +502,12 @@
             },
             "dump-context": {
               "success": true,
-              "sizeBytes": 6476,
+              "sizeBytes": 6516,
               "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.dump-context.json"
             },
             "python-geojson": {
               "success": true,
-              "sizeBytes": 263,
+              "sizeBytes": 218,
               "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.python-geojson.geojson",
               "profilesValidation": {
                 "ogc.geo.features.feature": {

@@ -23,7 +23,7 @@
     "semantic-uplift",
     "examples"
   ],
-  "group": "Examples",
+  "group": "Semantic & Linked Data",
   "shaclShapes": {},
   "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/override-binding/base/context.jsonld",
   "schema": {

@@ -16,7 +16,6 @@
     "feature",
     "examples"
   ],
-  "group": "Examples",
   "shaclShapes": {
     "ogc.geo.features.feature": [
       "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"

@@ -26,7 +26,7 @@
     "feature",
     "examples"
   ],
-  "group": "Examples",
+  "group": "Features & Geometry",
   "highlighted": true,
   "shaclShapes": {
     "ogc.geo.features.feature": [

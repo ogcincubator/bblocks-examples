@@ -14,12 +14,12 @@
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
+    "ogc.ogc-utils.iri-or-curie",
     "ogc.geo.topo.features.topo-line",
-    "ogc.geo.topo.features.topo-feature-collection",
-    "ogc.ogc-utils.iri-or-curie"
+    "ogc.geo.topo.features.topo-feature-collection"
   ],
   "tags": [],
-  "group": "Entities",
+  "group": "Validation & Transforms",
   "highlighted": true,
   "shaclShapes": {
     "ogc.geo.topo.features.topo-feature": [

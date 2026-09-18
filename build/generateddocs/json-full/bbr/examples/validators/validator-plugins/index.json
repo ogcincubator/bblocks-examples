@@ -18,6 +18,7 @@
       "conformsTo": "https://www.w3.org/2001/XMLSchema"
     }
   ],
+  "group": "Validation & Transforms",
   "shaclShapes": {},
   "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/validators/validator-plugins/",
   "validationPassed": true,

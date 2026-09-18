@@ -19,10 +19,10 @@
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "ogc.sosa.properties.observation",
-    "ogc.sosa.features.observation",
     "ogc.bbr.examples.observation.vectorObservation",
-    "ogc.sosa.features.observationCollection"
+    "ogc.sosa.features.observationCollection",
+    "ogc.sosa.properties.observation",
+    "ogc.sosa.features.observation"
   ],
   "tags": [
     "sosa",
@@ -31,7 +31,7 @@
     "o&m&s",
     "examples"
   ],
-  "group": "Examples",
+  "group": "Features & Geometry",
   "highlighted": true,
   "shaclShapes": {
     "ogc.bbr.examples.observation.vectorObservationFeature": [

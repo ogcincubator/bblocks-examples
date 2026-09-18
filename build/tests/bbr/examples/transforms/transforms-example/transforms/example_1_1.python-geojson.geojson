@@ -1,1 +1,1 @@
-{"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[1.780067, 37.770408], [1.461556, 37.872316], [0.995452, 37.261681], [1.055288, 37.241973], [1.17497, 37.216081], [1.780067, 37.770408]]]}, "properties": {"one": 1, "two": 2, "string": "value"}}
+{"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[1.552935, 40.157408], [1.844732, 39.518812], [1.991957, 39.641344], [1.552935, 40.157408]]]}, "properties": {"one": 1, "two": 2, "string": "value"}}

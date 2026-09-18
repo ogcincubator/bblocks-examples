@@ -24,7 +24,6 @@
     "features",
     "examples"
   ],
-  "group": "Examples",
   "shaclShapes": {},
   "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/context.jsonld",
   "schema": {
