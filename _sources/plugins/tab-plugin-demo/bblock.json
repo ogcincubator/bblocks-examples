@@ -1,0 +1,15 @@
+{
+  "name": "Tab plugin example",
+  "highlighted": true,
+  "abstract": "A sample building block to showcase a tab plugin, scoped so it only adds its tab to this one block",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-18T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "dateOfLastChange": "2026-09-18",
+  "group": "Validation & Transforms",
+  "tags": [
+    "plugins",
+    "examples"
+  ]
+}
