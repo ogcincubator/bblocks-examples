@@ -34,6 +34,12 @@ Example ontology for forest sample datae
 
 Output schema for the buffer geometry process
 
+### `ogc.bbr.examples.plugins.tab-plugin-demo` — Tab plugin example
+
+**Type:** schema
+
+A sample building block to showcase a tab plugin, scoped so it only adds its tab to this one block
+
 ### `ogc.bbr.examples.semantic-uplift.override-binding.base` — Override Binding - Base
 
 **Type:** schema
@@ -160,17 +166,17 @@ Description of the buffer geometry process
 
 Collection of output descriptions
 
-### `ogc.bbr.examples.observation.vectorObservationFeature` — Custom Result for Observation Feature
-
-**Type:** schema
-
-This building block defines an example specialisation of an existing Feature specialisation (SOSA Observation), using another schema to define a result set - in this case the GeoPose model
-
 ### `ogc.bbr.examples.rules.topo-edges` — Topo rules examples
 
 **Type:** schema
 
 Demonstrates inheritance of rules (in this case for topology using feature references - that cannot be expressed in schemas.
+
+### `ogc.bbr.examples.observation.vectorObservationFeature` — Custom Result for Observation Feature
+
+**Type:** schema
+
+This building block defines an example specialisation of an existing Feature specialisation (SOSA Observation), using another schema to define a result set - in this case the GeoPose model
 
 ### `ogc.bbr.examples.ogcapi.processes.custom-api` — Custom OGC API processes instance
 
