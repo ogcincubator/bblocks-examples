@@ -7,3 +7,16 @@
   snippets:
     - language: json
       ref: examples/feature.json
+
+- title: Broken example reference (showcase)
+  content: |
+    This example intentionally points 'ref' at a file that does not exist, to
+    demonstrate that a broken/unreachable example reference no longer aborts
+    the whole postprocessing run or silently drops this building block from
+    the register - it is instead reported as a scoped validation error for
+    this one example, while every other building block (and every other
+    example in this one) is still processed normally.
+  base-uri: http://example.com/features/
+  snippets:
+    - language: json
+      ref: examples/does-not-exist.json
