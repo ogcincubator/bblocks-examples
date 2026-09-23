@@ -6,6 +6,14 @@
     "label": {
       "@id": "http://www.w3.org/2004/02/skos/core#altLabel",
       "@type": "http://www.w3.org/2001/XMLSchema#language"
+    },
+    "assets": {
+      "@id": "http://www.w3.org/ns/dcat#distribution",
+      "@context": {
+        "href": {
+          "@id": "http://www.w3.org/ns/dcat#accessURL"
+        }
+      }
     }
   }
 }

@@ -1,4 +1,7 @@
 {
   "note": "This term narrows the inherited 'note' binding to skos:definition.",
-  "label": "en"
+  "label": "en",
+  "assets": {
+    "href": "https://example.org/resource"
+  }
 }

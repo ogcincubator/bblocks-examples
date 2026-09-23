@@ -7,6 +7,15 @@
     "label": {
       "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
       "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "assets": {
+      "@id": "http://www.w3.org/ns/dcat#distribution",
+      "@context": {
+        "href": {
+          "@id": "http://www.w3.org/ns/dcat#downloadURL",
+          "@type": "@id"
+        }
+      }
     }
   }
 }

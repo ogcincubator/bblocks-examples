@@ -1,6 +1,7 @@
 - title: Base example
   comment: |
-    A plain instance showing "note" as skos:note and "label" as skos:prefLabel.
+    A plain instance showing "note" as skos:note, "label" as skos:prefLabel, and the nested
+    "assets.href" as dcat:downloadURL.
   snippets:
     - language: json
       ref: examples/base.json

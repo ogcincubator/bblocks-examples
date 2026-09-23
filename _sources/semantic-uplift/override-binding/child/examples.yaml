@@ -1,7 +1,8 @@
 - title: Child (profile) example
   comment: |
     An instance of the profile: "note" is now skos:definition (@type xsd:string still inherited from the
-    base block) and "label" is now skos:altLabel with @type xsd:language.
+    base block), "label" is now skos:altLabel with @type xsd:language, and the nested "assets.href" is now
+    dcat:accessURL (@type @id still inherited from the base block).
   snippets:
     - language: json
       ref: examples/child.json

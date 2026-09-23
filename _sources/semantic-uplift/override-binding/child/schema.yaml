@@ -1,5 +1,5 @@
 "$schema": https://json-schema.org/draft/2020-12/schema
-description: 'Profile of "Override Binding - Base" that redeclares "note" and "label" to narrow their inherited SKOS bindings.'
+description: 'Profile of "Override Binding - Base" that redeclares "note" and "label" to narrow their inherited SKOS bindings, and restates "assets" to narrow the nested "href" binding.'
 allOf:
   - $ref: bblocks://ogc.bbr.examples.semantic-uplift.override-binding.base
   - type: object
@@ -8,3 +8,8 @@ allOf:
         type: string
       label:
         type: string
+      assets:
+        type: object
+        properties:
+          href:
+            type: string
