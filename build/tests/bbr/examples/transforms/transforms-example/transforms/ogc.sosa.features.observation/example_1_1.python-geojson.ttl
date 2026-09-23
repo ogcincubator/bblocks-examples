@@ -4,5 +4,5 @@
 
 [] a geojson:Feature ;
     geojson:geometry [ a geojson:Polygon ;
-            geojson:coordinates ( ( ( 4.88983e-01 3.818518e+01 ) ( -9.56822e-01 3.746643e+01 ) ( 7.08358e-01 3.713564e+01 ) ( 4.88983e-01 3.818518e+01 ) ) ) ] .
+            geojson:coordinates ( ( ( 3.3625e-02 3.976563e+01 ) ( -2.42e-03 3.930919e+01 ) ( 6.52318e-01 3.925533e+01 ) ( 3.3625e-02 3.976563e+01 ) ) ) ] .
 
