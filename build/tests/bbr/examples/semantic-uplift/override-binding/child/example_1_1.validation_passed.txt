@@ -1,5 +1,5 @@
 Validation report for ogc.bbr.examples.semantic-uplift.override-binding.child - Override Binding - Child (Profile)
-Generated 2026-09-23T11:06:01.375109+00:00
+Generated 2026-09-23T12:34:40.195121+00:00
 === Files ===
 Using examples/child.json from examples
 JSON-LD context is present - uplifting

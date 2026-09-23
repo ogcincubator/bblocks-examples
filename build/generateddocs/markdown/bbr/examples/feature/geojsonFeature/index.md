@@ -92,6 +92,18 @@ This building block **inherits** reusable semantic annotations for the Feature s
 
 ```
 
+
+### Broken example reference (showcase)
+This example intentionally points 'ref' at a file that does not exist, to
+demonstrate that a broken/unreachable example reference no longer aborts
+the whole postprocessing run or silently drops this building block from
+the register - it is instead reported as a scoped validation error for
+this one example, while every other building block (and every other
+example in this one) is still processed normally.
+
+#### json
+*Snippet unavailable: [Errno 2] No such file or directory: '/github/workspace/_sources/feature/geojsonFeature/examples/does-not-exist.json'*
+
 ## Schema
 
 ```yaml
