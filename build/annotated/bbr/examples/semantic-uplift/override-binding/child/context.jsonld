@@ -8,6 +8,15 @@
       "@id": "http://www.w3.org/2004/02/skos/core#altLabel",
       "@type": "http://www.w3.org/2001/XMLSchema#language"
     },
+    "assets": {
+      "@context": {
+        "href": {
+          "@id": "http://www.w3.org/ns/dcat#accessURL",
+          "@type": "@id"
+        }
+      },
+      "@id": "http://www.w3.org/ns/dcat#distribution"
+    },
     "@version": 1.1
   }
 }

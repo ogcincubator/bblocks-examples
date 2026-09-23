@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.bbr.examples.semantic-uplift.override-binding.base - Override Binding - Base",
   "bblockName": "Override Binding - Base",
   "bblockId": "ogc.bbr.examples.semantic-uplift.override-binding.base",
-  "generated": "2026-09-18T10:32:08.297696+00:00",
+  "generated": "2026-09-23T11:06:00.913346+00:00",
   "result": true,
   "items": [
     {
@@ -40,7 +40,7 @@
               "op": "ttl-create",
               "empty": false,
               "filename": "example_1_1.ttl",
-              "size": 2,
+              "size": 4,
               "isError": false,
               "message": "Output Turtle example_1_1.ttl created"
             }

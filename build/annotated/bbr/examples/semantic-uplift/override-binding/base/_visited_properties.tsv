@@ -1,3 +1,5 @@
 path	@id	schema
 /note	http://www.w3.org/2004/02/skos/core#note	/github/workspace/build/annotated/bbr/examples/semantic-uplift/override-binding/base/schema.yaml
 /label	http://www.w3.org/2004/02/skos/core#prefLabel	/github/workspace/build/annotated/bbr/examples/semantic-uplift/override-binding/base/schema.yaml
+/assets	http://www.w3.org/ns/dcat#distribution	/github/workspace/build/annotated/bbr/examples/semantic-uplift/override-binding/base/schema.yaml
+/assets/href	http://www.w3.org/ns/dcat#downloadURL	/github/workspace/build/annotated/bbr/examples/semantic-uplift/override-binding/base/schema.yaml

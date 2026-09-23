@@ -1,6 +1,7 @@
 $schema: https://json-schema.org/draft/2020-12/schema
-description: Base schema binding "note" and "label" to generic SKOS predicates. See
-  the "Override Binding - Child" building block for how a profile can narrow these.
+description: Base schema binding "note" and "label" to generic SKOS predicates, and
+  "assets.href" (nested inside an object) to a generic download predicate. See the
+  "Override Binding - Child" building block for how a profile can narrow these.
 type: object
 properties:
   note:
@@ -11,3 +12,11 @@ properties:
     type: string
     x-jsonld-id: http://www.w3.org/2004/02/skos/core#prefLabel
     x-jsonld-type: http://www.w3.org/2001/XMLSchema#string
+  assets:
+    type: object
+    properties:
+      href:
+        type: string
+        x-jsonld-id: http://www.w3.org/ns/dcat#downloadURL
+        x-jsonld-type: '@id'
+    x-jsonld-id: http://www.w3.org/ns/dcat#distribution

@@ -11,16 +11,18 @@ A base building block binding 'note' and 'label' to generic SKOS predicates, to 
 
 ## Override Binding - Base
 
-A plain building block with two properties, `note` and `label`, each bound in [context.jsonld](context.jsonld)
-to a generic SKOS predicate:
+A plain building block with two top-level properties, `note` and `label`, plus a nested one, `assets.href`, each
+bound in [context.jsonld](context.jsonld) to a generic predicate:
 
 * `note` &rarr; `skos:note`
 * `label` &rarr; `skos:prefLabel`
+* `assets.href` &rarr; `dcat:downloadURL`
 
 On its own this block is unremarkable. It exists to be extended by
 [Override Binding - Child](bblocks://ogc.bbr.examples.semantic-uplift.override-binding.child), which redeclares
-these same property names in its own context to narrow their meaning — see that block's description, and the docs
-on [overriding an inherited binding](https://ogcincubator.github.io/bblocks-docs/create/semantic-uplift#overriding-an-inherited-binding),
+`note` and `label` in its own context, and restates the whole `assets` object to narrow `href`, to narrow their
+meaning — see that block's description, and the docs on
+[overriding an inherited binding](https://ogcincubator.github.io/bblocks-docs/create/semantic-uplift#overriding-an-inherited-binding),
 for what that demonstrates.
 
 ## Examples
@@ -30,7 +32,10 @@ for what that demonstrates.
 ```json
 {
   "note": "A generic remark about this resource.",
-  "label": "Generic Label"
+  "label": "Generic Label",
+  "assets": {
+    "href": "https://example.org/downloads/resource.zip"
+  }
 }
 
 ```
@@ -40,17 +45,22 @@ for what that demonstrates.
 {
   "@context": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/override-binding/base/context.jsonld",
   "note": "A generic remark about this resource.",
-  "label": "Generic Label"
+  "label": "Generic Label",
+  "assets": {
+    "href": "https://example.org/downloads/resource.zip"
+  }
 }
 ```
 
 #### ttl
 ```ttl
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 [] skos:note "A generic remark about this resource."^^xsd:string ;
-    skos:prefLabel "Generic Label"^^xsd:string .
+    skos:prefLabel "Generic Label"^^xsd:string ;
+    dcat:distribution [ dcat:downloadURL <https://example.org/downloads/resource.zip> ] .
 
 
 ```
@@ -59,8 +69,9 @@ for what that demonstrates.
 
 ```yaml
 $schema: https://json-schema.org/draft/2020-12/schema
-description: Base schema binding "note" and "label" to generic SKOS predicates. See
-  the "Override Binding - Child" building block for how a profile can narrow these.
+description: Base schema binding "note" and "label" to generic SKOS predicates, and
+  "assets.href" (nested inside an object) to a generic download predicate. See the
+  "Override Binding - Child" building block for how a profile can narrow these.
 type: object
 properties:
   note:
@@ -71,6 +82,14 @@ properties:
     type: string
     x-jsonld-id: http://www.w3.org/2004/02/skos/core#prefLabel
     x-jsonld-type: http://www.w3.org/2001/XMLSchema#string
+  assets:
+    type: object
+    properties:
+      href:
+        type: string
+        x-jsonld-id: http://www.w3.org/ns/dcat#downloadURL
+        x-jsonld-type: '@id'
+    x-jsonld-id: http://www.w3.org/ns/dcat#distribution
 
 ```
 
@@ -92,6 +111,15 @@ Links to the schema:
     "label": {
       "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
       "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "assets": {
+      "@context": {
+        "href": {
+          "@id": "http://www.w3.org/ns/dcat#downloadURL",
+          "@type": "@id"
+        }
+      },
+      "@id": "http://www.w3.org/ns/dcat#distribution"
     },
     "@version": 1.1
   }
