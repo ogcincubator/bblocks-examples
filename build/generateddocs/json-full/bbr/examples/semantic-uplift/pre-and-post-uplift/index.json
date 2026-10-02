@@ -29,10 +29,13 @@
     "additionalSteps": [
       {
         "type": "jq",
-        "code": ".three = 3 | .doubleString = \"\\(.string)\\(.string)\""
+        "code": ".three = 3 | .doubleString = \"\\(.string)\\(.string)\"",
+        "stage": "pre"
       },
       {
         "type": "sparql-update",
+        "ref": "semantic-uplift/update.sparql",
+        "stage": "post",
         "code": "PREFIX ex: <http://example.com/>\nPREFIX ex2: <https://example.net/2/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nINSERT {\n  ?s ex2:hasFour ?hasFour;\n    ex2:nineBound ?nineBound .\n} WHERE {\n  ?s ex:hasTwo ?hasTwo\n  BIND(xsd:integer(?hasTwo * 2) as ?hasFour) .\n  OPTIONAL {\n    ?s ex:hasNine ?nine .\n  }\n  BIND(BOUND(?nine) as ?nineBound)\n}"
       }
     ]
