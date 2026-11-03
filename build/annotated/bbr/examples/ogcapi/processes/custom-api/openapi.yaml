@@ -46,7 +46,7 @@ paths:
               schema:
                 allOf:
                 - $ref: https://ogcincubator.github.io/bblocks-ogcapi-processes/build/annotated/api/processes/v1/schemas/results/schema.yaml
-                - $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputSchema/schema.yaml
+                - $ref: https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputSchema/schema.yaml
                   x-bblocks-extension-source: ogc.api.processes.v1.schemas.results
                   x-bblocks-extension-target: ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputSchema
           description: The results of a job.
@@ -68,7 +68,7 @@ paths:
             application/json:
               schema:
                 allOf:
-                - $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/processDescription/schema.yaml
+                - $ref: https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/processDescription/schema.yaml
                 - allOf:
                   - allOf:
                     - {}
@@ -76,23 +76,23 @@ paths:
                       properties:
                         inputs:
                           additionalProperties:
-                            $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/inputDescriptions/schema.yaml
+                            $ref: https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/inputDescriptions/schema.yaml
                             x-bblocks-extension-source: ogc.api.processes.v1.schemas.inputDescription
                             x-bblocks-extension-target: ogc.bbr.examples.ogcapi.processes.schemas.inputDescriptions
                         outputs:
                           additionalProperties:
-                            $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/outputDescriptions/schema.yaml
+                            $ref: https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/outputDescriptions/schema.yaml
                             x-bblocks-extension-source: ogc.api.processes.v1.schemas.outputDescription
                             x-bblocks-extension-target: ogc.bbr.examples.ogcapi.processes.schemas.outputDescriptions
                   - properties:
                       inputs:
                         allOf:
-                        - $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/inputDescriptions/schema.yaml
+                        - $ref: https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/inputDescriptions/schema.yaml
                           x-bblocks-extension-source: ogc.api.processes.v1.schemas.inputDescription
                           x-bblocks-extension-target: ogc.bbr.examples.ogcapi.processes.schemas.inputDescriptions
                       outputs:
                         allOf:
-                        - $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/outputDescriptions/schema.yaml
+                        - $ref: https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/outputDescriptions/schema.yaml
                           x-bblocks-extension-source: ogc.api.processes.v1.schemas.outputDescription
                           x-bblocks-extension-target: ogc.bbr.examples.ogcapi.processes.schemas.outputDescriptions
   /processes/buffer-geometry/execution:

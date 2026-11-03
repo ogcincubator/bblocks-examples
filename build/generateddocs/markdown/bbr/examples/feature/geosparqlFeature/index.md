@@ -38,7 +38,7 @@ This example includes an uplift step to use a GeoSPARQL geometry in a GeoJSON ob
 #### jsonld
 ```jsonld
 {
-  "@context": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/context.jsonld",
+  "@context": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/context.jsonld",
   "id": "f1",
   "type": "Feature",
   "geometry": {
@@ -85,12 +85,12 @@ allOf:
       type: object
       x-jsonld-id: https://purl.org/geojson/vocab#geometry
     properties:
-      $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/schema.yaml
+      $ref: https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/schema.yaml
 x-jsonld-prefixes:
   geojson: https://purl.org/geojson/vocab#
 x-bblocks-metadata:
   itemIdentifier: ogc.bbr.examples.feature.geosparqlFeature
-  register: https://ogcincubator.github.io/bblocks-examples/build/register.json
+  register: https://rob-metalinkage.github.io/bblocks-examples/build/register.json
   version: '1.0'
   dateOfLastChange: '2026-11-03'
 
@@ -98,8 +98,8 @@ x-bblocks-metadata:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/schema.json)
-* JSON version: [schema.json](https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/schema.yaml)
+* YAML version: [schema.yaml](https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/schema.json)
+* JSON version: [schema.json](https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/schema.yaml)
 
 
 # JSON-LD Context
@@ -168,13 +168,13 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/context.jsonld)
+[context.jsonld](https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/context.jsonld)
 
 
 # For developers
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/ogcincubator/bblocks-examples](https://github.com/ogcincubator/bblocks-examples)
+* URL: [https://github.com/rob-metalinkage/bblocks-examples](https://github.com/rob-metalinkage/bblocks-examples)
 * Path: `_sources/feature/geosparqlFeature`
 

@@ -28,7 +28,7 @@ description: A simple JSON object used to demonstrate transform reuse
 type: object
 x-bblocks-metadata:
   itemIdentifier: ogc.bbr.examples.transforms.transforms-reuse
-  register: https://ogcincubator.github.io/bblocks-examples/build/register.json
+  register: https://rob-metalinkage.github.io/bblocks-examples/build/register.json
   version: '0.1'
   dateOfLastChange: '2026-11-03'
 
@@ -36,14 +36,14 @@ x-bblocks-metadata:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-reuse/schema.json)
-* JSON version: [schema.json](https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-reuse/schema.yaml)
+* YAML version: [schema.yaml](https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-reuse/schema.json)
+* JSON version: [schema.json](https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-reuse/schema.yaml)
 
 
 # For developers
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/ogcincubator/bblocks-examples](https://github.com/ogcincubator/bblocks-examples)
+* URL: [https://github.com/rob-metalinkage/bblocks-examples](https://github.com/rob-metalinkage/bblocks-examples)
 * Path: `_sources/transforms/transforms-reuse`
 

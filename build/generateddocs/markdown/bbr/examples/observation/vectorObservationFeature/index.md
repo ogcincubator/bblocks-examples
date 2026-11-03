@@ -63,7 +63,7 @@ View [live example](https://defs-dev.opengis.net/bblocks-pygeoapi/collections/og
     {
       "ex": "https://w3id.org/ogc/demo/observable/"
     },
-    "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld"
+    "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld"
   ],
   "id": "vector-obs-1",
   "type": "Feature",
@@ -193,7 +193,7 @@ Example of Specialised ObservationCollection being a vector, using GeoPose as pa
     {
       "ex": "https://w3id.org/ogc/demo/observable/"
     },
-    "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld"
+    "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld"
   ],
   "id": "c1",
   "type": "FeatureCollection",
@@ -327,7 +327,7 @@ Example of Specialised ObservationCollection being a vector, using GeoPose as pa
     {
       "ex": "https://w3id.org/ogc/demo/observable/"
     },
-    "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld"
+    "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld"
   ],
   "id": "vector-obs-1",
   "type": "Feature",
@@ -409,14 +409,14 @@ $defs:
     - type: object
       properties:
         properties:
-          $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.yaml
+          $ref: https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.yaml
   VectorObservationMember:
     allOf:
     - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observation/schema.yaml#/$defs/member
     - type: object
       properties:
         properties:
-          $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.yaml#/$defs/member
+          $ref: https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.yaml#/$defs/member
   VectorObservationCollection:
     allOf:
     - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observationCollection/schema.yaml
@@ -431,7 +431,7 @@ anyOf:
 - $ref: '#/$defs/VectorObservationCollection'
 x-bblocks-metadata:
   itemIdentifier: ogc.bbr.examples.observation.vectorObservationFeature
-  register: https://ogcincubator.github.io/bblocks-examples/build/register.json
+  register: https://rob-metalinkage.github.io/bblocks-examples/build/register.json
   version: '1.0'
   dateOfLastChange: '2026-11-03'
 
@@ -439,8 +439,8 @@ x-bblocks-metadata:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/schema.json)
-* JSON version: [schema.json](https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/schema.yaml)
+* YAML version: [schema.yaml](https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/schema.json)
+* JSON version: [schema.json](https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/schema.yaml)
 
 
 # JSON-LD Context
@@ -1083,7 +1083,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld)
+[context.jsonld](https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld)
 
 ## Sources
 
@@ -1093,6 +1093,6 @@ You can find the full JSON-LD context here:
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/ogcincubator/bblocks-examples](https://github.com/ogcincubator/bblocks-examples)
+* URL: [https://github.com/rob-metalinkage/bblocks-examples](https://github.com/rob-metalinkage/bblocks-examples)
 * Path: `_sources/observation/vectorObservationFeature`
 

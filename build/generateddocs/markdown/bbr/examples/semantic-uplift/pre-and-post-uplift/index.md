@@ -31,7 +31,7 @@ This building block defines two custom semantic uplift steps:
 #### jsonld
 ```jsonld
 {
-  "@context": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/pre-and-post-uplift/context.jsonld",
+  "@context": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/pre-and-post-uplift/context.jsonld",
   "one": 1,
   "two": 2,
   "string": "value",
@@ -80,7 +80,7 @@ x-jsonld-prefixes:
   ex: http://example.com/
 x-bblocks-metadata:
   itemIdentifier: ogc.bbr.examples.semantic-uplift.pre-and-post-uplift
-  register: https://ogcincubator.github.io/bblocks-examples/build/register.json
+  register: https://rob-metalinkage.github.io/bblocks-examples/build/register.json
   version: '0.1'
   dateOfLastChange: '2026-11-03'
 
@@ -88,8 +88,8 @@ x-bblocks-metadata:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/pre-and-post-uplift/schema.json)
-* JSON version: [schema.json](https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/pre-and-post-uplift/schema.yaml)
+* YAML version: [schema.yaml](https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/pre-and-post-uplift/schema.json)
+* JSON version: [schema.json](https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/pre-and-post-uplift/schema.yaml)
 
 
 # JSON-LD Context
@@ -109,13 +109,13 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/pre-and-post-uplift/context.jsonld)
+[context.jsonld](https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/pre-and-post-uplift/context.jsonld)
 
 
 # For developers
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/ogcincubator/bblocks-examples](https://github.com/ogcincubator/bblocks-examples)
+* URL: [https://github.com/rob-metalinkage/bblocks-examples](https://github.com/rob-metalinkage/bblocks-examples)
 * Path: `_sources/semantic-uplift/pre-and-post-uplift`
 

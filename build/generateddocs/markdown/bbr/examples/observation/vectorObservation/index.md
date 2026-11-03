@@ -37,7 +37,7 @@ This building block defines the *property set* for an example specialisation of 
 #### jsonld
 ```jsonld
 {
-  "@context": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/context.jsonld",
+  "@context": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/context.jsonld",
   "hasFeatureOfInterest": "https://demo.pygeoapi.io/master/collections/utah_city_locations/items/Salem",
   "resultTime": "2023-05-22T16:41:00+02:00",
   "observedProperty": "p1",
@@ -116,7 +116,7 @@ x-jsonld-prefixes:
   resultschema: https://w3id.org/ogc/hosted/examples/resultschema/
 x-bblocks-metadata:
   itemIdentifier: ogc.bbr.examples.observation.vectorObservation
-  register: https://ogcincubator.github.io/bblocks-examples/build/register.json
+  register: https://rob-metalinkage.github.io/bblocks-examples/build/register.json
   version: '1.0'
   dateOfLastChange: '2026-11-03'
 
@@ -124,8 +124,8 @@ x-bblocks-metadata:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.json)
-* JSON version: [schema.json](https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.yaml)
+* YAML version: [schema.yaml](https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.json)
+* JSON version: [schema.json](https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.yaml)
 
 
 # JSON-LD Context
@@ -629,13 +629,13 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/context.jsonld)
+[context.jsonld](https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/context.jsonld)
 
 
 # For developers
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/ogcincubator/bblocks-examples](https://github.com/ogcincubator/bblocks-examples)
+* URL: [https://github.com/rob-metalinkage/bblocks-examples](https://github.com/rob-metalinkage/bblocks-examples)
 * Path: `_sources/observation/vectorObservation`
 

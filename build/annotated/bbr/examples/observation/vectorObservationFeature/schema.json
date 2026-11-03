@@ -11,7 +11,7 @@
           "type": "object",
           "properties": {
             "properties": {
-              "$ref": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.json"
+              "$ref": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.json"
             }
           }
         }
@@ -26,7 +26,7 @@
           "type": "object",
           "properties": {
             "properties": {
-              "$ref": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.json#/$defs/member"
+              "$ref": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.json#/$defs/member"
             }
           }
         }
@@ -61,7 +61,7 @@
   ],
   "x-bblocks-metadata": {
     "itemIdentifier": "ogc.bbr.examples.observation.vectorObservationFeature",
-    "register": "https://ogcincubator.github.io/bblocks-examples/build/register.json",
+    "register": "https://rob-metalinkage.github.io/bblocks-examples/build/register.json",
     "version": "1.0",
     "dateOfLastChange": "2026-11-03"
   }

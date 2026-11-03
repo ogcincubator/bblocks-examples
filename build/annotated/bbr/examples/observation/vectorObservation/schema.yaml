@@ -32,6 +32,6 @@ x-jsonld-prefixes:
   resultschema: https://w3id.org/ogc/hosted/examples/resultschema/
 x-bblocks-metadata:
   itemIdentifier: ogc.bbr.examples.observation.vectorObservation
-  register: https://ogcincubator.github.io/bblocks-examples/build/register.json
+  register: https://rob-metalinkage.github.io/bblocks-examples/build/register.json
   version: '1.0'
   dateOfLastChange: '2026-11-03'

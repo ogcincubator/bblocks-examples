@@ -3,7 +3,7 @@
     {
       "ex": "https://w3id.org/ogc/demo/observable/"
     },
-    "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld"
+    "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld"
   ],
   "id": "c1",
   "type": "FeatureCollection",

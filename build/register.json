@@ -4,7 +4,7 @@
   "abstract": "This register provides a collection of **examples** designed to illustrate capabilities and implementation patterns for [Building Blocks (see more)](https://ogcincubator.github.io/bblocks-docs). \n\n*These buildings blocks may be copied and edited into a new repository based on the [template](https://github.com/opengeospatial/bblock-template) - but should not be referenced and extended for reuse*\n",
   "description": "The aim of the highlighted examples is to illustrate implementation patterns for reusing OGC building blocks. The emphasis is on typical requirements to extend or constrain generic or abstract models such as OGC API Features, Observations etc. \n\nOther examples will illustrate different possible ways to use the Building Block machinery to semantically annotate externally defines schemas, develop and test logical constraints, or simply test examples using a published specification.\n\nMore complex examples will include transformation testing - testing a format can be transformed into a related structure and/or data model.\n\nThe `imports` list also shows both ways to reference another register: a plain `register.json` URL, and the `@org/register` alias form resolved against the [OGC Blocks meta-registry](https://w3id.org/ogc/bblocks/meta-register.json).\n",
   "sparqlEndpoint": "https://defs-dev.opengis.net/fuseki/query",
-  "modified": "2026-11-03T04:28:02.260408",
+  "modified": "2026-11-03T12:03:19.667514",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"862052921203373f8136e6f464e0dfdd693e79f5",
@@ -12,18 +12,20 @@
       "date": "2026-10-26T21:53:11+00:00\""
     }
   },
-  "gitRepository": "https://github.com/ogcincubator/bblocks-examples",
-  "gitHubRepository": "https://github.com/ogcincubator/bblocks-examples/blob/master/",
-  "baseURL": "https://ogcincubator.github.io/bblocks-examples/",
-  "viewerURL": "https://ogcincubator.github.io/bblocks-examples/",
-  "validationReport": "https://ogcincubator.github.io/bblocks-examples/build/tests/report.html",
-  "validationReportJson": "https://ogcincubator.github.io/bblocks-examples/build/tests/report.json",
+  "gitRepository": "https://github.com/rob-metalinkage/bblocks-examples",
+  "gitHubRepository": "https://github.com/rob-metalinkage/bblocks-examples/blob/master/",
+  "baseURL": "https://rob-metalinkage.github.io/bblocks-examples/",
+  "viewerURL": "https://rob-metalinkage.github.io/bblocks-examples/",
+  "validationReport": "https://rob-metalinkage.github.io/bblocks-examples/build/tests/report.html",
+  "validationReportJson": "https://rob-metalinkage.github.io/bblocks-examples/build/tests/report.json",
   "imports": [
     "https://opengeospatial.github.io/bblocks/register.json",
     "https://opengeospatial.github.io/ogcapi-sosa/build/register.json",
     "https://ogcincubator.github.io/bblocks-ogcapi-processes/build/register.json",
     "https://ogcincubator.github.io/topo-feature/build/register.json",
-    "https://opengeospatial.github.io/geopose-bblocks/build/register.json"
+    "https://opengeospatial.github.io/geopose-bblocks/build/register.json",
+    "https://ogcincubator.github.io/geodcat-ogcapi-records/build/register.json",
+    "https://ogcincubator.github.io/cross-domain-model/build/register.json"
   ],
   "bblocks": [
     {
@@ -51,33 +53,33 @@
         "examples"
       ],
       "shaclShapes": {},
-      "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/context.jsonld",
+      "ldContext": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/context.jsonld",
       "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/schema.json"
+        "application/yaml": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/schema.yaml",
+        "application/json": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/schema.json"
       },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/propertySet/schema.yaml",
-      "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/propertySet/context.jsonld",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/propertySet/",
+      "sourceSchema": "https://rob-metalinkage.github.io/bblocks-examples/_sources/feature/propertySet/schema.yaml",
+      "sourceLdContext": "https://rob-metalinkage.github.io/bblocks-examples/_sources/feature/propertySet/context.jsonld",
+      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/resolvedProperties.json",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks-examples/_sources/feature/propertySet/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/propertySet/",
+      "testOutputs": "https://github.com/rob-metalinkage/bblocks-examples/blob/master/build/tests/bbr/examples/feature/propertySet/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/propertySet/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/propertySet/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/propertySet/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/propertySet/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.propertySet"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.propertySet"
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-11-03T04:29:37.258086+00:00",
+        "processedAt": "2026-11-03T12:04:44.561039+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -96,25 +98,25 @@
         "forestry"
       ],
       "shaclShapes": {},
-      "ontology": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/forest-ontology/ontology.ttl",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/linkeddata/forest-ontology/",
+      "ontology": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/forest-ontology/ontology.ttl",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks-examples/_sources/linkeddata/forest-ontology/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/linkeddata/forest-ontology/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/linkeddata/forest-ontology/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/linkeddata/forest-ontology/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/linkeddata/forest-ontology/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.linkeddata.forest-ontology"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/bblock/ogc.bbr.examples.linkeddata.forest-ontology"
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-11-03T04:29:37.258086+00:00",
+        "processedAt": "2026-11-03T12:04:44.561039+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -136,29 +138,29 @@
       ],
       "shaclShapes": {},
       "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputSchema/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputSchema/schema.json"
+        "application/yaml": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputSchema/schema.yaml",
+        "application/json": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputSchema/schema.json"
       },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/ogcapi/processes/schemas/buffer-geometry/outputSchema/schema.yaml",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputSchema/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/ogcapi/processes/schemas/buffer-geometry/outputSchema/",
+      "sourceSchema": "https://rob-metalinkage.github.io/bblocks-examples/_sources/ogcapi/processes/schemas/buffer-geometry/outputSchema/schema.yaml",
+      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputSchema/resolvedProperties.json",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks-examples/_sources/ogcapi/processes/schemas/buffer-geometry/outputSchema/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputSchema/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputSchema/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputSchema/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputSchema/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputSchema"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/bblock/ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputSchema"
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-11-03T04:29:37.258086+00:00",
+        "processedAt": "2026-11-03T12:04:44.561039+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -178,24 +180,24 @@
         "examples"
       ],
       "shaclShapes": {},
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/plugins/tab-plugin-demo/",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks-examples/_sources/plugins/tab-plugin-demo/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/plugins/tab-plugin-demo/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/plugins/tab-plugin-demo/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/plugins/tab-plugin-demo/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/plugins/tab-plugin-demo/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.plugins.tab-plugin-demo"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/bblock/ogc.bbr.examples.plugins.tab-plugin-demo"
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-11-03T04:29:37.258086+00:00",
+        "processedAt": "2026-11-03T12:04:44.561039+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -224,33 +226,33 @@
       ],
       "group": "Semantic & Linked Data",
       "shaclShapes": {},
-      "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/override-binding/base/context.jsonld",
+      "ldContext": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/override-binding/base/context.jsonld",
       "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/override-binding/base/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/override-binding/base/schema.json"
+        "application/yaml": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/override-binding/base/schema.yaml",
+        "application/json": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/override-binding/base/schema.json"
       },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/override-binding/base/schema.yaml",
-      "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/override-binding/base/context.jsonld",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/override-binding/base/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/override-binding/base/",
+      "sourceSchema": "https://rob-metalinkage.github.io/bblocks-examples/_sources/semantic-uplift/override-binding/base/schema.yaml",
+      "sourceLdContext": "https://rob-metalinkage.github.io/bblocks-examples/_sources/semantic-uplift/override-binding/base/context.jsonld",
+      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/override-binding/base/resolvedProperties.json",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks-examples/_sources/semantic-uplift/override-binding/base/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/semantic-uplift/override-binding/base/",
+      "testOutputs": "https://github.com/rob-metalinkage/bblocks-examples/blob/master/build/tests/bbr/examples/semantic-uplift/override-binding/base/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/semantic-uplift/override-binding/base/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/semantic-uplift/override-binding/base/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/semantic-uplift/override-binding/base/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/semantic-uplift/override-binding/base/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.semantic-uplift.override-binding.base"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/bblock/ogc.bbr.examples.semantic-uplift.override-binding.base"
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-11-03T04:29:37.258086+00:00",
+        "processedAt": "2026-11-03T12:04:44.561039+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -265,20 +267,20 @@
       "dateOfLastChange": "2026-11-03",
       "shaclShapes": {
         "ogc.bbr.examples.semantic-uplift.pre-and-post-uplift": [
-          "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/pre-and-post-uplift/rules.shacl"
+          "https://rob-metalinkage.github.io/bblocks-examples/_sources/semantic-uplift/pre-and-post-uplift/rules.shacl"
         ]
       },
-      "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/pre-and-post-uplift/context.jsonld",
+      "ldContext": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/pre-and-post-uplift/context.jsonld",
       "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/pre-and-post-uplift/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/pre-and-post-uplift/schema.json"
+        "application/yaml": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/pre-and-post-uplift/schema.yaml",
+        "application/json": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/pre-and-post-uplift/schema.json"
       },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/pre-and-post-uplift/schema.yaml",
-      "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/pre-and-post-uplift/context.jsonld",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/pre-and-post-uplift/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/pre-and-post-uplift/",
+      "sourceSchema": "https://rob-metalinkage.github.io/bblocks-examples/_sources/semantic-uplift/pre-and-post-uplift/schema.yaml",
+      "sourceLdContext": "https://rob-metalinkage.github.io/bblocks-examples/_sources/semantic-uplift/pre-and-post-uplift/context.jsonld",
+      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/pre-and-post-uplift/resolvedProperties.json",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks-examples/_sources/semantic-uplift/pre-and-post-uplift/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/semantic-uplift/pre-and-post-uplift/",
+      "testOutputs": "https://github.com/rob-metalinkage/bblocks-examples/blob/master/build/tests/bbr/examples/semantic-uplift/pre-and-post-uplift/",
       "semanticUplift": {
         "additionalSteps": [
           {
@@ -297,19 +299,19 @@
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/semantic-uplift/pre-and-post-uplift/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/semantic-uplift/pre-and-post-uplift/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/semantic-uplift/pre-and-post-uplift/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/semantic-uplift/pre-and-post-uplift/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.semantic-uplift.pre-and-post-uplift"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/bblock/ogc.bbr.examples.semantic-uplift.pre-and-post-uplift"
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-11-03T04:29:37.258086+00:00",
+        "processedAt": "2026-11-03T12:04:44.561039+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -325,23 +327,23 @@
       "dateOfLastChange": "2026-11-03",
       "group": "Validation & Transforms",
       "shaclShapes": {},
-      "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/context.jsonld",
+      "ldContext": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/context.jsonld",
       "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/schema.json"
+        "application/yaml": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/schema.yaml",
+        "application/json": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/schema.json"
       },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-example/schema.yaml",
-      "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-example/context.jsonld",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-example/",
+      "sourceSchema": "https://rob-metalinkage.github.io/bblocks-examples/_sources/transforms/transforms-example/schema.yaml",
+      "sourceLdContext": "https://rob-metalinkage.github.io/bblocks-examples/_sources/transforms/transforms-example/context.jsonld",
+      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-example/resolvedProperties.json",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks-examples/_sources/transforms/transforms-example/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/transforms/transforms-example/",
+      "testOutputs": "https://github.com/rob-metalinkage/bblocks-examples/blob/master/build/tests/bbr/examples/transforms/transforms-example/",
       "transforms": [
         {
           "id": "prefix-keys",
           "description": "Adds a \"PREF\" prefix to all object keys.",
           "type": "jq",
-          "ref": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-example/transforms/prefix-keys.jq",
+          "ref": "https://rob-metalinkage.github.io/bblocks-examples/_sources/transforms/transforms-example/transforms/prefix-keys.jq",
           "code": "walk(if type == \"object\" then with_entries( .key |= \"PREF\\(.)\" ) else . end)",
           "inputs": {
             "mediaTypes": [
@@ -374,7 +376,7 @@
           "id": "prefix-predicates",
           "description": "Changes the \"http://example.com/\" prefix of every predicate to a URN",
           "type": "sparql-update",
-          "ref": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-example/transforms/prefix-predicates.sparql",
+          "ref": "https://rob-metalinkage.github.io/bblocks-examples/_sources/transforms/transforms-example/transforms/prefix-predicates.sparql",
           "code": "DELETE {\n  ?s ?p ?o\n}\nINSERT {\n  ?s ?p2 ?o\n}\nWHERE {\n  ?s ?p ?o\n  FILTER(STRSTARTS(STR(?p), \"http://example.com/\"))\n  BIND(URI(REPLACE(STR(?p), \"^http://example.com/\", \"urn:example:ex#\")) as ?p2)\n}",
           "inputs": {
             "mediaTypes": [
@@ -471,7 +473,7 @@
           "id": "sample-xslt",
           "description": "This transform applies some changes to input XML to demonstrate XSLT transforms",
           "type": "xslt",
-          "ref": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-example/transforms/sample.xslt",
+          "ref": "https://rob-metalinkage.github.io/bblocks-examples/_sources/transforms/transforms-example/transforms/sample.xslt",
           "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<xsl:stylesheet xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\" version=\"1.0\">\n    <xsl:output method=\"xml\" indent=\"yes\" encoding=\"UTF-8\"/>\n\n    <!-- Match the root node -->\n    <xsl:template match=\"/\">\n        <xsl:apply-templates select=\"Article\"/>\n    </xsl:template>\n\n    <!-- Transform <Article> -->\n    <xsl:template match=\"Article\">\n        <Document type=\"article\">\n            <xsl:apply-templates select=\"*\"/>\n        </Document>\n    </xsl:template>\n\n    <!-- Transform <Title> to <Heading> -->\n    <xsl:template match=\"Title\">\n        <Heading>\n            <xsl:apply-templates/>\n        </Heading>\n    </xsl:template>\n\n    <!-- Wrap <Authors> content in <Contributors> -->\n    <xsl:template match=\"Authors\">\n        <Contributors>\n            <xsl:apply-templates select=\"Author\"/>\n        </Contributors>\n    </xsl:template>\n\n    <!-- Leave <Author> as is -->\n    <xsl:template match=\"Author\">\n        <xsl:copy>\n            <xsl:apply-templates/>\n        </xsl:copy>\n    </xsl:template>\n\n    <!-- Append \" [Modified]\" to the <Body> -->\n    <xsl:template match=\"Body\">\n        <xsl:copy>\n            <xsl:value-of select=\"concat(., ' [Modified]')\"/>\n        </xsl:copy>\n    </xsl:template>\n\n</xsl:stylesheet>\n",
           "inputs": {
             "mediaTypes": [
@@ -757,26 +759,26 @@
               "bblocks://ogc.sosa.features.observation"
             ]
           },
-          "ref": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-example/transforms/python-geojson.py",
+          "ref": "https://rob-metalinkage.github.io/bblocks-examples/_sources/transforms/transforms-example/transforms/python-geojson.py",
           "code": "import json\nimport random\nimport math\n\ndata = json.loads(input_data)\n\nif 'features' in data or 'geometry' in data:\n    output_data = input_data\nelse:\n    # Iberian Peninsula bounding box (approx): lon -9.5 to 3.3, lat 36.0 to 43.8\n    LON_MIN, LON_MAX = -9.5, 3.3\n    LAT_MIN, LAT_MAX = 36.0, 43.8\n\n    num_points = random.randint(3, 5)\n\n    cx = random.uniform(LON_MIN + 1, LON_MAX - 1)\n    cy = random.uniform(LAT_MIN + 1, LAT_MAX - 1)\n    radius_lon = random.uniform(0.3, 1.0)\n    radius_lat = random.uniform(0.3, 1.0)\n\n    angles = sorted(random.uniform(0, 2 * math.pi) for _ in range(num_points))\n    ring = [\n        [\n            round(cx + radius_lon * math.cos(a), 6),\n            round(cy + radius_lat * math.sin(a), 6),\n        ]\n        for a in angles\n    ]\n    ring.append(ring[0])  # close the ring\n\n    output_data = json.dumps({\n        'type': 'Feature',\n        'geometry': {\n            'type': 'Polygon',\n            'coordinates': [ring],\n        },\n        'properties': data,\n    })\n"
         }
       ],
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/transforms/transforms-example/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/transforms/transforms-example/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/transforms/transforms-example/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/transforms/transforms-example/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.transforms.transforms-example"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/bblock/ogc.bbr.examples.transforms.transforms-example"
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-11-03T04:29:37.258086+00:00",
+        "processedAt": "2026-11-03T12:04:44.561039+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -791,13 +793,13 @@
       "dateOfLastChange": "2026-11-03",
       "shaclShapes": {},
       "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-reuse/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-reuse/schema.json"
+        "application/yaml": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-reuse/schema.yaml",
+        "application/json": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/transforms/transforms-reuse/schema.json"
       },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-reuse/schema.yaml",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/transforms/transforms-reuse/",
+      "sourceSchema": "https://rob-metalinkage.github.io/bblocks-examples/_sources/transforms/transforms-reuse/schema.yaml",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks-examples/_sources/transforms/transforms-reuse/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/transforms/transforms-reuse/",
+      "testOutputs": "https://github.com/rob-metalinkage/bblocks-examples/blob/master/build/tests/bbr/examples/transforms/transforms-reuse/",
       "transforms": [
         {
           "id": "reuse-uppercase-keys",
@@ -971,19 +973,19 @@
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/transforms/transforms-reuse/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/transforms/transforms-reuse/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/transforms/transforms-reuse/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/transforms/transforms-reuse/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.transforms.transforms-reuse"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/bblock/ogc.bbr.examples.transforms.transforms-reuse"
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-11-03T04:29:37.258086+00:00",
+        "processedAt": "2026-11-03T12:04:44.561039+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -1000,32 +1002,32 @@
       "resources": [
         {
           "role": "validation",
-          "ref": "https://ogcincubator.github.io/bblocks-examples/_sources/validators/validator-plugins/assets/schema.xsd",
+          "ref": "https://rob-metalinkage.github.io/bblocks-examples/_sources/validators/validator-plugins/assets/schema.xsd",
           "format": "application/xml",
           "conformsTo": "https://www.w3.org/2001/XMLSchema"
         }
       ],
       "group": "Validation & Transforms",
       "shaclShapes": {},
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/validators/validator-plugins/",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks-examples/_sources/validators/validator-plugins/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/validators/validator-plugins/",
+      "testOutputs": "https://github.com/rob-metalinkage/bblocks-examples/blob/master/build/tests/bbr/examples/validators/validator-plugins/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/validators/validator-plugins/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/validators/validator-plugins/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/validators/validator-plugins/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/validators/validator-plugins/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.validators.validator-plugins"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/bblock/ogc.bbr.examples.validators.validator-plugins"
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-11-03T04:29:37.258086+00:00",
+        "processedAt": "2026-11-03T12:04:44.561039+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -1051,30 +1053,112 @@
         "bblocks://ogc.ogc-utils.iri-or-curie"
       ],
       "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputSchema/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputSchema/schema.json"
+        "application/yaml": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputSchema/schema.yaml",
+        "application/json": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputSchema/schema.json"
       },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/ogcapi/processes/schemas/buffer-geometry/inputSchema/schema.yaml",
-      "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputSchema/context.jsonld",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputSchema/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/ogcapi/processes/schemas/buffer-geometry/inputSchema/",
+      "sourceSchema": "https://rob-metalinkage.github.io/bblocks-examples/_sources/ogcapi/processes/schemas/buffer-geometry/inputSchema/schema.yaml",
+      "ldContext": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputSchema/context.jsonld",
+      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputSchema/resolvedProperties.json",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks-examples/_sources/ogcapi/processes/schemas/buffer-geometry/inputSchema/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputSchema/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputSchema/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputSchema/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputSchema/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputSchema"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/bblock/ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputSchema"
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-11-03T04:29:37.258086+00:00",
+        "processedAt": "2026-11-03T12:04:44.561039+00:00",
+        "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.examples.linkeddata.marine-protection-ontology",
+      "name": "Marine Protections Ontology",
+      "abstract": "Example ontology for the regulation of marine managed areas, minting only the terms that have no exact equivalent in the ontologies of the OGC Cross Domain Model. Definitions are taken from the ProtectedSeas Navigator data dictionary.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-11-03T00:00:00Z",
+      "register": "ogc-building-block-examples",
+      "version": "0.1",
+      "dateOfLastChange": "2026-11-03",
+      "itemClass": "model",
+      "shaclShapes": {
+        "ogc.bbr.examples.linkeddata.marine-protection-ontology": [
+          "https://rob-metalinkage.github.io/bblocks-examples/_sources/linkeddata/marine-protection-ontology/shapes.shacl"
+        ]
+      },
+      "dependsOn": [
+        "bblocks://ogc.model.cross-domain.dcterms",
+        "bblocks://ogc.model.cross-domain.geosparql",
+        "bblocks://ogc.model.cross-domain.pav",
+        "bblocks://ogc.model.cross-domain.schema-org"
+      ],
+      "sources": [
+        {
+          "title": "ProtectedSeas Navigator Data Dictionary",
+          "link": "https://navigatormap.org/data-dictionary/"
+        },
+        {
+          "title": "ProtectedSeas Navigator Methodology",
+          "link": "https://navigatormap.org/methodology/"
+        },
+        {
+          "title": "ProtectedSeas Navigator: What Areas do we Include?",
+          "link": "https://navigatormap.org/what-do-we-include/"
+        },
+        {
+          "title": "DCMI Metadata Terms",
+          "link": "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl"
+        },
+        {
+          "title": "Schema.org vocabulary",
+          "link": "https://schema.org/version/latest/schemaorg-current-https.ttl"
+        },
+        {
+          "title": "Provenance, Authoring and Versioning (PAV) ontology",
+          "link": "https://pav-ontology.github.io/pav/pav.rdf"
+        },
+        {
+          "title": "OGC Cross Domain Model",
+          "link": "https://github.com/ogcincubator/cross-domain-model"
+        }
+      ],
+      "maturity": "development",
+      "scope": "unstable",
+      "tags": [
+        "ontology",
+        "marine",
+        "marine-protected-areas"
+      ],
+      "group": "Semantic & Linked Data",
+      "ontology": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/marine-protection-ontology/ontology.ttl",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks-examples/_sources/linkeddata/marine-protection-ontology/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/rob-metalinkage/bblocks-examples/blob/master/build/tests/bbr/examples/linkeddata/marine-protection-ontology/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/linkeddata/marine-protection-ontology/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/linkeddata/marine-protection-ontology/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/bblock/ogc.bbr.examples.linkeddata.marine-protection-ontology"
+        }
+      },
+      "x-sampleBuildPlugin": {
+        "processedAt": "2026-11-03T12:04:44.561039+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -1106,33 +1190,33 @@
         "schema"
       ],
       "shaclShapes": {},
-      "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/forestStandProperties/context.jsonld",
+      "ldContext": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/forestStandProperties/context.jsonld",
       "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/forestStandProperties/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/forestStandProperties/schema.json"
+        "application/yaml": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/forestStandProperties/schema.yaml",
+        "application/json": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/forestStandProperties/schema.json"
       },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/linkeddata/forestStandProperties/schema.yaml",
-      "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/linkeddata/forestStandProperties/context.jsonld",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/forestStandProperties/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/linkeddata/forestStandProperties/",
+      "sourceSchema": "https://rob-metalinkage.github.io/bblocks-examples/_sources/linkeddata/forestStandProperties/schema.yaml",
+      "sourceLdContext": "https://rob-metalinkage.github.io/bblocks-examples/_sources/linkeddata/forestStandProperties/context.jsonld",
+      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/forestStandProperties/resolvedProperties.json",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks-examples/_sources/linkeddata/forestStandProperties/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/linkeddata/forestStandProperties/",
+      "testOutputs": "https://github.com/rob-metalinkage/bblocks-examples/blob/master/build/tests/bbr/examples/linkeddata/forestStandProperties/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/linkeddata/forestStandProperties/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/linkeddata/forestStandProperties/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/linkeddata/forestStandProperties/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/linkeddata/forestStandProperties/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.linkeddata.forestStandProperties"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/bblock/ogc.bbr.examples.linkeddata.forestStandProperties"
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-11-03T04:29:37.258086+00:00",
+        "processedAt": "2026-11-03T12:04:44.561039+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -1172,33 +1256,33 @@
       "dependsOn": [
         "bblocks://ogc.bbr.examples.semantic-uplift.override-binding.base"
       ],
-      "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/override-binding/child/context.jsonld",
+      "ldContext": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/override-binding/child/context.jsonld",
       "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/override-binding/child/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/override-binding/child/schema.json"
+        "application/yaml": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/override-binding/child/schema.yaml",
+        "application/json": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/override-binding/child/schema.json"
       },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/override-binding/child/schema.yaml",
-      "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/override-binding/child/context.jsonld",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/override-binding/child/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/semantic-uplift/override-binding/child/",
+      "sourceSchema": "https://rob-metalinkage.github.io/bblocks-examples/_sources/semantic-uplift/override-binding/child/schema.yaml",
+      "sourceLdContext": "https://rob-metalinkage.github.io/bblocks-examples/_sources/semantic-uplift/override-binding/child/context.jsonld",
+      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/override-binding/child/resolvedProperties.json",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks-examples/_sources/semantic-uplift/override-binding/child/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/semantic-uplift/override-binding/child/",
+      "testOutputs": "https://github.com/rob-metalinkage/bblocks-examples/blob/master/build/tests/bbr/examples/semantic-uplift/override-binding/child/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/semantic-uplift/override-binding/child/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/semantic-uplift/override-binding/child/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/semantic-uplift/override-binding/child/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/semantic-uplift/override-binding/child/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.semantic-uplift.override-binding.child"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/bblock/ogc.bbr.examples.semantic-uplift.override-binding.child"
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-11-03T04:29:37.258086+00:00",
+        "processedAt": "2026-11-03T12:04:44.561039+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -1229,7 +1313,7 @@
       ],
       "maturity": "development",
       "scope": "unstable",
-      "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/context.jsonld",
+      "ldContext": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/context.jsonld",
       "dependsOn": [
         "bblocks://ogc.geo.features.feature"
       ],
@@ -1244,31 +1328,31 @@
         ]
       },
       "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema.json"
+        "application/yaml": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema.yaml",
+        "application/json": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema.json"
       },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/externalSchema/schema.yaml",
+      "sourceSchema": "https://rob-metalinkage.github.io/bblocks-examples/_sources/feature/externalSchema/schema.yaml",
       "sourceLdContext": "https://raw.githubusercontent.com/smart-data-models/dataModel.ACRIS/master/context.jsonld",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/externalSchema/",
+      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/resolvedProperties.json",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks-examples/_sources/feature/externalSchema/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/externalSchema/",
+      "testOutputs": "https://github.com/rob-metalinkage/bblocks-examples/blob/master/build/tests/bbr/examples/feature/externalSchema/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/externalSchema/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/externalSchema/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/externalSchema/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/externalSchema/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.externalSchema"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.externalSchema"
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-11-03T04:29:37.258086+00:00",
+        "processedAt": "2026-11-03T12:04:44.561039+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -1306,31 +1390,31 @@
         ]
       },
       "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/schema.json"
+        "application/yaml": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/schema.yaml",
+        "application/json": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/schema.json"
       },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geojsonFeature/schema.yaml",
-      "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/context.jsonld",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geojsonFeature/",
+      "sourceSchema": "https://rob-metalinkage.github.io/bblocks-examples/_sources/feature/geojsonFeature/schema.yaml",
+      "ldContext": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/context.jsonld",
+      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeature/resolvedProperties.json",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks-examples/_sources/feature/geojsonFeature/",
       "validationPassed": false,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/geojsonFeature/",
+      "testOutputs": "https://github.com/rob-metalinkage/bblocks-examples/blob/master/build/tests/bbr/examples/feature/geojsonFeature/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/geojsonFeature/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/geojsonFeature/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/geojsonFeature/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/geojsonFeature/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.geojsonFeature"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.geojsonFeature"
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-11-03T04:29:37.258086+00:00",
+        "processedAt": "2026-11-03T12:04:44.561039+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -1361,17 +1445,17 @@
         "bblocks://ogc.bbr.examples.feature.propertySet",
         "bblocks://ogc.geo.features.feature"
       ],
-      "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/context.jsonld",
+      "ldContext": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/context.jsonld",
       "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/schema.json"
+        "application/yaml": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/schema.yaml",
+        "application/json": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/schema.json"
       },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geosparqlFeature/schema.yaml",
-      "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geosparqlFeature/context.jsonld",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geosparqlFeature/",
+      "sourceSchema": "https://rob-metalinkage.github.io/bblocks-examples/_sources/feature/geosparqlFeature/schema.yaml",
+      "sourceLdContext": "https://rob-metalinkage.github.io/bblocks-examples/_sources/feature/geosparqlFeature/context.jsonld",
+      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geosparqlFeature/resolvedProperties.json",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks-examples/_sources/feature/geosparqlFeature/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/geosparqlFeature/",
+      "testOutputs": "https://github.com/rob-metalinkage/bblocks-examples/blob/master/build/tests/bbr/examples/feature/geosparqlFeature/",
       "semanticUplift": {
         "additionalSteps": [
           {
@@ -1385,19 +1469,85 @@
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/geosparqlFeature/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/geosparqlFeature/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/geosparqlFeature/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/geosparqlFeature/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.geosparqlFeature"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.geosparqlFeature"
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-11-03T04:29:37.258086+00:00",
+        "processedAt": "2026-11-03T12:04:44.561039+00:00",
+        "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.examples.linkeddata.marineProtectionProperties",
+      "name": "Marine Protection Properties",
+      "abstract": "Attributes of a marine managed area in the ProtectedSeas Navigator dataset, including its designation, regulations, fishing protection level and the regulation status of fishing gears and marine activities, bound to the Marine Protections Ontology and the OGC Cross Domain Model.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-11-03T00:00:00Z",
+      "register": "ogc-building-block-examples",
+      "version": "0.1",
+      "dateOfLastChange": "2026-11-03",
+      "itemClass": "schema",
+      "sources": [
+        {
+          "title": "ProtectedSeas Navigator Data Dictionary",
+          "link": "https://navigatormap.org/data-dictionary/"
+        },
+        {
+          "title": "Sample items from the Ocean Data Platform features API",
+          "link": "https://api.hubocean.earth/api/features/collections/a608f54b-75c7-4df9-a3a8-cedbfa391873/items?limit=1"
+        }
+      ],
+      "dependsOn": [
+        "bblocks://ogc.bbr.examples.linkeddata.marine-protection-ontology"
+      ],
+      "maturity": "development",
+      "scope": "unstable",
+      "tags": [
+        "marine",
+        "marine-protected-areas",
+        "schema"
+      ],
+      "group": "Semantic & Linked Data",
+      "shaclShapes": {
+        "ogc.bbr.examples.linkeddata.marine-protection-ontology": [
+          "https://rob-metalinkage.github.io/bblocks-examples/_sources/linkeddata/marine-protection-ontology/shapes.shacl"
+        ]
+      },
+      "ldContext": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/marineProtectionProperties/context.jsonld",
+      "schema": {
+        "application/yaml": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/marineProtectionProperties/schema.yaml",
+        "application/json": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/marineProtectionProperties/schema.json"
+      },
+      "sourceSchema": "https://rob-metalinkage.github.io/bblocks-examples/_sources/linkeddata/marineProtectionProperties/schema.yaml",
+      "sourceLdContext": "https://rob-metalinkage.github.io/bblocks-examples/_sources/linkeddata/marineProtectionProperties/context.jsonld",
+      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/marineProtectionProperties/resolvedProperties.json",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks-examples/_sources/linkeddata/marineProtectionProperties/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/rob-metalinkage/bblocks-examples/blob/master/build/tests/bbr/examples/linkeddata/marineProtectionProperties/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/linkeddata/marineProtectionProperties/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/linkeddata/marineProtectionProperties/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/bblock/ogc.bbr.examples.linkeddata.marineProtectionProperties"
+        }
+      },
+      "x-sampleBuildPlugin": {
+        "processedAt": "2026-11-03T12:04:44.561039+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -1432,38 +1582,38 @@
       "highlighted": true,
       "shaclShapes": {
         "ogc.bbr.examples.linkeddata.forestStandFeature": [
-          "https://ogcincubator.github.io/bblocks-examples/_sources/linkeddata/forestStandFeature/shapes.shacl"
+          "https://rob-metalinkage.github.io/bblocks-examples/_sources/linkeddata/forestStandFeature/shapes.shacl"
         ],
         "ogc.geo.features.feature": [
           "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
         ]
       },
       "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/forestStandFeature/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/forestStandFeature/schema.json"
+        "application/yaml": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/forestStandFeature/schema.yaml",
+        "application/json": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/forestStandFeature/schema.json"
       },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/linkeddata/forestStandFeature/schema.yaml",
-      "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/forestStandFeature/context.jsonld",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/forestStandFeature/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/linkeddata/forestStandFeature/",
+      "sourceSchema": "https://rob-metalinkage.github.io/bblocks-examples/_sources/linkeddata/forestStandFeature/schema.yaml",
+      "ldContext": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/forestStandFeature/context.jsonld",
+      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/forestStandFeature/resolvedProperties.json",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks-examples/_sources/linkeddata/forestStandFeature/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/linkeddata/forestStandFeature/",
+      "testOutputs": "https://github.com/rob-metalinkage/bblocks-examples/blob/master/build/tests/bbr/examples/linkeddata/forestStandFeature/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/linkeddata/forestStandFeature/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/linkeddata/forestStandFeature/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/linkeddata/forestStandFeature/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/linkeddata/forestStandFeature/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.linkeddata.forestStandFeature"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/bblock/ogc.bbr.examples.linkeddata.forestStandFeature"
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-11-03T04:29:37.258086+00:00",
+        "processedAt": "2026-11-03T12:04:44.561039+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -1493,31 +1643,31 @@
         "bblocks://ogc.geo.json-fg.feature-lenient"
       ],
       "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/schema.json"
+        "application/yaml": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/schema.yaml",
+        "application/json": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/schema.json"
       },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geojsonFeatureFGLenient/schema.yaml",
-      "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/context.jsonld",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/geojsonFeatureFGLenient/",
+      "sourceSchema": "https://rob-metalinkage.github.io/bblocks-examples/_sources/feature/geojsonFeatureFGLenient/schema.yaml",
+      "ldContext": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/context.jsonld",
+      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/feature/geojsonFeatureFGLenient/resolvedProperties.json",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks-examples/_sources/feature/geojsonFeatureFGLenient/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/geojsonFeatureFGLenient/",
+      "testOutputs": "https://github.com/rob-metalinkage/bblocks-examples/blob/master/build/tests/bbr/examples/feature/geojsonFeatureFGLenient/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/geojsonFeatureFGLenient/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/geojsonFeatureFGLenient/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/geojsonFeatureFGLenient/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/geojsonFeatureFGLenient/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.geojsonFeatureFGLenient"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.geojsonFeatureFGLenient"
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-11-03T04:29:37.258086+00:00",
+        "processedAt": "2026-11-03T12:04:44.561039+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -1561,33 +1711,33 @@
           "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
         ]
       },
-      "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/overrideContext/context.jsonld",
+      "ldContext": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/feature/overrideContext/context.jsonld",
       "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/overrideContext/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/overrideContext/schema.json"
+        "application/yaml": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/feature/overrideContext/schema.yaml",
+        "application/json": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/feature/overrideContext/schema.json"
       },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/overrideContext/schema.yaml",
-      "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/overrideContext/context.jsonld",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/overrideContext/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/feature/overrideContext/",
+      "sourceSchema": "https://rob-metalinkage.github.io/bblocks-examples/_sources/feature/overrideContext/schema.yaml",
+      "sourceLdContext": "https://rob-metalinkage.github.io/bblocks-examples/_sources/feature/overrideContext/context.jsonld",
+      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/feature/overrideContext/resolvedProperties.json",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks-examples/_sources/feature/overrideContext/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/feature/overrideContext/",
+      "testOutputs": "https://github.com/rob-metalinkage/bblocks-examples/blob/master/build/tests/bbr/examples/feature/overrideContext/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/overrideContext/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/feature/overrideContext/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/overrideContext/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/feature/overrideContext/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.overrideContext"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/bblock/ogc.bbr.examples.feature.overrideContext"
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-11-03T04:29:37.258086+00:00",
+        "processedAt": "2026-11-03T12:04:44.561039+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -1626,34 +1776,34 @@
           "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/execution/shapes.shacl"
         ]
       },
-      "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/context.jsonld",
-      "ontology": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/ontology.ttl",
+      "ldContext": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/context.jsonld",
+      "ontology": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/ontology.ttl",
       "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.json"
+        "application/yaml": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.yaml",
+        "application/json": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.json"
       },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservation/schema.yaml",
-      "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservation/context.jsonld",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservation/",
+      "sourceSchema": "https://rob-metalinkage.github.io/bblocks-examples/_sources/observation/vectorObservation/schema.yaml",
+      "sourceLdContext": "https://rob-metalinkage.github.io/bblocks-examples/_sources/observation/vectorObservation/context.jsonld",
+      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/resolvedProperties.json",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks-examples/_sources/observation/vectorObservation/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/observation/vectorObservation/",
+      "testOutputs": "https://github.com/rob-metalinkage/bblocks-examples/blob/master/build/tests/bbr/examples/observation/vectorObservation/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/observation/vectorObservation/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/observation/vectorObservation/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/observation/vectorObservation/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/observation/vectorObservation/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.observation.vectorObservation"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/bblock/ogc.bbr.examples.observation.vectorObservation"
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-11-03T04:29:37.258086+00:00",
+        "processedAt": "2026-11-03T12:04:44.561039+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -1679,30 +1829,30 @@
         "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputSchema"
       ],
       "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputDescription/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputDescription/schema.json"
+        "application/yaml": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputDescription/schema.yaml",
+        "application/json": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputDescription/schema.json"
       },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/ogcapi/processes/schemas/buffer-geometry/inputDescription/schema.yaml",
-      "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputDescription/context.jsonld",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputDescription/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/ogcapi/processes/schemas/buffer-geometry/inputDescription/",
+      "sourceSchema": "https://rob-metalinkage.github.io/bblocks-examples/_sources/ogcapi/processes/schemas/buffer-geometry/inputDescription/schema.yaml",
+      "ldContext": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputDescription/context.jsonld",
+      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputDescription/resolvedProperties.json",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks-examples/_sources/ogcapi/processes/schemas/buffer-geometry/inputDescription/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputDescription/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputDescription/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputDescription/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputDescription/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputDescription"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/bblock/ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputDescription"
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-11-03T04:29:37.258086+00:00",
+        "processedAt": "2026-11-03T12:04:44.561039+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -1728,30 +1878,117 @@
         "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputSchema"
       ],
       "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputDescription/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputDescription/schema.json"
+        "application/yaml": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputDescription/schema.yaml",
+        "application/json": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputDescription/schema.json"
       },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/ogcapi/processes/schemas/buffer-geometry/outputDescription/schema.yaml",
-      "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputDescription/context.jsonld",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputDescription/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/ogcapi/processes/schemas/buffer-geometry/outputDescription/",
+      "sourceSchema": "https://rob-metalinkage.github.io/bblocks-examples/_sources/ogcapi/processes/schemas/buffer-geometry/outputDescription/schema.yaml",
+      "ldContext": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputDescription/context.jsonld",
+      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputDescription/resolvedProperties.json",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks-examples/_sources/ogcapi/processes/schemas/buffer-geometry/outputDescription/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputDescription/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputDescription/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputDescription/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/ogcapi/processes/schemas/buffer-geometry/outputDescription/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputDescription"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/bblock/ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputDescription"
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-11-03T04:29:37.258086+00:00",
+        "processedAt": "2026-11-03T12:04:44.561039+00:00",
+        "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.examples.linkeddata.marineProtectionFeature",
+      "name": "Marine Protection Feature",
+      "abstract": "GeoJSON Feature type for a marine managed area in the ProtectedSeas Navigator dataset, as served by the Ocean Data Platform features API, semantically described using the Marine Protections Ontology and the OGC Cross Domain Model.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-11-03T00:00:00Z",
+      "register": "ogc-building-block-examples",
+      "version": "0.1",
+      "dateOfLastChange": "2026-11-03",
+      "itemClass": "schema",
+      "shaclShapes": {
+        "ogc.bbr.examples.linkeddata.marineProtectionFeature": [
+          "https://rob-metalinkage.github.io/bblocks-examples/_sources/linkeddata/marine-protection-ontology/shapes.shacl"
+        ],
+        "ogc.bbr.examples.linkeddata.marine-protection-ontology": [
+          "https://rob-metalinkage.github.io/bblocks-examples/_sources/linkeddata/marine-protection-ontology/shapes.shacl"
+        ],
+        "ogc.geo.features.feature": [
+          "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
+        ]
+      },
+      "sources": [
+        {
+          "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
+          "link": "https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7"
+        },
+        {
+          "title": "Sample items from the Ocean Data Platform features API",
+          "link": "https://api.hubocean.earth/api/features/collections/a608f54b-75c7-4df9-a3a8-cedbfa391873/items?limit=1"
+        }
+      ],
+      "maturity": "development",
+      "scope": "unstable",
+      "dependsOn": [
+        "bblocks://ogc.bbr.examples.linkeddata.marineProtectionProperties",
+        "bblocks://ogc.geo.features.feature"
+      ],
+      "tags": [
+        "marine",
+        "marine-protected-areas",
+        "feature"
+      ],
+      "group": "Semantic & Linked Data",
+      "schema": {
+        "application/yaml": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/marineProtectionFeature/schema.yaml",
+        "application/json": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/marineProtectionFeature/schema.json"
+      },
+      "sourceSchema": "https://rob-metalinkage.github.io/bblocks-examples/_sources/linkeddata/marineProtectionFeature/schema.yaml",
+      "ldContext": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/marineProtectionFeature/context.jsonld",
+      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/marineProtectionFeature/resolvedProperties.json",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks-examples/_sources/linkeddata/marineProtectionFeature/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/rob-metalinkage/bblocks-examples/blob/master/build/tests/bbr/examples/linkeddata/marineProtectionFeature/",
+      "semanticUplift": {
+        "additionalSteps": [
+          {
+            "type": "jq",
+            "code": ".id = .properties.site_id | .properties |= with_entries(select(.value != \"\" and .value != \"null\"))",
+            "stage": "pre"
+          },
+          {
+            "type": "sparql-update",
+            "ref": "uplift/add-type.sparql",
+            "stage": "post",
+            "code": "PREFIX dct: <http://purl.org/dc/terms/>\nPREFIX geojson: <https://purl.org/geojson/vocab#>\nPREFIX mpr: <https://w3id.org/ogc/demo/marine-protections/>\n\nINSERT { ?feature a mpr:MarineManagedArea }\nWHERE { ?feature a geojson:Feature ; dct:identifier ?id }\n"
+          }
+        ]
+      },
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/linkeddata/marineProtectionFeature/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/linkeddata/marineProtectionFeature/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/bblock/ogc.bbr.examples.linkeddata.marineProtectionFeature"
+        }
+      },
+      "x-sampleBuildPlugin": {
+        "processedAt": "2026-11-03T12:04:44.561039+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -1787,7 +2024,7 @@
       "highlighted": true,
       "shaclShapes": {
         "ogc.bbr.examples.linkeddata.forestStandFeature": [
-          "https://ogcincubator.github.io/bblocks-examples/_sources/linkeddata/forestStandFeature/shapes.shacl"
+          "https://rob-metalinkage.github.io/bblocks-examples/_sources/linkeddata/forestStandFeature/shapes.shacl"
         ],
         "ogc.geo.features.feature": [
           "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
@@ -1797,15 +2034,15 @@
         ]
       },
       "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/forestStandCollection/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/forestStandCollection/schema.json"
+        "application/yaml": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/forestStandCollection/schema.yaml",
+        "application/json": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/forestStandCollection/schema.json"
       },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/linkeddata/forestStandCollection/schema.yaml",
-      "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/forestStandCollection/context.jsonld",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/forestStandCollection/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/linkeddata/forestStandCollection/",
+      "sourceSchema": "https://rob-metalinkage.github.io/bblocks-examples/_sources/linkeddata/forestStandCollection/schema.yaml",
+      "ldContext": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/forestStandCollection/context.jsonld",
+      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/forestStandCollection/resolvedProperties.json",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks-examples/_sources/linkeddata/forestStandCollection/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/linkeddata/forestStandCollection/",
+      "testOutputs": "https://github.com/rob-metalinkage/bblocks-examples/blob/master/build/tests/bbr/examples/linkeddata/forestStandCollection/",
       "transforms": [
         {
           "id": "to-crs5555-geopandas",
@@ -1837,7 +2074,7 @@
               "mynamespace": "http://example.com/mythings/"
             }
           },
-          "ref": "https://ogcincubator.github.io/bblocks-examples/_sources/linkeddata/forestStandCollection/transforms/to-crs-5555-geopandas.py",
+          "ref": "https://rob-metalinkage.github.io/bblocks-examples/_sources/linkeddata/forestStandCollection/transforms/to-crs-5555-geopandas.py",
           "code": "import json, geopandas as gpd\n\ndata = json.loads(input_data)\n\n# Normalize: wrap a single Feature into a FeatureCollection\nis_feature = data.get(\"type\") == \"Feature\"\nif is_feature:\n    data = {\"type\": \"FeatureCollection\", \"features\": [data], \"crs\": data.get(\"crs\")}\n\n# Extract CRS\ncrs_name = data.get(\"crs\", {}).get(\"properties\", {}).get(\"name\")\nepsg_code = crs_name.split(\":\")[-1] if crs_name else None\n\n# Create GeoDataFrame from GeoJSON-like dict\ngdf = gpd.GeoDataFrame.from_features(data[\"features\"])\n\n# Set CRS dynamically\nif epsg_code:\n    gdf.set_crs(epsg=int(epsg_code), inplace=True)\n\n# Print current CRS\nprint(\"Transform from CRS\" + str(gdf.crs))\n\n# Transform to another CRS (example: ETRS89)\ngdf = gdf.to_crs(epsg=5555)\n\n# Print current CRS\nprint(\"            to CRS\" + str(gdf.crs))\n\n# Convert back to GeoJSON \u2014 unwrap back to a single Feature if input was one\nresult = json.loads(gdf.to_json())\nif is_feature == 1:\n    output_data = json.dumps(result[\"features\"][0], indent=2)\nelse:\n    output_data = gdf.to_json(indent=2)\n"
         },
         {
@@ -1870,26 +2107,26 @@
               "mynamespace": "http://example.com/mythings/"
             }
           },
-          "ref": "https://ogcincubator.github.io/bblocks-examples/_sources/linkeddata/forestStandCollection/transforms/to-crs-5555-math.py",
+          "ref": "https://rob-metalinkage.github.io/bblocks-examples/_sources/linkeddata/forestStandCollection/transforms/to-crs-5555-math.py",
           "code": "\n\"\"\"\nPure-Python GeoJSON transformer: EPSG:5514 \u2192 EPSG:5555\nStdlib only: json + math\n\nPipeline for each coordinate pair [E, N]:\n  1. Inverse Krovak       EPSG:5514 (E, N m)     \u2192 S-JTSK / Bessel geographic (\u00b0)\n  2. Helmert datum shift  Bessel / S-JTSK         \u2192 GRS80 / ETRS89 (7-parameter)\n  3. UTM-32N forward      ETRS89 geographic (\u00b0)   \u2192 EPSG:5555 (E, N m)\n\"\"\"\n\nimport json\nimport math\n\n# \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n# Ellipsoid parameters\n# \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n\n# Bessel 1841 (S-JTSK datum)\n_a_B  = 6_377_397.155\n_f_B  = 1.0 / 299.1528128\n_e2_B = 2 * _f_B - _f_B ** 2\n_e_B  = math.sqrt(_e2_B)\n\n# GRS80 (ETRS89 / EPSG:5555)\n_a_G  = 6_378_137.0\n_f_G  = 1.0 / 298.257_222_101\n_e2_G = 2 * _f_G - _f_G ** 2\n\n# \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n# Krovak projection constants  (EPSG method 9819 / S-JTSK)\n# \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n\n_PHI_C = math.radians(49 + 30 / 60.0)                       # 49\u00b030' N  \u2013 projection centre\n_LAM_0 = math.radians(24 + 50 / 60.0)                       # 24\u00b050' E  \u2013 longitude of origin\n_ALPHA = math.radians(30 + 17 / 60.0 + 17.30311 / 3600.0)  # 30\u00b017'17.30311\" \u2013 azimuth\n_PHI_P = math.radians(78 + 30 / 60.0)                       # 78\u00b030'    \u2013 pseudo-std parallel\n_K_P   = 0.9999                                              # scale factor\n\n# Derived Krovak constants (computed once at import time)\n_BK   = math.sqrt(1 + _e2_B * math.cos(_PHI_C) ** 4 / (1 - _e2_B))\n_AK   = _a_B * math.sqrt(1 - _e2_B) / (1 - _e2_B * math.sin(_PHI_C) ** 2)\n_GAM0 = math.asin(math.sin(_PHI_C) / _BK)                  # \u03b3\u2080\n\n_t_phC = (math.tan(math.pi / 4 + _PHI_C / 2) *\n           ((1 - _e_B * math.sin(_PHI_C)) / (1 + _e_B * math.sin(_PHI_C))) ** (_e_B / 2))\n_T0   = math.tan(math.pi / 4 + _GAM0 / 2) / _t_phC ** _BK  # mapping constant T\u2080\n\n_NK   = math.sin(_PHI_P)                                     # cone constant  n = sin(\u03c6_P)\n_RF   = _K_P * _AK * math.cos(_PHI_P) / _NK                 # \u03c1 scale factor (constant part)\n_TP   = math.tan(math.pi / 4 + _PHI_P / 2)                  # tan(\u03c0/4 + \u03c6_P / 2)\n\n# \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n# 7-parameter Helmert: S-JTSK / Bessel \u2192 GRS80 / WGS84\n# Source: PROJ towgs84 for EPSG:4156  \u2014 Coordinate Frame rotation convention\n#         tx=570.8  ty=85.7  tz=462.8  rx=4.998  ry=1.587  rz=5.261  ds=3.56\n# \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n\n_HLM = (570.8, 85.7, 462.8, 4.998, 1.587, 5.261, 3.56)\n\n\ndef _geo2ecef(lat_d, lon_d, a, e2, h=0.0):\n    \"\"\"Geographic (\u00b0) \u2192 ECEF (X, Y, Z) metres.\"\"\"\n    \u03c6, \u03bb = math.radians(lat_d), math.radians(lon_d)\n    N = a / math.sqrt(1 - e2 * math.sin(\u03c6) ** 2)\n    return ((N + h) * math.cos(\u03c6) * math.cos(\u03bb),\n            (N + h) * math.cos(\u03c6) * math.sin(\u03bb),\n            (N * (1 - e2) + h) * math.sin(\u03c6))\n\n\ndef _ecef2geo(X, Y, Z, a, e2):\n    \"\"\"ECEF (X, Y, Z) \u2192 geographic (lat\u00b0, lon\u00b0, h m) \u2014 Bowring iteration.\"\"\"\n    \u03bb = math.atan2(Y, X)\n    p = math.hypot(X, Y)\n    \u03c6 = math.atan2(Z, p * (1 - e2))          # initial estimate\n    for _ in range(15):\n        N   = a / math.sqrt(1 - e2 * math.sin(\u03c6) ** 2)\n        \u03c6_n = math.atan2(Z + e2 * N * math.sin(\u03c6), p)\n        if abs(\u03c6_n - \u03c6) < 1e-12:\n            \u03c6 = \u03c6_n\n            break\n        \u03c6 = \u03c6_n\n    N = a / math.sqrt(1 - e2 * math.sin(\u03c6) ** 2)\n    h = (p / math.cos(\u03c6) - N) if abs(math.cos(\u03c6)) > 1e-10 else abs(Z) / math.sin(\u03c6) - N * (1 - e2)\n    return math.degrees(\u03c6), math.degrees(\u03bb), h\n\n\ndef _helmert(X, Y, Z, tx, ty, tz, rx, ry, rz, ds):\n    \"\"\"Coordinate Frame rotation (Bursa-Wolf) Helmert.\n    rx / ry / rz in arc-seconds; ds in ppm.\"\"\"\n    s  = ds * 1e-6\n    rx = math.radians(rx / 3600)\n    ry = math.radians(ry / 3600)\n    rz = math.radians(rz / 3600)\n    return (tx + (1 + s) * ( X + rz * Y - ry * Z),\n            ty + (1 + s) * (-rz * X + Y  + rx * Z),\n            tz + (1 + s) * ( ry * X - rx * Y + Z ))\n\n\ndef _bessel_to_etrs89(lat_d, lon_d):\n    \"\"\"S-JTSK / Bessel geographic (\u00b0) \u2192 ETRS89 / GRS80 geographic (\u00b0).\"\"\"\n    X, Y, Z = _geo2ecef(lat_d, lon_d, _a_B, _e2_B)\n    X, Y, Z = _helmert(X, Y, Z, *_HLM)\n    \u03c6, \u03bb, _ = _ecef2geo(X, Y, Z, _a_G, _e2_G)\n    return \u03c6, \u03bb\n\n\n# \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n# Krovak inverse:  EPSG:5514 (E, N) metres \u2192 Bessel geographic (lat\u00b0, lon\u00b0)\n# \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n\ndef _krovak_inv(E, N):\n    \"\"\"Inverse Krovak \u2014 converts EPSG:5514 metres to Bessel geographic degrees.\"\"\"\n\n    # 1. Undo EPSG:5514 axis convention \u2192 standard Krovak (Xs south+, Ys west+)\n    Xs, Ys = -N, -E\n\n    # 2. Cartesian \u2192 polar on the cone\n    \u03c1 = math.hypot(Xs, Ys)\n    \u03b8 = math.atan2(Ys, Xs)\n    D = \u03b8 / _NK\n\n    # 3. Recover spherical latitude S from \u03c1\n    #    Forward: \u03c1 = _RF * (_TP / tan(\u03c0/4 + S/2))^_NK\n    #    Inverse: tan(\u03c0/4 + S/2) = _TP * (_RF / \u03c1)^(1/_NK)\n    t_S = _TP * (_RF / \u03c1) ** (1.0 / _NK)\n    S   = 2 * math.atan(t_S) - math.pi / 2\n\n    # 4. Inverse oblique rotation \u2014 from conic (S, D) back to Gaussian sphere (U, V)\n    U = math.asin(math.cos(_ALPHA) * math.sin(S)\n                  - math.sin(_ALPHA) * math.cos(S) * math.cos(D))\n    V = math.asin(math.cos(S) * math.sin(D) / math.cos(U))\n\n    # 5. Recover geodetic longitude (direct)\n    \u03bb = _LAM_0 - V / _BK\n\n    # 6. Iterative recovery of geodetic latitude \u03c6 on Bessel ellipsoid\n    #    Forward: tan(\u03c0/4 + U/2) = _T0 \u00b7 (tan(\u03c0/4 + \u03c6/2) \u00b7 ec(\u03c6))^_BK\n    #    \u2192 rhs = (tan(\u03c0/4 + U/2) / _T0)^(1/_BK)  [constant per point]\n    #    \u2192 iterate: \u03c6_new = 2\u00b7atan(rhs / ec(\u03c6)) - \u03c0/2\n    \u03c6 = U   # starting estimate\n    for _ in range(20):\n        ec    = ((1 - _e_B * math.sin(\u03c6)) / (1 + _e_B * math.sin(\u03c6))) ** (_e_B / 2)\n        rhs   = (math.tan(math.pi / 4 + U / 2) / _T0) ** (1.0 / _BK)\n        \u03c6_new = 2 * math.atan(rhs / ec) - math.pi / 2\n        if abs(\u03c6_new - \u03c6) < 1e-13:\n            \u03c6 = \u03c6_new\n            break\n        \u03c6 = \u03c6_new\n\n    return math.degrees(\u03c6), math.degrees(\u03bb)\n\n\n# \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n# UTM zone 32N forward:  ETRS89 geographic \u2192 EPSG:5555\n# (2-D horizontal component; identical to EPSG:25832)\n# \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n\ndef _meridional_arc(lat):\n    a, e2 = _a_G, _e2_G\n    return a * (\n        (1 - e2 / 4   - 3 * e2**2 / 64  - 5 * e2**3 / 256)  * lat\n      - (3 * e2 / 8   + 3 * e2**2 / 32  + 45 * e2**3 / 1024) * math.sin(2 * lat)\n      + (15 * e2**2 / 256 + 45 * e2**3 / 1024)                * math.sin(4 * lat)\n      -  35 * e2**3 / 3072                                     * math.sin(6 * lat)\n    )\n\n\ndef _utm32_fwd(lat_d, lon_d):\n    \"\"\"ETRS89 geographic (\u00b0) \u2192 ETRS89 / UTM-32N metres  (EPSG:25832 / 5555).\"\"\"\n    a, e2 = _a_G, _e2_G\n    ep2   = e2 / (1 - e2)\n    \u03c6     = math.radians(lat_d)\n    \u0394\u03bb    = math.radians(lon_d - 9.0)          # offset from central meridian 9\u00b0 E\n    s\u03c6, c\u03c6, t\u03c6 = math.sin(\u03c6), math.cos(\u03c6), math.tan(\u03c6)\n    N  = a / math.sqrt(1 - e2 * s\u03c6 ** 2)\n    T, C, A_ = t\u03c6**2, ep2 * c\u03c6**2, c\u03c6 * \u0394\u03bb\n    M  = _meridional_arc(\u03c6)\n    k0 = 0.9996\n    E  = 500_000.0 + k0 * N * (\n            A_\n          + A_**3 / 6   * (1 - T + C)\n          + A_**5 / 120 * (5 - 18*T + T**2 + 72*C - 58*ep2)\n    )\n    Nn = k0 * (\n            M + N * t\u03c6 * (\n                A_**2 / 2\n              + A_**4 / 24  * (5  - T + 9*C + 4*C**2)\n              + A_**6 / 720 * (61 - 58*T + T**2 + 600*C - 330*ep2)\n            )\n    )\n    return E, Nn\n\n\n# \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n# GeoJSON geometry recursion\n# \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n\ndef _transform_xy(xy):\n    \"\"\"Single EPSG:5514 coordinate pair \u2192 EPSG:5555.\"\"\"\n    lat_b, lon_b = _krovak_inv(xy[0], xy[1])           # Krovak\u207b\u00b9  \u2192 Bessel \u00b0\n    lat_g, lon_g = _bessel_to_etrs89(lat_b, lon_b)     # Helmert   \u2192 ETRS89 \u00b0\n    E, N         = _utm32_fwd(lat_g, lon_g)             # UTM-32N   \u2192 metres\n    return [E, N] + list(xy[2:])                        # keep Z / M if present\n\n\ndef _xform_coords(c):\n    if not c:\n        return c\n    if isinstance(c[0], (int, float)):\n        return _transform_xy(c)\n    return [_xform_coords(ring) for ring in c]\n\n\ndef _xform_geom(g):\n    if g is None:\n        return None\n    if g[\"type\"] == \"GeometryCollection\":\n        return {\"type\": \"GeometryCollection\",\n                \"geometries\": [_xform_geom(s) for s in g[\"geometries\"]]}\n    return {\"type\": g[\"type\"], \"coordinates\": _xform_coords(g[\"coordinates\"])}\n\n\n# \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n# Transform\n# \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n\n\ndata = json.loads(input_data)\n\n# \u2500\u2500 Transform every feature \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\nout_features = []\nfor feat in data[\"features\"]:\n    nf = {\n        \"type\":       \"Feature\",\n        \"geometry\":   _xform_geom(feat.get(\"geometry\")),\n        \"properties\": feat.get(\"properties\"),\n    }\n    if \"id\" in feat:\n        nf[\"id\"] = feat[\"id\"]\n    out_features.append(nf)\n\nresult = {\n    \"type\":     \"FeatureCollection\",\n    \"features\": out_features,\n    \"crs\": {\"type\": \"name\",\n            \"properties\": {\"name\": \"urn:ogc:def:crs:EPSG::5555\"}},\n}\n\noutput_data = json.dumps(result, indent=2)\n"
         }
       ],
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/linkeddata/forestStandCollection/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/linkeddata/forestStandCollection/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/linkeddata/forestStandCollection/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/linkeddata/forestStandCollection/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.linkeddata.forestStandCollection"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/bblock/ogc.bbr.examples.linkeddata.forestStandCollection"
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-11-03T04:29:37.258086+00:00",
+        "processedAt": "2026-11-03T12:04:44.561039+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -1914,30 +2151,30 @@
         "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputDescription"
       ],
       "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/inputDescriptions/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/inputDescriptions/schema.json"
+        "application/yaml": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/inputDescriptions/schema.yaml",
+        "application/json": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/inputDescriptions/schema.json"
       },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/ogcapi/processes/schemas/inputDescriptions/schema.yaml",
-      "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/inputDescriptions/context.jsonld",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/inputDescriptions/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/ogcapi/processes/schemas/inputDescriptions/",
+      "sourceSchema": "https://rob-metalinkage.github.io/bblocks-examples/_sources/ogcapi/processes/schemas/inputDescriptions/schema.yaml",
+      "ldContext": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/inputDescriptions/context.jsonld",
+      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/inputDescriptions/resolvedProperties.json",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks-examples/_sources/ogcapi/processes/schemas/inputDescriptions/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/ogcapi/processes/schemas/inputDescriptions/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/ogcapi/processes/schemas/inputDescriptions/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/ogcapi/processes/schemas/inputDescriptions/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/ogcapi/processes/schemas/inputDescriptions/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.ogcapi.processes.schemas.inputDescriptions"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/bblock/ogc.bbr.examples.ogcapi.processes.schemas.inputDescriptions"
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-11-03T04:29:37.258086+00:00",
+        "processedAt": "2026-11-03T12:04:44.561039+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -1964,30 +2201,30 @@
         "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputDescription"
       ],
       "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/processDescription/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/processDescription/schema.json"
+        "application/yaml": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/processDescription/schema.yaml",
+        "application/json": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/processDescription/schema.json"
       },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/ogcapi/processes/schemas/buffer-geometry/processDescription/schema.yaml",
-      "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/processDescription/context.jsonld",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/processDescription/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/ogcapi/processes/schemas/buffer-geometry/processDescription/",
+      "sourceSchema": "https://rob-metalinkage.github.io/bblocks-examples/_sources/ogcapi/processes/schemas/buffer-geometry/processDescription/schema.yaml",
+      "ldContext": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/processDescription/context.jsonld",
+      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/processDescription/resolvedProperties.json",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks-examples/_sources/ogcapi/processes/schemas/buffer-geometry/processDescription/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/ogcapi/processes/schemas/buffer-geometry/processDescription/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/ogcapi/processes/schemas/buffer-geometry/processDescription/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/ogcapi/processes/schemas/buffer-geometry/processDescription/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/ogcapi/processes/schemas/buffer-geometry/processDescription/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.processDescription"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/bblock/ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.processDescription"
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-11-03T04:29:37.258086+00:00",
+        "processedAt": "2026-11-03T12:04:44.561039+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -2012,30 +2249,107 @@
         "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.outputDescription"
       ],
       "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/outputDescriptions/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/outputDescriptions/schema.json"
+        "application/yaml": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/outputDescriptions/schema.yaml",
+        "application/json": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/outputDescriptions/schema.json"
       },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/ogcapi/processes/schemas/outputDescriptions/schema.yaml",
-      "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/outputDescriptions/context.jsonld",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/outputDescriptions/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/ogcapi/processes/schemas/outputDescriptions/",
+      "sourceSchema": "https://rob-metalinkage.github.io/bblocks-examples/_sources/ogcapi/processes/schemas/outputDescriptions/schema.yaml",
+      "ldContext": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/outputDescriptions/context.jsonld",
+      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/outputDescriptions/resolvedProperties.json",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks-examples/_sources/ogcapi/processes/schemas/outputDescriptions/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/ogcapi/processes/schemas/outputDescriptions/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/ogcapi/processes/schemas/outputDescriptions/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/ogcapi/processes/schemas/outputDescriptions/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/ogcapi/processes/schemas/outputDescriptions/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.ogcapi.processes.schemas.outputDescriptions"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/bblock/ogc.bbr.examples.ogcapi.processes.schemas.outputDescriptions"
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-11-03T04:29:37.258086+00:00",
+        "processedAt": "2026-11-03T12:04:44.561039+00:00",
+        "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.examples.linkeddata.marineProtectionRecord",
+      "name": "Marine Protection Dataset Record",
+      "abstract": "Profile of the GeoDCAT binding of OGC API Records for describing a dataset of marine protections and how to access it, requiring its descriptive metadata, temporal extent, creator and a link to its features.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-11-03T00:00:00Z",
+      "register": "ogc-building-block-examples",
+      "version": "0.1",
+      "dateOfLastChange": "2026-11-03",
+      "itemClass": "schema",
+      "isProfileOf": [
+        "bblocks://ogc.geo.geodcat.geodcat-records"
+      ],
+      "dependsOn": [
+        "bblocks://ogc.geo.geodcat.geodcat-records",
+        "bblocks://ogc.model.cross-domain.schema-org"
+      ],
+      "seeAlso": [
+        "bblocks://ogc.bbr.examples.linkeddata.marineProtectionFeature"
+      ],
+      "sources": [
+        {
+          "title": "OGC API - Records",
+          "link": "https://github.com/opengeospatial/ogcapi-records"
+        },
+        {
+          "title": "Ocean Data Platform catalog entry (schema.org JSON-LD)",
+          "link": "https://api.hubocean.earth/api/public/catalog/v2/jsonld/datasets/a608f54b-75c7-4df9-a3a8-cedbfa391873"
+        }
+      ],
+      "maturity": "development",
+      "scope": "unstable",
+      "tags": [
+        "marine",
+        "marine-protected-areas",
+        "Records",
+        "DCAT"
+      ],
+      "group": "Semantic & Linked Data",
+      "shaclShapes": {
+        "ogc.api.records.v1.schemas.linkTemplate": [
+          "https://ogcincubator.github.io/bblocks-ogcapi-records/_sources/v1/schemas/linkTemplate/rules.shacl"
+        ],
+        "ogc.geo.features.feature": [
+          "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
+        ]
+      },
+      "ldContext": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/marineProtectionRecord/context.jsonld",
+      "schema": {
+        "application/yaml": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/marineProtectionRecord/schema.yaml",
+        "application/json": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/marineProtectionRecord/schema.json"
+      },
+      "sourceSchema": "https://rob-metalinkage.github.io/bblocks-examples/_sources/linkeddata/marineProtectionRecord/schema.yaml",
+      "sourceLdContext": "https://rob-metalinkage.github.io/bblocks-examples/_sources/linkeddata/marineProtectionRecord/context.jsonld",
+      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/marineProtectionRecord/resolvedProperties.json",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks-examples/_sources/linkeddata/marineProtectionRecord/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/rob-metalinkage/bblocks-examples/blob/master/build/tests/bbr/examples/linkeddata/marineProtectionRecord/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/linkeddata/marineProtectionRecord/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/linkeddata/marineProtectionRecord/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/bblock/ogc.bbr.examples.linkeddata.marineProtectionRecord"
+        }
+      },
+      "x-sampleBuildPlugin": {
+        "processedAt": "2026-11-03T12:04:44.561039+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -2074,7 +2388,7 @@
       "highlighted": true,
       "shaclShapes": {
         "ogc.bbr.examples.observation.vectorObservationFeature": [
-          "https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservationFeature/rules.shacl"
+          "https://rob-metalinkage.github.io/bblocks-examples/_sources/observation/vectorObservationFeature/rules.shacl"
         ],
         "ogc.sosa.properties.observation": [
           "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/shapes.shacl"
@@ -2090,31 +2404,31 @@
         ]
       },
       "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/schema.json"
+        "application/yaml": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/schema.yaml",
+        "application/json": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/schema.json"
       },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservationFeature/schema.yaml",
-      "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/observation/vectorObservationFeature/",
+      "sourceSchema": "https://rob-metalinkage.github.io/bblocks-examples/_sources/observation/vectorObservationFeature/schema.yaml",
+      "ldContext": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld",
+      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/resolvedProperties.json",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks-examples/_sources/observation/vectorObservationFeature/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/observation/vectorObservationFeature/",
+      "testOutputs": "https://github.com/rob-metalinkage/bblocks-examples/blob/master/build/tests/bbr/examples/observation/vectorObservationFeature/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/observation/vectorObservationFeature/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/observation/vectorObservationFeature/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/observation/vectorObservationFeature/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/observation/vectorObservationFeature/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.observation.vectorObservationFeature"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/bblock/ogc.bbr.examples.observation.vectorObservationFeature"
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-11-03T04:29:37.258086+00:00",
+        "processedAt": "2026-11-03T12:04:44.561039+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -2158,17 +2472,17 @@
           "https://ogcincubator.github.io/topo-feature/_sources/ontology/shapes.shacl"
         ]
       },
-      "ldContext": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/rules/topo-edges/context.jsonld",
+      "ldContext": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/rules/topo-edges/context.jsonld",
       "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/rules/topo-edges/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/rules/topo-edges/schema.json"
+        "application/yaml": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/rules/topo-edges/schema.yaml",
+        "application/json": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/rules/topo-edges/schema.json"
       },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-examples/_sources/rules/topo-edges/schema.json",
-      "sourceLdContext": "https://ogcincubator.github.io/bblocks-examples/_sources/rules/topo-edges/context.jsonld",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/rules/topo-edges/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/rules/topo-edges/",
+      "sourceSchema": "https://rob-metalinkage.github.io/bblocks-examples/_sources/rules/topo-edges/schema.json",
+      "sourceLdContext": "https://rob-metalinkage.github.io/bblocks-examples/_sources/rules/topo-edges/context.jsonld",
+      "resolvedSchemaProperties": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/rules/topo-edges/resolvedProperties.json",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks-examples/_sources/rules/topo-edges/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-examples/blob/master/build/tests/bbr/examples/rules/topo-edges/",
+      "testOutputs": "https://github.com/rob-metalinkage/bblocks-examples/blob/master/build/tests/bbr/examples/rules/topo-edges/",
       "transforms": [
         {
           "id": "object-as-JSON",
@@ -2206,19 +2520,19 @@
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/rules/topo-edges/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/rules/topo-edges/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/rules/topo-edges/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/rules/topo-edges/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.rules.topo-edges"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/bblock/ogc.bbr.examples.rules.topo-edges"
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-11-03T04:29:37.258086+00:00",
+        "processedAt": "2026-11-03T12:04:44.561039+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     },
@@ -2265,26 +2579,26 @@
         "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.inputDescriptions",
         "bblocks://ogc.bbr.examples.ogcapi.processes.schemas.outputDescriptions"
       ],
-      "sourceOpenAPIDocument": "https://ogcincubator.github.io/bblocks-examples/_sources/ogcapi/processes/custom-api/openapi.yaml",
-      "openAPIDocument": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/custom-api/openapi.yaml",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-examples/_sources/ogcapi/processes/custom-api/",
+      "sourceOpenAPIDocument": "https://rob-metalinkage.github.io/bblocks-examples/_sources/ogcapi/processes/custom-api/openapi.yaml",
+      "openAPIDocument": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/custom-api/openapi.yaml",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks-examples/_sources/ogcapi/processes/custom-api/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/ogcapi/processes/custom-api/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/markdown/bbr/examples/ogcapi/processes/custom-api/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/ogcapi/processes/custom-api/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/build/generateddocs/json-full/bbr/examples/ogcapi/processes/custom-api/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-examples/bblock/ogc.bbr.examples.ogcapi.processes.custom-api"
+          "url": "https://rob-metalinkage.github.io/bblocks-examples/bblock/ogc.bbr.examples.ogcapi.processes.custom-api"
         }
       },
       "x-sampleBuildPlugin": {
-        "processedAt": "2026-11-03T04:29:37.258086+00:00",
+        "processedAt": "2026-11-03T12:04:44.561039+00:00",
         "note": "stamped by bbplugin-sample-build.SampleBuildHooks.after_register"
       }
     }
@@ -2408,29 +2722,29 @@
       ]
     }
   ],
-  "remoteCacheDir": "https://ogcincubator.github.io/bblocks-examples/build/annotated/_cache",
+  "remoteCacheDir": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/_cache",
   "links": [
     {
       "rel": "self",
-      "href": "https://ogcincubator.github.io/bblocks-examples/build/register.json",
+      "href": "https://rob-metalinkage.github.io/bblocks-examples/build/register.json",
       "type": "application/json",
       "title": "This Building Blocks Register in JSON format"
     },
     {
       "rel": "self",
-      "href": "https://ogcincubator.github.io/bblocks-examples/build/bblocks.ttl",
+      "href": "https://rob-metalinkage.github.io/bblocks-examples/build/bblocks.ttl",
       "type": "text/turtle",
       "title": "This Building Blocks Register in RDF Turtle format"
     },
     {
       "rel": "self",
-      "href": "https://ogcincubator.github.io/bblocks-examples/build/bblocks.jsonld",
+      "href": "https://rob-metalinkage.github.io/bblocks-examples/build/bblocks.jsonld",
       "type": "application/ld+json",
       "title": "This Building Blocks Register in JSON-LD format"
     }
   ],
   "x-sampleBuildPlugin": {
-    "processedAt": "2026-11-03T04:29:37.258086+00:00",
-    "bblockCount": 28
+    "processedAt": "2026-11-03T12:04:44.561039+00:00",
+    "bblockCount": 32
   }
 }
