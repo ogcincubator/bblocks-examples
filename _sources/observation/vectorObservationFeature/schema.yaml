@@ -8,6 +8,13 @@ $defs:
         properties:
           properties:
             $ref: ../vectorObservation/schema.yaml
+  VectorObservationMember:
+    allOf:
+      - $ref: bblocks://ogc.sosa.features.observation#/$defs/member
+      - type: object
+        properties:
+          properties:
+            $ref: ../vectorObservation/schema.yaml#/$defs/member
   VectorObservationCollection:
     allOf:
       - $ref: bblocks://ogc.sosa.features.observationCollection
@@ -16,7 +23,7 @@ $defs:
           features:
             type: array
             items:
-              $ref: "#/$defs/VectorObservation"
+              $ref: "#/$defs/VectorObservationMember"
 anyOf:
   - $ref: "#/$defs/VectorObservation"
   - $ref: "#/$defs/VectorObservationCollection"

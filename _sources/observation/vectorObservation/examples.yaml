@@ -3,7 +3,7 @@
       code: |
         {
           "hasFeatureOfInterest": "https://demo.pygeoapi.io/master/collections/utah_city_locations/items/Salem",
-          "resultTime": "2023-05-22T16:41:00+2",
+          "resultTime": "2023-05-22T16:41:00+02:00",
           "observedProperty": "p1",
           "hasResult": {
             "pose": {

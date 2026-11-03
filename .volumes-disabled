@@ -1,0 +1,5 @@
+../ogcapi-sosa/build-local-export:/imports/ogcapi-sosa/export
+../ogcapi-sosa/_sources:/imports/ogcapi-sosa/_sources
+*local*
+.claude
+.volumes

@@ -1,25 +1,71 @@
-- title: VectorObservation - specialisation example.
-  content:
-    Example of Specialised Observation being a vector, using GeoPose as part of a complex result.
+prefixes:
+  ex: https://w3id.org/ogc/demo/observable/
 
-    View [live example](https://defs-dev.opengis.net/bblocks-pygeoapi/collections/ogc.bbr.examples.observation.vectorObservationFeature/items/vector-obs-1) - using PyGeoAPI, configured to use this BuildingBlock to provide a JSON-LD context, and a client Linked Data library.
+examples:
+  - title: VectorObservation - specialisation example.
+    base-output-filename: observation
+    content:
+      Example of Specialised Observation being a vector, using GeoPose as part of a complex result.
+  
+      View [live example](https://defs-dev.opengis.net/bblocks-pygeoapi/collections/ogc.bbr.examples.observation.vectorObservationFeature/items/vector-obs-1) - using PyGeoAPI, configured to use this BuildingBlock to provide a JSON-LD context, and a client Linked Data library.
 
-  base-uri: http://example.com/features/
-  snippets:
-    - language: json
-      ref: examples/observation.json
+    base-uri: http://example.com/features/
+    snippets:
+      - language: json
+        ref: examples/observation.json
 
-- title: VectorObservationCollection
-  content:
-    Example of Specialised ObservationCollection being a vector, using GeoPose as part of a complex result
+  - title: VectorObservationCollection
+    base-output-filename: observationCollection
+    content:
+      Example of Specialised ObservationCollection being a vector, using GeoPose as part of a complex result
 
-  base-uri: http://example.com/features/
-  snippets:
-    - language: json
-      ref: examples/observationCollection.json
+    base-uri: http://example.com/features/
+    snippets:
+      - language: json
+        ref: examples/observationCollection.json
 
-- title: VectorObservation Feature using json-path
-  snippets:
-    - language: json
-      ref: examples/observationCollection.json
-      json-path: '$.features[0]'
+  - title: VectorObservation Feature from a collection, with its own observedProperty
+    base-output-filename: observationInline
+    base-uri: http://example.com/features/
+    snippets:
+      - language: json
+        code: |
+          {
+            "id": "vector-obs-1",
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  -111.67183507997295,
+                  40.056709946862874
+                ],
+                [
+                  -111.71,
+                  40.156709946862874
+                ]
+              ]
+            },
+            "time": null,
+            "place": null,
+            "properties": {
+              "hasFeatureOfInterest": "eg:Traverse-P1-P2",
+              "observedProperty": "ex:pose-target-distance",
+              "resultTime": "2023-05-22T16:41:00+02:00",
+              "hasResult": {
+                "pose": {
+                  "position": {
+                    "lat": -111.67183507997295,
+                    "lon": 40.056709946862874,
+                    "h": 0.5
+                  },
+                  "angles": {
+                    "yaw": 15.35,
+                    "pitch": -0.01,
+                    "roll": 0
+                  }
+                },
+                "distance": 6889234.2
+              }
+            }
+          }
