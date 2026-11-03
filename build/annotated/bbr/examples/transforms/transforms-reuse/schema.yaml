@@ -3,6 +3,6 @@ description: A simple JSON object used to demonstrate transform reuse
 type: object
 x-bblocks-metadata:
   itemIdentifier: ogc.bbr.examples.transforms.transforms-reuse
-  register: https://ogcincubator.github.io/bblocks-examples/build/register.json
+  register: https://rob-metalinkage.github.io/bblocks-examples/build/register.json
   version: '0.1'
   dateOfLastChange: '2026-11-03'

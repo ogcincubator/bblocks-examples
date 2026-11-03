@@ -3,7 +3,7 @@ description: Profile of "Override Binding - Base" that redeclares "note" and "la
   to narrow their inherited SKOS bindings, and restates "assets" to narrow the nested
   "href" binding.
 allOf:
-- $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/override-binding/base/schema.yaml
+- $ref: https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/semantic-uplift/override-binding/base/schema.yaml
 - type: object
   properties:
     note:
@@ -22,6 +22,6 @@ allOf:
       x-jsonld-id: http://www.w3.org/ns/dcat#distribution
 x-bblocks-metadata:
   itemIdentifier: ogc.bbr.examples.semantic-uplift.override-binding.child
-  register: https://ogcincubator.github.io/bblocks-examples/build/register.json
+  register: https://rob-metalinkage.github.io/bblocks-examples/build/register.json
   version: '1.0'
   dateOfLastChange: '2026-11-03'

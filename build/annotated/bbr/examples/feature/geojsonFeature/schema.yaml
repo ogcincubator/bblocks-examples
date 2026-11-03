@@ -11,11 +11,11 @@ $defs:
     - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml
     - properties:
         properties:
-          $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/schema.yaml
+          $ref: https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/schema.yaml
 anyOf:
 - $ref: '#/$defs/MyFeature'
 x-bblocks-metadata:
   itemIdentifier: ogc.bbr.examples.feature.geojsonFeature
-  register: https://ogcincubator.github.io/bblocks-examples/build/register.json
+  register: https://rob-metalinkage.github.io/bblocks-examples/build/register.json
   version: '1.0'
   dateOfLastChange: '2026-11-03'

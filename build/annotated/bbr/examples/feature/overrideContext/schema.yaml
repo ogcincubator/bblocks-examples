@@ -3,7 +3,7 @@ description: Example of a simple GeoJSON Feature specialisation
 $defs:
   MyFeature:
     allOf:
-    - $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema.yaml
+    - $ref: https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema.yaml
     - properties:
         properties:
           properties:
@@ -13,6 +13,6 @@ anyOf:
 - $ref: '#/$defs/MyFeature'
 x-bblocks-metadata:
   itemIdentifier: ogc.bbr.examples.feature.overrideContext
-  register: https://ogcincubator.github.io/bblocks-examples/build/register.json
+  register: https://rob-metalinkage.github.io/bblocks-examples/build/register.json
   version: '1.0'
   dateOfLastChange: '2026-11-03'

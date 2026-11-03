@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "A marine managed area in the ProtectedSeas Navigator dataset",
+  "allOf": [
+    {
+      "$ref": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "properties": {
+          "$ref": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/linkeddata/marineProtectionProperties/schema.json"
+        }
+      }
+    }
+  ],
+  "x-bblocks-metadata": {
+    "itemIdentifier": "ogc.bbr.examples.linkeddata.marineProtectionFeature",
+    "register": "https://rob-metalinkage.github.io/bblocks-examples/build/register.json",
+    "version": "0.1",
+    "dateOfLastChange": "2026-11-03"
+  }
+}

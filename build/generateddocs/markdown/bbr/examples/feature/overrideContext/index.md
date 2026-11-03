@@ -44,7 +44,7 @@ In this case Latitude and Longitude are converted to more common options.
 #### jsonld
 ```jsonld
 {
-  "@context": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/overrideContext/context.jsonld",
+  "@context": "https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/feature/overrideContext/context.jsonld",
   "id": "f1",
   "type": "Feature",
   "geometry": {
@@ -91,7 +91,7 @@ description: Example of a simple GeoJSON Feature specialisation
 $defs:
   MyFeature:
     allOf:
-    - $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema.yaml
+    - $ref: https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/feature/externalSchema/schema.yaml
     - properties:
         properties:
           properties:
@@ -101,7 +101,7 @@ anyOf:
 - $ref: '#/$defs/MyFeature'
 x-bblocks-metadata:
   itemIdentifier: ogc.bbr.examples.feature.overrideContext
-  register: https://ogcincubator.github.io/bblocks-examples/build/register.json
+  register: https://rob-metalinkage.github.io/bblocks-examples/build/register.json
   version: '1.0'
   dateOfLastChange: '2026-11-03'
 
@@ -109,8 +109,8 @@ x-bblocks-metadata:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/overrideContext/schema.json)
-* JSON version: [schema.json](https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/overrideContext/schema.yaml)
+* YAML version: [schema.yaml](https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/feature/overrideContext/schema.json)
+* JSON version: [schema.json](https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/feature/overrideContext/schema.yaml)
 
 
 # JSON-LD Context
@@ -218,7 +218,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/overrideContext/context.jsonld)
+[context.jsonld](https://rob-metalinkage.github.io/bblocks-examples/build/annotated/bbr/examples/feature/overrideContext/context.jsonld)
 
 ## Sources
 
@@ -230,6 +230,6 @@ You can find the full JSON-LD context here:
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/ogcincubator/bblocks-examples](https://github.com/ogcincubator/bblocks-examples)
+* URL: [https://github.com/rob-metalinkage/bblocks-examples](https://github.com/rob-metalinkage/bblocks-examples)
 * Path: `_sources/feature/overrideContext`
 

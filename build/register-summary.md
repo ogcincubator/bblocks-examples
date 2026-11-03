@@ -76,6 +76,12 @@ A sample building block to showcase validator plugins (ZIP integrity, WKT geomet
 
 Input schema for the buffer geometry process
 
+### `ogc.bbr.examples.linkeddata.marine-protection-ontology` — Marine Protections Ontology
+
+**Type:** model
+
+Example ontology for the regulation of marine managed areas, minting only the terms that have no exact equivalent in the ontologies of the OGC Cross Domain Model. Definitions are taken from the ProtectedSeas Navigator data dictionary.
+
 ### `ogc.bbr.examples.linkeddata.forestStandProperties` — Forest Stand Properties
 
 **Type:** schema
@@ -105,6 +111,12 @@ This example shows a simple customisation method for OGC API Feature schemas
 **Type:** schema
 
 This example includes an uplift step to use a GeoSPARQL geometry in a GeoJSON object
+
+### `ogc.bbr.examples.linkeddata.marineProtectionProperties` — Marine Protection Properties
+
+**Type:** schema
+
+Attributes of a marine managed area in the ProtectedSeas Navigator dataset, including its designation, regulations, fishing protection level and the regulation status of fishing gears and marine activities, bound to the Marine Protections Ontology and the OGC Cross Domain Model.
 
 ### `ogc.bbr.examples.linkeddata.forestStandFeature` — Semantic Feature
 
@@ -142,6 +154,12 @@ Description for the inputs of the buffer geometry process
 
 Description for the output of the buffer geometry process
 
+### `ogc.bbr.examples.linkeddata.marineProtectionFeature` — Marine Protection Feature
+
+**Type:** schema
+
+GeoJSON Feature type for a marine managed area in the ProtectedSeas Navigator dataset, as served by the Ocean Data Platform features API, semantically described using the Marine Protections Ontology and the OGC Cross Domain Model.
+
 ### `ogc.bbr.examples.linkeddata.forestStandCollection` — Forest Stand Feature Collection
 
 **Type:** schema
@@ -165,6 +183,12 @@ Description of the buffer geometry process
 **Type:** schema
 
 Collection of output descriptions
+
+### `ogc.bbr.examples.linkeddata.marineProtectionRecord` — Marine Protection Dataset Record
+
+**Type:** schema
+
+Profile of the GeoDCAT binding of OGC API Records for describing a dataset of marine protections and how to access it, requiring its descriptive metadata, temporal extent, creator and a link to its features.
 
 ### `ogc.bbr.examples.observation.vectorObservationFeature` — Custom Result for Observation Feature
 
