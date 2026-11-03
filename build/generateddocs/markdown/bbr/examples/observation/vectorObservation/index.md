@@ -14,7 +14,7 @@ This building block defines the *property set* for an example specialisation of 
 ```json
 {
   "hasFeatureOfInterest": "https://demo.pygeoapi.io/master/collections/utah_city_locations/items/Salem",
-  "resultTime": "2023-05-22T16:41:00+2",
+  "resultTime": "2023-05-22T16:41:00+02:00",
   "observedProperty": "p1",
   "hasResult": {
     "pose": {
@@ -39,7 +39,7 @@ This building block defines the *property set* for an example specialisation of 
 {
   "@context": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/context.jsonld",
   "hasFeatureOfInterest": "https://demo.pygeoapi.io/master/collections/utah_city_locations/items/Salem",
-  "resultTime": "2023-05-22T16:41:00+2",
+  "resultTime": "2023-05-22T16:41:00+02:00",
   "observedProperty": "p1",
   "hasResult": {
     "pose": {
@@ -74,7 +74,7 @@ This building block defines the *property set* for an example specialisation of 
                             geo1:lat 4.346498e+01 ;
                             geo1:long -3.803638e+00 ] ] ] ;
     sosa:observedProperty <file:///github/workspace/p1> ;
-    sosa:resultTime "2023-05-22T16:41:00+2" .
+    sosa:resultTime "2023-05-22T16:41:00+02:00"^^xsd:dateTime .
 
 
 ```
@@ -84,27 +84,41 @@ This building block defines the *property set* for an example specialisation of 
 ```yaml
 $schema: https://json-schema.org/draft/2020-12/schema
 description: Example SOSA Vector Observation
+$defs:
+  VectorResult:
+    type: object
+    properties:
+      hasResult:
+        properties:
+          pose:
+            $ref: https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/schema.yaml
+            x-jsonld-id: https://w3id.org/ogc/hosted/examples/resultschema/pose
+          distance:
+            type: number
+            x-jsonld-id: https://w3id.org/ogc/hosted/examples/resultschema/distance
+        x-jsonld-id: http://www.w3.org/ns/sosa/hasResult
+    required:
+    - hasResult
+    not:
+      required:
+      - hasSimpleResult
+  member:
+    description: A Vector Observation in an ObservationCollection (observed property
+      etc. may be provided by the collection)
+    allOf:
+    - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation/schema.yaml#/$defs/member
+    - $ref: '#/$defs/VectorResult'
 allOf:
 - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation/schema.yaml
-- type: object
-  properties:
-    hasResult:
-      properties:
-        pose:
-          $ref: https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/schema.yaml
-          x-jsonld-id: https://w3id.org/ogc/hosted/examples/resultschema/pose
-        distance:
-          type: number
-          x-jsonld-id: https://w3id.org/ogc/hosted/examples/resultschema/distance
-      x-jsonld-id: http://www.w3.org/ns/sosa/hasResult
-  required:
-  - hasResult
-  not:
-    required:
-    - hasSimpleResult
+- $ref: '#/$defs/VectorResult'
 x-jsonld-prefixes:
   sosa: http://www.w3.org/ns/sosa/
   resultschema: https://w3id.org/ogc/hosted/examples/resultschema/
+x-bblocks-metadata:
+  itemIdentifier: ogc.bbr.examples.observation.vectorObservation
+  register: https://ogcincubator.github.io/bblocks-examples/build/register.json
+  version: '1.0'
+  dateOfLastChange: '2026-11-03'
 
 ```
 
@@ -508,10 +522,46 @@ Links to the schema:
       "@id": "ssn-system:qualityOfObservation",
       "@type": "@id"
     },
-    "resultTime": "sosa:resultTime",
+    "resultTime": {
+      "@id": "sosa:resultTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
     "phenomenonTime": {
+      "@context": {
+        "hasBeginning": "time:hasBeginning",
+        "hasEnd": "time:hasEnd",
+        "inXSDDateTime": {
+          "@id": "time:inXSDDateTime",
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "inXSDDateTimeStamp": {
+          "@id": "time:inXSDDateTimeStamp",
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+        },
+        "inXSDDate": {
+          "@id": "time:inXSDDate",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "Instant": "time:Instant",
+        "Interval": "time:Interval",
+        "ProperInterval": "time:ProperInterval",
+        "hasDuration": "time:hasDuration",
+        "hasXSDDuration": {
+          "@id": "time:hasXSDDuration",
+          "@type": "http://www.w3.org/2001/XMLSchema#duration"
+        },
+        "inTimePosition": "time:inTimePosition",
+        "inXSDgYear": {
+          "@id": "time:inXSDgYear",
+          "@type": "http://www.w3.org/2001/XMLSchema#gYear"
+        },
+        "inXSDgYearMonth": {
+          "@id": "time:inXSDgYearMonth",
+          "@type": "http://www.w3.org/2001/XMLSchema#gYearMonth"
+        }
+      },
       "@id": "sosa:phenomenonTime",
-      "@type": "@id"
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "hasFeatureOfInterest": {
       "@id": "sosa:hasFeatureOfInterest",
@@ -525,8 +575,14 @@ Links to the schema:
       "@id": "sosa:usedProcedure",
       "@type": "@id"
     },
-    "startTime": "sosa:startTime",
-    "endTime": "sosa:endTime",
+    "startTime": {
+      "@id": "sosa:startTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "endTime": {
+      "@id": "sosa:endTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
     "hasResult": {
       "@context": {
         "pose": {
@@ -555,15 +611,13 @@ Links to the schema:
       "@id": "sosa:hasResult",
       "@type": "@id"
     },
-    "hasSimpleResult": {
-      "@id": "sosa:hasSimpleResult",
-      "@type": "@id"
-    },
+    "hasSimpleResult": "sosa:hasSimpleResult",
     "hasInputValue": {
       "@id": "sosa:hasInputValue",
       "@type": "@id"
     },
     "sosa": "http://www.w3.org/ns/sosa/",
+    "time": "http://www.w3.org/2006/time#",
     "ssn-system": "ssn:systems/",
     "ssn": "http://www.w3.org/ns/ssn/",
     "resultschema": "https://w3id.org/ogc/hosted/examples/resultschema/",

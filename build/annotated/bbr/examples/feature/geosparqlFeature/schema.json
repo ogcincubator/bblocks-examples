@@ -7,8 +7,7 @@
       "properties": {
         "geometry": {
           "type": "object",
-          "x-jsonld-id": "https://purl.org/geojson/vocab#geometry",
-          "x-jsonld-type": "@json"
+          "x-jsonld-id": "https://purl.org/geojson/vocab#geometry"
         },
         "properties": {
           "$ref": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/schema.json"
@@ -18,5 +17,11 @@
   ],
   "x-jsonld-prefixes": {
     "geojson": "https://purl.org/geojson/vocab#"
+  },
+  "x-bblocks-metadata": {
+    "itemIdentifier": "ogc.bbr.examples.feature.geosparqlFeature",
+    "register": "https://ogcincubator.github.io/bblocks-examples/build/register.json",
+    "version": "1.0",
+    "dateOfLastChange": "2026-11-03"
   }
 }

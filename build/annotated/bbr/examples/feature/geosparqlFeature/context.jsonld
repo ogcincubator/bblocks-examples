@@ -23,8 +23,7 @@
           "@id": "geojson:coordinates"
         }
       },
-      "@id": "geojson:geometry",
-      "@type": "@json"
+      "@id": "geojson:geometry"
     },
     "bbox": {
       "@container": "@list",

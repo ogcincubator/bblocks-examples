@@ -8,6 +8,13 @@ $defs:
       properties:
         properties:
           $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.yaml
+  VectorObservationMember:
+    allOf:
+    - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observation/schema.yaml#/$defs/member
+    - type: object
+      properties:
+        properties:
+          $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.yaml#/$defs/member
   VectorObservationCollection:
     allOf:
     - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observationCollection/schema.yaml
@@ -16,7 +23,12 @@ $defs:
         features:
           type: array
           items:
-            $ref: '#/$defs/VectorObservation'
+            $ref: '#/$defs/VectorObservationMember'
 anyOf:
 - $ref: '#/$defs/VectorObservation'
 - $ref: '#/$defs/VectorObservationCollection'
+x-bblocks-metadata:
+  itemIdentifier: ogc.bbr.examples.observation.vectorObservationFeature
+  register: https://ogcincubator.github.io/bblocks-examples/build/register.json
+  version: '1.0'
+  dateOfLastChange: '2026-11-03'

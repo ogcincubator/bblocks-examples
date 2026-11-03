@@ -2,7 +2,7 @@
   "id": "c1",
   "type": "FeatureCollection",
   "featureType": "sosa:ObservationCollection",
-  "observedProperty": "https://example.org/def/observableProperties/geopose",
+  "observedProperty": "ex:pose-target-distance",
   "features": [
     {
       "id": "vector-obs-1",
@@ -24,8 +24,7 @@
       "place": null,
       "properties": {
         "hasFeatureOfInterest": "eg:Traverse-P1-P2",
-        "observedProperty": "https://example.org/def/observableProperties/geopose",
-        "resultTime": "2023-05-22T16:41:00+2",
+        "resultTime": "2023-05-22T16:41:00+02:00",
         "hasResult": {
           "pose": {
             "position": {

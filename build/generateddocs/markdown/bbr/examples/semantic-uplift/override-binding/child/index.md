@@ -110,6 +110,11 @@ allOf:
           type: string
           x-jsonld-id: http://www.w3.org/ns/dcat#accessURL
       x-jsonld-id: http://www.w3.org/ns/dcat#distribution
+x-bblocks-metadata:
+  itemIdentifier: ogc.bbr.examples.semantic-uplift.override-binding.child
+  register: https://ogcincubator.github.io/bblocks-examples/build/register.json
+  version: '1.0'
+  dateOfLastChange: '2026-11-03'
 
 ```
 

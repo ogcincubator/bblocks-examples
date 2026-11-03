@@ -61,6 +61,11 @@ properties:
         const: 1
       schema:
         $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/ogcapi/processes/schemas/buffer-geometry/inputSchema/schema.yaml#/properties/units
+x-bblocks-metadata:
+  itemIdentifier: ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputDescription
+  register: https://ogcincubator.github.io/bblocks-examples/build/register.json
+  version: '1.0'
+  dateOfLastChange: '2026-11-03'
 
 ```
 
@@ -88,7 +93,7 @@ Links to the schema:
     "description": "dct:description",
     "keywords": "proc:keywords",
     "nullable": "proc:nullable",
-    "type": "proc:type",
+    "type": "@type",
     "$ref": {
       "@id": "proc:ref",
       "@type": "@id"
@@ -113,6 +118,21 @@ Links to the schema:
     "features": {
       "@container": "@set",
       "@id": "geojson:features"
+    },
+    "id": "@id",
+    "properties": "@nest",
+    "geometry": {
+      "@context": {
+        "coordinates": {
+          "@container": "@list",
+          "@id": "geojson:coordinates"
+        }
+      },
+      "@id": "geojson:geometry"
+    },
+    "bbox": {
+      "@container": "@list",
+      "@id": "geojson:bbox"
     },
     "dct": "http://purl.org/dc/terms/",
     "proc": "https://w3id.org/ogc/api/processes/",

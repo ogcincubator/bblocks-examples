@@ -62,13 +62,15 @@ This example includes an uplift step to use a GeoSPARQL geometry in a GeoJSON ob
 
 #### ttl
 ```ttl
-@prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix myNamespace: <http://example.org/myModel/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://example.com/features/f1> a geojson:Feature ;
     myNamespace:myProp "Mandatory property example" ;
-    geo:hasGeometry [ geo:asGeoJson "{\"coordinates\":[[-111.67183507997295,40.056709946862874],[-111.71,40.156709946862875]],\"type\":\"LineString\"}"^^geo:geoJSONLiteral ] .
+    geojson:geometry [ a geojson:LineString ;
+            geojson:coordinates ( ( -1.116718e+02 4.005671e+01 ) ( -1.1171e+02 4.015671e+01 ) ) ] .
 
 
 ```
@@ -82,11 +84,15 @@ allOf:
     geometry:
       type: object
       x-jsonld-id: https://purl.org/geojson/vocab#geometry
-      x-jsonld-type: '@json'
     properties:
       $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/feature/propertySet/schema.yaml
 x-jsonld-prefixes:
   geojson: https://purl.org/geojson/vocab#
+x-bblocks-metadata:
+  itemIdentifier: ogc.bbr.examples.feature.geosparqlFeature
+  register: https://ogcincubator.github.io/bblocks-examples/build/register.json
+  version: '1.0'
+  dateOfLastChange: '2026-11-03'
 
 ```
 
@@ -124,8 +130,7 @@ Links to the schema:
           "@id": "geojson:coordinates"
         }
       },
-      "@id": "geojson:geometry",
-      "@type": "@json"
+      "@id": "geojson:geometry"
     },
     "bbox": {
       "@container": "@list",

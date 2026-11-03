@@ -34,8 +34,8 @@ View [live example](https://defs-dev.opengis.net/bblocks-pygeoapi/collections/og
   "place": null,
   "properties": {
     "hasFeatureOfInterest": "eg:Traverse-P1-P2",
-    "observedProperty": "https://w3id.org/ad4gd/air-quality/properties/CO2",
-    "resultTime": "2023-05-22T16:41:00+2",
+    "observedProperty": "ex:pose-target-distance",
+    "resultTime": "2023-05-22T16:41:00+02:00",
     "hasResult": {
       "pose": {
         "position": {
@@ -59,7 +59,12 @@ View [live example](https://defs-dev.opengis.net/bblocks-pygeoapi/collections/og
 #### jsonld
 ```jsonld
 {
-  "@context": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld",
+  "@context": [
+    {
+      "ex": "https://w3id.org/ogc/demo/observable/"
+    },
+    "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld"
+  ],
   "id": "vector-obs-1",
   "type": "Feature",
   "geometry": {
@@ -79,8 +84,8 @@ View [live example](https://defs-dev.opengis.net/bblocks-pygeoapi/collections/og
   "place": null,
   "properties": {
     "hasFeatureOfInterest": "eg:Traverse-P1-P2",
-    "observedProperty": "https://w3id.org/ad4gd/air-quality/properties/CO2",
-    "resultTime": "2023-05-22T16:41:00+2",
+    "observedProperty": "ex:pose-target-distance",
+    "resultTime": "2023-05-22T16:41:00+02:00",
     "hasResult": {
       "pose": {
         "position": {
@@ -102,6 +107,7 @@ View [live example](https://defs-dev.opengis.net/bblocks-pygeoapi/collections/og
 
 #### ttl
 ```ttl
+@prefix ex: <https://w3id.org/ogc/demo/observable/> .
 @prefix geo1: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix geopose: <http://example.com/geopose/> .
@@ -119,8 +125,8 @@ View [live example](https://defs-dev.opengis.net/bblocks-pygeoapi/collections/og
                     geopose:position [ geopose:h 5e-01 ;
                             geo1:lat -1.116718e+02 ;
                             geo1:long 4.005671e+01 ] ] ] ;
-    sosa:observedProperty <https://w3id.org/ad4gd/air-quality/properties/CO2> ;
-    sosa:resultTime "2023-05-22T16:41:00+2" ;
+    sosa:observedProperty ex:pose-target-distance ;
+    sosa:resultTime "2023-05-22T16:41:00+02:00"^^xsd:dateTime ;
     geojson:geometry [ a geojson:LineString ;
             geojson:coordinates ( ( -1.116718e+02 4.005671e+01 ) ( -1.1171e+02 4.015671e+01 ) ) ] .
 
@@ -136,7 +142,7 @@ Example of Specialised ObservationCollection being a vector, using GeoPose as pa
   "id": "c1",
   "type": "FeatureCollection",
   "featureType": "sosa:ObservationCollection",
-  "observedProperty": "https://example.org/def/observableProperties/geopose",
+  "observedProperty": "ex:pose-target-distance",
   "features": [
     {
       "id": "vector-obs-1",
@@ -158,8 +164,7 @@ Example of Specialised ObservationCollection being a vector, using GeoPose as pa
       "place": null,
       "properties": {
         "hasFeatureOfInterest": "eg:Traverse-P1-P2",
-        "observedProperty": "https://example.org/def/observableProperties/geopose",
-        "resultTime": "2023-05-22T16:41:00+2",
+        "resultTime": "2023-05-22T16:41:00+02:00",
         "hasResult": {
           "pose": {
             "position": {
@@ -184,11 +189,16 @@ Example of Specialised ObservationCollection being a vector, using GeoPose as pa
 #### jsonld
 ```jsonld
 {
-  "@context": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld",
+  "@context": [
+    {
+      "ex": "https://w3id.org/ogc/demo/observable/"
+    },
+    "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld"
+  ],
   "id": "c1",
   "type": "FeatureCollection",
   "featureType": "sosa:ObservationCollection",
-  "observedProperty": "https://example.org/def/observableProperties/geopose",
+  "observedProperty": "ex:pose-target-distance",
   "features": [
     {
       "id": "vector-obs-1",
@@ -210,8 +220,7 @@ Example of Specialised ObservationCollection being a vector, using GeoPose as pa
       "place": null,
       "properties": {
         "hasFeatureOfInterest": "eg:Traverse-P1-P2",
-        "observedProperty": "https://example.org/def/observableProperties/geopose",
-        "resultTime": "2023-05-22T16:41:00+2",
+        "resultTime": "2023-05-22T16:41:00+02:00",
         "hasResult": {
           "pose": {
             "position": {
@@ -235,6 +244,7 @@ Example of Specialised ObservationCollection being a vector, using GeoPose as pa
 
 #### ttl
 ```ttl
+@prefix ex: <https://w3id.org/ogc/demo/observable/> .
 @prefix geo1: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix geopose: <http://example.com/geopose/> .
@@ -246,7 +256,7 @@ Example of Specialised ObservationCollection being a vector, using GeoPose as pa
 <http://example.com/features/c1> a sosa:ObservationCollection,
         geojson:FeatureCollection ;
     sosa:hasMember <http://example.com/features/vector-obs-1> ;
-    sosa:observedProperty <https://example.org/def/observableProperties/geopose> .
+    sosa:observedProperty ex:pose-target-distance .
 
 <http://example.com/features/vector-obs-1> a geojson:Feature ;
     sosa:hasFeatureOfInterest <eg:Traverse-P1-P2> ;
@@ -257,8 +267,7 @@ Example of Specialised ObservationCollection being a vector, using GeoPose as pa
                     geopose:position [ geopose:h 5e-01 ;
                             geo1:lat -1.116718e+02 ;
                             geo1:long 4.005671e+01 ] ] ] ;
-    sosa:observedProperty <https://example.org/def/observableProperties/geopose> ;
-    sosa:resultTime "2023-05-22T16:41:00+2" ;
+    sosa:resultTime "2023-05-22T16:41:00+02:00"^^xsd:dateTime ;
     geojson:geometry [ a geojson:LineString ;
             geojson:coordinates ( ( -1.116718e+02 4.005671e+01 ) ( -1.1171e+02 4.015671e+01 ) ) ] .
 
@@ -266,7 +275,7 @@ Example of Specialised ObservationCollection being a vector, using GeoPose as pa
 ```
 
 
-### VectorObservation Feature using json-path
+### VectorObservation Feature from a collection, with its own observedProperty
 #### json
 ```json
 {
@@ -281,7 +290,7 @@ Example of Specialised ObservationCollection being a vector, using GeoPose as pa
       ],
       [
         -111.71,
-        40.156709946862875
+        40.156709946862874
       ]
     ]
   },
@@ -289,8 +298,8 @@ Example of Specialised ObservationCollection being a vector, using GeoPose as pa
   "place": null,
   "properties": {
     "hasFeatureOfInterest": "eg:Traverse-P1-P2",
-    "observedProperty": "https://example.org/def/observableProperties/geopose",
-    "resultTime": "2023-05-22T16:41:00+2",
+    "observedProperty": "ex:pose-target-distance",
+    "resultTime": "2023-05-22T16:41:00+02:00",
     "hasResult": {
       "pose": {
         "position": {
@@ -308,12 +317,18 @@ Example of Specialised ObservationCollection being a vector, using GeoPose as pa
     }
   }
 }
+
 ```
 
 #### jsonld
 ```jsonld
 {
-  "@context": "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld",
+  "@context": [
+    {
+      "ex": "https://w3id.org/ogc/demo/observable/"
+    },
+    "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld"
+  ],
   "id": "vector-obs-1",
   "type": "Feature",
   "geometry": {
@@ -333,8 +348,8 @@ Example of Specialised ObservationCollection being a vector, using GeoPose as pa
   "place": null,
   "properties": {
     "hasFeatureOfInterest": "eg:Traverse-P1-P2",
-    "observedProperty": "https://example.org/def/observableProperties/geopose",
-    "resultTime": "2023-05-22T16:41:00+2",
+    "observedProperty": "ex:pose-target-distance",
+    "resultTime": "2023-05-22T16:41:00+02:00",
     "hasResult": {
       "pose": {
         "position": {
@@ -356,6 +371,7 @@ Example of Specialised ObservationCollection being a vector, using GeoPose as pa
 
 #### ttl
 ```ttl
+@prefix ex: <https://w3id.org/ogc/demo/observable/> .
 @prefix geo1: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix geopose: <http://example.com/geopose/> .
@@ -364,7 +380,7 @@ Example of Specialised ObservationCollection being a vector, using GeoPose as pa
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<file:///github/workspace/vector-obs-1> a geojson:Feature ;
+<http://example.com/features/vector-obs-1> a geojson:Feature ;
     sosa:hasFeatureOfInterest <eg:Traverse-P1-P2> ;
     sosa:hasResult [ resultschema:distance 6.889234e+06 ;
             resultschema:pose [ geopose:angles [ geopose:pitch -1e-02 ;
@@ -373,8 +389,8 @@ Example of Specialised ObservationCollection being a vector, using GeoPose as pa
                     geopose:position [ geopose:h 5e-01 ;
                             geo1:lat -1.116718e+02 ;
                             geo1:long 4.005671e+01 ] ] ] ;
-    sosa:observedProperty <https://example.org/def/observableProperties/geopose> ;
-    sosa:resultTime "2023-05-22T16:41:00+2" ;
+    sosa:observedProperty ex:pose-target-distance ;
+    sosa:resultTime "2023-05-22T16:41:00+02:00"^^xsd:dateTime ;
     geojson:geometry [ a geojson:LineString ;
             geojson:coordinates ( ( -1.116718e+02 4.005671e+01 ) ( -1.1171e+02 4.015671e+01 ) ) ] .
 
@@ -394,6 +410,13 @@ $defs:
       properties:
         properties:
           $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.yaml
+  VectorObservationMember:
+    allOf:
+    - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observation/schema.yaml#/$defs/member
+    - type: object
+      properties:
+        properties:
+          $ref: https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservation/schema.yaml#/$defs/member
   VectorObservationCollection:
     allOf:
     - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observationCollection/schema.yaml
@@ -402,10 +425,15 @@ $defs:
         features:
           type: array
           items:
-            $ref: '#/$defs/VectorObservation'
+            $ref: '#/$defs/VectorObservationMember'
 anyOf:
 - $ref: '#/$defs/VectorObservation'
 - $ref: '#/$defs/VectorObservationCollection'
+x-bblocks-metadata:
+  itemIdentifier: ogc.bbr.examples.observation.vectorObservationFeature
+  register: https://ogcincubator.github.io/bblocks-examples/build/register.json
+  version: '1.0'
+  dateOfLastChange: '2026-11-03'
 
 ```
 
@@ -640,7 +668,46 @@ Links to the schema:
     },
     "hasMember": {
       "@id": "sosa:hasMember",
-      "@type": "@id"
+      "@type": "@id",
+      "@context": {
+        "phenomenonTime": {
+          "@context": {
+            "hasBeginning": "owlTime:hasBeginning",
+            "hasEnd": "owlTime:hasEnd",
+            "inXSDDateTime": {
+              "@id": "owlTime:inXSDDateTime",
+              "@type": "xsd:dateTime"
+            },
+            "inXSDDateTimeStamp": {
+              "@id": "owlTime:inXSDDateTimeStamp",
+              "@type": "xsd:dateTimeStamp"
+            },
+            "inXSDDate": {
+              "@id": "owlTime:inXSDDate",
+              "@type": "xsd:date"
+            },
+            "Instant": "owlTime:Instant",
+            "Interval": "owlTime:Interval",
+            "ProperInterval": "owlTime:ProperInterval",
+            "hasDuration": "owlTime:hasDuration",
+            "hasXSDDuration": {
+              "@id": "owlTime:hasXSDDuration",
+              "@type": "xsd:duration"
+            },
+            "inTimePosition": "owlTime:inTimePosition",
+            "inXSDgYear": {
+              "@id": "owlTime:inXSDgYear",
+              "@type": "xsd:gYear"
+            },
+            "inXSDgYearMonth": {
+              "@id": "owlTime:inXSDgYearMonth",
+              "@type": "xsd:gYearMonth"
+            }
+          },
+          "@id": "sosa:phenomenonTime",
+          "@type": "xsd:dateTime"
+        }
+      }
     },
     "hasOriginalSample": {
       "@id": "sosa:hasOriginalSample",
@@ -904,10 +971,46 @@ Links to the schema:
       "@id": "ssn-system:qualityOfObservation",
       "@type": "@id"
     },
-    "resultTime": "sosa:resultTime",
+    "resultTime": {
+      "@id": "sosa:resultTime",
+      "@type": "xsd:dateTime"
+    },
     "phenomenonTime": {
+      "@context": {
+        "hasBeginning": "owlTime:hasBeginning",
+        "hasEnd": "owlTime:hasEnd",
+        "inXSDDateTime": {
+          "@id": "owlTime:inXSDDateTime",
+          "@type": "xsd:dateTime"
+        },
+        "inXSDDateTimeStamp": {
+          "@id": "owlTime:inXSDDateTimeStamp",
+          "@type": "xsd:dateTimeStamp"
+        },
+        "inXSDDate": {
+          "@id": "owlTime:inXSDDate",
+          "@type": "xsd:date"
+        },
+        "Instant": "owlTime:Instant",
+        "Interval": "owlTime:Interval",
+        "ProperInterval": "owlTime:ProperInterval",
+        "hasDuration": "owlTime:hasDuration",
+        "hasXSDDuration": {
+          "@id": "owlTime:hasXSDDuration",
+          "@type": "xsd:duration"
+        },
+        "inTimePosition": "owlTime:inTimePosition",
+        "inXSDgYear": {
+          "@id": "owlTime:inXSDgYear",
+          "@type": "xsd:gYear"
+        },
+        "inXSDgYearMonth": {
+          "@id": "owlTime:inXSDgYearMonth",
+          "@type": "xsd:gYearMonth"
+        }
+      },
       "@id": "sosa:phenomenonTime",
-      "@type": "@id"
+      "@type": "xsd:dateTime"
     },
     "hasFeatureOfInterest": {
       "@id": "sosa:hasFeatureOfInterest",
@@ -921,8 +1024,14 @@ Links to the schema:
       "@id": "sosa:usedProcedure",
       "@type": "@id"
     },
-    "startTime": "sosa:startTime",
-    "endTime": "sosa:endTime",
+    "startTime": {
+      "@id": "sosa:startTime",
+      "@type": "xsd:dateTime"
+    },
+    "endTime": {
+      "@id": "sosa:endTime",
+      "@type": "xsd:dateTime"
+    },
     "hasResult": {
       "@context": {
         "pose": {
@@ -951,10 +1060,7 @@ Links to the schema:
       "@id": "sosa:hasResult",
       "@type": "@id"
     },
-    "hasSimpleResult": {
-      "@id": "sosa:hasSimpleResult",
-      "@type": "@id"
-    },
+    "hasSimpleResult": "sosa:hasSimpleResult",
     "hasInputValue": {
       "@id": "sosa:hasInputValue",
       "@type": "@id"

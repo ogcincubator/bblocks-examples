@@ -1,4 +1,10 @@
 {
+  "@context": [
+    {
+      "ex": "https://w3id.org/ogc/demo/observable/"
+    },
+    "https://ogcincubator.github.io/bblocks-examples/build/annotated/bbr/examples/observation/vectorObservationFeature/context.jsonld"
+  ],
   "id": "vector-obs-1",
   "type": "Feature",
   "geometry": {
@@ -18,8 +24,8 @@
   "place": null,
   "properties": {
     "hasFeatureOfInterest": "eg:Traverse-P1-P2",
-    "observedProperty": "https://w3id.org/ad4gd/air-quality/properties/CO2",
-    "resultTime": "2023-05-22T16:41:00+2",
+    "observedProperty": "ex:pose-target-distance",
+    "resultTime": "2023-05-22T16:41:00+02:00",
     "hasResult": {
       "pose": {
         "position": {

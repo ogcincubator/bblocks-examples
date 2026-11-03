@@ -12,5 +12,5 @@
                             geo1:lat 4.346498e+01 ;
                             geo1:long -3.803638e+00 ] ] ] ;
     sosa:observedProperty <file:///github/workspace/p1> ;
-    sosa:resultTime "2023-05-22T16:41:00+2" .
+    sosa:resultTime "2023-05-22T16:41:00+02:00"^^xsd:dateTime .
 

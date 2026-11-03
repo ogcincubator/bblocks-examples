@@ -1,23 +1,37 @@
 $schema: https://json-schema.org/draft/2020-12/schema
 description: Example SOSA Vector Observation
+$defs:
+  VectorResult:
+    type: object
+    properties:
+      hasResult:
+        properties:
+          pose:
+            $ref: https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/schema.yaml
+            x-jsonld-id: https://w3id.org/ogc/hosted/examples/resultschema/pose
+          distance:
+            type: number
+            x-jsonld-id: https://w3id.org/ogc/hosted/examples/resultschema/distance
+        x-jsonld-id: http://www.w3.org/ns/sosa/hasResult
+    required:
+    - hasResult
+    not:
+      required:
+      - hasSimpleResult
+  member:
+    description: A Vector Observation in an ObservationCollection (observed property
+      etc. may be provided by the collection)
+    allOf:
+    - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation/schema.yaml#/$defs/member
+    - $ref: '#/$defs/VectorResult'
 allOf:
 - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation/schema.yaml
-- type: object
-  properties:
-    hasResult:
-      properties:
-        pose:
-          $ref: https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/schema.yaml
-          x-jsonld-id: https://w3id.org/ogc/hosted/examples/resultschema/pose
-        distance:
-          type: number
-          x-jsonld-id: https://w3id.org/ogc/hosted/examples/resultschema/distance
-      x-jsonld-id: http://www.w3.org/ns/sosa/hasResult
-  required:
-  - hasResult
-  not:
-    required:
-    - hasSimpleResult
+- $ref: '#/$defs/VectorResult'
 x-jsonld-prefixes:
   sosa: http://www.w3.org/ns/sosa/
   resultschema: https://w3id.org/ogc/hosted/examples/resultschema/
+x-bblocks-metadata:
+  itemIdentifier: ogc.bbr.examples.observation.vectorObservation
+  register: https://ogcincubator.github.io/bblocks-examples/build/register.json
+  version: '1.0'
+  dateOfLastChange: '2026-11-03'
