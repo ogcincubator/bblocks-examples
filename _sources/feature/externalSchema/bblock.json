@@ -13,7 +13,7 @@
       "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
       "link": "https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7"
     },
-     {
+    {
       "title": "Smart Data models",
       "link": "https://smartdatamodels.org/"
     },
@@ -25,12 +25,10 @@
   "maturity": "development",
   "scope": "unstable",
   "ldContext": "https://raw.githubusercontent.com/smart-data-models/dataModel.ACRIS/master/context.jsonld",
-  "dependsOn": [
-
-  ],
+  "dependsOn": [],
   "tags": [
     "feature",
     "examples"
   ],
-  "group": "Examples"
+  "group": "Features & Geometry"
 }

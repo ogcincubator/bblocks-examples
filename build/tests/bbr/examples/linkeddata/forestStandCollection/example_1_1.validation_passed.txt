@@ -1,5 +1,5 @@
 Validation report for ogc.bbr.examples.linkeddata.forestStandCollection - Forest Stand Feature Collection
-Generated 2026-06-28T16:32:35.875165+00:00
+Generated 2026-10-02T09:32:12.047809+00:00
 === Files ===
 Using examples/feature.json from examples
 JSON-LD context is present - uplifting
@@ -12,22 +12,24 @@ Validation passed
 === End JSON Schema ===
 
 === SHACL ===
+Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
+ - /github/workspace/_sources/linkeddata/forest-ontology/ontology.ttl
 Validation result for _sources/linkeddata/forestStandFeature/shapes.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for _sources/linkeddata/forestStandFeature/shapes.shacl:
- - Shape <https://example.com/focal/feature-lesniTyp>: _:N56b5c05a1e404349a1109ec8a8f0905e,_:N0edc9087bb4b4684aa3af7789f0a1f2c,_:Nde2a8db748fa4ff885fba02317215225,_:Ne27a0f47bdde46858fea5b73566da98b,_:Nef710277dbb8428785c333db1360a5cc,_:N76094df113c34b7abcc3d29197efd59f,_:N33ac0de6e47141b4840ecfe559948448,_:N6d94c5e573894c10a77437ad9b634080,_:Nf3bf360e9c794dba9dee7f2b3e565c53,_:N2a3f25a63a2b45b280bc0d407869f1b2,_:N5ae34fa2e5744dc8a483c7e55fd2f97b,_:N8f9edf5e581a493e8085c449b9a99c73,_:N85ef24d969724ae69b2f4e6030018d8d
+ - Shape <https://example.com/focal/feature-lesniTyp>: _:Ne579277d581c4197a17ba4fb9f6faba4,_:Nd22b007e7fea4f51a5748c6d68121288,_:N7d8d9d458de442cd9d2f44f3d8c73620,_:N999999ed23e84c2f8a50de675c6fe382,_:N5ec8defc5e134142a36650be979688ae,_:N32ebdfd754634d58a7d1829f361a96b1,_:N1c04ad94759d4aaebdd9bab4e897621d,_:N723c370b1e7a4d37a930210d0526418f,_:Ne50afd56752b43b587b1c44c7834d210,_:N4f14ef846e3848f1a28900e8f323e6b8,_:Ncdf7d544ab5e4e9193ada58ecc2c5792,_:Nebd0d37769aa47daa589ed658822b731,_:N44079730461645b8a817d793c5a8b5c3
 
 Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:FeatureShape: _:N56b5c05a1e404349a1109ec8a8f0905e,_:N0edc9087bb4b4684aa3af7789f0a1f2c,_:Nde2a8db748fa4ff885fba02317215225,_:Ne27a0f47bdde46858fea5b73566da98b,_:Nef710277dbb8428785c333db1360a5cc,_:N76094df113c34b7abcc3d29197efd59f,_:N33ac0de6e47141b4840ecfe559948448,_:N6d94c5e573894c10a77437ad9b634080,_:Nf3bf360e9c794dba9dee7f2b3e565c53,_:N2a3f25a63a2b45b280bc0d407869f1b2,_:N5ae34fa2e5744dc8a483c7e55fd2f97b,_:N8f9edf5e581a493e8085c449b9a99c73,_:N85ef24d969724ae69b2f4e6030018d8d
  - Shape geojson:GeometryShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
  - Shape geojson:LinkShape: *none*
+ - Shape geojson:FeatureShape: _:Ne579277d581c4197a17ba4fb9f6faba4,_:Nd22b007e7fea4f51a5748c6d68121288,_:N7d8d9d458de442cd9d2f44f3d8c73620,_:N999999ed23e84c2f8a50de675c6fe382,_:N5ec8defc5e134142a36650be979688ae,_:N32ebdfd754634d58a7d1829f361a96b1,_:N1c04ad94759d4aaebdd9bab4e897621d,_:N723c370b1e7a4d37a930210d0526418f,_:Ne50afd56752b43b587b1c44c7834d210,_:N4f14ef846e3848f1a28900e8f323e6b8,_:Ncdf7d544ab5e4e9193ada58ecc2c5792,_:Nebd0d37769aa47daa589ed658822b731,_:N44079730461645b8a817d793c5a8b5c3
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
 
 Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
@@ -35,12 +37,12 @@ Validation result for https://opengeospatial.github.io/bblocks/registereditems/g
   Conforms: True
   
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
- - Shape geojson:FeatureCollectionShape: _:N2fddcd6f87c94ffdb87e91b9cd962041
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
- - Shape geojson:FeatureShape: *none*
  - Shape geojson:GeometryShape: *none*
- - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:LinkShape: *none*
+ - Shape geojson:FeatureShape: *none*
+ - Shape geojson:FeatureCollectionShape: _:Nea6f678c8ce44ec0be1dce4afec7f8b9
 
 === End SHACL ===
 

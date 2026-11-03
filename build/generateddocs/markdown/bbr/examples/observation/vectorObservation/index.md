@@ -61,7 +61,7 @@ This building block defines the *property set* for an example specialisation of 
 #### ttl
 ```ttl
 @prefix geo1: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
-@prefix geopose: <https://w3id.org/ogc/geopose/> .
+@prefix geopose: <http://example.com/geopose/> .
 @prefix resultschema: <https://w3id.org/ogc/hosted/examples/resultschema/> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -70,9 +70,9 @@ This building block defines the *property set* for an example specialisation of 
     sosa:hasResult [ resultschema:pose [ geopose:angles [ geopose:pitch -9.2e-01 ;
                             geopose:roll 3.3e-01 ;
                             geopose:yaw 5.553e+00 ] ;
-                    geopose:position [ geo1:lat 4.346498e+01 ;
-                            geo1:long -3.803638e+00 ;
-                            geopose:h 5e-01 ] ] ] ;
+                    geopose:position [ geopose:h 5e-01 ;
+                            geo1:lat 4.346498e+01 ;
+                            geo1:long -3.803638e+00 ] ] ] ;
     sosa:observedProperty <file:///github/workspace/p1> ;
     sosa:resultTime "2023-05-22T16:41:00+2" .
 
@@ -91,7 +91,7 @@ allOf:
     hasResult:
       properties:
         pose:
-          $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/schema.yaml
+          $ref: https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/schema.yaml
           x-jsonld-id: https://w3id.org/ogc/hosted/examples/resultschema/pose
         distance:
           type: number
@@ -202,8 +202,16 @@ Links to the schema:
       "@id": "sosa:System",
       "@type": "@id"
     },
+    "actsOn": {
+      "@id": "sosa:actsOn",
+      "@type": "@id"
+    },
     "actsOnProperty": {
       "@id": "sosa:actsOnProperty",
+      "@type": "@id"
+    },
+    "deployedAsset": {
+      "@id": "sosa:deployedAsset",
       "@type": "@id"
     },
     "deployedOnPlatform": {
@@ -250,34 +258,6 @@ Links to the schema:
       "@id": "sosa:hasProperty",
       "@type": "@id"
     },
-    "hasResult": {
-      "@id": "sosa:hasResult",
-      "@type": "@id",
-      "@context": {
-        "pose": {
-          "@context": {
-            "position": {
-              "@context": {
-                "lat": "geo:lat",
-                "lon": "geo:long",
-                "h": "geopose:h"
-              },
-              "@id": "geopose:position"
-            },
-            "angles": {
-              "@context": {
-                "yaw": "geopose:yaw",
-                "pitch": "geopose:pitch",
-                "roll": "geopose:roll"
-              },
-              "@id": "geopose:angles"
-            }
-          },
-          "@id": "resultschema:pose"
-        },
-        "distance": "resultschema:distance"
-      }
-    },
     "hasResultQuality": {
       "@id": "sosa:hasResultQuality",
       "@type": "@id"
@@ -290,18 +270,10 @@ Links to the schema:
       "@id": "sosa:hasSampledFeature",
       "@type": "@id"
     },
-    "hasSimpleResult": {
-      "@id": "sosa:hasSimpleResult",
-      "@type": "@id"
-    },
     "hasSubSystem": {
       "@id": "sosa:hasSubSystem",
       "@type": "@id",
       "@container": "@set"
-    },
-    "hasUltimateFeatureOfInterest": {
-      "@id": "sosa:hasUltimateFeatureOfInterest",
-      "@type": "@id"
     },
     "hosts": {
       "@id": "sosa:hosts",
@@ -336,6 +308,10 @@ Links to the schema:
       "@id": "sosa:isObservedBy",
       "@type": "@id"
     },
+    "isOriginalSampleOf": {
+      "@id": "sosa:isOriginalSampleOf",
+      "@type": "@id"
+    },
     "isPropertyOf": {
       "@id": "sosa:isPropertyOf",
       "@type": "@id"
@@ -360,6 +336,14 @@ Links to the schema:
       "@id": "sosa:isSampleOf",
       "@type": "@id"
     },
+    "isSampleOfUltimateFOI": {
+      "@id": "sosa:isSampleOfUltimateFOI",
+      "@type": "@id"
+    },
+    "isSubSystemOf": {
+      "@id": "sosa:isSubSystemOf",
+      "@type": "@id"
+    },
     "madeActuation": {
       "@id": "sosa:madeActuation",
       "@type": "@id"
@@ -372,12 +356,28 @@ Links to the schema:
       "@id": "sosa:madeBySampler",
       "@type": "@id"
     },
+    "madeBySensor": {
+      "@id": "sosa:madeBySensor",
+      "@type": "@id"
+    },
+    "madeBySystem": {
+      "@id": "sosa:madeBySystem",
+      "@type": "@id"
+    },
+    "madeExecution": {
+      "@id": "sosa:madeExecution",
+      "@type": "@id"
+    },
     "madeObservation": {
       "@id": "sosa:madeObservation",
       "@type": "@id"
     },
     "madeSampling": {
       "@id": "sosa:madeSampling",
+      "@type": "@id"
+    },
+    "observedProperty": {
+      "@id": "sosa:observedProperty",
       "@type": "@id"
     },
     "observes": {
@@ -517,23 +517,57 @@ Links to the schema:
       "@id": "sosa:hasFeatureOfInterest",
       "@type": "@id"
     },
-    "observedProperty": {
-      "@id": "sosa:observedProperty",
+    "hasUltimateFeatureOfInterest": {
+      "@id": "sosa:hasUltimateFeatureOfInterest",
       "@type": "@id"
     },
     "usedProcedure": {
       "@id": "sosa:usedProcedure",
       "@type": "@id"
     },
-    "madeBySensor": {
-      "@id": "sosa:madeBySensor",
+    "startTime": "sosa:startTime",
+    "endTime": "sosa:endTime",
+    "hasResult": {
+      "@context": {
+        "pose": {
+          "@context": {
+            "position": {
+              "@context": {
+                "lat": "geo:lat",
+                "lon": "geo:long",
+                "h": "geopose:h"
+              },
+              "@id": "geopose:position"
+            },
+            "angles": {
+              "@context": {
+                "yaw": "geopose:yaw",
+                "pitch": "geopose:pitch",
+                "roll": "geopose:roll"
+              },
+              "@id": "geopose:angles"
+            }
+          },
+          "@id": "resultschema:pose"
+        },
+        "distance": "resultschema:distance"
+      },
+      "@id": "sosa:hasResult",
+      "@type": "@id"
+    },
+    "hasSimpleResult": {
+      "@id": "sosa:hasSimpleResult",
+      "@type": "@id"
+    },
+    "hasInputValue": {
+      "@id": "sosa:hasInputValue",
       "@type": "@id"
     },
     "sosa": "http://www.w3.org/ns/sosa/",
     "ssn-system": "ssn:systems/",
     "ssn": "http://www.w3.org/ns/ssn/",
     "resultschema": "https://w3id.org/ogc/hosted/examples/resultschema/",
-    "geopose": "https://w3id.org/ogc/geopose/",
+    "geopose": "http://example.com/geopose/",
     "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
     "@version": 1.1
   }

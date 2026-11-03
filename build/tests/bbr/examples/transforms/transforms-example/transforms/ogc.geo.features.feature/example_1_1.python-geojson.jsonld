@@ -1,0 +1,40 @@
+{
+  "@context": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/context.jsonld",
+  "type": "Feature",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          0.994708,
+          38.681206
+        ],
+        [
+          0.989551,
+          38.686123
+        ],
+        [
+          0.570508,
+          38.811685
+        ],
+        [
+          0.253276,
+          38.242096
+        ],
+        [
+          0.489714,
+          38.096498
+        ],
+        [
+          0.994708,
+          38.681206
+        ]
+      ]
+    ]
+  },
+  "properties": {
+    "one": 1,
+    "two": 2,
+    "string": "value"
+  }
+}

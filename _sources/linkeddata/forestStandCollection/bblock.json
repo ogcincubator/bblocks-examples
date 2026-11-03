@@ -15,14 +15,13 @@
   ],
   "maturity": "development",
   "scope": "unstable",
-  "dependsOn": [
-  ],
+  "dependsOn": [],
   "tags": [
     "focal",
     "forestry",
     "feature",
     "collection"
   ],
-  "group": "FOCAL",
+  "group": "Semantic & Linked Data",
   "highlighted": true
 }

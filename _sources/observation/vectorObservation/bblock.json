@@ -8,12 +8,10 @@
   "register": "ogc-building-block-examples",
   "version": "1.0",
   "dateOfLastChange": "2023-05-19",
-  "sources": [
-  ],
+  "sources": [],
   "maturity": "development",
   "scope": "unstable",
-  "dependsOn": [
-  ],
+  "dependsOn": [],
   "tags": [
     "examples",
     "sosa",
@@ -22,5 +20,5 @@
     "o&m&s",
     "geopose"
   ],
-  "group": "Examples"
+  "group": "Features & Geometry"
 }

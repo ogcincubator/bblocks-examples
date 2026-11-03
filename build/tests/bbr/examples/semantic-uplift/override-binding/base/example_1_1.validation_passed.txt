@@ -1,0 +1,13 @@
+Validation report for ogc.bbr.examples.semantic-uplift.override-binding.base - Override Binding - Base
+Generated 2026-10-02T09:32:04.985026+00:00
+=== Files ===
+Using examples/base.json from examples
+JSON-LD context is present - uplifting
+Output JSON-LD example_1_1.jsonld created
+Output Turtle example_1_1.ttl created
+=== End Files ===
+
+=== JSON Schema ===
+Validation passed
+=== End JSON Schema ===
+

@@ -24,11 +24,10 @@
   ],
   "maturity": "development",
   "scope": "unstable",
-  "dependsOn": [
-  ],
+  "dependsOn": [],
   "tags": [
     "feature",
     "examples"
   ],
-  "group": "Examples"
+  "group": "Features & Geometry"
 }

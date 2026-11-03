@@ -15,12 +15,10 @@
   ],
   "maturity": "development",
   "scope": "unstable",
-  "dependsOn": [
-  ],
+  "dependsOn": [],
   "tags": [
     "properties",
     "features",
     "examples"
-  ],
-  "group": "Examples"
+  ]
 }

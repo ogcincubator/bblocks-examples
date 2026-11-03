@@ -14,7 +14,8 @@
     "dateTimeAddition": "2024-10-03T11:31:00+02:00",
     "itemClass": "schema",
     "version": "0.1",
-    "dateOfLastChange": "2026-06-28",
+    "dateOfLastChange": "2024-10-03",
+    "group": "Validation & Transforms",
     "shaclShapes": [],
     "ldContext": "_sources/transforms/transforms-example/context.jsonld"
   },
@@ -29,38 +30,45 @@
     "transformResults": {
       "prefix-keys": {
         "success": true,
+        "sizeBytes": 59,
         "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.prefix-keys.json"
       },
       "inline-transform": {
         "success": true,
+        "sizeBytes": 146,
         "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.inline-transform.json"
       },
       "python-uppercase-keys": {
         "success": true,
+        "sizeBytes": 47,
         "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.python-uppercase-keys.json"
       },
       "node-add-metadata": {
         "success": true,
+        "sizeBytes": 90,
         "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.node-add-metadata.json"
       },
       "python-to-csv": {
         "success": true,
+        "sizeBytes": 25,
         "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.python-to-csv.csv"
       },
       "node-to-csv": {
         "success": true,
+        "sizeBytes": 32,
         "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.node-to-csv.csv"
       },
       "jq-error": {
         "success": false,
-        "stderr": "ValueError: intentional test error\nTraceback (most recent call last):\n  File \"/src/ogc/bblocks/transform.py\", line 605, in apply_transforms\n    result = transformer.transform(transform_metadata)\n  File \"/src/ogc/bblocks/models.py\", line 932, in transform\n    output = self.do_transform(metadata)\n  File \"/src/ogc/bblocks/transformers/jq.py\", line 24, in do_transform\n    transformed = jq.compile(metadata.transform_content).input_text(metadata.input_data).text()\n  File \"jq.pyx\", line 323, in genexpr\n  File \"jq.pyx\", line 323, in genexpr\n  File \"jq.pyx\", line 373, in jq._ResultIterator.__next__\nValueError: intentional test error\n"
+        "stderr": "ValueError: intentional test error\nTraceback (most recent call last):\n  File \"/src/ogc/bblocks/transform.py\", line 611, in apply_transforms\n    result = transformer.transform(transform_metadata)\n  File \"/src/ogc/bblocks/models.py\", line 1193, in transform\n    output = self.do_transform(metadata)\n  File \"/src/ogc/bblocks/transformers/jq.py\", line 24, in do_transform\n    transformed = jq.compile(metadata.transform_content).input_text(metadata.input_data).text()\n  File \"jq.pyx\", line 323, in genexpr\n  File \"jq.pyx\", line 323, in genexpr\n  File \"jq.pyx\", line 373, in jq._ResultIterator.__next__\nValueError: intentional test error\n"
       },
       "python-error": {
         "success": false,
-        "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpfvihs90s.py\", line 253, in <module>\n    exec(_TRANSFORM_CODE, _ns)\n  File \"<transform>\", line 1, in <module>\nValueError: intentional test error from Python transform\n"
+        "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp0_te7oyp.py\", line 253, in <module>\n    exec(_TRANSFORM_CODE, _ns)\n  File \"<transform>\", line 1, in <module>\nValueError: intentional test error from Python transform\n"
       },
       "jinja2-html": {
         "success": true,
+        "sizeBytes": 96,
         "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.jinja2-html.html"
       }
     }
@@ -78,9 +86,10 @@
   "id_prefix": "ogc.bbr.examples.",
   "imported_register_urls": [
     "https://opengeospatial.github.io/bblocks/register.json",
-    "https://opengeospatial.github.io/ogcapi-sosa",
+    "https://opengeospatial.github.io/ogcapi-sosa/build/register.json",
     "https://ogcincubator.github.io/bblocks-ogcapi-processes",
-    "https://ogcincubator.github.io/topo-feature"
+    "https://ogcincubator.github.io/topo-feature/build/register.json",
+    "https://opengeospatial.github.io/geopose-bblocks/"
   ],
   "transform_plugins": [
     {
