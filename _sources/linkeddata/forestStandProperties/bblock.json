@@ -15,7 +15,7 @@
       "link": "https://example.com/sources/1"
     }
   ],
-  "dependsOn": [
+  "isDescribedBy": [
     "ogc.bbr.examples.linkeddata.forest-ontology"
   ],
   "maturity": "mature",

@@ -16,6 +16,9 @@
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [],
+  "isDescribedBy": [
+    "ogc.bbr.examples.linkeddata.forest-ontology"
+  ],
   "tags": [
     "focal",
     "forestry",
