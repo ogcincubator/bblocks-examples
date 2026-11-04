@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputSchema - Buffer geometry process input schema",
   "bblockName": "Buffer geometry process input schema",
   "bblockId": "ogc.bbr.examples.ogcapi.processes.schemas.buffer-geometry.inputSchema",
-  "generated": "2026-11-03T04:28:43.187560+00:00",
+  "generated": "2026-11-04T12:51:13.265497+00:00",
   "result": true,
   "items": [],
   "globalErrors": {},
