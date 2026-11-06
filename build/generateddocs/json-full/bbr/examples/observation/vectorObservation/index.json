@@ -10,7 +10,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2026-11-04",
+  "dateOfLastChange": "2026-11-06",
   "sources": [],
   "maturity": "development",
   "scope": "unstable",
@@ -71,7 +71,7 @@
       ]
     }
   ],
-  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Example SOSA Vector Observation\n$defs:\n  VectorResult:\n    type: object\n    properties:\n      hasResult:\n        properties:\n          pose:\n            $ref: https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/schema.yaml\n            x-jsonld-id: https://w3id.org/ogc/hosted/examples/resultschema/pose\n          distance:\n            type: number\n            x-jsonld-id: https://w3id.org/ogc/hosted/examples/resultschema/distance\n        x-jsonld-id: http://www.w3.org/ns/sosa/hasResult\n    required:\n    - hasResult\n    not:\n      required:\n      - hasSimpleResult\n  member:\n    description: A Vector Observation in an ObservationCollection (observed property\n      etc. may be provided by the collection)\n    allOf:\n    - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation/schema.yaml#/$defs/member\n    - $ref: '#/$defs/VectorResult'\nallOf:\n- $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation/schema.yaml\n- $ref: '#/$defs/VectorResult'\nx-jsonld-prefixes:\n  sosa: http://www.w3.org/ns/sosa/\n  resultschema: https://w3id.org/ogc/hosted/examples/resultschema/\nx-bblocks-metadata:\n  itemIdentifier: ogc.bbr.examples.observation.vectorObservation\n  register: https://ogcincubator.github.io/bblocks-examples/build/register.json\n  version: '1.0'\n  dateOfLastChange: '2026-11-04'\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Example SOSA Vector Observation\n$defs:\n  VectorResult:\n    type: object\n    properties:\n      hasResult:\n        properties:\n          pose:\n            $ref: https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/schema.yaml\n            x-jsonld-id: https://w3id.org/ogc/hosted/examples/resultschema/pose\n          distance:\n            type: number\n            x-jsonld-id: https://w3id.org/ogc/hosted/examples/resultschema/distance\n        x-jsonld-id: http://www.w3.org/ns/sosa/hasResult\n    required:\n    - hasResult\n    not:\n      required:\n      - hasSimpleResult\n  member:\n    description: A Vector Observation in an ObservationCollection (observed property\n      etc. may be provided by the collection)\n    allOf:\n    - $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation/schema.yaml#/$defs/member\n    - $ref: '#/$defs/VectorResult'\nallOf:\n- $ref: https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/properties/observation/schema.yaml\n- $ref: '#/$defs/VectorResult'\nx-jsonld-prefixes:\n  sosa: http://www.w3.org/ns/sosa/\n  resultschema: https://w3id.org/ogc/hosted/examples/resultschema/\nx-bblocks-metadata:\n  itemIdentifier: ogc.bbr.examples.observation.vectorObservation\n  register: https://ogcincubator.github.io/bblocks-examples/build/register.json\n  version: '1.0'\n  dateOfLastChange: '2026-11-06'\n",
   "gitRepository": "https://github.com/ogcincubator/bblocks-examples",
   "gitPath": "_sources/observation/vectorObservation"
 }

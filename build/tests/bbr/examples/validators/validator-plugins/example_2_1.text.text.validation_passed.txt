@@ -1,5 +1,5 @@
 Validation report for ogc.bbr.examples.validators.validator-plugins - Validator plugins example
-Generated 2026-11-06T09:27:50.625302+00:00
+Generated 2026-11-06T11:04:19.249537+00:00
 === Plugin ===
 
 --- Plugin: bbplugin_sample_validators.WktValidator ---

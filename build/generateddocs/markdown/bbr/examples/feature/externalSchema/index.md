@@ -150,7 +150,7 @@ x-bblocks-metadata:
   itemIdentifier: ogc.bbr.examples.feature.externalSchema
   register: https://ogcincubator.github.io/bblocks-examples/build/register.json
   version: '1.0'
-  dateOfLastChange: '2026-11-04'
+  dateOfLastChange: '2026-11-06'
 
 ```
 

@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.bbr.examples.validators.validator-plugins - Validator plugins example",
   "bblockName": "Validator plugins example",
   "bblockId": "ogc.bbr.examples.validators.validator-plugins",
-  "generated": "2026-11-06T09:27:50.660796+00:00",
+  "generated": "2026-11-06T11:04:19.290248+00:00",
   "result": true,
   "items": [
     {
@@ -14,6 +14,7 @@
         "language": "zip"
       },
       "result": true,
+      "hasWarnings": false,
       "sections": [
         {
           "name": "GENERAL",
@@ -48,6 +49,7 @@
         "language": "wkt"
       },
       "result": true,
+      "hasWarnings": false,
       "sections": [
         {
           "name": "GENERAL",
@@ -82,6 +84,7 @@
         "language": "xml"
       },
       "result": true,
+      "hasWarnings": false,
       "sections": [
         {
           "name": "GENERAL",
@@ -121,6 +124,7 @@
         "language": "application/zip"
       },
       "result": true,
+      "hasWarnings": false,
       "sections": [
         {
           "name": "PLUGIN",
@@ -146,6 +150,7 @@
         "language": "text/wkt"
       },
       "result": true,
+      "hasWarnings": false,
       "sections": [
         {
           "name": "PLUGIN",
@@ -171,6 +176,7 @@
         "language": "application/xml"
       },
       "result": true,
+      "hasWarnings": false,
       "sections": [
         {
           "name": "PLUGIN",
@@ -188,6 +194,7 @@
     }
   ],
   "globalErrors": {},
+  "hasWarnings": false,
   "counts": {
     "total": 6,
     "passed": 6,

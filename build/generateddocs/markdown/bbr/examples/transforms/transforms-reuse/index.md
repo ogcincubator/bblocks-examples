@@ -30,7 +30,7 @@ x-bblocks-metadata:
   itemIdentifier: ogc.bbr.examples.transforms.transforms-reuse
   register: https://ogcincubator.github.io/bblocks-examples/build/register.json
   version: '0.1'
-  dateOfLastChange: '2026-11-04'
+  dateOfLastChange: '2026-11-06'
 
 ```
 
