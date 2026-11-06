@@ -61,7 +61,7 @@ This building block defines the *property set* for an example specialisation of 
 #### ttl
 ```ttl
 @prefix geo1: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
-@prefix geopose: <http://example.com/geopose/> .
+@prefix geopose: <https://w3id.org/ogc/geopose/> .
 @prefix resultschema: <https://w3id.org/ogc/hosted/examples/resultschema/> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -70,9 +70,9 @@ This building block defines the *property set* for an example specialisation of 
     sosa:hasResult [ resultschema:pose [ geopose:angles [ geopose:pitch -9.2e-01 ;
                             geopose:roll 3.3e-01 ;
                             geopose:yaw 5.553e+00 ] ;
-                    geopose:position [ geopose:h 5e-01 ;
-                            geo1:lat 4.346498e+01 ;
-                            geo1:long -3.803638e+00 ] ] ] ;
+                    geopose:position [ geo1:lat 4.346498e+01 ;
+                            geo1:long -3.803638e+00 ;
+                            geopose:h 5e-01 ] ] ] ;
     sosa:observedProperty <file:///github/workspace/p1> ;
     sosa:resultTime "2023-05-22T16:41:00+02:00"^^xsd:dateTime .
 
@@ -621,7 +621,7 @@ Links to the schema:
     "ssn-system": "ssn:systems/",
     "ssn": "http://www.w3.org/ns/ssn/",
     "resultschema": "https://w3id.org/ogc/hosted/examples/resultschema/",
-    "geopose": "http://example.com/geopose/",
+    "geopose": "https://w3id.org/ogc/geopose/",
     "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
     "@version": 1.1
   }

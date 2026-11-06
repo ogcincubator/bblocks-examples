@@ -493,7 +493,7 @@
             },
             "python-error": {
               "success": false,
-              "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpbypf_hs1.py\", line 253, in <module>\n    exec(_TRANSFORM_CODE, _ns)\n  File \"<transform>\", line 1, in <module>\nValueError: intentional test error from Python transform\n"
+              "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmpqieko84r.py\", line 253, in <module>\n    exec(_TRANSFORM_CODE, _ns)\n  File \"<transform>\", line 1, in <module>\nValueError: intentional test error from Python transform\n"
             },
             "jinja2-html": {
               "success": true,
@@ -507,7 +507,7 @@
             },
             "python-geojson": {
               "success": true,
-              "sizeBytes": 245,
+              "sizeBytes": 222,
               "url": "https://ogcincubator.github.io/bblocks-examples/build/tests/bbr/examples/transforms/transforms-example/transforms/example_1_1.python-geojson.geojson",
               "profilesValidation": {
                 "ogc.geo.features.feature": {
