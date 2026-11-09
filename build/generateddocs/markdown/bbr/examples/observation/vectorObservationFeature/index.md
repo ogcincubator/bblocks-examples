@@ -433,7 +433,7 @@ x-bblocks-metadata:
   itemIdentifier: ogc.bbr.examples.observation.vectorObservationFeature
   register: https://ogcincubator.github.io/bblocks-examples/build/register.json
   version: '1.0'
-  dateOfLastChange: '2026-11-06'
+  dateOfLastChange: '2026-11-09'
 
 ```
 

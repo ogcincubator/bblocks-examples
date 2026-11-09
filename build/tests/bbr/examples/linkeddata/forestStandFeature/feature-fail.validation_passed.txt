@@ -1,5 +1,5 @@
 Validation report for ogc.bbr.examples.linkeddata.forestStandFeature - Semantic Feature
-Generated 2026-11-06T11:04:20.849816+00:00
+Generated 2026-11-09T11:36:42.249727+00:00
 === General ===
 Test was expected to fail and it did.
 === End General ===
@@ -55,7 +55,7 @@ Failed validating 'required' in schema[0]['allOf'][1]['properties']['properties'
      'x-bblocks-metadata': {'itemIdentifier': 'ogc.bbr.examples.linkeddata.forestStandProperties',
                             'register': 'https://ogcincubator.github.io/bblocks-examples/build/register.json',
                             'version': '0.1',
-                            'dateOfLastChange': '2026-11-06'}}
+                            'dateOfLastChange': '2026-11-09'}}
 
 On instance['properties']:
     {'LES_OBL': 8,
@@ -76,32 +76,24 @@ On instance['properties']:
 === SHACL ===
 Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
  - /github/workspace/_sources/linkeddata/forest-ontology/ontology.ttl
+Validation result for _sources/linkeddata/forestStandFeature/shapes.shacl: 1 violation
 
 ** Validation error **
-Validation result for _sources/linkeddata/forestStandFeature/shapes.shacl:
-  Validation Report
-  Conforms: False
-  Results (1):
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: [ sh:message Literal("Every geojson:Feature must have at least one focal-prop:lesniTyp whose value is an IRI resource.") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:name Literal("lesniTyp") ; sh:nodeKind sh:IRI ; sh:path focal-prop:lesniTyp ]
-  	Focus Node: [ <https://purl.org/geojson/vocab#geometry> [ <https://purl.org/geojson/vocab#coordinates> ( ( ( ( Literal("-785371.8095452676", datatype=xsd:double) Literal("-1062509.789513851", datatype=xsd:double) ) ( Literal("-785367.0195452989", datatype=xsd:double) Literal("-1062497.0295136066", datatype=xsd:double) ) ( Literal("-785331.7395455441", datatype=xsd:double) Literal("-1062484.789513836", datatype=xsd:double) ) ( Literal("-785328.9995457674", datatype=xsd:double) Literal("-1062483.8395130674", datatype=xsd:double) ) ( Literal("-785327.3695456531", datatype=xsd:double) Literal("-1062483.2695133782", datatype=xsd:double) ) ( Literal("-785323.1095454189", datatype=xsd:double) Literal("-1062481.859513526", datatype=xsd:double) ) ( Literal("-785321.3095452319", datatype=xsd:double) Literal("-1062483.119513762", datatype=xsd:double) ) ( Literal("-785319.6595456105", datatype=xsd:double) Literal("-1062484.279513609", datatype=xsd:double) ) ( Literal("-785312.5495449909", datatype=xsd:double) Literal("-1062481.649514441", datatype=xsd:double) ) ( Literal("-785304.0695454476", datatype=xsd:double) Literal("-1062478.5095131495", datatype=xsd:double) ) ( Literal("-785297.8597342281", datatype=xsd:double) Literal("-1062470.8605682855", datatype=xsd:double) ) ( Literal("-785292.4935223358", datatype=xsd:double) Literal("-1062477.384270917", datatype=xsd:double) ) ( Literal("-785282.5179010982", datatype=xsd:double) Literal("-1062488.6637585284", datatype=xsd:double) ) ( Literal("-785284.2195450471", datatype=xsd:double) Literal("-1062489.2795136191", datatype=xsd:double) ) ( Literal("-785339.9495455844", datatype=xsd:double) Literal("-1062502.819514532", datatype=xsd:double) ) ( Literal("-785371.8095452676", datatype=xsd:double) Literal("-1062509.789513851", datatype=xsd:double) ) ) ) ) ; rdf:type <https://purl.org/geojson/vocab#MultiPolygon> ] ; <https://w3id.org/ogc/hosted/focal/properties/lesniCHS> Literal("25", datatype=xsd:integer) ; <https://w3id.org/ogc/hosted/focal/properties/lesniDSOPRL> Literal("2025", datatype=xsd:integer) ; <https://w3id.org/ogc/hosted/focal/properties/lesniID1> Literal("128301", datatype=xsd:integer) ; <https://w3id.org/ogc/hosted/focal/properties/lesniOVERT> Literal("NE") ; <https://w3id.org/ogc/hosted/focal/properties/lesniOblast> Literal("8", datatype=xsd:integer) ; <https://w3id.org/ogc/hosted/focal/properties/lesniOblastCast> Literal("a") ; <https://w3id.org/ogc/hosted/focal/properties/lesniPCHS> Literal("25a") ; <https://w3id.org/ogc/hosted/focal/properties/lesniPLOCHA> Literal("1224.24963", datatype=xsd:double) ; <https://w3id.org/ogc/hosted/focal/properties/lesniROKMAP> Literal("2015", datatype=xsd:integer) ; <https://w3id.org/ogc/hosted/focal/properties/lesniSLT> Literal("2S") ; <https://w3id.org/ogc/hosted/focal/properties/lesniUDRZBA> Literal("2022", datatype=xsd:integer) ; <https://w3id.org/ogc/hosted/focal/properties/lesniZADOST> Literal("-") ; <https://w3id.org/ogc/hosted/focal/properties/lesniZMENA> Literal("Uvedení do souladu s KN") ; rdf:type <https://purl.org/geojson/vocab#Feature> ]
-  	Result Path: focal-prop:lesniTyp
-  	Message: Every geojson:Feature must have at least one focal-prop:lesniTyp whose value is an IRI resource.
-  
+Violation (sh:MinCountConstraintComponent):
+  Source shape: <https://example.com/focal/feature-lesniTyp>/sh:property "lesniTyp" (path focal-prop:lesniTyp)
+  Focus node: _:N99328fe7ae364cbebcffd88af10daa1f
+  Result path: focal-prop:lesniTyp
+  Message: Every geojson:Feature must have at least one focal-prop:lesniTyp whose value is an IRI resource.
 Focus nodes for _sources/linkeddata/forestStandFeature/shapes.shacl:
- - Shape <https://example.com/focal/feature-lesniTyp>: _:Nf1d09e7d2fb24655a6b16c2491a8b42a
+ - Shape <https://example.com/focal/feature-lesniTyp>: _:N99328fe7ae364cbebcffd88af10daa1f
 
-Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
-  Validation Report
-  Conforms: True
-  
+Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl: no results
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:FeatureShape: _:Nf1d09e7d2fb24655a6b16c2491a8b42a
- - Shape geojson:GeometryShape: *none*
- - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:GeometryShape: *none*
+ - Shape geojson:FeatureShape: _:N99328fe7ae364cbebcffd88af10daa1f
+ - Shape geojson:LinkShape: *none*
 
 === End SHACL ===
 

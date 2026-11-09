@@ -21,6 +21,6 @@
     "itemIdentifier": "ogc.bbr.examples.transforms.transforms-example",
     "register": "https://ogcincubator.github.io/bblocks-examples/build/register.json",
     "version": "0.1",
-    "dateOfLastChange": "2026-11-06"
+    "dateOfLastChange": "2026-11-09"
   }
 }

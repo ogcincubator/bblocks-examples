@@ -1,5 +1,5 @@
 Validation report for ogc.bbr.examples.linkeddata.forestStandFeature - Semantic Feature
-Generated 2026-11-06T11:04:20.997829+00:00
+Generated 2026-11-09T11:36:42.401193+00:00
 === Files ===
 Using ../forestStandCollection/examples/feature.json from examples
 JSON-LD context is present - uplifting
@@ -14,23 +14,17 @@ Validation passed
 === SHACL ===
 Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
  - /github/workspace/_sources/linkeddata/forest-ontology/ontology.ttl
-Validation result for _sources/linkeddata/forestStandFeature/shapes.shacl:
-  Validation Report
-  Conforms: True
-  
+Validation result for _sources/linkeddata/forestStandFeature/shapes.shacl: no results
 Focus nodes for _sources/linkeddata/forestStandFeature/shapes.shacl:
- - Shape <https://example.com/focal/feature-lesniTyp>: _:N2281ec83689f40579d71e99e10ed9f7e
+ - Shape <https://example.com/focal/feature-lesniTyp>: _:N433b4f1246c149719442170b32fe3550
 
-Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
-  Validation Report
-  Conforms: True
-  
+Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl: no results
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:FeatureShape: _:N2281ec83689f40579d71e99e10ed9f7e
- - Shape geojson:GeometryShape: *none*
- - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:GeometryShape: *none*
+ - Shape geojson:FeatureShape: _:N433b4f1246c149719442170b32fe3550
+ - Shape geojson:LinkShape: *none*
 
 === End SHACL ===
 

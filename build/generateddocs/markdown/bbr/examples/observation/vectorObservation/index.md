@@ -91,7 +91,7 @@ $defs:
       hasResult:
         properties:
           pose:
-            $ref: https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/schema.yaml
+            $ref: https://opengeospatial.github.io/bblocks-geopose/build/annotated/geo/geopose/basic/ypr/schema.yaml
             x-jsonld-id: https://w3id.org/ogc/hosted/examples/resultschema/pose
           distance:
             type: number
@@ -118,7 +118,7 @@ x-bblocks-metadata:
   itemIdentifier: ogc.bbr.examples.observation.vectorObservation
   register: https://ogcincubator.github.io/bblocks-examples/build/register.json
   version: '1.0'
-  dateOfLastChange: '2026-11-06'
+  dateOfLastChange: '2026-11-09'
 
 ```
 
